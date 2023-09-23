@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.xjqsh.lesraisinsadd.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "ExampleTaCAddon.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

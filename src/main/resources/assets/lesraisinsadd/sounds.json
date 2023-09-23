@@ -1,0 +1,114 @@
+{
+  "item.p90_fire": {
+    "subtitle": "subtitle.lesraisinsadd.p90_fire",
+    "sounds": [
+      {
+        "name": "lesraisinsadd:item/p90_fire"
+      }
+    ]
+  },
+  "item.p90_reload": {
+    "subtitle": "subtitle.lesraisinsadd.p90_reload",
+    "sounds": [
+      {
+        "name": "lesraisinsadd:item/p90_reload"
+      }
+    ]
+  },
+  "item.p90_draw": {
+    "subtitle": "subtitle.lesraisinsadd.p90_draw",
+    "sounds": [
+      {
+        "name": "lesraisinsadd:item/p90_draw"
+      }
+    ]
+  },
+  "item.p90_inspect": {
+    "subtitle": "subtitle.lesraisinsadd.p90_inspect",
+    "sounds": [
+      {
+        "name": "lesraisinsadd:item/p90_inspect"
+      }
+    ]
+  },
+  "item.pp19_fire": {
+    "subtitle": "subtitle.lesraisinsadd.pp19_fire",
+    "sounds": [
+      {
+        "name": "lesraisinsadd:item/pp19_fire"
+      }
+    ]
+  },
+  "item.pp19_reload_empty": {
+    "subtitle": "subtitle.lesraisinsadd.pp19_reload_empty",
+    "sounds": [
+      {
+        "name": "lesraisinsadd:item/pp19_reload_empty"
+      }
+    ]
+  },
+  "item.pp19_reload_norm": {
+    "subtitle": "subtitle.lesraisinsadd.pp19_reload_norm",
+    "sounds": [
+      {
+        "name": "lesraisinsadd:item/pp19_reload_norm"
+      }
+    ]
+  },
+  "item.pp19_draw": {
+    "subtitle": "subtitle.lesraisinsadd.pp19_draw",
+    "sounds": [
+      {
+        "name": "lesraisinsadd:item/pp19_draw"
+      }
+    ]
+  },
+  "item.pp19_inspect": {
+    "subtitle": "subtitle.lesraisinsadd.pp19_inspect",
+    "sounds": [
+      {
+        "name": "lesraisinsadd:item/pp19_inspect"
+      }
+    ]
+  },
+  "item.ppk20_fire": {
+    "subtitle": "subtitle.lesraisinsadd.ppk20_fire",
+    "sounds": [
+      {
+        "name": "lesraisinsadd:item/ppk20_fire"
+      }
+    ]
+  },
+  "item.ppk20_reload_empty": {
+    "subtitle": "subtitle.lesraisinsadd.ppk20_reload_empty",
+    "sounds": [
+      {
+        "name": "lesraisinsadd:item/ppk20_reload_empty"
+      }
+    ]
+  },
+  "item.ppk20_reload_norm": {
+    "subtitle": "subtitle.lesraisinsadd.ppk20_reload_norm",
+    "sounds": [
+      {
+        "name": "lesraisinsadd:item/ppk20_reload_norm"
+      }
+    ]
+  },
+  "item.ppk20_draw": {
+    "subtitle": "subtitle.lesraisinsadd.ppk20_draw",
+    "sounds": [
+      {
+        "name": "lesraisinsadd:item/ppk20_draw"
+      }
+    ]
+  },
+  "item.ppk20_inspect": {
+    "subtitle": "subtitle.lesraisinsadd.ppk20_inspect",
+    "sounds": [
+      {
+        "name": "lesraisinsadd:item/ppk20_inspect"
+      }
+    ]
+  }
+}
