@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "ExampleTaCAddon.refmap.json",
   "mixins": [
+    "LivingEntityMixin"
   ],
   "client": [
   ],
