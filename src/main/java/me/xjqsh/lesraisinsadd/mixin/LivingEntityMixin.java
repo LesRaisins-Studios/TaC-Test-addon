@@ -25,20 +25,25 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class LivingEntityMixin{
     @Shadow public abstract ItemStack getMainHandItem();
 
-    @Shadow public abstract float getAttackAnim(float p_70678_1_);
-
     @Inject(method = "isDamageSourceBlocked", at = @At("HEAD"), cancellable = true)
     public void block(DamageSource source, CallbackInfoReturnable<Boolean> cir) {
         if(source instanceof DamageSourceProjectile){
             if(this.getMainHandItem()!=null){
                 if(this.getMainHandItem().getItem() instanceof RiotShieldItem){
-                    Vector3d vector3d2 = source.getSourcePosition();
-                    if (vector3d2 != null) {
-                        Vector3d vector3d = ((Entity)(Object)this).getViewVector(1.0F);
-                        Vector3d vector3d1 = vector3d2.vectorTo(((Entity)(Object)this).position()).normalize();
-                        vector3d1 = new Vector3d(vector3d1.x, 0.0D, vector3d1.z);
-                        if (vector3d1.dot(vector3d) < 0.0D) {
-                            cir.setReturnValue(true);
+                    if(((Object)this) instanceof PlayerEntity){
+                        float x = ((PlayerEntity)(Object)this).getAttackStrengthScale(0.5f);
+                        if(x < 1.0f){
+                            cir.setReturnValue(false);
+                        }else{
+                            Vector3d vector3d2 = source.getSourcePosition();
+                            if (vector3d2 != null) {
+                                Vector3d vector3d = ((Entity)(Object)this).getViewVector(1.0F);
+                                Vector3d vector3d1 = vector3d2.vectorTo(((Entity)(Object)this).position()).normalize();
+                                vector3d1 = new Vector3d(vector3d1.x, 0.0D, vector3d1.z);
+                                if (vector3d1.dot(vector3d) < 0.0D) {
+                                    cir.setReturnValue(true);
+                                }
+                            }
                         }
                     }
                 }

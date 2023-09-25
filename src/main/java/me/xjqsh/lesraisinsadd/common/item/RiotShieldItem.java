@@ -32,11 +32,13 @@ public class RiotShieldItem extends Item {
         return UseAction.NONE;
     }
 
-    public boolean canAttackBlock(BlockState p_195938_1_, World p_195938_2_, BlockPos p_195938_3_, PlayerEntity p_195938_4_) {
+    @Override
+    public boolean canAttackBlock(BlockState blockState, World world, BlockPos blockPos, PlayerEntity player) {
         return false;
     }
 
-    public Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers(EquipmentSlotType p_111205_1_) {
-        return p_111205_1_ == EquipmentSlotType.MAINHAND ? this.defaultModifiers : super.getDefaultAttributeModifiers(p_111205_1_);
+    @Override
+    public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlotType slot,ItemStack stack) {
+        return slot == EquipmentSlotType.MAINHAND ? this.defaultModifiers : super.getAttributeModifiers(slot,stack);
     }
 }

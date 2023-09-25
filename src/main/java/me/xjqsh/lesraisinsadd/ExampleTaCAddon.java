@@ -1,9 +1,8 @@
 package me.xjqsh.lesraisinsadd;
 
-import com.tac.guns.client.handler.GunRenderingHandler;
 import com.tac.guns.client.render.gun.ModelOverrides;
 import me.xjqsh.lesraisinsadd.client.render.ModelLoader;
-import me.xjqsh.lesraisinsadd.client.render.PlayerRenderHandle;
+import me.xjqsh.lesraisinsadd.client.listener.PlayerRenderHandle;
 import me.xjqsh.lesraisinsadd.client.render.animation.HCARAnimationController;
 import me.xjqsh.lesraisinsadd.client.render.animation.P90AnimationController;
 import me.xjqsh.lesraisinsadd.client.render.animation.PP19AnimationController;

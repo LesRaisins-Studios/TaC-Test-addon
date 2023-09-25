@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "me.xjqsh.lesraisinsadd.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "ExampleTaCAddon.refmap.json",
+  "refmap": "lesraisinsadd.refmap.json",
   "mixins": [
     "LivingEntityMixin"
   ],

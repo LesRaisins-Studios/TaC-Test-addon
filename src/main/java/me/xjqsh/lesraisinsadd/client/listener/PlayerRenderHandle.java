@@ -1,4 +1,4 @@
-package me.xjqsh.lesraisinsadd.client.render;
+package me.xjqsh.lesraisinsadd.client.listener;
 
 import me.xjqsh.lesraisinsadd.common.item.RiotShieldItem;
 import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
