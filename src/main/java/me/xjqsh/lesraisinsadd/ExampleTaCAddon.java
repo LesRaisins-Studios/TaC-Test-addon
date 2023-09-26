@@ -2,15 +2,15 @@ package me.xjqsh.lesraisinsadd;
 
 import com.tac.guns.client.render.gun.ModelOverrides;
 import me.xjqsh.lesraisinsadd.client.render.ModelLoader;
-import me.xjqsh.lesraisinsadd.client.listener.PlayerRenderHandle;
+import me.xjqsh.lesraisinsadd.client.listener.PlayerRenderingHandle;
 import me.xjqsh.lesraisinsadd.client.render.animation.HCARAnimationController;
 import me.xjqsh.lesraisinsadd.client.render.animation.P90AnimationController;
 import me.xjqsh.lesraisinsadd.client.render.animation.PP19AnimationController;
 import me.xjqsh.lesraisinsadd.client.render.animation.PPK20AnimationController;
-import me.xjqsh.lesraisinsadd.client.render.gun.model.hcar_animation;
-import me.xjqsh.lesraisinsadd.client.render.gun.model.p90_animation;
-import me.xjqsh.lesraisinsadd.client.render.gun.model.pp19_animation;
-import me.xjqsh.lesraisinsadd.client.render.gun.model.ppk20_animation;
+import me.xjqsh.lesraisinsadd.client.render.model.gun.hcar_animation;
+import me.xjqsh.lesraisinsadd.client.render.model.gun.p90_animation;
+import me.xjqsh.lesraisinsadd.client.render.model.gun.pp19_animation;
+import me.xjqsh.lesraisinsadd.client.render.model.gun.ppk20_animation;
 import me.xjqsh.lesraisinsadd.init.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -31,7 +31,7 @@ public class ExampleTaCAddon {
 
         bus.addListener(this::onClientSetup);
         ModelLoader.init();
-        MinecraftForge.EVENT_BUS.register(new PlayerRenderHandle());
+        MinecraftForge.EVENT_BUS.register(new PlayerRenderingHandle());
     }
 
     private void onClientSetup(FMLClientSetupEvent event) {

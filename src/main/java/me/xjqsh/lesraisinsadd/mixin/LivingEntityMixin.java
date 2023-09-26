@@ -1,17 +1,13 @@
 package me.xjqsh.lesraisinsadd.mixin;
 
 import com.tac.guns.entity.DamageSourceProjectile;
-import me.xjqsh.lesraisinsadd.common.item.RiotShieldItem;
+import me.xjqsh.lesraisinsadd.item.shield.RiotShieldItem;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.UseAction;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.vector.Vector3d;
-import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;

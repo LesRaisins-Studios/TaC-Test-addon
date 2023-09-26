@@ -1,6 +1,6 @@
 package me.xjqsh.lesraisinsadd.client.listener;
 
-import me.xjqsh.lesraisinsadd.common.item.RiotShieldItem;
+import me.xjqsh.lesraisinsadd.item.shield.RiotShieldItem;
 import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
 import net.minecraft.client.renderer.entity.PlayerRenderer;
 import net.minecraft.client.renderer.entity.model.BipedModel;
@@ -11,7 +11,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(value = Dist.CLIENT)
-public class PlayerRenderHandle {
+public class PlayerRenderingHandle {
     @SubscribeEvent
     public static void onPlayerRender(RenderPlayerEvent.Pre event){
         if(event.getPlayer().getMainHandItem().getItem() instanceof RiotShieldItem){
