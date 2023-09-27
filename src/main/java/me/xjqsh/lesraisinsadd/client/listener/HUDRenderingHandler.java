@@ -99,7 +99,7 @@ public class HUDRenderingHandler extends AbstractGui {
                         IFormattableTextComponent currentAmmo;
                         IFormattableTextComponent reserveAmmo;
 
-                        int ammo = heldItem.getTag().getInt("flash");
+                        int ammo = ((FlashShieldItem) heldItem.getItem()).getAmmo(heldItem);
                         TextFormatting ammoColor = (ammo==0 ? TextFormatting.RED : TextFormatting.WHITE);
                         TextFormatting ammoBg = (ammo==0 ? TextFormatting.RED : TextFormatting.GRAY);
                         TextFormatting reserveColor = (ammo==0 ? TextFormatting.RED : TextFormatting.GRAY);

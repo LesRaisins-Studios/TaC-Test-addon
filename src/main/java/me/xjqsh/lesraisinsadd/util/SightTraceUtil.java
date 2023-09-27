@@ -19,10 +19,12 @@ import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.World;
 
 import javax.annotation.Nullable;
-/*sight ray trace from cgm*/
-public class StunCheck {
+/** Sight ray trace tools, referenced cgm's stun grenade.
+ *  Need to separate the applying effects part from the method to make it easier to use.
+ */
+public class SightTraceUtil {
     public static boolean calculateAndApplyEffect(Effect effect, Config.EffectCriteria criteria, LivingEntity starter, LivingEntity target) {
-        // flash position
+        // origin position
         Vector3d p = starter.position().add(0.0,1.0,0.0);
         // target eyes
         Vector3d eyes = target.getEyePosition(1.0F);

@@ -1,6 +1,10 @@
 package me.xjqsh.lesraisinsadd.client.listener;
 
+import me.xjqsh.lesraisinsadd.event.ItemCooldownEvent;
+import me.xjqsh.lesraisinsadd.init.ModSounds;
+import me.xjqsh.lesraisinsadd.item.shield.FlashShieldItem;
 import me.xjqsh.lesraisinsadd.item.shield.RiotShieldItem;
+import net.minecraft.client.Minecraft;
 import net.minecraft.util.ActionResultType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -35,5 +39,12 @@ public class ClientPlayHandler {
         }
     }
 
-
+    @SubscribeEvent
+    public static void onCooldownEnd(ItemCooldownEvent event){
+        if(event.getItem() instanceof FlashShieldItem){
+            if (Minecraft.getInstance().player != null) {
+                Minecraft.getInstance().player.playSound(ModSounds.flash_shield_charged.get(),1.0f,1.0f);
+            }
+        }
+    }
 }

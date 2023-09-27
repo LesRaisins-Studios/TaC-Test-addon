@@ -12,6 +12,7 @@ import me.xjqsh.lesraisinsadd.client.render.model.gun.p90_animation;
 import me.xjqsh.lesraisinsadd.client.render.model.gun.pp19_animation;
 import me.xjqsh.lesraisinsadd.client.render.model.gun.ppk20_animation;
 import me.xjqsh.lesraisinsadd.init.ModItems;
+import me.xjqsh.lesraisinsadd.init.ModSounds;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -28,6 +29,7 @@ public class ExampleTaCAddon {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.REGISTER.register(bus);
+        ModSounds.REGISTER.register(bus);
 
         bus.addListener(this::onClientSetup);
         ModelLoader.init();
