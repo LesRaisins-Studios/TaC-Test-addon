@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(value = Dist.CLIENT)
 public class PlayerRenderingHandle {
     @SubscribeEvent
-    public static void onPlayerRender(RenderPlayerEvent.Pre event){
+    public void onPlayerRender(RenderPlayerEvent.Pre event){
         if(event.getPlayer().getMainHandItem().getItem() instanceof RiotShieldItem){
             PlayerRenderer renderer = event.getRenderer();
             PlayerModel<AbstractClientPlayerEntity> playermodel = renderer.getModel();

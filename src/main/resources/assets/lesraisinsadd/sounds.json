@@ -41,7 +41,7 @@
       { "name": "lesraisinsadd:item/pp19_reload_norm" }
     ]
   },
-  "`item.pp19_draw`": {
+  "item.pp19_draw": {
     "subtitle": "subtitle.lesraisinsadd.pp19_draw",
     "sounds": [
       { "name": "lesraisinsadd:item/pp19_draw" }
@@ -71,7 +71,7 @@
       { "name": "lesraisinsadd:item/ppk20_reload_norm" }
     ]
   },
-  "`item.ppk20_draw`": {
+  "item.ppk20_draw": {
     "subtitle": "subtitle.lesraisinsadd.ppk20_draw",
     "sounds": [
       { "name": "lesraisinsadd:item/ppk20_draw" }

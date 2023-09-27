@@ -22,10 +22,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @Mod(Reference.MOD_ID)
-public class ExampleTaCAddon {
+public class LesRaisinsTaCAddon {
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public ExampleTaCAddon() {
+    public LesRaisinsTaCAddon() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.REGISTER.register(bus);
