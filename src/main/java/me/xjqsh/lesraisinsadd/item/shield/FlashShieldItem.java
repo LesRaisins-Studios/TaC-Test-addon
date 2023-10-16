@@ -15,11 +15,12 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.UseAction;
-import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.potion.EffectInstance;
-import net.minecraft.util.*;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.CooldownTracker;
+import net.minecraft.util.Hand;
+import net.minecraft.util.NonNullList;
 import net.minecraft.world.World;
-import net.minecraftforge.common.util.Constants;
 
 public class FlashShieldItem extends RiotShieldItem implements IAmmoable {
     public FlashShieldItem(Properties properties, Multimap<Attribute, AttributeModifier> modifiers) {
@@ -39,7 +40,7 @@ public class FlashShieldItem extends RiotShieldItem implements IAmmoable {
 
     public ActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
-        if(getAmmo(itemstack)>0){
+        if(getAmmo(itemstack)>0 && player.getMainHandItem().equals(itemstack)){
             player.startUsingItem(hand);
             return ActionResult.pass(itemstack);
         }else {

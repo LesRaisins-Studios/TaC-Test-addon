@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"3": "exampletacaddon:items/hcar/hcar_other_2",
-		"7": "exampletacaddon:items/hcar/hg_holes",
-		"particle": "exampletacaddon:items/hcar/hg_holes"
+		"3": "lesraisinsadd:items/hcar/hcar_other_2",
+		"7": "lesraisinsadd:items/hcar/hg_holes",
+		"particle": "lesraisinsadd:items/hcar/hg_holes"
 	},
 	"elements": [
 		{

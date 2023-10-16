@@ -28,6 +28,8 @@ public class ModItems {
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG), GunModifiers.AK47_MOD));
     public static final RegistryObject<GunItem> PPK20 = REGISTER.register("ppk20",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG), GunModifiers.AK47_MOD));
+    public static final RegistryObject<GunItem> SVD = REGISTER.register("svd",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG), GunModifiers.AK47_MOD));
     /*shield*/
     public static final RegistryObject<Item> RIOT_SHIELD = REGISTER.register("riot_shield",
             () -> new RiotShieldItem(new Item.Properties().durability(1000).tab(GunMod.GROUP),
@@ -41,7 +43,6 @@ public class ModItems {
             ()-> new BulletProofVestItem(
                     CustomArmorMaterial.ARMOR_MATERIAL_FRANKSUIT,
                     EquipmentSlotType.CHEST,
-                    new Item.Properties().durability(1000).tab(GunMod.GROUP),
-                    new BulletProofVest<>()
+                    new Item.Properties().durability(1000).tab(GunMod.GROUP)
             ));
 }

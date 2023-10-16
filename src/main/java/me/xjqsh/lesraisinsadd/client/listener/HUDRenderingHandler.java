@@ -27,6 +27,7 @@ import org.lwjgl.opengl.GL11;
 import java.awt.*;
 import java.awt.Color;
 
+/**Referenced the ammo hud of tac, used as a temporary placeholder*/
 @OnlyIn(Dist.CLIENT)
 @Mod.EventBusSubscriber(value = Dist.CLIENT)
 public class HUDRenderingHandler extends AbstractGui {

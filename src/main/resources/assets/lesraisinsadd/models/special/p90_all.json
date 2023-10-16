@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
-		"9": "exampletacaddon:items/p90/p90"
+		"9": "lesraisinsadd:items/p90/p90"
 	},
 	"elements": [
 		{

@@ -3,14 +3,8 @@ package me.xjqsh.lesraisinsadd;
 import com.tac.guns.client.render.gun.ModelOverrides;
 import me.xjqsh.lesraisinsadd.client.render.ModelLoader;
 import me.xjqsh.lesraisinsadd.client.listener.PlayerRenderingHandle;
-import me.xjqsh.lesraisinsadd.client.render.animation.HCARAnimationController;
-import me.xjqsh.lesraisinsadd.client.render.animation.P90AnimationController;
-import me.xjqsh.lesraisinsadd.client.render.animation.PP19AnimationController;
-import me.xjqsh.lesraisinsadd.client.render.animation.PPK20AnimationController;
-import me.xjqsh.lesraisinsadd.client.render.model.gun.hcar_animation;
-import me.xjqsh.lesraisinsadd.client.render.model.gun.p90_animation;
-import me.xjqsh.lesraisinsadd.client.render.model.gun.pp19_animation;
-import me.xjqsh.lesraisinsadd.client.render.model.gun.ppk20_animation;
+import me.xjqsh.lesraisinsadd.client.render.animation.*;
+import me.xjqsh.lesraisinsadd.client.render.model.gun.*;
 import me.xjqsh.lesraisinsadd.init.ModItems;
 import me.xjqsh.lesraisinsadd.init.ModSounds;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,7 +27,7 @@ public class LesRaisinsTaCAddon {
 
         bus.addListener(this::onClientSetup);
         ModelLoader.init();
-        MinecraftForge.EVENT_BUS.register(new PlayerRenderingHandle());
+
     }
 
     private void onClientSetup(FMLClientSetupEvent event) {
@@ -53,9 +47,14 @@ public class LesRaisinsTaCAddon {
                 ModItems.PPK20.get(),
                 new ppk20_animation()
         );
+        ModelOverrides.register(
+                ModItems.SVD.get(),
+                new svd_animation()
+        );
         HCARAnimationController.getInstance();
         P90AnimationController.getInstance();
         PP19AnimationController.getInstance();
         PPK20AnimationController.getInstance();
+        SVDAnimationController.getInstance();
     }
 }
