@@ -26,7 +26,7 @@ public class p90_animation extends SkinAnimationModel {
         {
             controller.applySpecialModelTransform(getModelComponent(skin, BODY), P90AnimationController.INDEX_BODY, transformType, matrices);
             RenderUtil.renderModel(getModelComponent(skin, BODY), stack, matrices, renderBuffer, light, overlay);
-            renderBarrel(stack,matrices,renderBuffer,light,overlay,skin);
+            renderBarrelWithDefault(stack,matrices,renderBuffer,light,overlay,skin);
         }
         matrices.popPose();
 

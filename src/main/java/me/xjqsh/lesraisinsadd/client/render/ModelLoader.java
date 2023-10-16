@@ -9,7 +9,7 @@ public class ModelLoader {
     public static SkinLoader HCAR = new SkinLoader(ModItems.HCAR.getId(),
             BODY,MAG_STANDARD,MAG_EXTENDED,PULL);
     public static SkinLoader P90 = new SkinLoader(ModItems.P90.getId(),
-            BODY,MAG_STANDARD,MUZZLE_SILENCER,MUZZLE_BRAKE,MUZZLE_COMPENSATOR);
+            BODY,MAG_STANDARD,MUZZLE_SILENCER,MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT);
     public static SkinLoader PP19 = new SkinLoader(ModItems.PP19.getId(),
             BODY,MAG_STANDARD,BOLT);
     public static SkinLoader PPK20 = new SkinLoader(ModItems.PPK20.getId(),
