@@ -21,6 +21,9 @@ public class ModelLoader {
             MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT,MUZZLE_SILENCER,
             SIGHT,SIGHT_FOLDED);
 
+    public static SkinLoader QSZ92 = new SkinLoader(ModItems.QSZ92.getId(),
+            BODY,MAG_STANDARD,SLIDE);
+
     public static void init(){
         SkinLoader.register(ModItems.HCAR.getId(),HCAR);
         SkinLoader.register(ModItems.P90.getId(),P90);
@@ -28,5 +31,6 @@ public class ModelLoader {
         SkinLoader.register(ModItems.PPK20.getId(),PPK20);
         SkinLoader.register(ModItems.SVD.getId(),SVD);
         SkinLoader.register(ModItems.AUG.getId(),AUG);
+        SkinLoader.register(ModItems.QSZ92.getId(),QSZ92);
     }
 }

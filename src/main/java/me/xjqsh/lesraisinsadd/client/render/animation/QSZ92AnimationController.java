@@ -15,34 +15,37 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.io.IOException;
 
 @OnlyIn(Dist.CLIENT)
-public class P90AnimationController extends GunAnimationController {
+public class QSZ92AnimationController extends GunAnimationController {
     public static int INDEX_BODY = 6;
-    public static int INDEX_LEFT_HAND = 0;
-    public static int INDEX_RIGHT_HAND = 2;
-    public static int INDEX_MAGAZINE = 5;
+    public static int INDEX_LEFT_HAND = 8;
+    public static int INDEX_RIGHT_HAND = 0;
+    public static int INDEX_MAG = 5;
+    public static int INDEX_SLIDE = 2;
 
-    public static final AnimationMeta RELOAD_NORM = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/p90_reload_norm.gltf"));
-    public static final AnimationMeta INSPECT = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/p90_inspect.gltf"));
-    public static final AnimationMeta DRAW = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/p90_draw.gltf"));
-    public static final AnimationMeta STATIC = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/p90_static.gltf"));
-    private static P90AnimationController instance = new P90AnimationController();
+    public static final AnimationMeta RELOAD_NORM = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/qsz92_reload_norm.gltf"));
+    public static final AnimationMeta RELOAD_EMPTY = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/qsz92_reload_empty.gltf"));
+    public static final AnimationMeta INSPECT = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/qsz92_inspect.gltf"));
+    public static final AnimationMeta DRAW = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/qsz92_draw.gltf"));
+    public static final AnimationMeta STATIC = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/qsz92_static.gltf"));
+    private static QSZ92AnimationController instance;
 
-    private P90AnimationController() {
+    private QSZ92AnimationController() {
         try {
             Animations.load(RELOAD_NORM);
             Animations.load(INSPECT);
             Animations.load(DRAW);
+            Animations.load(RELOAD_EMPTY);
             Animations.load(STATIC);
         } catch (IOException e) {
             GunMod.LOGGER.fatal(e.getStackTrace());
         }
         this.enableStaticState();
-        GunAnimationController.setAnimationControllerMap(ModItems.P90.getId(),this);
+        GunAnimationController.setAnimationControllerMap(ModItems.QSZ92.getId(),this);
     }
 
-    public static P90AnimationController getInstance(){
+    public static QSZ92AnimationController getInstance(){
         if(instance==null){
-            instance=new P90AnimationController();
+            instance = new QSZ92AnimationController();
         }
         return instance;
     }
@@ -51,18 +54,17 @@ public class P90AnimationController extends GunAnimationController {
     public AnimationMeta getAnimationFromLabel(AnimationLabel label) {
         switch (label){
             case INSPECT: return INSPECT;
-            case RELOAD_NORMAL:
-            case RELOAD_EMPTY:
-                return RELOAD_NORM;
+            case RELOAD_NORMAL: return RELOAD_NORM;
             case DRAW: return DRAW;
             case STATIC: return STATIC;
+            case RELOAD_EMPTY: return RELOAD_EMPTY;
             default: return null;
         }
     }
 
     @Override
     public AnimationSoundMeta getSoundFromLabel(AnimationLabel label){
-        return super.getSoundFromLabel(ModItems.P90.get(), label);
+        return super.getSoundFromLabel(ModItems.QSZ92.get(), label);
     }
 
     @Override

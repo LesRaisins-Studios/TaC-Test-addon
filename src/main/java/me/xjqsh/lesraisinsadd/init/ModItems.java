@@ -4,6 +4,7 @@ import com.tac.guns.GunMod;
 import com.tac.guns.common.GunModifiers;
 import com.tac.guns.item.GunItem;
 import com.tac.guns.item.TransitionalTypes.TimelessGunItem;
+import com.tac.guns.item.TransitionalTypes.TimelessPistolGunItem;
 import me.xjqsh.lesraisinsadd.Reference;
 import me.xjqsh.lesraisinsadd.item.BulletProofVestItem;
 import me.xjqsh.lesraisinsadd.item.CustomArmorMaterial;
@@ -28,10 +29,14 @@ public class ModItems {
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> AUG = REGISTER.register("aug",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
+
     public static final RegistryObject<GunItem> PP19 = REGISTER.register("pp19",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
     public static final RegistryObject<GunItem> PPK20 = REGISTER.register("ppk20",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
+
+    public static final RegistryObject<GunItem> QSZ92 = REGISTER.register("qsz92",
+            () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
 
     /*shield*/
     public static final RegistryObject<Item> RIOT_SHIELD = REGISTER.register("riot_shield",
