@@ -1,5 +1,7 @@
 package me.xjqsh.lesraisinsadd.item;
 
+import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -49,5 +51,30 @@ public interface IAmmoable {
 
     default Item getAmmoItem(){
         return Items.AIR;
+    }
+    /**Count the reserve ammo in the given inventory
+     * @param inventory The inv to search.
+     * @return The number of reserve ammos.
+     * */
+    default int countAmmo(IInventory inventory){
+        if(getAmmoItem().equals(Items.AIR)){
+            return 0;
+        } else {
+            return inventory.countItem(getAmmoItem());
+        }
+
+    }
+
+    default int filling(IInventory inventory, ItemStack stack){
+        if(getAmmoItem().equals(Items.AIR)){
+            return 0;
+        }
+
+        int i = getMaxAmmo()-getAmmo(stack);
+
+        ItemStackHelper.clearOrCountMatchingItems(inventory,
+                (s)-> s.getItem().equals(getAmmoItem()),i,false);
+
+        return i;
     }
 }

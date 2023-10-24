@@ -21,15 +21,18 @@ public class ModItems {
     public static final DeferredRegister<Item> REGISTER = DeferredRegister.create(ForgeRegistries.ITEMS, Reference.MOD_ID);
     /*guns*/
     public static final RegistryObject<GunItem> HCAR = REGISTER.register("hcar",
-            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE), GunModifiers.AK47_MOD));
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> P90 = REGISTER.register("p90",
-            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE), GunModifiers.AK47_MOD));
-    public static final RegistryObject<GunItem> PP19 = REGISTER.register("pp19",
-            () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG), GunModifiers.AK47_MOD));
-    public static final RegistryObject<GunItem> PPK20 = REGISTER.register("ppk20",
-            () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG), GunModifiers.AK47_MOD));
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> SVD = REGISTER.register("svd",
-            () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG), GunModifiers.AK47_MOD));
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
+    public static final RegistryObject<GunItem> AUG = REGISTER.register("aug",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
+    public static final RegistryObject<GunItem> PP19 = REGISTER.register("pp19",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
+    public static final RegistryObject<GunItem> PPK20 = REGISTER.register("ppk20",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
+
     /*shield*/
     public static final RegistryObject<Item> RIOT_SHIELD = REGISTER.register("riot_shield",
             () -> new RiotShieldItem(new Item.Properties().durability(1000).tab(GunMod.GROUP),

@@ -12,9 +12,7 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ai.attributes.Attribute;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.UseAction;
+import net.minecraft.item.*;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.CooldownTracker;
@@ -48,6 +46,10 @@ public class FlashShieldItem extends RiotShieldItem implements IAmmoable {
         }
     }
     @Override
+    public Item getAmmoItem(){
+        return Items.REDSTONE;
+    }
+    @Override
     public UseAction getUseAnimation(ItemStack itemStack) {
         return UseAction.NONE;
     }
@@ -59,12 +61,12 @@ public class FlashShieldItem extends RiotShieldItem implements IAmmoable {
     public void onUseTick(World world, LivingEntity caster, ItemStack itemstack, int tick) {
         int useTick = this.getUseDuration(itemstack) - tick;
         if(useTick==20){
-            if(!consume(itemstack,1)){
-                caster.stopUsingItem();
-                return;
-            }else{
+            if(caster instanceof PlayerEntity && (((PlayerEntity) caster).isCreative() || consume(itemstack,1))){
                 CooldownTracker tracker = ((PlayerEntity) caster).getCooldowns();
                 tracker.addCooldown(this, 100);
+            }else{
+                caster.stopUsingItem();
+                return;
             }
 
             if(!world.isClientSide()) {

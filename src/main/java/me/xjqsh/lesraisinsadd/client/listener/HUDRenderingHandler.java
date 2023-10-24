@@ -4,6 +4,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.tac.guns.Config;
 import me.xjqsh.lesraisinsadd.Reference;
+import me.xjqsh.lesraisinsadd.item.IAmmoable;
 import me.xjqsh.lesraisinsadd.item.shield.FlashShieldItem;
 import me.xjqsh.lesraisinsadd.item.shield.RiotShieldItem;
 import net.minecraft.client.Minecraft;
@@ -78,7 +79,7 @@ public class HUDRenderingHandler extends AbstractGui {
             }
             stack.popPose();
 
-            if(heldItem.getItem() instanceof FlashShieldItem){
+            if(heldItem.getItem() instanceof IAmmoable){
                 float anchorPointX = event.getWindow().getGuiScaledWidth() / 12F * 11F;
                 float anchorPointY = event.getWindow().getGuiScaledHeight() / 10F * 9F;
 
@@ -100,15 +101,17 @@ public class HUDRenderingHandler extends AbstractGui {
                         IFormattableTextComponent currentAmmo;
                         IFormattableTextComponent reserveAmmo;
 
-                        int ammo = ((FlashShieldItem) heldItem.getItem()).getAmmo(heldItem);
+                        int ammo = ((IAmmoable) heldItem.getItem()).getAmmo(heldItem);
+                        int reserve = (player.isCreative() ? 9999 : ((IAmmoable) heldItem.getItem()).countAmmo(player.inventory) );
+
                         TextFormatting ammoColor = (ammo==0 ? TextFormatting.RED : TextFormatting.WHITE);
                         TextFormatting ammoBg = (ammo==0 ? TextFormatting.RED : TextFormatting.GRAY);
-                        TextFormatting reserveColor = (ammo==0 ? TextFormatting.RED : TextFormatting.GRAY);
+                        TextFormatting reserveColor = (reserve==0 ? TextFormatting.RED : TextFormatting.GRAY);
 
                         currentAmmo = byPaddingZeros(ammo).withStyle(ammoBg)
                                 .append(new StringTextComponent(""+ammo).withStyle(ammoColor));
-                        reserveAmmo = byPaddingZeros(3)
-                                .append(new StringTextComponent(""+3).withStyle(TextFormatting.GRAY));
+                        reserveAmmo = byPaddingZeros(reserve).withStyle(reserveColor)
+                                .append(new StringTextComponent(""+reserve).withStyle(reserveColor));
 
                         stack.scale(counterSize, counterSize, counterSize);
                         stack.pushPose();

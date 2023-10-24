@@ -1,8 +1,8 @@
 {
   "general": {
     "auto": true,
-    "rate": 150,
-    "rateSelector": [1],
+    "rate": 600,
+    "rateSelector": [2, 1],
     "gripType": "tac:two_handed_ak47",
     "recoilAngle": 3.275,
     "horizontalRecoilAngle": 2.35,
@@ -23,7 +23,7 @@
   "projectile": {
     "item": "tac:762x39",
     "visible": false,
-    "damage": 15,
+    "damage": 8.5,
     "armorIgnore": 1.0,
     "critical": 0.00,
     "criticalDamage": 0.75,
@@ -39,19 +39,19 @@
   },
   "reloads": {
     "magFed": true,
-    "maxAmmo": 10,
+    "maxAmmo": 30,
     "reloadMagTimer": 36,
     "additionalReloadEmptyMagTimer": 20,
     "maxAdditionalAmmoPerOC": [5, 7, 10],
     "preReloadPauseTicks": 0
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.svd_fire",
-    "reloadNormal": "lesraisinsadd:item.svd_reload_norm",
-    "reloadEmpty": "lesraisinsadd:item.svd_reload_empty",
+    "fire": "tac:item.ak47_fire",
+    "reloadNormal": "tac:animation.ak47_reload_norm",
+    "reloadEmpty": "tac:animation.ak47_reload_empty",
     "draw": "tac:animation.ak47_draw",
-    "inspect": "lesraisinsadd:item.svd_inspect",
-    "cock": "lesraisinsadd:item.pistol.cock",
+    "inspect": "tac:animation.ak47_inspect",
+    "cock": "tac:item.pistol.cock",
     "silencedFire": "tac:item.ak47_fire_s"
   },
   "display": {
@@ -86,7 +86,7 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 8.10,
+      "yOffset": 14.850,
       "zOffset": -1.8
     },
     "attachments": {
@@ -106,13 +106,13 @@
         "scale": 0.00
       },
       "scope": {
-        "yOffset": 7.3,
-        "zOffset": 9.0,
+        "yOffset": 12.97,
+        "zOffset": 2.0,
         "scale": 1.0
       },
       "pistolScope": {
-        "yOffset": 7.35,
-        "zOffset": 10.2,
+        "yOffset": 10.97,
+        "zOffset": 3.2,
         "scale": 1.0,
         "doRenderMount": true,
         "doOnSlideMovement": false

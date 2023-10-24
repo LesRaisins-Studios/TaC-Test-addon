@@ -51,10 +51,15 @@ public class LesRaisinsTaCAddon {
                 ModItems.SVD.get(),
                 new svd_animation()
         );
+        ModelOverrides.register(
+                ModItems.AUG.get(),
+                new aug_animation()
+        );
         HCARAnimationController.getInstance();
         P90AnimationController.getInstance();
         PP19AnimationController.getInstance();
         PPK20AnimationController.getInstance();
         SVDAnimationController.getInstance();
+        AUGAnimationController.getInstance();
     }
 }

@@ -16,11 +16,17 @@ public class ModelLoader {
             BODY,MAG_STANDARD,BOLT);
     public static SkinLoader SVD = new SkinLoader(ModItems.SVD.getId(),
             BODY,MAG_STANDARD,BOLT,RAIL_SCOPE);
+    public static SkinLoader AUG = new SkinLoader(ModItems.AUG.getId(),
+            BODY,MAG_STANDARD,MAG_EXTENDED,BOLT,
+            MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT,MUZZLE_SILENCER,
+            SIGHT,SIGHT_FOLDED);
+
     public static void init(){
         SkinLoader.register(ModItems.HCAR.getId(),HCAR);
         SkinLoader.register(ModItems.P90.getId(),P90);
         SkinLoader.register(ModItems.PP19.getId(),PP19);
         SkinLoader.register(ModItems.PPK20.getId(),PPK20);
         SkinLoader.register(ModItems.SVD.getId(),SVD);
+        SkinLoader.register(ModItems.AUG.getId(),AUG);
     }
 }

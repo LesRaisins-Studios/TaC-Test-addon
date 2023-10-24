@@ -15,21 +15,21 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.io.IOException;
 
 @OnlyIn(Dist.CLIENT)
-public class PP19AnimationController extends GunAnimationController {
-    public static int INDEX_BODY = 4;
-    public static int INDEX_LEFT_HAND = 6;
-    public static int INDEX_RIGHT_HAND = 0;
-    public static int INDEX_MAGAZINE = 2;
-    public static int INDEX_BOLT = 3;
+public class AUGAnimationController extends GunAnimationController {
+    public static int INDEX_BODY = 6;
+    public static int INDEX_LEFT_HAND = 0;
+    public static int INDEX_RIGHT_HAND = 2;
+    public static int INDEX_MAG = 4;
+    public static int INDEX_CHARGE = 5;
 
-    public static final AnimationMeta RELOAD_NORM = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/pp19_reload_norm.gltf"));
-    public static final AnimationMeta RELOAD_EMPTY = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/pp19_reload_empty.gltf"));
-    public static final AnimationMeta INSPECT = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/pp19_inspect.gltf"));
-    public static final AnimationMeta DRAW = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/pp19_draw.gltf"));
-    public static final AnimationMeta STATIC = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/pp19_static.gltf"));
-    private static final PP19AnimationController instance = new PP19AnimationController();
+    public static final AnimationMeta RELOAD_NORM = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/aug_reload_norm.gltf"));
+    public static final AnimationMeta RELOAD_EMPTY = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/aug_reload_empty.gltf"));
+    public static final AnimationMeta INSPECT = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/aug_inspect.gltf"));
+    public static final AnimationMeta DRAW = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/aug_draw.gltf"));
+    public static final AnimationMeta STATIC = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/aug_static.gltf"));
+    private static AUGAnimationController instance;
 
-    private PP19AnimationController() {
+    private AUGAnimationController() {
         try {
             Animations.load(RELOAD_NORM);
             Animations.load(INSPECT);
@@ -40,10 +40,13 @@ public class PP19AnimationController extends GunAnimationController {
             GunMod.LOGGER.fatal(e.getStackTrace());
         }
         this.enableStaticState();
-        GunAnimationController.setAnimationControllerMap(ModItems.PP19.getId(),this);
+        GunAnimationController.setAnimationControllerMap(ModItems.AUG.getId(),this);
     }
 
-    public static PP19AnimationController getInstance(){
+    public static AUGAnimationController getInstance(){
+        if(instance==null){
+            instance = new AUGAnimationController();
+        }
         return instance;
     }
 
@@ -61,7 +64,7 @@ public class PP19AnimationController extends GunAnimationController {
 
     @Override
     public AnimationSoundMeta getSoundFromLabel(AnimationLabel label){
-        return super.getSoundFromLabel(ModItems.PP19.get(), label);
+        return super.getSoundFromLabel(ModItems.AUG.get(), label);
     }
 
     @Override
