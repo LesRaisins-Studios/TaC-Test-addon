@@ -2,12 +2,10 @@ package me.xjqsh.lesraisinsadd;
 
 import com.tac.guns.client.render.gun.ModelOverrides;
 import me.xjqsh.lesraisinsadd.client.render.ModelLoader;
-import me.xjqsh.lesraisinsadd.client.listener.PlayerRenderingHandle;
 import me.xjqsh.lesraisinsadd.client.render.animation.*;
 import me.xjqsh.lesraisinsadd.client.render.model.gun.*;
 import me.xjqsh.lesraisinsadd.init.ModItems;
 import me.xjqsh.lesraisinsadd.init.ModSounds;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -60,8 +58,11 @@ public class LesRaisinsTaCAddon {
                 new qsz92_animation()
         );
         ModelOverrides.register(
-                ModItems.ANGLE.get(),
+                ModItems.ANGEL.get(),
                 new angle_animation()
+        );
+        ModelOverrides.register(ModItems.SA58.get(),
+                new sa58_animation()
         );
         HCARAnimationController.getInstance();
         P90AnimationController.getInstance();
@@ -71,5 +72,6 @@ public class LesRaisinsTaCAddon {
         AUGAnimationController.getInstance();
         QSZ92AnimationController.getInstance();
         ANGLEAnimationController.getInstance();
+        SA58AnimationController.getInstance();
     }
 }

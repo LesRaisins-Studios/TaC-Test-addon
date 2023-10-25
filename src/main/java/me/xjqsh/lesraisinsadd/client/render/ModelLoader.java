@@ -22,11 +22,13 @@ public class ModelLoader {
             BODY,MAG_STANDARD,MAG_EXTENDED,BOLT,
             MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT,MUZZLE_SILENCER,
             SIGHT,SIGHT_FOLDED);
-
     public static SkinLoader QSZ92 = new SkinLoader(ModItems.QSZ92.getId(),
             BODY,MAG_STANDARD,SLIDE);
-    public static SkinLoader ANGLE = new SkinLoader(ModItems.ANGLE.getId(),
-            BODY,MAG_STANDARD,LOADER,BULLETS);
+    public static SkinLoader ANGLE = new SkinLoader(ModItems.ANGEL.getId(),
+            BODY,MAG_STANDARD,LOADER,BULLETS,HAMMER);
+    public static SkinLoader SA58 = new SkinLoader(ModItems.SA58.getId(),
+            BODY,HANDLE,GRIP_LIGHT,GRIP_TACTICAL,MAG_STANDARD,MAG_EXTENDED,
+            MUZZLE_SILENCER,MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT);
 
     public static void init(){
         SkinLoader.register(ModItems.HCAR.getId(),HCAR);
@@ -36,6 +38,7 @@ public class ModelLoader {
         SkinLoader.register(ModItems.SVD.getId(),SVD);
         SkinLoader.register(ModItems.AUG.getId(),AUG);
         SkinLoader.register(ModItems.QSZ92.getId(),QSZ92);
-        SkinLoader.register(ModItems.ANGLE.getId(),ANGLE);
+        SkinLoader.register(ModItems.ANGEL.getId(),ANGLE);
+        SkinLoader.register(ModItems.SA58.getId(),SA58);
     }
 }

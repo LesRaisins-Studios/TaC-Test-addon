@@ -15,39 +15,37 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.io.IOException;
 
 @OnlyIn(Dist.CLIENT)
-public class ANGLEAnimationController extends GunAnimationController {
-    public static int INDEX_BODY = 7;
-    public static int INDEX_LEFT_HAND = 9;
+public class SA58AnimationController extends GunAnimationController {
+    public static int INDEX_BODY = 4;
+    public static int INDEX_LEFT_HAND = 6;
     public static int INDEX_RIGHT_HAND = 0;
-    public static int INDEX_BULLETS = 3;
-    public static int INDEX_LOADER = 5;
-    public static int INDEX_MAG = 4;
-    public static int INDEX_HAMMER = 6;
+    public static int INDEX_MAGAZINE = 2;
+    public static int INDEX_HANDEL = 3;
 
-    public static final AnimationMeta RELOAD_NORM = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/angel_reload.gltf"));
-    public static final AnimationMeta INSPECT = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/angel_inspect.gltf"));
-    public static final AnimationMeta DRAW = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/angel_draw.gltf"));
-    public static final AnimationMeta STATIC = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/angel_static.gltf"));
-    public static final AnimationMeta FIRE = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/angel_fire.gltf"));
-    private static ANGLEAnimationController instance;
+    public static final AnimationMeta RELOAD_NORM = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/sa58_reload_norm.gltf"));
+    public static final AnimationMeta RELOAD_EMPTY = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/sa58_reload_empty.gltf"));
+    public static final AnimationMeta INSPECT = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/sa58_inspect.gltf"));
+    public static final AnimationMeta DRAW = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/sa58_draw.gltf"));
+    public static final AnimationMeta STATIC = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/sa58_static.gltf"));
+    private static SA58AnimationController instance = new SA58AnimationController();
 
-    private ANGLEAnimationController() {
+    private SA58AnimationController() {
         try {
             Animations.load(RELOAD_NORM);
             Animations.load(INSPECT);
             Animations.load(DRAW);
+            Animations.load(RELOAD_EMPTY);
             Animations.load(STATIC);
-            Animations.load(FIRE);
         } catch (IOException e) {
             GunMod.LOGGER.fatal(e.getStackTrace());
         }
         this.enableStaticState();
-        GunAnimationController.setAnimationControllerMap(ModItems.ANGEL.getId(),this);
+        GunAnimationController.setAnimationControllerMap(ModItems.SA58.getId(),this);
     }
 
-    public static ANGLEAnimationController getInstance(){
+    public static SA58AnimationController getInstance(){
         if(instance==null){
-            instance = new ANGLEAnimationController();
+            instance = new SA58AnimationController();
         }
         return instance;
     }
@@ -56,17 +54,17 @@ public class ANGLEAnimationController extends GunAnimationController {
     public AnimationMeta getAnimationFromLabel(AnimationLabel label) {
         switch (label){
             case INSPECT: return INSPECT;
-            case RELOAD_EMPTY:
             case RELOAD_NORMAL: return RELOAD_NORM;
             case DRAW: return DRAW;
             case STATIC: return STATIC;
+            case RELOAD_EMPTY: return RELOAD_EMPTY;
             default: return null;
         }
     }
 
     @Override
     public AnimationSoundMeta getSoundFromLabel(AnimationLabel label){
-        return super.getSoundFromLabel(ModItems.ANGEL.get(), label);
+        return super.getSoundFromLabel(ModItems.SA58.get(), label);
     }
 
     @Override
@@ -82,9 +80,5 @@ public class ANGLEAnimationController extends GunAnimationController {
     @Override
     protected int getLeftHandNodeIndex() {
         return INDEX_LEFT_HAND;
-    }
-
-    public void runFireAnimation(){
-        runAnimation(FIRE,null,null);
     }
 }

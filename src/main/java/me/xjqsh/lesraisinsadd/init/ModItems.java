@@ -10,7 +10,6 @@ import me.xjqsh.lesraisinsadd.item.BulletProofVestItem;
 import me.xjqsh.lesraisinsadd.item.CustomArmorMaterial;
 import me.xjqsh.lesraisinsadd.item.shield.FlashShieldItem;
 import me.xjqsh.lesraisinsadd.item.shield.RiotShieldItem;
-import me.xjqsh.lesraisinsadd.client.render.model.armor.BulletProofVest;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
 import net.minecraft.item.Rarity;
@@ -29,6 +28,8 @@ public class ModItems {
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> AUG = REGISTER.register("aug",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
+    public static final RegistryObject<GunItem> SA58 = REGISTER.register("sa58",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
 
     public static final RegistryObject<GunItem> PP19 = REGISTER.register("pp19",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
@@ -37,7 +38,7 @@ public class ModItems {
 
     public static final RegistryObject<GunItem> QSZ92 = REGISTER.register("qsz92",
             () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
-    public static final RegistryObject<GunItem> ANGLE = REGISTER.register("angle",
+    public static final RegistryObject<GunItem> ANGEL = REGISTER.register("angel",
             () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
 
     /*shield*/
