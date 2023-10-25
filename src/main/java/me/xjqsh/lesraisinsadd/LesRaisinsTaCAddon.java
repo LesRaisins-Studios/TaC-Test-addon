@@ -59,6 +59,10 @@ public class LesRaisinsTaCAddon {
                 ModItems.QSZ92.get(),
                 new qsz92_animation()
         );
+        ModelOverrides.register(
+                ModItems.ANGLE.get(),
+                new angle_animation()
+        );
         HCARAnimationController.getInstance();
         P90AnimationController.getInstance();
         PP19AnimationController.getInstance();
@@ -66,5 +70,6 @@ public class LesRaisinsTaCAddon {
         SVDAnimationController.getInstance();
         AUGAnimationController.getInstance();
         QSZ92AnimationController.getInstance();
+        ANGLEAnimationController.getInstance();
     }
 }

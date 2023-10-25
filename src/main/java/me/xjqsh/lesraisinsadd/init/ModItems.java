@@ -37,6 +37,8 @@ public class ModItems {
 
     public static final RegistryObject<GunItem> QSZ92 = REGISTER.register("qsz92",
             () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
+    public static final RegistryObject<GunItem> ANGLE = REGISTER.register("angle",
+            () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
 
     /*shield*/
     public static final RegistryObject<Item> RIOT_SHIELD = REGISTER.register("riot_shield",
