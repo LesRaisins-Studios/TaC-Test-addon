@@ -40,6 +40,9 @@ public class ModItems {
             () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
     public static final RegistryObject<GunItem> ANGEL = REGISTER.register("angel",
             () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
+    /*crossbow*/
+    public static final RegistryObject<GunItem> CROSSBOW = REGISTER.register("crossbow",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
 
     /*shield*/
     public static final RegistryObject<Item> RIOT_SHIELD = REGISTER.register("riot_shield",

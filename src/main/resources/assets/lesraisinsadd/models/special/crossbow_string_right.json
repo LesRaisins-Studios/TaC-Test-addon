@@ -1,0 +1,39 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "lesraisinsadd:items/crossbow/crossbow",
+		"particle": "lesraisinsadd:items/crossbow/crossbow"
+	},
+	"elements": [
+		{
+			"name": "right_string",
+			"from": [7.91564, 8.0065, -4.1745],
+			"to": [15.58654, 8.1065, -4.0745],
+			"rotation": {"angle": 0, "axis": "y", "origin": [14.55109, 7.8565, -2.9745]},
+			"faces": {
+				"north": {"uv": [4.25, 1.25, 5.1875, 1.3125], "texture": "#0"},
+				"east": {"uv": [1.125, 8.875, 1.1875, 8.9375], "texture": "#0"},
+				"south": {"uv": [4.25, 1.375, 5.1875, 1.4375], "texture": "#0"},
+				"west": {"uv": [8.875, 1.125, 8.9375, 1.1875], "texture": "#0"},
+				"up": {"uv": [4.8125, 4.3125, 3.875, 4.25], "texture": "#0"},
+				"down": {"uv": [5.3125, 1.75, 4.375, 1.8125], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "arm_right",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "string_r",
+					"origin": [14.55109, 7.8565, -2.9745],
+					"color": 0,
+					"children": [0]
+				}
+			]
+		}
+	]
+}

@@ -4,8 +4,7 @@ import com.tac.guns.client.gunskin.SkinLoader;
 import me.xjqsh.lesraisinsadd.init.ModItems;
 
 import static com.tac.guns.client.gunskin.ModelComponent.*;
-import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.BULLETS;
-import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.LOADER;
+import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.*;
 
 public class ModelLoader {
     public static SkinLoader HCAR = new SkinLoader(ModItems.HCAR.getId(),
@@ -30,6 +29,9 @@ public class ModelLoader {
             BODY,HANDLE,GRIP_LIGHT,GRIP_TACTICAL,MAG_STANDARD,MAG_EXTENDED,
             MUZZLE_SILENCER,MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT);
 
+    public static SkinLoader CROSS_BOW = new SkinLoader(ModItems.CROSSBOW.getId(),
+            BODY,ARM_L,ARM_R,STRING_L,STRING_R,WHEEL_L,WHEEL_R,ARROW);
+
     public static void init(){
         SkinLoader.register(ModItems.HCAR.getId(),HCAR);
         SkinLoader.register(ModItems.P90.getId(),P90);
@@ -40,5 +42,6 @@ public class ModelLoader {
         SkinLoader.register(ModItems.QSZ92.getId(),QSZ92);
         SkinLoader.register(ModItems.ANGEL.getId(),ANGLE);
         SkinLoader.register(ModItems.SA58.getId(),SA58);
+        SkinLoader.register(ModItems.CROSSBOW.getId(), CROSS_BOW);
     }
 }

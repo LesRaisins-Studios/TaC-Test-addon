@@ -1,0 +1,51 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "lesraisinsadd:items/crossbow/crossbow",
+		"particle": "lesraisinsadd:items/crossbow/crossbow"
+	},
+	"elements": [
+		{
+			"from": [15.33662, 8.2575, -1.76857],
+			"to": [15.83662, 9.0075, 4.98143],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15.58662, 7.7565, 4.85643]},
+			"faces": {
+				"north": {"uv": [7.375, 8, 7.4375, 8.125], "texture": "#0"},
+				"east": {"uv": [2.875, 0.25, 3.75, 0.375], "texture": "#0"},
+				"south": {"uv": [8, 7.375, 8.0625, 7.5], "texture": "#0"},
+				"west": {"uv": [2.875, 0.375, 3.75, 0.5], "texture": "#0"},
+				"up": {"uv": [3.1875, 5.25, 3.125, 4.375], "texture": "#0"},
+				"down": {"uv": [3.3125, 4.375, 3.25, 5.25], "texture": "#0"}
+			}
+		},
+		{
+			"from": [15.33662, 6.5055, -1.76857],
+			"to": [15.83662, 7.2555, 4.98143],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15.58662, 7.7565, 4.85643]},
+			"faces": {
+				"north": {"uv": [7.5, 8, 7.5625, 8.125], "texture": "#0"},
+				"east": {"uv": [2.875, 0.5, 3.75, 0.625], "texture": "#0"},
+				"south": {"uv": [8, 7.5, 8.0625, 7.625], "texture": "#0"},
+				"west": {"uv": [2.875, 0.625, 3.75, 0.75], "texture": "#0"},
+				"up": {"uv": [0.8125, 5.375, 0.75, 4.5], "texture": "#0"},
+				"down": {"uv": [2.5625, 4.5, 2.5, 5.375], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "arm_right",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "arm_r",
+					"origin": [15.58662, 7.7565, 4.85643],
+					"color": 0,
+					"children": [0, 1]
+				}
+			]
+		}
+	]
+}

@@ -64,6 +64,9 @@ public class LesRaisinsTaCAddon {
         ModelOverrides.register(ModItems.SA58.get(),
                 new sa58_animation()
         );
+        ModelOverrides.register(ModItems.CROSSBOW.get(),
+                new crossbow_animation()
+        );
         HCARAnimationController.getInstance();
         P90AnimationController.getInstance();
         PP19AnimationController.getInstance();
@@ -73,5 +76,6 @@ public class LesRaisinsTaCAddon {
         QSZ92AnimationController.getInstance();
         ANGLEAnimationController.getInstance();
         SA58AnimationController.getInstance();
+        CROSSBOWAnimationController.getInstance();
     }
 }
