@@ -1,14 +1,23 @@
 package me.xjqsh.lesraisinsadd;
 
+
 import com.tac.guns.client.render.gun.ModelOverrides;
+import com.tac.guns.common.ProjectileManager;
+import me.xjqsh.lesraisinsadd.client.render.ArrowRender;
 import me.xjqsh.lesraisinsadd.client.render.ModelLoader;
 import me.xjqsh.lesraisinsadd.client.render.animation.*;
 import me.xjqsh.lesraisinsadd.client.render.model.gun.*;
+import me.xjqsh.lesraisinsadd.entity.CrossBowArrowEntity;
+import me.xjqsh.lesraisinsadd.init.ModEntities;
 import me.xjqsh.lesraisinsadd.init.ModItems;
 import me.xjqsh.lesraisinsadd.init.ModSounds;
+import net.minecraft.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,10 +31,17 @@ public class LesRaisinsTaCAddon {
 
         ModItems.REGISTER.register(bus);
         ModSounds.REGISTER.register(bus);
+        ModEntities.REGISTER.register(bus);
 
         bus.addListener(this::onClientSetup);
+        bus.addListener(this::onCommonSetup);
         ModelLoader.init();
 
+    }
+
+    private void onCommonSetup(FMLLoadCompleteEvent event) {
+        ProjectileManager.getInstance().registerFactory(ModItems.CROSSBOW_ARROW.get(),
+                new CrossBowArrowEntity.ArrowFactory());
     }
 
     private void onClientSetup(FMLClientSetupEvent event) {
@@ -77,5 +93,7 @@ public class LesRaisinsTaCAddon {
         ANGLEAnimationController.getInstance();
         SA58AnimationController.getInstance();
         CROSSBOWAnimationController.getInstance();
+
+        RenderingRegistry.registerEntityRenderingHandler(ModEntities.ARROW.get(), ArrowRender::new);
     }
 }

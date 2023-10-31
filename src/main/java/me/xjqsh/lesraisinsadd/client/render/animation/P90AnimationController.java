@@ -16,12 +16,14 @@ import java.io.IOException;
 
 @OnlyIn(Dist.CLIENT)
 public class P90AnimationController extends GunAnimationController {
-    public static int INDEX_BODY = 6;
-    public static int INDEX_LEFT_HAND = 0;
-    public static int INDEX_RIGHT_HAND = 2;
-    public static int INDEX_MAGAZINE = 5;
+    public static int INDEX_BODY = 4;
+    public static int INDEX_LEFT_HAND = 6;
+    public static int INDEX_RIGHT_HAND = 0;
+    public static int INDEX_MAGAZINE = 3;
+    public static int INDEX_BOLT = 2;
 
     public static final AnimationMeta RELOAD_NORM = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/p90_reload_norm.gltf"));
+    public static final AnimationMeta RELOAD_EMPTY = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/p90_reload_empty.gltf"));
     public static final AnimationMeta INSPECT = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/p90_inspect.gltf"));
     public static final AnimationMeta DRAW = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/p90_draw.gltf"));
     public static final AnimationMeta STATIC = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/p90_static.gltf"));
@@ -33,6 +35,7 @@ public class P90AnimationController extends GunAnimationController {
             Animations.load(INSPECT);
             Animations.load(DRAW);
             Animations.load(STATIC);
+            Animations.load(RELOAD_EMPTY);
         } catch (IOException e) {
             GunMod.LOGGER.fatal(e.getStackTrace());
         }
@@ -52,8 +55,9 @@ public class P90AnimationController extends GunAnimationController {
         switch (label){
             case INSPECT: return INSPECT;
             case RELOAD_NORMAL:
-            case RELOAD_EMPTY:
                 return RELOAD_NORM;
+            case RELOAD_EMPTY:
+                return RELOAD_EMPTY;
             case DRAW: return DRAW;
             case STATIC: return STATIC;
             default: return null;
