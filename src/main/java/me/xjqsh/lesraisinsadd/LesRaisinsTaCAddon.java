@@ -11,12 +11,10 @@ import me.xjqsh.lesraisinsadd.entity.CrossBowArrowEntity;
 import me.xjqsh.lesraisinsadd.init.ModEntities;
 import me.xjqsh.lesraisinsadd.init.ModItems;
 import me.xjqsh.lesraisinsadd.init.ModSounds;
-import net.minecraft.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
@@ -83,6 +81,9 @@ public class LesRaisinsTaCAddon {
         ModelOverrides.register(ModItems.CROSSBOW.get(),
                 new crossbow_animation()
         );
+        ModelOverrides.register(ModItems.MARLIN_1895.get(),
+                new marlin_1895_animation());
+
         HCARAnimationController.getInstance();
         P90AnimationController.getInstance();
         PP19AnimationController.getInstance();
@@ -93,6 +94,7 @@ public class LesRaisinsTaCAddon {
         ANGLEAnimationController.getInstance();
         SA58AnimationController.getInstance();
         CROSSBOWAnimationController.getInstance();
+        MARLIN1895AnimationController.getInstance();
 
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.ARROW.get(), ArrowRender::new);
     }

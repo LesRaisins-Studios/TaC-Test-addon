@@ -11,7 +11,8 @@ public enum LrModelComponent implements IModelComponent {
     STRING_R("string_right"),
     WHEEL_L("wheel_left"),
     WHEEL_R("wheel_right"),
-    ARROW("arrow");
+    ARROW("arrow"),
+    LEVER("lever");
     public final String key;
     LrModelComponent(String key){
         this.key = key;
