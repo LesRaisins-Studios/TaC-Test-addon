@@ -2,7 +2,9 @@ package me.xjqsh.lesraisinsadd.init;
 
 import com.tac.guns.GunMod;
 import com.tac.guns.common.GunModifiers;
+import com.tac.guns.item.AmmoItem;
 import com.tac.guns.item.GunItem;
+import com.tac.guns.item.TransitionalTypes.TimelessAmmoItem;
 import com.tac.guns.item.TransitionalTypes.TimelessGunItem;
 import com.tac.guns.item.TransitionalTypes.TimelessPistolGunItem;
 import me.xjqsh.lesraisinsadd.Reference;
@@ -59,4 +61,7 @@ public class ModItems {
                     EquipmentSlotType.CHEST,
                     new Item.Properties().durability(1000).tab(GunMod.GROUP)
             ));
+    /*ammo*/
+    public static final RegistryObject<Item> CROSSBOW_ARROW = REGISTER.register("crossbow_arrow",
+            TimelessAmmoItem::new);
 }

@@ -37,12 +37,12 @@ public class p90_animation extends SkinAnimationModel {
         }
         matrices.popPose();
 
-//        matrices.pushPose();
-//        {
-//            controller.applySpecialModelTransform(getModelComponent(skin, BODY), P90AnimationController.INDEX_PULL, transformType, matrices);
-//            RenderUtil.renderModel(getModelComponent(skin, PULL), stack, matrices, renderBuffer, light, overlay);
-//        }
-//        matrices.popPose();
+        matrices.pushPose();
+        {
+            controller.applySpecialModelTransform(getModelComponent(skin, BODY), P90AnimationController.INDEX_BOLT, transformType, matrices);
+            RenderUtil.renderModel(getModelComponent(skin, BOLT), stack, matrices, renderBuffer, light, overlay);
+        }
+        matrices.popPose();
 
         PlayerHandAnimation.render(controller, transformType, matrices, renderBuffer, light);
     }

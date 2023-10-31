@@ -16,11 +16,11 @@ import java.io.IOException;
 
 @OnlyIn(Dist.CLIENT)
 public class PPK20AnimationController extends GunAnimationController {
-    public static int INDEX_BODY = 6;
-    public static int INDEX_LEFT_HAND = 0;
-    public static int INDEX_RIGHT_HAND = 2;
-    public static int INDEX_MAGAZINE = 5;
-    public static int INDEX_BOLT = 4;
+    public static int INDEX_BODY = 7;
+    public static int INDEX_LEFT_HAND = 9;
+    public static int INDEX_RIGHT_HAND = 0;
+    public static int INDEX_MAGAZINE = 6;
+    public static int INDEX_BOLT = 3;
     public static final AnimationMeta RELOAD_EMPTY = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/ppk20_reload_empty.gltf"));
     public static final AnimationMeta RELOAD_NORM = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/ppk20_reload_norm.gltf"));
     public static final AnimationMeta INSPECT = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/ppk20_inspect.gltf"));

@@ -3,7 +3,7 @@
     "auto": false,
     "rate": 600,
     "rateSelector": [1],
-    "gripType": "tac:one_handed",
+    "gripType": "tac:two_handed",
     "recoilAngle": 3.275,
     "horizontalRecoilAngle": 2.35,
     "recoilKick": 1.625,
@@ -12,30 +12,25 @@
     "cameraRecoilModifier": 1.15,
     "recoilDuration": 0.195,
     "weightKilo": 4.4,
-
-    "spread": 2.15,
-    "firstShotSpread": 0.145,
+    "alwaysSpread": false,
+    "spread": 0,
+    "firstShotSpread": 0,
     "hipFireInaccuracy": 5.05,
     "projToMinAccuracy": 4,
     "msToAccuracyReset": 500,
     "movementInaccuracy": 0.75
   },
   "projectile": {
-    "item": "tac:762x39",
-    "visible": false,
-    "damage": 8.5,
-    "armorIgnore": 1.0,
-    "critical": 0.00,
-    "criticalDamage": 0.75,
-    "headDamage": 1.0,
-    "closeDamage": 1.1,
-    "decayStart": 0.14,
-    "minDecayMultiplier": 0.3,
-    "decayEnd": 1.0,
-    "size": 0.125,
-    "speed": 18.5,
-    "life": 10,
-    "trailLengthMultiplier": 2.75
+    "item": "lesraisinsadd:crossbow_arrow",
+    "visible": true,
+    "gravity": false,
+    "damage": 25,
+    "size": 1,
+    "speed": 4,
+    "trailLengthMultiplier": 0,
+    "life": 40,
+    "damageReduceOverLife": false,
+    "ricochet": false
   },
   "reloads": {
     "magFed": true,
@@ -56,12 +51,6 @@
     "silencedFire": "tac:item.ak47_fire_s"
   },
   "display": {
-    "flash": {
-      "yOffset": 9.0,
-      "zOffset": -20.75,
-      "trailAdjust": 1.325,
-      "size": 0.8
-    },
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,
     "hipfireRecoilScale": 1.0,
