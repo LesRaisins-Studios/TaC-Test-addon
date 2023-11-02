@@ -7,8 +7,6 @@ import static com.tac.guns.client.gunskin.ModelComponent.*;
 import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.*;
 
 public class ModelLoader {
-    public static SkinLoader HCAR = new SkinLoader(ModItems.HCAR.getId(),
-            BODY,MAG_STANDARD,MAG_EXTENDED,PULL);
     public static SkinLoader P90 = new SkinLoader(ModItems.P90.getId(),
             BODY,MAG_STANDARD,BOLT,
             MUZZLE_SILENCER,MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT);
@@ -40,7 +38,6 @@ public class ModelLoader {
             BODY,ARM_L,ARM_R,STRING_L,STRING_R,WHEEL_L,WHEEL_R,ARROW);
 
     public static void init(){
-        SkinLoader.register(ModItems.HCAR.getId(),HCAR);
         SkinLoader.register(ModItems.P90.getId(),P90);
         SkinLoader.register(ModItems.PP19.getId(),PP19);
         SkinLoader.register(ModItems.PPK20.getId(),PPK20);

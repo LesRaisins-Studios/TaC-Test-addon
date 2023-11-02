@@ -13,13 +13,13 @@ import java.io.IOException;
 
 @OnlyIn(Dist.CLIENT)
 public class MARLIN1895AnimationController extends PumpShotgunAnimationController {
-    public static int INDEX_BODY = 7;
-    public static int INDEX_LEFT_HAND = 9;
+    public static int INDEX_BODY = 6;
+    public static int INDEX_LEFT_HAND = 8;
     public static int INDEX_RIGHT_HAND = 0;
     public static int INDEX_LEVER = 2;
     public static int INDEX_BULLET = 3;
-    public static int INDEX_BOLT = 5;
-    public static int INDEX_HAMMER = 6;
+    public static int INDEX_BOLT = 4;
+    public static int INDEX_HAMMER = 5;
     public static final AnimationMeta FIRE = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/marlin_1895_fire.gltf"));
     public static final AnimationMeta RELOAD_END = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/marlin_1895_reload_end.gltf"));
     public static final AnimationMeta RELOAD_INTRO = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/marlin_1895_reload_intro.gltf"));

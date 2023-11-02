@@ -22,8 +22,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ModItems {
     public static final DeferredRegister<Item> REGISTER = DeferredRegister.create(ForgeRegistries.ITEMS, Reference.MOD_ID);
     /*guns*/
-    public static final RegistryObject<GunItem> HCAR = REGISTER.register("hcar",
-            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> P90 = REGISTER.register("p90",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> SVD = REGISTER.register("svd",
