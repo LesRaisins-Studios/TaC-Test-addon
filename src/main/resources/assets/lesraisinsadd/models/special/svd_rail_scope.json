@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "block/texture",
-		"particle": "block/texture"
+		"1": "lesraisinsadd:items/svd/svd_rail_scope",
+		"particle": "lesraisinsadd:items/svd/svd_rail_scope"
 	},
 	"elements": [
 		{

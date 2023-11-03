@@ -1,49 +1,45 @@
 {
   "general": {
     "auto": true,
-    "rate": 750,
+    "rate": 840,
     "rateSelector": [2, 1],
     "gripType": "tac:two_handed_ak47",
-    "recoilAngle": 3.275,
-    "horizontalRecoilAngle": 2.35,
-    "recoilKick": 1.625,
-    "recoilAdsReduction": 0.235,
-    "weaponRecoilOffset": 0.625,
+    "recoilAngle": 1.85,
+    "horizontalRecoilAngle": 2.15,
+    "recoilKick": 0.85,
+    "recoilAdsReduction": 0.08,
+    "weaponRecoilOffset": 0.7,
     "cameraRecoilModifier": 1.15,
-    "recoilDuration": 0.195,
-    "weightKilo": 4.4,
+    "recoilDuration": 0.2,
+    "weightKilo": 1.8,
 
-    "spread": 2.15,
-    "firstShotSpread": 0.145,
-    "hipFireInaccuracy": 5.05,
-    "projToMinAccuracy": 4,
-    "msToAccuracyReset": 500,
-    "movementInaccuracy": 0.75
-  },
-  "projectile": {
-    "item": "tac:9mm_round",
-    "visible": false,
-    "damage": 8.5,
-    "armorIgnore": 1.0,
-    "critical": 0.00,
-    "criticalDamage": 0.75,
-    "headDamage": 1.0,
-    "closeDamage": 1.1,
-    "decayStart": 0.14,
-    "minDecayMultiplier": 0.3,
-    "decayEnd": 1.0,
-    "size": 0.125,
-    "speed": 18.5,
-    "life": 10,
-    "trailLengthMultiplier": 2.75
+    "spread": 1.35,
+    "firstShotSpread": 0.165,
+    "hipFireInaccuracy": 1.1,
+    "projToMinAccuracy": 7,
+    "msToAccuracyReset": 380,
+    "movementInaccuracy": 0.20
   },
   "reloads": {
     "magFed": true,
     "maxAmmo": 64,
-    "reloadMagTimer": 36,
-    "additionalReloadEmptyMagTimer": 20,
-    "maxAdditionalAmmoPerOC": [5, 7, 10],
+    "reloadMagTimer": 35,
+    "additionalReloadEmptyMagTimer": 16,
+    "maxAdditionalAmmoPerOC": [5, 12, 20],
     "preReloadPauseTicks": 0
+  },
+  "projectile": {
+    "item": "tac:9mm_round",
+    "visible": false,
+    "damage": 6.2,
+    "decayStart": 0.1,
+    "minDecayMultiplier": 0.1,
+    "decayEnd": 0.6,
+    "speed": 80,
+    "size": 0.05,
+    "life": 2,
+    "trailLengthMultiplier": 2.5,
+    "ricochet": true
   },
   "sounds": {
     "fire": "lesraisinsadd:item.pp19_fire",
@@ -86,7 +82,7 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 11.15,
+      "yOffset": 11.8,
       "zOffset": 4.5
     },
     "attachments": {

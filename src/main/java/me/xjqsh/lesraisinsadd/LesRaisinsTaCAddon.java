@@ -44,10 +44,6 @@ public class LesRaisinsTaCAddon {
 
     private void onClientSetup(FMLClientSetupEvent event) {
         ModelOverrides.register(
-                ModItems.HCAR.get(),
-                new hcar_animation()
-        );
-        ModelOverrides.register(
                 ModItems.P90.get(),
                 new p90_animation()
         );
@@ -84,7 +80,6 @@ public class LesRaisinsTaCAddon {
         ModelOverrides.register(ModItems.MARLIN_1895.get(),
                 new marlin_1895_animation());
 
-        HCARAnimationController.getInstance();
         P90AnimationController.getInstance();
         PP19AnimationController.getInstance();
         PPK20AnimationController.getInstance();

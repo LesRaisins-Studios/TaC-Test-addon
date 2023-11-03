@@ -1,224 +1,284 @@
 {
-  "item.p90_fire": {
-    "subtitle": "subtitle.lesraisinsadd.p90_fire",
-    "sounds": [
-      { "name": "lesraisinsadd:item/p90_fire" }
-    ]
-  },
-  "item.p90_reload": {
-    "subtitle": "subtitle.lesraisinsadd.p90_reload",
-    "sounds": [
-      { "name": "lesraisinsadd:item/p90_reload" }
-    ]
-  },
-  "item.p90_draw": {
-    "subtitle": "subtitle.lesraisinsadd.p90_draw",
-    "sounds": [
-      { "name": "lesraisinsadd:item/p90_draw" }
-    ]
-  },
-  "item.p90_inspect": {
-    "subtitle": "subtitle.lesraisinsadd.p90_inspect",
-    "sounds": [
-      { "name": "lesraisinsadd:item/p90_inspect" }
-    ]
-  },
-  "item.pp19_fire": {
-    "subtitle": "subtitle.lesraisinsadd.pp19_fire",
-    "sounds": [
-      { "name": "lesraisinsadd:item/pp19_fire" }
-    ]
-  },
-  "item.pp19_reload_empty": {
-    "subtitle": "subtitle.lesraisinsadd.pp19_reload_empty",
-    "sounds": [
-      { "name": "lesraisinsadd:item/pp19_reload_empty" }
-    ]
-  },
-  "item.pp19_reload_norm": {
-    "subtitle": "subtitle.lesraisinsadd.pp19_reload_norm",
-    "sounds": [
-      { "name": "lesraisinsadd:item/pp19_reload_norm" }
-    ]
-  },
-  "item.pp19_draw": {
-    "subtitle": "subtitle.lesraisinsadd.pp19_draw",
-    "sounds": [
-      { "name": "lesraisinsadd:item/pp19_draw" }
-    ]
-  },
-  "item.pp19_inspect": {
-    "subtitle": "subtitle.lesraisinsadd.pp19_inspect",
-    "sounds": [
-      { "name": "lesraisinsadd:item/pp19_inspect" }
-    ]
-  },
-  "item.ppk20_fire": {
-    "subtitle": "subtitle.lesraisinsadd.ppk20_fire",
-    "sounds": [
-      { "name": "lesraisinsadd:item/ppk20_fire" }
-    ]
-  },
-  "item.ppk20_reload_empty": {
-    "subtitle": "subtitle.lesraisinsadd.ppk20_reload_empty",
-    "sounds": [
-      { "name": "lesraisinsadd:item/ppk20_reload_empty" }
-    ]
-  },
-  "item.ppk20_reload_norm": {
-    "subtitle": "subtitle.lesraisinsadd.ppk20_reload_norm",
-    "sounds": [
-      { "name": "lesraisinsadd:item/ppk20_reload_norm" }
-    ]
-  },
-  "item.ppk20_draw": {
-    "subtitle": "subtitle.lesraisinsadd.ppk20_draw",
-    "sounds": [
-      { "name": "lesraisinsadd:item/ppk20_draw" }
-    ]
-  },
-  "item.ppk20_inspect": {
-    "subtitle": "subtitle.lesraisinsadd.ppk20_inspect",
-    "sounds": [
-      { "name": "lesraisinsadd:item/ppk20_inspect" }
-    ]
-  },
-  "item.shield_charged": {
-    "subtitle": "subtitle.lesraisinsadd.shield_charged",
-    "sounds": [
-      { "name": "lesraisinsadd:item/shield_charged" }
-    ]
-  },
-  "item.shield_fire": {
-    "subtitle": "subtitle.lesraisinsadd.shield_fire",
-    "sounds": [
-      { "name": "lesraisinsadd:item/shield_fire" }
-    ]
-  },
-  "item.svd_fire": {
-    "subtitle": "subtitle.lesraisinsadd.svd_fire",
-    "sounds": [
-      { "name": "lesraisinsadd:item/svd_fire" }
-    ]
-  },
-  "item.svd_inspect": {
-    "subtitle": "subtitle.lesraisinsadd.svd_inspect",
-    "sounds": [
-      { "name": "lesraisinsadd:item/svd_inspect" }
-    ]
-  },
-  "item.svd_reload_empty": {
-    "subtitle": "subtitle.lesraisinsadd.svd_reload_empty",
-    "sounds": [
-      { "name": "lesraisinsadd:item/svd_reload_empty" }
-    ]
-  },
-  "item.svd_reload_norm": {
-    "subtitle": "subtitle.lesraisinsadd.svd_reload_norm",
-    "sounds": [
-      { "name": "lesraisinsadd:item/svd_reload_norm" }
-    ]
-  },
-  "item.aug_fire": {
-    "subtitle": "subtitle.lesraisinsadd.aug_fire",
-    "sounds": [
-      { "name": "lesraisinsadd:item/aug_fire" }
-    ]
-  },
-  "item.aug_inspect": {
-    "subtitle": "subtitle.lesraisinsadd.aug_inspect",
-    "sounds": [
-      { "name": "lesraisinsadd:item/aug_inspect" }
-    ]
-  },
-  "item.aug_reload_empty": {
-    "subtitle": "subtitle.lesraisinsadd.aug_reload_empty",
-    "sounds": [
-      { "name": "lesraisinsadd:item/aug_reload_empty" }
-    ]
-  },
-  "item.aug_reload_norm": {
-    "subtitle": "subtitle.lesraisinsadd.aug_reload_norm",
-    "sounds": [
-      { "name": "lesraisinsadd:item/aug_reload_norm" }
-    ]
-  },
-  "item.angle_draw": {
-    "subtitle": "subtitle.lesraisinsadd.angle_draw",
-    "sounds": [
-      { "name": "lesraisinsadd:item/angle_draw" }
-    ]
-  },
-  "item.angle_fire": {
-    "subtitle": "subtitle.lesraisinsadd.angle_fire",
-    "sounds": [
-      { "name": "lesraisinsadd:item/angle_fire" }
-    ]
-  },
-  "item.angle_inspect": {
-    "subtitle": "subtitle.lesraisinsadd.angle_inspect",
-    "sounds": [
-      { "name": "lesraisinsadd:item/angle_inspect" }
-    ]
-  },
-  "item.angle_reload": {
-    "subtitle": "subtitle.lesraisinsadd.angle_reload",
-    "sounds": [
-      { "name": "lesraisinsadd:item/angle_reload" }
-    ]
-  },
-  "item.qsz92_draw": {
-    "subtitle": "subtitle.lesraisinsadd.qsz92_draw",
-    "sounds": [
-      { "name": "lesraisinsadd:item/qsz92_draw" }
-    ]
-  },
-  "item.qsz92_fire": {
-    "subtitle": "subtitle.lesraisinsadd.qsz92_fire",
-    "sounds": [
-      { "name": "lesraisinsadd:item/qsz92_fire" }
-    ]
-  },
-  "item.qsz92_inspect": {
-    "subtitle": "subtitle.lesraisinsadd.qsz92_inspect",
-    "sounds": [
-      { "name": "lesraisinsadd:item/qsz92_inspect" }
-    ]
-  },
-  "item.qsz92_reload_empty": {
-    "subtitle": "subtitle.lesraisinsadd.qsz92_reload_empty",
-    "sounds": [
-      { "name": "lesraisinsadd:item/qsz92_reload_empty" }
-    ]
-  },
-  "item.qsz92_reload_norm": {
-    "subtitle": "subtitle.lesraisinsadd.qsz92_reload_norm",
-    "sounds": [
-      { "name": "lesraisinsadd:item/qsz92_reload_norm" }
-    ]
-  },
-  "item.sa58_fire": {
-    "subtitle": "subtitle.lesraisinsadd.sa58_fire",
-    "sounds": [
-      { "name": "lesraisinsadd:item/sa58_fire" }
-    ]
-  },
-  "item.sa58_inspect": {
-    "subtitle": "subtitle.lesraisinsadd.sa58_inspect",
-    "sounds": [
-      { "name": "lesraisinsadd:item/sa58_inspect" }
-    ]
-  },
-  "item.sa58_reload_empty": {
-    "subtitle": "subtitle.lesraisinsadd.sa58_reload_empty",
-    "sounds": [
-      { "name": "lesraisinsadd:item/sa58_reload_empty" }
-    ]
-  },
-  "item.sa58_reload_norm": {
-    "subtitle": "subtitle.lesraisinsadd.sa58_reload_norm",
-    "sounds": [
-      { "name": "lesraisinsadd:item/sa58_reload_norm" }
-    ]
-  }
+    "item.p90_fire": {
+        "subtitle": "subtitle.lesraisinsadd.p90_fire",
+        "sounds": [
+           { "name": "lesraisinsadd:item/p90_fire" }
+        ]
+     },
+     "item.p90_reload_norm": {
+        "subtitle": "subtitle.lesraisinsadd.p90_reload_norm",
+        "sounds": [
+           { "name": "lesraisinsadd:item/p90_reload_norm" }
+        ]
+     },
+     "item.p90_reload_empty": {
+      "subtitle": "subtitle.lesraisinsadd.p90_reload_empty",
+      "sounds": [
+         { "name": "lesraisinsadd:item/p90_reload_empty" }
+      ]
+   },
+     "item.p90_draw": {
+        "subtitle": "subtitle.lesraisinsadd.p90_draw",
+        "sounds": [
+           { "name": "lesraisinsadd:item/p90_draw" }
+        ]
+     },
+     "item.p90_inspect": {
+        "subtitle": "subtitle.lesraisinsadd.p90_inspect",
+        "sounds": [
+           { "name": "lesraisinsadd:item/p90_inspect" }
+        ]
+     },
+     "item.pp19_fire": {
+        "subtitle": "subtitle.lesraisinsadd.pp19_fire",
+        "sounds": [
+           { "name": "lesraisinsadd:item/pp19_fire" }
+        ]
+     },
+     "item.pp19_reload_empty": {
+        "subtitle": "subtitle.lesraisinsadd.pp19_reload_empty",
+        "sounds": [
+           { "name": "lesraisinsadd:item/pp19_reload_empty" }
+        ]
+     },
+     "item.pp19_reload_norm": {
+        "subtitle": "subtitle.lesraisinsadd.pp19_reload_norm",
+        "sounds": [
+           { "name": "lesraisinsadd:item/pp19_reload_norm" }
+        ]
+     },
+     "item.pp19_draw": {
+        "subtitle": "subtitle.lesraisinsadd.pp19_draw",
+        "sounds": [
+           { "name": "lesraisinsadd:item/pp19_draw" }
+        ]
+     },
+     "item.pp19_inspect": {
+        "subtitle": "subtitle.lesraisinsadd.pp19_inspect",
+        "sounds": [
+           { "name": "lesraisinsadd:item/pp19_inspect" }
+        ]
+     },
+     "item.ppk20_fire": {
+        "subtitle": "subtitle.lesraisinsadd.ppk20_fire",
+        "sounds": [
+           { "name": "lesraisinsadd:item/ppk20_fire" }
+        ]
+     },
+     "item.ppk20_reload_empty": {
+        "subtitle": "subtitle.lesraisinsadd.ppk20_reload_empty",
+        "sounds": [
+           { "name": "lesraisinsadd:item/ppk20_reload_empty" }
+        ]
+     },
+     "item.ppk20_reload_norm": {
+        "subtitle": "subtitle.lesraisinsadd.ppk20_reload_norm",
+        "sounds": [
+           { "name": "lesraisinsadd:item/ppk20_reload_norm" }
+        ]
+     },
+     "item.ppk20_draw": {
+        "subtitle": "subtitle.lesraisinsadd.ppk20_draw",
+        "sounds": [
+           { "name": "lesraisinsadd:item/ppk20_draw" }
+        ]
+     },
+     "item.ppk20_inspect": {
+        "subtitle": "subtitle.lesraisinsadd.ppk20_inspect",
+        "sounds": [
+           { "name": "lesraisinsadd:item/ppk20_inspect" }
+        ]
+     },
+     "item.shield_charged": {
+        "subtitle": "subtitle.lesraisinsadd.shield_charged",
+        "sounds": [
+           { "name": "lesraisinsadd:item/shield_charged" }
+        ]
+     },
+     "item.shield_fire": {
+        "subtitle": "subtitle.lesraisinsadd.shield_fire",
+        "sounds": [
+           { "name": "lesraisinsadd:item/shield_fire" }
+        ]
+     },
+     "item.svd_fire": {
+      "subtitle": "subtitle.lesraisinsadd.svd_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/svd_fire" }
+      ]
+   },
+   "item.svd_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.svd_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/svd_inspect" }
+      ]
+   },
+   "item.svd_reload_empty": {
+      "subtitle": "subtitle.lesraisinsadd.svd_reload_empty",
+      "sounds": [
+         { "name": "lesraisinsadd:item/svd_reload_empty" }
+      ]
+   },
+   "item.svd_reload_norm": {
+      "subtitle": "subtitle.lesraisinsadd.svd_reload_norm",
+      "sounds": [
+         { "name": "lesraisinsadd:item/svd_reload_norm" }
+      ]
+   },
+   "item.aug_fire": {
+      "subtitle": "subtitle.lesraisinsadd.aug_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/aug_fire" }
+      ]
+   },
+   "item.aug_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.aug_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/aug_inspect" }
+      ]
+   },
+   "item.aug_reload_empty": {
+      "subtitle": "subtitle.lesraisinsadd.aug_reload_empty",
+      "sounds": [
+         { "name": "lesraisinsadd:item/aug_reload_empty" }
+      ]
+   },
+   "item.aug_reload_norm": {
+      "subtitle": "subtitle.lesraisinsadd.aug_reload_norm",
+      "sounds": [
+         { "name": "lesraisinsadd:item/aug_reload_norm" }
+      ]
+   },
+   "item.angle_draw": {
+      "subtitle": "subtitle.lesraisinsadd.angle_draw",
+      "sounds": [
+         { "name": "lesraisinsadd:item/angle_draw" }
+      ]
+   },
+   "item.angle_fire": {
+      "subtitle": "subtitle.lesraisinsadd.angle_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/angle_fire" }
+      ]
+   },
+   "item.angle_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.angle_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/angle_inspect" }
+      ]
+   },
+   "item.angle_reload": {
+      "subtitle": "subtitle.lesraisinsadd.angle_reload",
+      "sounds": [
+         { "name": "lesraisinsadd:item/angle_reload" }
+      ]
+   },
+   "item.qsz92_draw": {
+      "subtitle": "subtitle.lesraisinsadd.qsz92_draw",
+      "sounds": [
+         { "name": "lesraisinsadd:item/qsz92_draw" }
+      ]
+   },
+   "item.qsz92_fire": {
+      "subtitle": "subtitle.lesraisinsadd.qsz92_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/qsz92_fire" }
+      ]
+   },
+   "item.qsz92_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.qsz92_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/qsz92_inspect" }
+      ]
+   },
+   "item.qsz92_reload_empty": {
+      "subtitle": "subtitle.lesraisinsadd.qsz92_reload_empty",
+      "sounds": [
+         { "name": "lesraisinsadd:item/qsz92_reload_empty" }
+      ]
+   },
+   "item.qsz92_reload_norm": {
+      "subtitle": "subtitle.lesraisinsadd.qsz92_reload_norm",
+      "sounds": [
+         { "name": "lesraisinsadd:item/qsz92_reload_norm" }
+      ]
+   },
+   "item.sa58_fire": {
+      "subtitle": "subtitle.lesraisinsadd.sa58_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/sa58_fire" }
+      ]
+   },
+   "item.sa58_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.sa58_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/sa58_inspect" }
+      ]
+   },
+   "item.sa58_reload_empty": {
+      "subtitle": "subtitle.lesraisinsadd.sa58_reload_empty",
+      "sounds": [
+         { "name": "lesraisinsadd:item/sa58_reload_empty" }
+      ]
+   },
+   "item.sa58_reload_norm": {
+      "subtitle": "subtitle.lesraisinsadd.sa58_reload_norm",
+      "sounds": [
+         { "name": "lesraisinsadd:item/sa58_reload_norm" }
+      ]
+   },
+   "item.crossbow_fire": {
+      "subtitle": "subtitle.lesraisinsadd.crossbow_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/crossbow_fire" }
+      ]
+   },
+   "item.crossbow_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.crossbow_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/crossbow_inspect" }
+      ]
+   },
+   "item.crossbow_reload": {
+      "subtitle": "subtitle.lesraisinsadd.crossbow_reload",
+      "sounds": [
+         { "name": "lesraisinsadd:item/crossbow_reload" }
+      ]
+   },
+   "item.marlin_1895_draw": {
+      "subtitle": "subtitle.lesraisinsadd.marlin_1895_draw",
+      "sounds": [
+         { "name": "lesraisinsadd:item/marlin_1895_draw" }
+      ]
+   },
+   "item.marlin_1895_fire": {
+      "subtitle": "subtitle.lesraisinsadd.marlin_1895_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/marlin_1895_fire" }
+      ]
+   },
+   "item.marlin_1895_reload_end": {
+      "subtitle": "subtitle.lesraisinsadd.marlin_1895_reload_end",
+      "sounds": [
+         { "name": "lesraisinsadd:item/marlin_1895_reload_end" }
+      ]
+   },
+   "item.marlin_1895_reload_intro": {
+      "subtitle": "subtitle.lesraisinsadd.marlin_1895_reload_intro",
+      "sounds": [
+         { "name": "lesraisinsadd:item/marlin_1895_reload_intro" }
+      ]
+   },
+   "item.marlin_1895_reload_loop": {
+      "subtitle": "subtitle.lesraisinsadd.marlin_1895_reload_loop",
+      "sounds": [
+         { "name": "lesraisinsadd:item/marlin_1895_reload_loop" }
+      ]
+   },
+   "item.marlin_1895_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.marlin_1895_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/marlin_1895_inspect" }
+      ]
+   }
 }

@@ -2,14 +2,12 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"1": "lesraisinsadd:items/hotbar_icons/hcar",
-		"particle": "lesraisinsadd:items/hotbar_icons/hcar",
-		"layer0": "lesraisinsadd:items/hotbar_icons/p90"
+		"layer0": "lesraisinsadd:items/hotbar_icons/crossbow"
 	},
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [-27.57, 8.46, 4.37],
-			"translation": [1.25, 0.75, 0.75],
+			"rotation": [0.43, 25.96, 4.16],
+			"translation": [-1, 1, -3.5],
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"thirdperson_lefthand": {
@@ -17,14 +15,15 @@
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"firstperson_righthand": {
-			"translation": [-0.5, 0.5, -10]
+			"translation": [-5, 3.5, -6.25]
 		},
 		"ground": {
 			"translation": [0, 3, 0],
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"fixed": {
-			"translation": [0, 0.5, 0.5],
+			"rotation": [90, 0, 180],
+			"translation": [0, 0.5, -1],
 			"scale": [1.1, 1.1, 1.1]
 		}
 	}

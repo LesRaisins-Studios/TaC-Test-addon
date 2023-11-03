@@ -1,30 +1,30 @@
 {
   "general": {
     "auto": false,
-    "rate": 600,
+    "rate": 240,
     "rateSelector": [1],
     "gripType": "tac:two_handed",
-    "recoilAngle": 3.275,
-    "horizontalRecoilAngle": 2.35,
-    "recoilKick": 1.625,
-    "recoilAdsReduction": 0.235,
-    "weaponRecoilOffset": 0.625,
+    "recoilAngle": 7.85,
+    "horizontalRecoilAngle": 0.65,
+    "recoilKick": 3.335,
+    "recoilAdsReduction": 0.3,
+    "weaponRecoilOffset": 0.4,
     "cameraRecoilModifier": 1.15,
-    "recoilDuration": 0.195,
-    "weightKilo": 4.4,
-    "alwaysSpread": false,
-    "spread": 0,
-    "firstShotSpread": 0,
+    "recoilDuration": 0.225,
+    "weightKilo": 2.85,
+
+    "spread": 0.006,
+    "firstShotSpread": 0.006,
     "hipFireInaccuracy": 5.05,
     "projToMinAccuracy": 4,
     "msToAccuracyReset": 500,
-    "movementInaccuracy": 0.75
+    "movementInaccuracy": 0.68
   },
   "projectile": {
     "item": "lesraisinsadd:crossbow_arrow",
     "visible": true,
     "gravity": false,
-    "damage": 25,
+    "damage": 36,
     "size": 1,
     "speed": 4,
     "trailLengthMultiplier": 0,
@@ -37,63 +37,29 @@
     "maxAmmo": 1,
     "reloadMagTimer": 35,
     "additionalReloadEmptyMagTimer": 0,
-    "maxAdditionalAmmoPerOC": [5, 7, 10],
     "preReloadPauseTicks": 0,
     "openBolt": true
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.angle_fire",
-    "reloadNormal": "lesraisinsadd:item.angle_reload",
-    "reloadEmpty": "lesraisinsadd:item.angle_reload",
-    "draw": "lesraisinsadd:item.angle_draw",
-    "inspect": "lesraisinsadd:item.angle_inspect",
+    "fire": "lesraisinsadd:item.crossbow_fire",
+    "reloadNormal": "lesraisinsadd:item.crossbow_reload",
+    "reloadEmpty": "lesraisinsadd:item.crossbow_reload",
+    "draw": "tac:animation.ak47_draw",
+    "inspect": "lesraisinsadd:item.crossbow_inspect",
     "cock": "tac:item.pistol.cock",
     "silencedFire": "tac:item.ak47_fire_s"
-  },
-  "display": {
-    "hipfireScale": 1.25,
-    "hipfireMoveScale": 0.5,
-    "hipfireRecoilScale": 1.0,
-    "showDynamicHipfire":true
   },
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 14.850,
+      "yOffset": 11.850,
       "zOffset": -1.8
     },
     "attachments": {
-      "barrel": {
-        "yOffset": -100829.84,
-        "zOffset": -11.55,
-        "scale": 1.00
-      },
-      "extendedMag": {
-        "yOffset": 1000.89,
-        "zOffset": 5.35,
-        "scale": 0.0
-      },
-      "stock": {
-        "yOffset": 7.75,
-        "zOffset": -22.05,
-        "scale": 0.00
-      },
       "scope": {
-        "yOffset": 12.97,
-        "zOffset": 2.0,
+        "yOffset": 9.1,
+        "zOffset": 7.0,
         "scale": 1.0
-      },
-      "pistolScope": {
-        "yOffset": 10.97,
-        "zOffset": 3.2,
-        "scale": 1.0,
-        "doRenderMount": true,
-        "doOnSlideMovement": false
-      },
-      "gunSkin": {
-        "yOffset": 7.799,
-        "zOffset": -2.35,
-        "scale": 0.00
       }
     }
   }

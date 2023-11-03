@@ -2,30 +2,28 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"1": "lesraisinsadd:items/hotbar_icons/hcar",
-		"particle": "lesraisinsadd:items/hotbar_icons/hcar",
-		"layer0": "lesraisinsadd:items/hotbar_icons/p90"
+		"layer0": "lesraisinsadd:items/hotbar_icons/angle"
 	},
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [-27.57, 8.46, 4.37],
-			"translation": [1.25, 0.75, 0.75],
-			"scale": [0.55, 0.55, 0.55]
+			"rotation": [-0.32, 2.21, 4.35],
+			"translation": [0.25, 0, -1.25],
+			"scale": [0.4, 0.4, 0.4]
 		},
 		"thirdperson_lefthand": {
 			"translation": [-1.75, 1.25, -3.25],
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"firstperson_righthand": {
-			"translation": [-0.5, 0.5, -10]
+			"translation": [-3, -0.25, -13.5]
 		},
 		"ground": {
 			"translation": [0, 3, 0],
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"fixed": {
-			"translation": [0, 0.5, 0.5],
-			"scale": [1.1, 1.1, 1.1]
+			"rotation": [0, 90, 0],
+			"scale": [0.6, 0.6, 0.6]
 		}
 	}
 }

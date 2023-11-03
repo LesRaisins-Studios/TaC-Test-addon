@@ -22,30 +22,30 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ModItems {
     public static final DeferredRegister<Item> REGISTER = DeferredRegister.create(ForgeRegistries.ITEMS, Reference.MOD_ID);
     /*guns*/
-    public static final RegistryObject<GunItem> P90 = REGISTER.register("p90",
-            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
-    public static final RegistryObject<GunItem> SVD = REGISTER.register("svd",
+    public static final RegistryObject<GunItem> MARLIN_1895 = REGISTER.register("marlin_1895",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> AUG = REGISTER.register("aug",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> SA58 = REGISTER.register("sa58",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
 
+    public static final RegistryObject<GunItem> SVD = REGISTER.register("svd",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.SNIPER)));
+    public static final RegistryObject<GunItem> CROSSBOW = REGISTER.register("crossbow",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.SNIPER)));
+
+    public static final RegistryObject<GunItem> P90 = REGISTER.register("p90",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
     public static final RegistryObject<GunItem> PP19 = REGISTER.register("pp19",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
     public static final RegistryObject<GunItem> PPK20 = REGISTER.register("ppk20",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
 
-    public static final RegistryObject<GunItem> MARLIN_1895 = REGISTER.register("marlin_1895",
-            () -> new TimelessGunItem(properties -> properties.tab(GunMod.SHOTGUN)));
 
     public static final RegistryObject<GunItem> QSZ92 = REGISTER.register("qsz92",
             () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
     public static final RegistryObject<GunItem> ANGEL = REGISTER.register("angel",
             () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
-    /*crossbow*/
-    public static final RegistryObject<GunItem> CROSSBOW = REGISTER.register("crossbow",
-            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
 
     /*shield*/
     public static final RegistryObject<Item> RIOT_SHIELD = REGISTER.register("riot_shield",

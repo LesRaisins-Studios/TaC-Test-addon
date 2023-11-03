@@ -53,8 +53,11 @@ public class angle_animation extends SkinAnimationModel {
 
         matrices.pushPose();
         {
-            controller.applySpecialModelTransform(getModelComponent(skin, BODY), ANGLEAnimationController.INDEX_LOADER, transformType, matrices);
-            RenderUtil.renderModel(getModelComponent(skin, LOADER), stack, matrices, renderBuffer, light, overlay);
+            if (transformType.firstPerson()) {
+                controller.applySpecialModelTransform(getModelComponent(skin, BODY), ANGLEAnimationController.INDEX_LOADER, transformType, matrices);
+                RenderUtil.renderModel(getModelComponent(skin, LOADER), stack, matrices, renderBuffer, light, overlay);
+
+            }
         }
         matrices.popPose();
 
