@@ -55,6 +55,7 @@ public class ANGLEAnimationController extends GunAnimationController {
     @Override
     public AnimationMeta getAnimationFromLabel(AnimationLabel label) {
         switch (label){
+            case INSPECT_EMPTY:
             case INSPECT: return INSPECT;
             case RELOAD_EMPTY:
             case RELOAD_NORMAL: return RELOAD_NORM;

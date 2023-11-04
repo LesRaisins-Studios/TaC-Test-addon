@@ -49,6 +49,7 @@ public class PPK20AnimationController extends GunAnimationController {
     @Override
     public AnimationMeta getAnimationFromLabel(AnimationLabel label) {
         switch (label){
+            case INSPECT_EMPTY:
             case INSPECT: return INSPECT;
             case RELOAD_NORMAL: return RELOAD_NORM;
             case RELOAD_EMPTY: return RELOAD_EMPTY;
