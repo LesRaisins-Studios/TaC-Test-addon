@@ -1,0 +1,14 @@
+{
+  "type": "tac:workbench",
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 15
+    }
+  ],
+  "result": {
+    "item": "lesraisinsadd:pp19"
+  }
+}

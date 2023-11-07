@@ -1,0 +1,20 @@
+{
+  "type": "tac:workbench",
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 20
+    },
+    {
+      "item": {
+        "tag": "minecraft:logs"
+      },
+      "count": 8
+    }
+  ],
+  "result": {
+    "item": "lesraisinsadd:svd"
+  }
+}

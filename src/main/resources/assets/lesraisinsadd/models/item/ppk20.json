@@ -8,8 +8,8 @@
 	},
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [1.5, 0, 0],
-			"translation": [1.25, 0.75, -5],
+			"rotation": [-5.47, 15.75, 1.5],
+			"translation": [-0.25, 0.5, -5],
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"thirdperson_lefthand": {
@@ -17,7 +17,7 @@
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"firstperson_righthand": {
-			"translation": [-6.75, 1.75, -2.5]
+			"translation": [-6.75, 2.25, -4.25]
 		},
 		"firstperson_lefthand": {
 			"translation": [-5, 1.75, 5.25]

@@ -3,7 +3,7 @@
     "auto": true,
     "rate": 400,
     "rateSelector": [1],
-    "gripType": "tac:two_handed_ak47",
+    "gripType": "tac:two_handed_mosin",
     "recoilAngle": 2.885,
     "horizontalRecoilAngle": 2.65,
     "recoilKick": 2.25,
@@ -76,11 +76,6 @@
         "zOffset": -11.55,
         "scale": 1.00
       },
-      "extendedMag": {
-        "yOffset": 1000.89,
-        "zOffset": 5.35,
-        "scale": 0.0
-      },
       "stock": {
         "yOffset": 7.75,
         "zOffset": -22.05,
@@ -91,17 +86,17 @@
         "zOffset": -1.0,
         "scale": 1.0
       },
+      "underBarrel": {
+        "yOffset": 7.799,
+        "zOffset": -2.35,
+        "scale": 0.00
+      },
       "pistolScope": {
         "yOffset": 7.35,
         "zOffset": 10.2,
         "scale": 1.0,
         "doRenderMount": true,
         "doOnSlideMovement": false
-      },
-      "gunSkin": {
-        "yOffset": 7.799,
-        "zOffset": -2.35,
-        "scale": 0.00
       }
     }
   }

@@ -86,21 +86,6 @@
       "zOffset": -1.8
     },
     "attachments": {
-      "barrel": {
-        "yOffset": -100829.84,
-        "zOffset": -11.55,
-        "scale": 1.00
-      },
-      "extendedMag": {
-        "yOffset": 1000.89,
-        "zOffset": 5.35,
-        "scale": 0.0
-      },
-      "stock": {
-        "yOffset": 7.75,
-        "zOffset": -22.05,
-        "scale": 0.00
-      },
       "scope": {
         "yOffset": 7.3,
         "zOffset": 9.0,
@@ -112,11 +97,6 @@
         "scale": 1.0,
         "doRenderMount": true,
         "doOnSlideMovement": false
-      },
-      "gunSkin": {
-        "yOffset": 7.799,
-        "zOffset": -2.35,
-        "scale": 0.00
       }
     }
   }

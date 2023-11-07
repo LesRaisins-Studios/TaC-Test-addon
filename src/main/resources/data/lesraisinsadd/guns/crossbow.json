@@ -3,7 +3,7 @@
     "auto": false,
     "rate": 240,
     "rateSelector": [1],
-    "gripType": "tac:two_handed",
+    "gripType": "tac:two_handed_ak47",
     "recoilAngle": 7.85,
     "horizontalRecoilAngle": 0.65,
     "recoilKick": 3.335,
@@ -21,22 +21,23 @@
     "movementInaccuracy": 0.68
   },
   "projectile": {
-    "item": "lesraisinsadd:crossbow_arrow",
-    "visible": true,
-    "gravity": false,
+    "item": "tac:762x39",
+    "visible": false,
     "damage": 36,
-    "size": 1,
-    "speed": 4,
-    "trailLengthMultiplier": 0,
-    "life": 40,
-    "damageReduceOverLife": false,
-    "ricochet": false
+    "decayStart": 0.02,
+    "minDecayMultiplier": 0.2,
+    "decayEnd": 0.6,
+    "size": 0.125,
+    "speed": 120,
+    "life": 2,
+    "trailLengthMultiplier": 2.75
   },
   "reloads": {
     "magFed": true,
     "maxAmmo": 1,
-    "reloadMagTimer": 35,
+    "reloadMagTimer": 36,
     "additionalReloadEmptyMagTimer": 0,
+    "maxAdditionalAmmoPerOC": [5, 7, 10],
     "preReloadPauseTicks": 0,
     "openBolt": true
   },
