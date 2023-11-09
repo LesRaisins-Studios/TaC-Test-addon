@@ -85,11 +85,6 @@
       "zOffset": 1.5
     },
     "attachments": {
-      "stock": {
-        "yOffset": 7.75,
-        "zOffset": -22.05,
-        "scale": 0.00
-      },
       "scope": {
         "yOffset": 10,
         "zOffset": 6.0,

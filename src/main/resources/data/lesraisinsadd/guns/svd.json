@@ -52,7 +52,7 @@
   },
   "display": {
     "flash": {
-      "yOffset": 9.0,
+      "yOffset": 6.0,
       "zOffset": -20.75,
       "trailAdjust": 1.325,
       "size": 0.8
