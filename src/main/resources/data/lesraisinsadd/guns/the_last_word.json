@@ -1,12 +1,10 @@
 {
   "general": {
     "auto": true,
-    "rate": 600,
-    "rateSelector": [3,1],
-    "burstCount": 6,
-    "burstRate": 0,
+    "rate": 1000,
+    "rateSelector": [2,1],
     "gripType": "tac:one_handed_m1911",
-    "recoilAngle": 2.355,
+    "recoilAngle": 7.355,
     "horizontalRecoilAngle": 5.25,
     "recoilKick": 1.85,
     "recoilAdsReduction": 0.2,
@@ -25,7 +23,7 @@
   "projectile": {
     "item": "tac:9mm_round",
     "visible": false,
-    "damage": 8,
+    "damage": 20,
     "decayStart": 0.15,
     "minDecayMultiplier": 0.2,
     "decayEnd": 0.75,
@@ -36,43 +34,27 @@
   },
   "reloads": {
     "magFed": true,
-    "maxAmmo": 15,
+    "maxAmmo": 8,
     "reloadMagTimer": 36,
     "additionalReloadEmptyMagTimer": 0,
     "maxAdditionalAmmoPerOC": [5, 7, 10],
-    "preReloadPauseTicks": 0
+    "preReloadPauseTicks": 0,
+    "openBolt": true
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.qsz92_fire",
-    "reloadNormal": "lesraisinsadd:item.qsz92_reload_norm",
-    "reloadEmpty": "lesraisinsadd:item.qsz92_reload_empty",
-    "draw": "lesraisinsadd:item.qsz92_draw",
-    "inspect": "lesraisinsadd:item.qsz92_inspect",
+    "fire": "lesraisinsadd:item.the_last_word_fire",
+    "reloadNormal": "lesraisinsadd:item.the_last_word_reload",
+    "reloadEmpty": "lesraisinsadd:item.the_last_word_reload",
+    "draw": "lesraisinsadd:item.the_last_word_draw",
+    "inspect": "lesraisinsadd:item.the_last_word_inspect",
     "cock": "tac:item.pistol.cock"
   },
   "display": {
     "flash": {
-      "yOffset": 9.0,
+      "yOffset": 13.0,
       "zOffset": -20.75,
       "trailAdjust": 1.325,
       "size": 0.8
-    },
-    "shellCasing": {
-      "tickLife":10,
-      "yOffset": 5,
-      "xOffset": 0,
-      "zOffset": -2,
-      "scale": 1,
-      "velocityX": 8,
-      "velocityY": 1,
-      "velocityZ": -0.5,
-      "rVelocityX": 0,
-      "rVelocityY": 1.25,
-      "rVelocityZ": 0.0,
-      "aVelocityX": 45.0,
-      "aVelocityY": -90.0,
-      "aVelocityZ": 15.0,
-      "casingModel": "tac:special/shell_small"
     },
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,
@@ -82,8 +64,8 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 13.00,
-      "zOffset": -6
+      "yOffset": 16.20,
+      "zOffset": 2
     }
   }
 }

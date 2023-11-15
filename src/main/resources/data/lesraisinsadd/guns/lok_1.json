@@ -1,7 +1,7 @@
 {
   "general": {
     "auto": true,
-    "rate": 1080,
+    "rate": 500,
     "rateSelector": [2, 1],
     "gripType": "tac:two_handed_ak47",
     "recoilAngle": 2.335,
@@ -42,11 +42,11 @@
     "ricochet": true
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.p90_fire",
-    "reloadNormal": "lesraisinsadd:item.p90_reload_norm",
-    "reloadEmpty": "lesraisinsadd:item.p90_reload_empty",
+    "fire": "lesraisinsadd:item.lok1_fire",
+    "reloadNormal": "lesraisinsadd:item.lok1_reload_norm",
+    "reloadEmpty": "lesraisinsadd:item.lok1_reload_empty",
     "draw": "lesraisinsadd:item.p90_draw",
-    "inspect": "lesraisinsadd:item.p90_inspect",
+    "inspect": "lesraisinsadd:item.lok1_inspect",
     "cock": "tac:item.pistol.cock",
     "silencedFire": "tac:item.ak47_fire_s"
   },

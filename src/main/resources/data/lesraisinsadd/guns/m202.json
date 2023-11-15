@@ -1,7 +1,9 @@
 {
   "general": {
-    "rate": 200,
-    "rateSelector": [1],
+    "rate": 500,
+    "rateSelector": [1,3],
+    "burstCount": 4,
+    "burstRate": 30,
     "gripType": "tac:bazooka",
     "recoilAngle": 3.25,
     "horizontalRecoilAngle": 3.25,
@@ -40,13 +42,13 @@
     "ricochet": false
   },
   "sounds": {
-    "fire": "tac:item.rpg7_fire",
-    "reloadNormal": "tac:animation.rpg7_reload_norm",
-    "reloadEmpty": "tac:animation.rpg7_reload_empty",
-    "draw": "tac:animation.rpg7_draw",
-    "inspect": "tac:animation.rpg7_inspect",
-    "cock":  "tac:item.pistol.cock",
-    "silencedFire":  "tac:item.rpg7_fire"
+    "fire": "lesraisinsadd:item.m202_fire",
+    "reloadNormal": "lesraisinsadd:item.m202_reload",
+    "reloadEmpty": "lesraisinsadd:item.m202_reload",
+    "draw": "lesraisinsadd:item.m202_draw",
+    "inspect": "lesraisinsadd:item.m202_inspect",
+    "cock":  "lesraisinsadd:item.pistol.cock",
+    "silencedFire":  "lesraisinsadd:item.m202_fire"
   },
   "display": {
     "flash": {
@@ -62,10 +64,10 @@
   },
   "modules": {
     "zoom":{
-      "fovModifier": 0.6,
+      "fovModifier": 0.4,
       "xOffset": 7.5,
-      "yOffset": 10,
-      "zOffset": 6
+      "yOffset": 9.65,
+      "zOffset": 10
     },
     "attachments": { }
   }
