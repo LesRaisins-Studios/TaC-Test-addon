@@ -21,7 +21,7 @@
     "movementInaccuracy": 0.68
   },
   "projectile": {
-    "item": "tac:762x39",
+    "item": "lesraisinsadd:crossbow_arrow",
     "visible": false,
     "damage": 36,
     "decayStart": 0.02,

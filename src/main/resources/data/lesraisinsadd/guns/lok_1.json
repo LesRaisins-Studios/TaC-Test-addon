@@ -1,0 +1,91 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 500,
+    "rateSelector": [2, 1],
+    "gripType": "tac:two_handed_ak47",
+    "recoilAngle": 2.335,
+    "horizontalRecoilAngle": 1.65,
+    "recoilKick": 0.6,
+    "recoilAdsReduction": 0.1,
+    "weaponRecoilOffset": 0.665,
+    "cameraRecoilModifier": 0.85,
+    "recoilDuration": 0.225,
+    "weightKilo": 2,
+
+    "spread": 1.25,
+    "firstShotSpread": 0.15,
+    "hipFireInaccuracy": 0.8,
+    "projToMinAccuracy": 8,
+    "msToAccuracyReset": 380,
+    "movementInaccuracy": 0.23
+  },
+  "reloads": {
+    "magFed": true,
+    "maxAmmo": 50,
+    "reloadMagTimer": 35,
+    "additionalReloadEmptyMagTimer": 16,
+    "maxAdditionalAmmoPerOC": [5, 12, 20],
+    "preReloadPauseTicks": 0
+  },
+  "projectile": {
+    "item": "tac:9mm_round",
+    "visible": false,
+    "damage": 6.8,
+    "decayStart": 0.05,
+    "minDecayMultiplier": 0.15,
+    "decayEnd": 0.6,
+    "speed": 80,
+    "size": 0.05,
+    "life": 2,
+    "trailLengthMultiplier": 2.5,
+    "ricochet": true
+  },
+  "sounds": {
+    "fire": "lesraisinsadd:item.lok1_fire",
+    "reloadNormal": "lesraisinsadd:item.lok1_reload_norm",
+    "reloadEmpty": "lesraisinsadd:item.lok1_reload_empty",
+    "draw": "lesraisinsadd:item.p90_draw",
+    "inspect": "lesraisinsadd:item.lok1_inspect",
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "tac:item.ak47_fire_s"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 8.0,
+      "zOffset": -15,
+      "trailAdjust": 1.325,
+      "size": 0.8
+    },
+    "hipfireScale": 1.25,
+    "hipfireMoveScale": 0.5,
+    "hipfireRecoilScale": 1.0,
+    "showDynamicHipfire":true
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.8,
+      "yOffset": 12.850,
+      "zOffset": 5.0
+    },
+    "attachments": {
+      "barrel": {
+        "yOffset": -100829.84,
+        "zOffset": -11.55,
+        "scale": 1.00
+      },
+      "scope": {
+        "yOffset": 11.5,
+        "zOffset": -4.0,
+        "scale": 1.0
+      },
+      "pistolScope": {
+        "yOffset": 11.5,
+        "zOffset": -5,
+        "scale": 1.0,
+        "doRenderMount": true,
+        "doOnSlideMovement": false
+      }
+    }
+  }
+}
