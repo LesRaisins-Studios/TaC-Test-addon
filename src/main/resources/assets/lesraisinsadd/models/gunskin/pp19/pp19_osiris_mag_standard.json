@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "tac:gunskin/pp19/pp19_bizon_osiris_add",
-		"9": "tac:gunskin/pp19/pp19_bizon_osiris",
-		"particle": "tac:gunskin/pp19/pp19_bizon_osiris_add"
+		"1": "lesraisinsadd:gunskin/pp19/pp19_bizon_osiris_add",
+		"9": "lesraisinsadd:gunskin/pp19/pp19_bizon_osiris",
+		"particle": "lesraisinsadd:gunskin/pp19/pp19_bizon_osiris_add"
 	},
 	"elements": [
 		{

@@ -13,13 +13,9 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.stream.Collectors;
 
 @OnlyIn(Dist.CLIENT)
-public class CROSSBOWAnimationController extends GunAnimationController {
+public class CROSSBOWAnimationController extends GunAnimationController implements IFireController {
     public static int INDEX_BODY = 11;
     public static int INDEX_LEFT_HAND = 13;
     public static int INDEX_RIGHT_HAND = 0;
@@ -94,7 +90,13 @@ public class CROSSBOWAnimationController extends GunAnimationController {
         return INDEX_LEFT_HAND;
     }
 
+    @Override
     public void runFireAnimation(){
         runAnimation(FIRE,null,null);
+    }
+
+    @Override
+    public boolean isFireAnimationRunning(){
+        return Animations.isAnimationRunning(FIRE);
     }
 }

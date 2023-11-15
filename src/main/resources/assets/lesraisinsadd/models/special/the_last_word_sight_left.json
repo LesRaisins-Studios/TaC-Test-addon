@@ -1,0 +1,55 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [256, 256],
+	"textures": {
+		"2": "lesraisinsadd:items/the_last_word/aiming"
+	},
+	"elements": [
+		{
+			"from": [7.6875, 15.92188, 4.3125],
+			"to": [7.8125, 16.07813, 4.3125],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.5625, 15.75, 3.3125]},
+			"faces": {
+				"south": {"uv": [0, 4.375, 4.51563, 10.89063], "texture": "#2"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, -1.5, -3.5],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"firstperson_righthand": {
+			"translation": [-3, -0.75, -3]
+		}
+	},
+	"groups": [
+		{
+			"name": "Lastword",
+			"origin": [8, 10.5625, 4],
+			"color": 0,
+			"children": [
+				{
+					"name": "Sight",
+					"origin": [7.5, 0.125, -8.125],
+					"color": 4,
+					"children": [
+						{
+							"name": "Sight_1",
+							"origin": [7.8125, 15.75, -11.8125],
+							"color": 0,
+							"children": [
+								{
+									"name": "sight_left",
+									"origin": [7.75, 16, 4.3125],
+									"color": 0,
+									"children": [0]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

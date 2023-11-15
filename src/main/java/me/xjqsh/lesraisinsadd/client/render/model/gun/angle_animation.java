@@ -13,10 +13,16 @@ import com.tac.guns.common.Gun;
 import com.tac.guns.item.GunItem;
 import me.xjqsh.lesraisinsadd.client.render.animation.ANGLEAnimationController;
 import me.xjqsh.lesraisinsadd.client.render.animation.QSZ92AnimationController;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.model.ItemCameraTransforms;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.util.math.vector.Vector3f;
+
+import java.awt.*;
 
 import static com.tac.guns.client.gunskin.ModelComponent.*;
 import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.BULLETS;
@@ -39,6 +45,13 @@ public class angle_animation extends SkinAnimationModel {
 
         matrices.pushPose();
         {
+            controller.applySpecialModelTransform(getModelComponent(skin, BODY), ANGLEAnimationController.INDEX_BODY, transformType, matrices);
+            RenderUtil.renderModel(getModelComponent(skin, BODY), stack, matrices, renderBuffer, light, overlay);
+        }
+        matrices.popPose();
+
+        matrices.pushPose();
+        {
             controller.applySpecialModelTransform(getModelComponent(skin, BODY), ANGLEAnimationController.INDEX_BULLETS, transformType, matrices);
             RenderUtil.renderModel(getModelComponent(skin, BULLETS), stack, matrices, renderBuffer, light, overlay);
         }
@@ -58,13 +71,6 @@ public class angle_animation extends SkinAnimationModel {
                 RenderUtil.renderModel(getModelComponent(skin, LOADER), stack, matrices, renderBuffer, light, overlay);
 
             }
-        }
-        matrices.popPose();
-
-        matrices.pushPose();
-        {
-            controller.applySpecialModelTransform(getModelComponent(skin, BODY), ANGLEAnimationController.INDEX_BODY, transformType, matrices);
-            RenderUtil.renderModel(getModelComponent(skin, BODY), stack, matrices, renderBuffer, light, overlay);
         }
         matrices.popPose();
 

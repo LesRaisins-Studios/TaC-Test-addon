@@ -1,0 +1,33 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "tac:items/hotbar_icons/rpg7"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 3.25, 2],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 3.25, -2],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"firstperson_righthand": {
+			"translation": [2.25, 5, 5]
+		},
+		"firstperson_lefthand": {
+			"translation": [-5, 8.75, 1],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.75, 0.75, 0.75]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"translation": [-1.5, 5.25, -2],
+			"scale": [1.5, 1.5, 1.5]
+		}
+	}
+}

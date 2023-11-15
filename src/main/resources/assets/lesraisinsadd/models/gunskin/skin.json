@@ -1,0 +1,28 @@
+{
+  "lesraisinsadd:pp19": {
+    "cyrex": {
+      "type": "custom",
+      "models": {
+        "auto": "lesraisinsadd:gunskin/pp19/pp19_cyrex"
+      },
+      "icon": "lesraisinsadd:gunskin/icon/pp19_cyrex",
+      "mini_icon": "lesraisinsadd:gunskin/icon/mini/pp19_cyrex"
+    },
+    "osiris": {
+      "type": "custom",
+      "models": {
+        "auto": "lesraisinsadd:gunskin/pp19/pp19_osiris"
+      },
+      "icon": "lesraisinsadd:gunskin/icon/pp19_osiris",
+      "mini_icon": "lesraisinsadd:gunskin/icon/mini/pp19_osiris"
+    },
+    "runic": {
+      "type": "custom",
+      "models": {
+        "auto": "lesraisinsadd:gunskin/pp19/pp19_runic"
+      },
+      "icon": "lesraisinsadd:gunskin/icon/pp19_runic",
+      "mini_icon": "lesraisinsadd:gunskin/icon/mini/pp19_runic"
+    }
+  }
+}

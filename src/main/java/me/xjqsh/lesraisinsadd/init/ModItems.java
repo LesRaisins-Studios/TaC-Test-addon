@@ -28,6 +28,8 @@ public class ModItems {
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> SA58 = REGISTER.register("sa58",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
+    public static final RegistryObject<GunItem> LOK1 = REGISTER.register("lok_1",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
 
     public static final RegistryObject<GunItem> SVD = REGISTER.register("svd",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SNIPER)));
@@ -46,6 +48,11 @@ public class ModItems {
             () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
     public static final RegistryObject<GunItem> ANGEL = REGISTER.register("angel",
             () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
+    public static final RegistryObject<GunItem> THE_LAST_WORD = REGISTER.register("the_last_word",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.PISTOL)));
+    /*launcher*/
+    public static final RegistryObject<GunItem> M202 = REGISTER.register("m202",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.HEAVY_MATERIAL)));
 
     /*shield*/
     public static final RegistryObject<Item> RIOT_SHIELD = REGISTER.register("riot_shield",
@@ -65,4 +72,7 @@ public class ModItems {
     /*ammo*/
     public static final RegistryObject<Item> CROSSBOW_ARROW = REGISTER.register("crossbow_arrow",
             TimelessAmmoItem::new);
+
+    public static final RegistryObject<Item> M202_ROCKET = REGISTER.register("m202_rocket",
+            () -> new AmmoItem(new Item.Properties().stacksTo(6).tab(GunMod.AMMO)));
 }

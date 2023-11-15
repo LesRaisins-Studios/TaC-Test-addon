@@ -15,7 +15,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.io.IOException;
 
 @OnlyIn(Dist.CLIENT)
-public class ANGLEAnimationController extends GunAnimationController {
+public class ANGLEAnimationController extends GunAnimationController implements IFireController {
     public static int INDEX_BODY = 7;
     public static int INDEX_LEFT_HAND = 9;
     public static int INDEX_RIGHT_HAND = 0;
@@ -85,7 +85,13 @@ public class ANGLEAnimationController extends GunAnimationController {
         return INDEX_LEFT_HAND;
     }
 
+    @Override
     public void runFireAnimation(){
         runAnimation(FIRE,null,null);
+    }
+
+    @Override
+    public boolean isFireAnimationRunning(){
+        return Animations.isAnimationRunning(FIRE);
     }
 }

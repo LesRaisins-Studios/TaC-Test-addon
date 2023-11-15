@@ -3,6 +3,7 @@ package me.xjqsh.lesraisinsadd;
 
 import com.tac.guns.client.render.gun.ModelOverrides;
 import com.tac.guns.common.ProjectileManager;
+import com.tac.guns.entity.MissileEntity;
 import me.xjqsh.lesraisinsadd.client.render.ArrowRender;
 import me.xjqsh.lesraisinsadd.client.render.ModelLoader;
 import me.xjqsh.lesraisinsadd.client.render.animation.*;
@@ -40,6 +41,13 @@ public class LesRaisinsTaCAddon {
     private void onCommonSetup(FMLLoadCompleteEvent event) {
         ProjectileManager.getInstance().registerFactory(ModItems.CROSSBOW_ARROW.get(),
                 new CrossBowArrowEntity.ArrowFactory());
+
+        ProjectileManager.getInstance().registerFactory(ModItems.M202_ROCKET.get(),
+                (worldIn, entity, weapon, item, modifiedGun, randP, randY) ->
+                    new MissileEntity(com.tac.guns.init.ModEntities.RPG7_MISSILE.get(),
+                            worldIn, entity, weapon, item, modifiedGun, 1.5F)
+
+        );
     }
 
     private void onClientSetup(FMLClientSetupEvent event) {
@@ -79,6 +87,12 @@ public class LesRaisinsTaCAddon {
         );
         ModelOverrides.register(ModItems.MARLIN_1895.get(),
                 new marlin_1895_animation());
+        ModelOverrides.register(ModItems.M202.get(),
+                new m202_animation());
+        ModelOverrides.register(ModItems.LOK1.get(),
+                new lok1_animation());
+        ModelOverrides.register(ModItems.THE_LAST_WORD.get(),
+                new the_last_word_animation());
 
         P90AnimationController.getInstance();
         PP19AnimationController.getInstance();
@@ -90,6 +104,9 @@ public class LesRaisinsTaCAddon {
         SA58AnimationController.getInstance();
         CROSSBOWAnimationController.getInstance();
         MARLIN1895AnimationController.getInstance();
+        M202AnimationController.getInstance();
+        LOK1AnimationController.getInstance();
+        THELASTWORDAnimationController.getInstance();
 
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.ARROW.get(), ArrowRender::new);
     }

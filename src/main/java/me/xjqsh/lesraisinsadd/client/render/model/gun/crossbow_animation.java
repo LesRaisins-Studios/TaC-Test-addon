@@ -5,14 +5,10 @@ import com.tac.guns.client.gunskin.GunSkin;
 import com.tac.guns.client.gunskin.IModelComponent;
 import com.tac.guns.client.gunskin.SkinManager;
 import com.tac.guns.client.render.animation.module.AnimationMeta;
-import com.tac.guns.client.render.animation.module.Animations;
 import com.tac.guns.client.render.animation.module.GunAnimationController;
 import com.tac.guns.client.render.animation.module.PlayerHandAnimation;
 import com.tac.guns.client.render.gun.SkinAnimationModel;
 import com.tac.guns.client.util.RenderUtil;
-import com.tac.guns.common.Gun;
-import com.tac.guns.item.GunItem;
-import me.xjqsh.lesraisinsadd.client.render.animation.ANGLEAnimationController;
 import me.xjqsh.lesraisinsadd.client.render.animation.CROSSBOWAnimationController;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.model.ItemCameraTransforms;
@@ -20,7 +16,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 
-import static com.tac.guns.client.gunskin.ModelComponent.*;
+import static com.tac.guns.client.gunskin.ModelComponent.BODY;
 import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.*;
 
 /*
@@ -85,14 +81,4 @@ public class crossbow_animation extends SkinAnimationModel {
         return tag.getInt("AmmoCount") > 0;
     }
 
-    public boolean isFireRunning(CROSSBOWAnimationController controller) {
-        if (!controller.isAnimationRunning()) {
-            return false;
-        } else if (controller.getPreviousAnimation() == null) {
-            return false;
-        } else {
-            AnimationMeta meta = CROSSBOWAnimationController.FIRE;
-            return meta.equals(controller.getPreviousAnimation());
-        }
-    }
 }

@@ -5,6 +5,9 @@ import me.xjqsh.lesraisinsadd.init.ModItems;
 
 import static com.tac.guns.client.gunskin.ModelComponent.*;
 import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.*;
+import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.LOADER;
+import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.WHEEL_L;
+import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.WHEEL_R;
 
 public class ModelLoader {
     public static SkinLoader P90 = new SkinLoader(ModItems.P90.getId(),
@@ -33,9 +36,17 @@ public class ModelLoader {
             RAIL_DEFAULT,RAIL_EXTENDED,
             STOCK_DEFAULT,STOCK_HEAVY,STOCK_LIGHT,STOCK_TACTICAL
             );
-
+    public static SkinLoader M202 = new SkinLoader(ModItems.M202.getId(),
+            BODY,COVER_BACK,COVER_FRONT,ROCKET_EMPTY,ROCKET_FULL,
+            ROCKET_HANDLE_EMPTY,ROCKET_HANDLE_FULL
+    );
     public static SkinLoader CROSS_BOW = new SkinLoader(ModItems.CROSSBOW.getId(),
             BODY,ARM_L,ARM_R,STRING_L,STRING_R,WHEEL_L,WHEEL_R,ARROW);
+    public static SkinLoader LOK1 = new SkinLoader(ModItems.LOK1.getId(),
+            BODY,BOLT,MAG_STANDARD,SIGHT,GRIP_MAG);
+
+    public static SkinLoader THE_LAST_WORD = new SkinLoader(ModItems.THE_LAST_WORD.getId(),
+            BODY,BULLET,HAMMER,MAG_1,MAG_2,MAG_3,SIGHT,SIGHT_LEFT,SIGHT_RIGHT);
 
     public static void init(){
         SkinLoader.register(ModItems.P90.getId(),P90);
@@ -48,5 +59,8 @@ public class ModelLoader {
         SkinLoader.register(ModItems.SA58.getId(),SA58);
         SkinLoader.register(ModItems.CROSSBOW.getId(), CROSS_BOW);
         SkinLoader.register(ModItems.MARLIN_1895.getId(),MARLIN_1895);
+        SkinLoader.register(ModItems.M202.getId(),M202);
+        SkinLoader.register(ModItems.LOK1.getId(),LOK1);
+        SkinLoader.register(ModItems.THE_LAST_WORD.getId(), THE_LAST_WORD);
     }
 }

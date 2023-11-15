@@ -85,7 +85,8 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
     maven {
-        url "file://D:/Minecraft/Dev/TimelessandClassics_Reforged/build/maven"
+//        url "file://D:/Minecraft/Dev/TimelessandClassics_Reforged/build/maven"
+        url "file://D:/Minecraft/temp/TimelessandClassics_Reforged/build/maven"
     }
     maven {
         url = "https://www.cursemaven.com"
@@ -96,7 +97,8 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
     implementation fg.deobf('curse.maven:obfuscate-289380:3336021')
-    implementation fg.deobf('com.tac:TimelessandClassics_Reforged:0.3.9.2-1.16.5-lesraisins')
+//    implementation fg.deobf('com.tac:TimelessandClassics_Reforged:0.3.9.2-1.16.5-lesraisins')
+    implementation fg.deobf('com.tac:TimelessandClassics_Reforged:0.3.10.5')
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
