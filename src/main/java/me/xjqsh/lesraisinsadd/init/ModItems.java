@@ -49,7 +49,10 @@ public class ModItems {
     public static final RegistryObject<GunItem> ANGEL = REGISTER.register("angel",
             () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
     public static final RegistryObject<GunItem> THE_LAST_WORD = REGISTER.register("the_last_word",
-            () -> new TimelessGunItem(properties -> properties.tab(GunMod.PISTOL)));
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.PISTOL).rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<GunItem> THE_FIRST_CURSE = REGISTER.register("the_first_curse",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.PISTOL).rarity(Rarity.UNCOMMON)));
+
     /*launcher*/
     public static final RegistryObject<GunItem> M202 = REGISTER.register("m202",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.HEAVY_MATERIAL)));

@@ -93,6 +93,9 @@ public class LesRaisinsTaCAddon {
                 new lok1_animation());
         ModelOverrides.register(ModItems.THE_LAST_WORD.get(),
                 new the_last_word_animation());
+        ModelOverrides.register(ModItems.THE_FIRST_CURSE.get(),
+                new the_first_curse_animation());
+
 
         P90AnimationController.getInstance();
         PP19AnimationController.getInstance();
@@ -107,6 +110,7 @@ public class LesRaisinsTaCAddon {
         M202AnimationController.getInstance();
         LOK1AnimationController.getInstance();
         THELASTWORDAnimationController.getInstance();
+        THEFIRSTCURSEAnimationController.getInstance();
 
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.ARROW.get(), ArrowRender::new);
     }

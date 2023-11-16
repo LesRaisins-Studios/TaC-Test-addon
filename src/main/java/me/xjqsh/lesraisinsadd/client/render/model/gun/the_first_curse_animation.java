@@ -7,7 +7,7 @@ import com.tac.guns.client.gunskin.SkinManager;
 import com.tac.guns.client.render.animation.module.PlayerHandAnimation;
 import com.tac.guns.client.render.gun.SkinAnimationModel;
 import com.tac.guns.client.util.RenderUtil;
-import me.xjqsh.lesraisinsadd.client.render.animation.ANGLEAnimationController;
+import me.xjqsh.lesraisinsadd.client.render.animation.THEFIRSTCURSEAnimationController;
 import me.xjqsh.lesraisinsadd.client.render.animation.THELASTWORDAnimationController;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.model.ItemCameraTransforms;
@@ -25,33 +25,28 @@ import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.*;
 /**
  * Author: Timeless Development, and associates.
  */
-public class the_last_word_animation extends SkinAnimationModel {
+public class the_first_curse_animation extends SkinAnimationModel {
 
     @Override
     public void render(float v, ItemCameraTransforms.TransformType transformType, ItemStack stack, ItemStack parent, LivingEntity entity, MatrixStack matrices, IRenderTypeBuffer renderBuffer, int light, int overlay) {
-        THELASTWORDAnimationController controller = THELASTWORDAnimationController.getInstance();
+        THEFIRSTCURSEAnimationController controller = THEFIRSTCURSEAnimationController.getInstance();
         GunSkin skin = SkinManager.getSkin(stack);
 
         matrices.pushPose();
         {
-            controller.applySpecialModelTransform(getModelComponent(skin, BODY), THELASTWORDAnimationController.INDEX_BODY, transformType, matrices);
+            controller.applySpecialModelTransform(getModelComponent(skin, BODY), THEFIRSTCURSEAnimationController.INDEX_BODY, transformType, matrices);
             RenderUtil.renderModel(getModelComponent(skin, BODY), stack, matrices, renderBuffer, light, overlay);
-            RenderUtil.renderModel(getModelComponent(skin, SIGHT), stack, matrices, renderBuffer, 15728880, overlay);
         }
         matrices.popPose();
 
-        renderSinglePart(BULLET,THELASTWORDAnimationController.INDEX_BULLET,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
-        renderSinglePart(HAMMER,THELASTWORDAnimationController.INDEX_HAMMER,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
-        renderSinglePart(MAG_1,THELASTWORDAnimationController.INDEX_MAG_1,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
-        renderSinglePart(MAG_2,THELASTWORDAnimationController.INDEX_MAG_2,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
-        renderSinglePart(MAG_3,THELASTWORDAnimationController.INDEX_MAG_3,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
-        renderSinglePart(SIGHT_LEFT,THELASTWORDAnimationController.INDEX_SIGHT_LEFT,transformType, stack, matrices, renderBuffer, 15728880, overlay, controller, skin);
-        renderSinglePart(SIGHT_RIGHT,THELASTWORDAnimationController.INDEX_SIGHT_RIGHT,transformType, stack, matrices, renderBuffer, 15728880, overlay, controller, skin);
-
+        renderSinglePart(BULLET,THEFIRSTCURSEAnimationController.INDEX_BULLET,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
+        renderSinglePart(MAG_1,THEFIRSTCURSEAnimationController.INDEX_MAG_1,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
+        renderSinglePart(MAG_2,THEFIRSTCURSEAnimationController.INDEX_MAG_2,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
+        renderSinglePart(MAG_3,THEFIRSTCURSEAnimationController.INDEX_MAG_3,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
         PlayerHandAnimation.render(controller, transformType, matrices, renderBuffer, light);
     }
 
-    private void renderSinglePart(IModelComponent component, int index, ItemCameraTransforms.TransformType transformType, ItemStack stack, MatrixStack matrices, IRenderTypeBuffer renderBuffer, int light, int overlay, THELASTWORDAnimationController controller, GunSkin skin) {
+    private void renderSinglePart(IModelComponent component, int index, ItemCameraTransforms.TransformType transformType, ItemStack stack, MatrixStack matrices, IRenderTypeBuffer renderBuffer, int light, int overlay, THEFIRSTCURSEAnimationController controller, GunSkin skin) {
         matrices.pushPose();
         {
             controller.applySpecialModelTransform(getModelComponent(skin, BODY), index, transformType, matrices);

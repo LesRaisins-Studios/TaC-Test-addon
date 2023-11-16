@@ -24,7 +24,9 @@ public enum LrModelComponent implements IModelComponent {
     MAG_2("mag_2"),
     MAG_3("mag_3"),
     SIGHT_LEFT("sight_left"),
-    SIGHT_RIGHT("sight_right")
+    SIGHT_RIGHT("sight_right"),
+    BOTTLE("bottle"),
+    STICK("stick")
     ;
     public final String key;
     LrModelComponent(String key){

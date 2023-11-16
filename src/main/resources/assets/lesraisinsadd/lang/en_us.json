@@ -13,5 +13,8 @@
     "item.lesraisinsadd.crossbow": "Tactical Crossbow",
     "item.lesraisinsadd.marlin_1895": "MARLIN 1895",
     "item.lesraisinsadd.bulletproof_vest": "Bulletproof Vest",
-    "item.lesraisinsadd.crossbow_arrow": "Crossbow Arrow"
+    "item.lesraisinsadd.crossbow_arrow": "Crossbow Arrow",
+    "item.lesraisinsadd.the_last_word": "THE LAST WORD",
+    "tooltip.lesraisins.the_last_word": "",
+    "tooltip.lesraisins.the_last_word_2": ""
 }

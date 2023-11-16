@@ -7578,22 +7578,26 @@
 			"name": "Firstcurse",
 			"origin": [16, 10.5625, 4],
 			"color": 0,
+			"nbt": "{}",
 			"children": [
 				{
 					"name": "gunbody",
 					"origin": [16, 3.53684, 5.13283],
 					"color": 1,
+					"nbt": "{}",
 					"children": [
 						{
 							"name": "Trigger",
 							"origin": [16, 11.07813, 4.3086],
 							"color": 3,
+							"nbt": "{}",
 							"children": [0, 1, 2, 3, 4, 5, 6, 7, 8]
 						},
 						{
 							"name": "Firingpin",
 							"origin": [16, 13.23629, 6.31123],
 							"color": 1,
+							"nbt": "{}",
 							"children": [9, 10, 11, 12, 13, 14, 15, 16, 17]
 						},
 						18,
@@ -7608,12 +7612,14 @@
 							"name": "Light2",
 							"origin": [16.315, 10.54688, 9.25781],
 							"color": 0,
+							"nbt": "{}",
 							"children": [26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46]
 						},
 						{
 							"name": "group10",
 							"origin": [16.15832, 15.13901, 4.78415],
 							"color": 0,
+							"nbt": "{}",
 							"children": [
 								47,
 								48,
@@ -8133,28 +8139,33 @@
 							"name": "Carving",
 							"origin": [15.50133, -3.44532, -8],
 							"color": 0,
+							"nbt": "{}",
 							"children": []
 						},
 						{
 							"name": "Sight",
 							"origin": [15.5, 0.125, -8.125],
 							"color": 4,
+							"nbt": "{}",
 							"children": [
 								{
 									"name": "Sight_1",
 									"origin": [15.8125, 15.75, -11.8125],
 									"color": 0,
+									"nbt": "{}",
 									"children": [
 										{
 											"name": "Sight_2_2",
 											"origin": [15.75, 16, 4.3125],
 											"color": 0,
+											"nbt": "{}",
 											"children": [559]
 										},
 										{
 											"name": "Sight_2_1",
 											"origin": [16.25, 16, 4.3125],
 											"color": 0,
+											"nbt": "{}",
 											"children": [560]
 										},
 										561

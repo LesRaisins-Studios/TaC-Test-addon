@@ -13,5 +13,8 @@
     "item.lesraisinsadd.crossbow": "战术弩",
     "item.lesraisinsadd.bulletproof_vest": "防弹衣",
     "item.lesraisinsadd.marlin_1895": "MARLIN 1895杠杆步枪",
-    "item.lesraisinsadd.crossbow_arrow": "弩箭"
+    "item.lesraisinsadd.crossbow_arrow": "弩箭",
+    "item.lesraisinsadd.the_last_word": "遗言",
+    "tooltip.lesraisins.the_last_word_1": "“在最后的火焰熄灭之前，它是你的了，",
+    "tooltip.lesraisins.the_last_word_2": "该说的话也都说完了。”"
 }

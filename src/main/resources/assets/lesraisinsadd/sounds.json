@@ -280,5 +280,77 @@
       "sounds": [
          { "name": "lesraisinsadd:item/marlin_1895_inspect" }
       ]
+   },
+   "item.m202_draw": {
+      "subtitle": "subtitle.lesraisinsadd.m202_draw",
+      "sounds": [
+         { "name": "lesraisinsadd:item/m202_draw" }
+      ]
+   },
+   "item.m202_fire": {
+      "subtitle": "subtitle.lesraisinsadd.m202_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/m202_fire" }
+      ]
+   },
+   "item.m202_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.m202_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/m202_inspect" }
+      ]
+   },
+   "item.m202_reload": {
+      "subtitle": "subtitle.lesraisinsadd.m202_reload",
+      "sounds": [
+         { "name": "lesraisinsadd:item/m202_reload" }
+      ]
+   },
+   "item.lok1_fire": {
+      "subtitle": "subtitle.lesraisinsadd.lok1_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/lok1_fire" }
+      ]
+   },
+   "item.lok1_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.lok1_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/lok1_inspect" }
+      ]
+   },
+   "item.lok1_reload_empty": {
+      "subtitle": "subtitle.lesraisinsadd.lok1_reload_empty",
+      "sounds": [
+         { "name": "lesraisinsadd:item/lok1_reload_empty" }
+      ]
+   },
+   "item.lok1_reload_norm": {
+      "subtitle": "subtitle.lesraisinsadd.lok1_reload_norm",
+      "sounds": [
+         { "name": "lesraisinsadd:item/lok1_reload_norm" }
+      ]
+   },
+   "item.the_last_word_draw": {
+      "subtitle": "subtitle.lesraisinsadd.the_last_word_draw",
+      "sounds": [
+         { "name": "lesraisinsadd:item/the_last_word_draw" }
+      ]
+   },
+   "item.the_last_word_fire": {
+      "subtitle": "subtitle.lesraisinsadd.the_last_word_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/the_last_word_fire" }
+      ]
+   },
+   "item.the_last_word_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.the_last_word_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/the_last_word_inspect" }
+      ]
+   },
+   "item.the_last_word_reload": {
+      "subtitle": "subtitle.lesraisinsadd.the_last_word_reload",
+      "sounds": [
+         { "name": "lesraisinsadd:item/the_last_word_reload" }
+      ]
    }
 }
