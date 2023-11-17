@@ -51,6 +51,12 @@ public class ModelLoader {
     public static SkinLoader THE_FIRST_CURSE = register(new SkinLoader(ModItems.THE_FIRST_CURSE.getId(),
             BODY,BULLET,MAG_1,MAG_2,MAG_3));
 
+    public static SkinLoader FLINTLOCK = register(new SkinLoader(ModItems.FLINTLOCK.getId(),
+            BODY,BOTTLE,BULLET,HAMMER,PLATE,STICK,
+            GRIP_LIGHT,GRIP_TACTICAL,
+            RAIL_DEFAULT,RAIL_EXTENDED,
+            STOCK_DEFAULT,STOCK_HEAVY,STOCK_LIGHT,STOCK_TACTICAL));
+
     public static SkinLoader register(SkinLoader skinLoader){
         SkinLoader.register(skinLoader.getGun(),skinLoader);
         return skinLoader;

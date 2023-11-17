@@ -30,6 +30,8 @@ public class ModItems {
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> LOK1 = REGISTER.register("lok_1",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
+    public static final RegistryObject<GunItem> FLINTLOCK = REGISTER.register("flintlock",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
 
     public static final RegistryObject<GunItem> SVD = REGISTER.register("svd",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SNIPER)));

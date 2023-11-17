@@ -26,7 +26,8 @@ public enum LrModelComponent implements IModelComponent {
     SIGHT_LEFT("sight_left"),
     SIGHT_RIGHT("sight_right"),
     BOTTLE("bottle"),
-    STICK("stick")
+    STICK("stick"),
+    PLATE("plate")
     ;
     public final String key;
     LrModelComponent(String key){
