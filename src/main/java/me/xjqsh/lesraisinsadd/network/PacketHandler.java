@@ -1,0 +1,33 @@
+package me.xjqsh.lesraisinsadd.network;
+
+
+import me.xjqsh.lesraisinsadd.Reference;
+import me.xjqsh.lesraisinsadd.network.message.SDefeatSpEffect;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.network.NetworkRegistry;
+import net.minecraftforge.fml.network.simple.SimpleChannel;
+
+public class PacketHandler {
+    public static final String PROTOCOL_VERSION = "1";
+    private static SimpleChannel playChannel;
+    private static int nextMessageId = 0;
+
+    public static void init() {
+        playChannel = NetworkRegistry.ChannelBuilder
+                .named(new ResourceLocation(Reference.MOD_ID, "play"))
+                .networkProtocolVersion(() -> PROTOCOL_VERSION)
+                .clientAcceptedVersions(PROTOCOL_VERSION::equals)
+                .serverAcceptedVersions(PROTOCOL_VERSION::equals)
+                .simpleChannel();
+
+        playChannel.messageBuilder(SDefeatSpEffect.class,nextMessageId++)
+                .encoder(SDefeatSpEffect::encode)
+                .decoder(SDefeatSpEffect::decode)
+                .consumer(SDefeatSpEffect::handle)
+                .add();
+    }
+
+    public static SimpleChannel getPlayChannel() {
+        return playChannel;
+    }
+}

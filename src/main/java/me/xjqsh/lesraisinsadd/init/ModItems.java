@@ -54,7 +54,8 @@ public class ModItems {
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.PISTOL).rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<GunItem> THE_FIRST_CURSE = REGISTER.register("the_first_curse",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.PISTOL).rarity(Rarity.UNCOMMON)));
-
+    public static final RegistryObject<GunItem> ACE_OF_SPADES = REGISTER.register("ace_of_spades",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.PISTOL).rarity(Rarity.UNCOMMON)));
     /*launcher*/
     public static final RegistryObject<GunItem> M202 = REGISTER.register("m202",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.HEAVY_MATERIAL)));
@@ -80,4 +81,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> M202_ROCKET = REGISTER.register("m202_rocket",
             () -> new AmmoItem(new Item.Properties().stacksTo(6).tab(GunMod.AMMO)));
+
+
+    public static final RegistryObject<Item> SEAL = REGISTER.register("seal",
+            () -> new AmmoItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP).rarity(Rarity.EPIC)));
 }

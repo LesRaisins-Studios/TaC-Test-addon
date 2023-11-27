@@ -1,4 +1,10 @@
 {
+   "kill.hun100": {
+      "subtitle": "subtitle.lesraisinsadd.kill_hun100",
+      "sounds": [
+         { "name": "lesraisinsadd:kill/ex2" }
+      ]
+   },
     "item.p90_fire": {
         "subtitle": "subtitle.lesraisinsadd.p90_fire",
         "sounds": [

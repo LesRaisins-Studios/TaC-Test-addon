@@ -1,18 +1,27 @@
 package me.xjqsh.lesraisinsadd.client.listener;
 
+import com.tac.guns.entity.DamageSourceProjectile;
+import me.xjqsh.lesraisinsadd.client.particle.Hun100Particle;
 import me.xjqsh.lesraisinsadd.event.ItemCooldownEvent;
 import me.xjqsh.lesraisinsadd.init.ModItems;
+import me.xjqsh.lesraisinsadd.init.ModParticleTypes;
 import me.xjqsh.lesraisinsadd.init.ModSounds;
 import me.xjqsh.lesraisinsadd.item.shield.FlashShieldItem;
 import me.xjqsh.lesraisinsadd.item.shield.RiotShieldItem;
+import me.xjqsh.lesraisinsadd.network.message.SDefeatSpEffect;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.particle.Particle;
+import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResultType;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -64,6 +73,18 @@ public class ClientPlayHandler {
                     .withStyle(TextFormatting.ITALIC));
             event.getToolTip().add(new TranslationTextComponent("tooltip.lesraisins.the_last_word_2")
                     .withStyle(TextFormatting.ITALIC));
+        }
+    }
+
+    public static void handle(SDefeatSpEffect effect){
+        if (Minecraft.getInstance().level != null) {
+
+            Minecraft.getInstance().level.addParticle(ModParticleTypes.Hun100.get(),
+                    effect.getX(),effect.getY(), effect.getZ(),
+                    0,0.4,0);
+
+            Minecraft.getInstance().level.playLocalSound(effect.getX(),effect.getY(),effect.getZ(),
+                    ModSounds.hun_100.get(), SoundCategory.PLAYERS,5.0f,1.0f,true);
         }
     }
 }

@@ -12,6 +12,7 @@ public class ModSounds {
     public static final DeferredRegister<SoundEvent> REGISTER = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Reference.MOD_ID);
     public static final RegistryObject<SoundEvent> flash_shield_charged = register("item.shield_charged");
     public static final RegistryObject<SoundEvent> flash_shield_fire = register("item.shield_fire");
+    public static final RegistryObject<SoundEvent> hun_100 = register("kill.hun100");
     private static RegistryObject<SoundEvent> register(String key) {
         return REGISTER.register(key, () -> new SoundEvent(new ResourceLocation(Reference.MOD_ID, key)));
     }

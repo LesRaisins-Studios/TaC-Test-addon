@@ -1,0 +1,54 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"5": "lesraisinsadd:items/ace_of_spades/aiming",
+		"particle": "lesraisinsadd:items/ace_of_spades/aiming"
+	},
+	"elements": [
+		{
+			"from": [7.56312, 15.90968, 4.56608],
+			"to": [7.75062, 16.15968, 4.56608],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.67249, 16.0936, 4.02021]},
+			"faces": {
+				"south": {"uv": [0.125, 4.5, 4.15625, 11.03125], "texture": "#5"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 1.5, -3.5],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"ground": {
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"gui": {
+			"rotation": [25, -145, 0],
+			"translation": [-0.25, 1.5, 0],
+			"scale": [1.1, 1.1, 1.1]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"translation": [1, 1.75, -2.25],
+			"scale": [1.2, 1.2, 1.2]
+		}
+	},
+	"groups": [
+		{
+			"name": "Root",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"nbt": "{}",
+			"children": [
+				{
+					"name": "Sight-left",
+					"origin": [7.99861, 18.54672, 14.83224],
+					"color": 0,
+					"nbt": "{}",
+					"children": [0]
+				}
+			]
+		}
+	]
+}

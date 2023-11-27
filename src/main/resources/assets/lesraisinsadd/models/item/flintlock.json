@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "lesraisinsadd:items/hotbar_icons/aug"
+		"layer0": "lesraisinsadd:items/hotbar_icons/flintlock"
 	},
 	"display": {
 		"thirdperson_righthand": {
@@ -15,7 +15,7 @@
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"firstperson_righthand": {
-			"translation": [-5.75, 2.75, -20.5]
+			"translation": [-5.75, 3.5, -10]
 		},
 		"firstperson_lefthand": {
 			"translation": [-6, 0, -5]

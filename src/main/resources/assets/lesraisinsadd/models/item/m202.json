@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "tac:items/hotbar_icons/rpg7"
+		"layer0": "lesraisinsadd:items/hotbar_icons/m202"
 	},
 	"display": {
 		"thirdperson_righthand": {
@@ -14,7 +14,7 @@
 			"scale": [0.75, 0.75, 0.75]
 		},
 		"firstperson_righthand": {
-			"translation": [2.25, 5, 5]
+			"translation": [-3, 5.75, 5.25]
 		},
 		"firstperson_lefthand": {
 			"translation": [-5, 8.75, 1],

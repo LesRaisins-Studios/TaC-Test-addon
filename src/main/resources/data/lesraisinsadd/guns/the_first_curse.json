@@ -2,7 +2,7 @@
   "general": {
     "auto": true,
     "rate": 270,
-    "rateSelector": [1,2],
+    "rateSelector": [1],
     "burstCount": 8,
     "burstRate": 120,
     "gripType": "tac:one_handed_m1911",

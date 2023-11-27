@@ -1,7 +1,7 @@
 {
   "general": {
     "auto": true,
-    "rate": 720,
+    "rate": 50,
     "rateSelector": [1],
     "gripType": "tac:two_handed_ak47",
     "recoilAngle": 2.65,
@@ -23,7 +23,7 @@
   "projectile": {
     "item": "tac:nato_556_bullet",
     "visible": false,
-    "damage": 8.8,
+    "damage": 20,
     "decayStart": 0.05,
     "minDecayMultiplier": 0.2,
     "decayEnd": 0.75,
@@ -35,18 +35,18 @@
   "reloads": {
     "magFed": true,
     "maxAmmo": 1,
-    "reloadMagTimer": 160,
-    "additionalReloadEmptyMagTimer": 20,
+    "reloadMagTimer": 166,
+    "additionalReloadEmptyMagTimer": 0,
     "maxAdditionalAmmoPerOC": [5, 7, 10],
     "preReloadPauseTicks": 0,
     "openBolt": true
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.aug_fire",
-    "reloadNormal": "lesraisinsadd:item.aug_reload_norm",
-    "reloadEmpty": "lesraisinsadd:item.aug_reload_empty",
-    "draw": "tac:animation.ak47_draw",
-    "inspect": "lesraisinsadd:item.aug_inspect",
+    "fire": "lesraisinsadd:item.flintlock_fire",
+    "reloadNormal": "lesraisinsadd:item.flintlock_reload",
+    "reloadEmpty": "lesraisinsadd:item.flintlock_reload",
+    "draw": "lesraisinsadd:item.flintlock_draw",
+    "inspect": "lesraisinsadd:item.flintlock_inspect",
     "cock": "tac:item.pistol.cock",
     "silencedFire": "tac:item.ak47_fire_s"
   },
@@ -57,23 +57,6 @@
       "trailAdjust": 1.325,
       "size": 0.8
     },
-    "shellCasing": {
-      "tickLife":10,
-      "yOffset": 1,
-      "xOffset": 0,
-      "zOffset": 7,
-      "scale": 1,
-      "velocityX": 8,
-      "velocityY": 1,
-      "velocityZ": -0.5,
-      "rVelocityX": 0,
-      "rVelocityY": 1.25,
-      "rVelocityZ": 0.0,
-      "aVelocityX": 45.0,
-      "aVelocityY": -90.0,
-      "aVelocityZ": 15.0,
-      "casingModel": "tac:special/shell_large"
-    },
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,
     "hipfireRecoilScale": 1.0,
@@ -82,23 +65,18 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 11.7,
-      "zOffset": -0.8
+      "yOffset": 8.4,
+      "zOffset": -4.8
     },
     "attachments": {
-      "barrel": {
-        "yOffset": -100829.84,
-        "zOffset": -11.55,
-        "scale": 1.00
-      },
-      "extendedMag": {
-        "yOffset": 1000.89,
-        "zOffset": 5.35,
-        "scale": 0.0
+      "stock": {
+        "yOffset": 7.75,
+        "zOffset": -22.05,
+        "scale": 0.00
       },
       "scope": {
-        "yOffset": 9.97,
-        "zOffset": 2.0,
+        "yOffset": 7.7,
+        "zOffset": 0.0,
         "scale": 1.0
       },
       "underBarrel": {

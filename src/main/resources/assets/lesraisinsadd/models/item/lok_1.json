@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "lesraisinsadd:items/hotbar_icons/aug"
+		"layer0": "lesraisinsadd:items/hotbar_icons/lok_1"
 	},
 	"display": {
 		"thirdperson_righthand": {

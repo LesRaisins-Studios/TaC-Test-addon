@@ -1,10 +1,8 @@
 {
   "general": {
     "auto": true,
-    "rate": 270,
+    "rate": 225,
     "rateSelector": [1,2],
-    "burstCount": 8,
-    "burstRate": 120,
     "gripType": "tac:one_handed_m1911",
     "recoilAngle": 7.355,
     "horizontalRecoilAngle": 5.25,
