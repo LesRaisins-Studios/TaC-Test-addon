@@ -5,6 +5,7 @@ import com.tac.guns.client.render.gun.ModelOverrides;
 import com.tac.guns.common.ProjectileManager;
 import com.tac.guns.entity.MissileEntity;
 
+import me.xjqsh.lesraisinsadd.client.LRKeys;
 import me.xjqsh.lesraisinsadd.client.render.ArrowRender;
 import me.xjqsh.lesraisinsadd.client.render.ModelLoader;
 import me.xjqsh.lesraisinsadd.client.render.animation.*;
@@ -127,5 +128,7 @@ public class LesRaisinsTaCAddon {
         FLINTLOCKAnimationController.getInstance();
 
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.ARROW.get(), ArrowRender::new);
+
+        LRKeys.init();
     }
 }

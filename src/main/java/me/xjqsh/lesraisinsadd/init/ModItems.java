@@ -8,6 +8,7 @@ import com.tac.guns.item.TransitionalTypes.TimelessAmmoItem;
 import com.tac.guns.item.TransitionalTypes.TimelessGunItem;
 import com.tac.guns.item.TransitionalTypes.TimelessPistolGunItem;
 import me.xjqsh.lesraisinsadd.Reference;
+import me.xjqsh.lesraisinsadd.item.AceItem;
 import me.xjqsh.lesraisinsadd.item.BulletProofVestItem;
 import me.xjqsh.lesraisinsadd.item.CustomArmorMaterial;
 import me.xjqsh.lesraisinsadd.item.shield.FlashShieldItem;
@@ -55,7 +56,10 @@ public class ModItems {
     public static final RegistryObject<GunItem> THE_FIRST_CURSE = REGISTER.register("the_first_curse",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.PISTOL).rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<GunItem> ACE_OF_SPADES = REGISTER.register("ace_of_spades",
-            () -> new TimelessGunItem(properties -> properties.tab(GunMod.PISTOL).rarity(Rarity.UNCOMMON)));
+            () -> new AceItem(properties -> properties.tab(GunMod.PISTOL).rarity(Rarity.UNCOMMON)));
+//    public static final RegistryObject<GunItem> BULLDOG = REGISTER.register("bulldog",
+//            () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL)));
+
     /*launcher*/
     public static final RegistryObject<GunItem> M202 = REGISTER.register("m202",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.HEAVY_MATERIAL)));
@@ -84,5 +88,5 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> SEAL = REGISTER.register("seal",
-            () -> new AmmoItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP).rarity(Rarity.EPIC)));
+            () -> new Item(new Item.Properties().stacksTo(1).tab(GunMod.GROUP).rarity(Rarity.EPIC)));
 }

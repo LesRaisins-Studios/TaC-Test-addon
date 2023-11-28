@@ -15,6 +15,12 @@
     "item.lesraisinsadd.bulletproof_vest": "Bulletproof Vest",
     "item.lesraisinsadd.crossbow_arrow": "Crossbow Arrow",
     "item.lesraisinsadd.the_last_word": "THE LAST WORD",
-    "tooltip.lesraisins.the_last_word": "",
+    "info.lesraisins.more_effect_gunitem": "Hold [%s] to display special effects",
+    "key.lesraisins.more_effect_hold": "Display gun's special effect",
+    "sp.lesraisins.perk.solid": "Intrinsic perk",
+    "sp.lesraisins.memento_mori": "Memento Mori",
+    "sp.lesraisins.memento_mori.desc": "Reloading after a kill loads magazine with a few extra damage bullets.",
+    "sp.lesraisins.memento_mori.desc_2": "Enhanced Ammo: %s",
+    "tooltip.lesraisins.the_last_word_1": "",
     "tooltip.lesraisins.the_last_word_2": ""
 }

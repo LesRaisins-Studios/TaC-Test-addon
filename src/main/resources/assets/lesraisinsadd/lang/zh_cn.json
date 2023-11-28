@@ -11,10 +11,17 @@
     "item.lesraisinsadd.aug": "AUG突击步枪",
     "item.lesraisinsadd.sa58": "SA58突击步枪",
     "item.lesraisinsadd.crossbow": "战术弩",
-    "item.lesraisinsadd.bulletproof_vest": "防弹衣",
     "item.lesraisinsadd.marlin_1895": "MARLIN 1895杠杆步枪",
+    "item.lesraisinsadd.bulletproof_vest": "防弹衣",
     "item.lesraisinsadd.crossbow_arrow": "弩箭",
     "item.lesraisinsadd.the_last_word": "遗言",
+    "info.lesraisins.more_effect_gunitem": "按住 [%s] 以查看特殊效果",
+    "key.lesraisins.more_effect_hold": "显示枪械特殊效果",
+    "sp.lesraisins.perk.solid": "固有效果",
+    "sp.lesraisins.memento_mori": "终有一死",
+    "sp.lesraisins.memento_mori.desc": "击杀后填装会加入一下具有额外伤害的弹药",
+    "sp.lesraisins.memento_mori.desc_2": "剩余强化次数: %s",
     "tooltip.lesraisins.the_last_word_1": "“在最后的火焰熄灭之前，它是你的了，",
     "tooltip.lesraisins.the_last_word_2": "该说的话也都说完了。”"
+
 }

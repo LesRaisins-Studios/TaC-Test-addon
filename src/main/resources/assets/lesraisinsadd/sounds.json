@@ -358,5 +358,53 @@
       "sounds": [
          { "name": "lesraisinsadd:item/the_last_word_reload" }
       ]
+   },
+   "item.ace_of_spades_draw": {
+      "subtitle": "subtitle.lesraisinsadd.ace_of_spades_draw",
+      "sounds": [
+         { "name": "lesraisinsadd:item/ace_of_spades_draw" }
+      ]
+   },
+   "item.ace_of_spades_fire": {
+      "subtitle": "subtitle.lesraisinsadd.ace_of_spades_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/ace_of_spades_fire" }
+      ]
+   },
+   "item.ace_of_spades_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.ace_of_spades_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/ace_of_spades_inspect" }
+      ]
+   },
+   "item.ace_of_spades_reload": {
+      "subtitle": "subtitle.lesraisinsadd.ace_of_spades_reload",
+      "sounds": [
+         { "name": "lesraisinsadd:item/ace_of_spades_reload" }
+      ]
+   },
+   "item.flintlock_draw": {
+      "subtitle": "subtitle.lesraisinsadd.flintlock_draw",
+      "sounds": [
+         { "name": "lesraisinsadd:item/flintlock_draw" }
+      ]
+   },
+   "item.flintlock_fire": {
+      "subtitle": "subtitle.lesraisinsadd.flintlock_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/flintlock_fire" }
+      ]
+   },
+   "item.flintlock_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.flintlock_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/flintlock_inspect" }
+      ]
+   },
+   "item.flintlock_reload": {
+      "subtitle": "subtitle.lesraisinsadd.flintlock_reload",
+      "sounds": [
+         { "name": "lesraisinsadd:item/flintlock_reload" }
+      ]
    }
 }

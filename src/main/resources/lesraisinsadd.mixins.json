@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "lesraisinsadd.refmap.json",
   "mixins": [
+    "GunModifierHelperMixin",
     "LivingEntityMixin"
   ],
   "client": [
