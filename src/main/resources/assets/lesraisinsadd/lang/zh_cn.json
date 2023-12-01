@@ -22,6 +22,6 @@
     "sp.lesraisins.memento_mori.desc": "击杀后填装会加入一下具有额外伤害的弹药",
     "sp.lesraisins.memento_mori.desc_2": "剩余强化次数: %s",
     "tooltip.lesraisins.the_last_word_1": "“在最后的火焰熄灭之前，它是你的了，",
-    "tooltip.lesraisins.the_last_word_2": "该说的话也都说完了。”"
-
+    "tooltip.lesraisins.the_last_word_2": "该说的话也都说完了。”",
+    "button.lesraisins.auto_reload": "自动换弹"
 }

@@ -1,0 +1,86 @@
+{
+  "general": {
+    "rate": 600,
+    "rateSelector": [1],
+    "gripType": "tac:one_handed_m1911",
+    "recoilAngle": 7.355,
+    "horizontalRecoilAngle": 5.25,
+    "recoilKick": 1.85,
+    "recoilAdsReduction": 0.2,
+    "weaponRecoilOffset": 0.635,
+    "cameraRecoilModifier": 3.5,
+    "recoilDuration": 0.225,
+    "weightKilo": 0.95,
+
+    "spread": 1.75,
+    "firstShotSpread": 0.115,
+    "hipFireInaccuracy": 5.05,
+    "projToMinAccuracy": 4,
+    "msToAccuracyReset": 500,
+    "movementInaccuracy": 0.75
+  },
+  "projectile": {
+    "item": "tac:9mm_round",
+    "visible": false,
+    "damage": 8,
+    "decayStart": 0.15,
+    "minDecayMultiplier": 0.2,
+    "decayEnd": 0.75,
+    "size": 0.125,
+    "speed": 60,
+    "life": 2,
+    "trailLengthMultiplier": 2.75
+  },
+  "reloads": {
+    "magFed": true,
+    "maxAmmo": 15,
+    "reloadMagTimer": 36,
+    "additionalReloadEmptyMagTimer": 0,
+    "maxAdditionalAmmoPerOC": [5, 7, 10],
+    "preReloadPauseTicks": 0
+  },
+  "sounds": {
+    "fire": "lesraisinsadd:item.qsz92_fire",
+    "reloadNormal": "lesraisinsadd:item.qsz92_reload_norm",
+    "reloadEmpty": "lesraisinsadd:item.qsz92_reload_empty",
+    "draw": "lesraisinsadd:item.qsz92_draw",
+    "inspect": "lesraisinsadd:item.qsz92_inspect",
+    "cock": "tac:item.pistol.cock"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 9.0,
+      "zOffset": -20.75,
+      "trailAdjust": 1.325,
+      "size": 0.8
+    },
+    "shellCasing": {
+      "tickLife":10,
+      "yOffset": 5,
+      "xOffset": 0,
+      "zOffset": -2,
+      "scale": 1,
+      "velocityX": 8,
+      "velocityY": 1,
+      "velocityZ": -0.5,
+      "rVelocityX": 0,
+      "rVelocityY": 1.25,
+      "rVelocityZ": 0.0,
+      "aVelocityX": 45.0,
+      "aVelocityY": -90.0,
+      "aVelocityZ": 15.0,
+      "casingModel": "tac:special/shell_small"
+    },
+    "hipfireScale": 1.25,
+    "hipfireMoveScale": 0.5,
+    "hipfireRecoilScale": 1.0,
+    "showDynamicHipfire":true
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.8,
+      "yOffset": 13.00,
+      "zOffset": -6
+    }
+  }
+}

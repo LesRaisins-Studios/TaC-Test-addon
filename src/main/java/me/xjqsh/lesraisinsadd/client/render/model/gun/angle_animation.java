@@ -3,24 +3,14 @@ package me.xjqsh.lesraisinsadd.client.render.model.gun;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.tac.guns.client.gunskin.GunSkin;
 import com.tac.guns.client.gunskin.SkinManager;
-import com.tac.guns.client.handler.ShootingHandler;
-import com.tac.guns.client.render.animation.module.AnimationMeta;
-import com.tac.guns.client.render.animation.module.GunAnimationController;
 import com.tac.guns.client.render.animation.module.PlayerHandAnimation;
 import com.tac.guns.client.render.gun.SkinAnimationModel;
 import com.tac.guns.client.util.RenderUtil;
-import com.tac.guns.common.Gun;
-import com.tac.guns.item.GunItem;
-import me.xjqsh.lesraisinsadd.client.render.animation.ANGLEAnimationController;
-import me.xjqsh.lesraisinsadd.client.render.animation.QSZ92AnimationController;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.FontRenderer;
+import me.xjqsh.lesraisinsadd.client.animation.ANGLEAnimationController;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.model.ItemCameraTransforms;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.util.math.vector.Vector3f;
 
 import java.awt.*;
 

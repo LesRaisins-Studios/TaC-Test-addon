@@ -4,6 +4,7 @@ import com.tac.guns.entity.DamageSourceProjectile;
 import com.tac.guns.event.GunFireEvent;
 import com.tac.guns.event.GunReloadEvent;
 import me.xjqsh.lesraisinsadd.init.ModItems;
+import me.xjqsh.lesraisinsadd.init.ModTags;
 import me.xjqsh.lesraisinsadd.item.AceItem;
 import me.xjqsh.lesraisinsadd.item.interfaces.IDefeatAction;
 import me.xjqsh.lesraisinsadd.item.interfaces.IFireAction;
@@ -19,6 +20,7 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.Explosion;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -39,6 +41,21 @@ public class ServerPlayHandler {
                     item.broadcastBreakEvent(Hand.MAIN_HAND);
                     net.minecraftforge.event.ForgeEventFactory.onPlayerDestroyItem(entity, stack, Hand.MAIN_HAND);
                 });
+            }
+        }
+
+    }
+
+    @SubscribeEvent
+    public static void onLivingDamage(LivingDamageEvent event){
+        if(event.isCanceled())return;
+
+        if(event.getSource() instanceof DamageSourceProjectile){
+            if(!event.getEntity().getType().is(ModTags.caster))return;
+            DamageSourceProjectile source = (DamageSourceProjectile) event.getSource();
+            ItemStack weapon = source.getWeapon();
+            if(weapon.getItem().equals(ModItems.ENCORE.get())){
+                event.setAmount(event.getAmount()*2);
             }
         }
 

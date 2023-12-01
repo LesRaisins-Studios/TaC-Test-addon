@@ -2,12 +2,9 @@ package me.xjqsh.lesraisinsadd.client.listener;
 
 import com.tac.guns.client.render.animation.module.GunAnimationController;
 import com.tac.guns.event.GunFireEvent;
-import me.xjqsh.lesraisinsadd.client.render.animation.IFireController;
+import me.xjqsh.lesraisinsadd.client.animation.IFireController;
 import me.xjqsh.lesraisinsadd.init.ModItems;
-import me.xjqsh.lesraisinsadd.init.ModParticleTypes;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.particle.Particle;
-import net.minecraft.client.particle.ParticleManager;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.math.vector.Vector3d;

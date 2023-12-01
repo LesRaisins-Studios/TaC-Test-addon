@@ -1,0 +1,72 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 270,
+    "rateSelector": [1],
+    "gripType": "tac:one_handed_m1911",
+    "recoilAngle": 7.355,
+    "horizontalRecoilAngle": 5.25,
+    "recoilKick": 1.85,
+    "recoilAdsReduction": 0.2,
+    "weaponRecoilOffset": 0.635,
+    "cameraRecoilModifier": 3.5,
+    "recoilDuration": 0.225,
+    "weightKilo": 0.95,
+
+    "spread": 1.75,
+    "firstShotSpread": 0.115,
+    "hipFireInaccuracy": 5.05,
+    "projToMinAccuracy": 4,
+    "msToAccuracyReset": 500,
+    "movementInaccuracy": 0.75
+  },
+  "projectile": {
+    "item": "lesraisinsadd:origin_bullet",
+    "visible": false,
+    "damage": 12,
+    "decayStart": 0.15,
+    "minDecayMultiplier": 0.2,
+    "decayEnd": 0.75,
+    "size": 0.125,
+    "speed": 20,
+    "life": 2,
+    "trailLengthMultiplier": 2.75,
+    "trailColor": -65281
+  },
+  "reloads": {
+    "magFed": true,
+    "maxAmmo": 1,
+    "reloadMagTimer": 36,
+    "additionalReloadEmptyMagTimer": 0,
+    "maxAdditionalAmmoPerOC": [5, 7, 10],
+    "preReloadPauseTicks": 0,
+    "openBolt": true
+  },
+  "sounds": {
+    "fire": "lesraisinsadd:item.ace_of_spades_fire",
+    "reloadNormal": "lesraisinsadd:item.ace_of_spades_reload",
+    "reloadEmpty": "lesraisinsadd:item.ace_of_spades_reload",
+    "draw": "lesraisinsadd:item.ace_of_spades_draw",
+    "inspect": "lesraisinsadd:item.ace_of_spades_inspect",
+    "cock": "tac:item.pistol.cock"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 18.0,
+      "zOffset": -15.75,
+      "trailAdjust": 1.325,
+      "size": 0.8
+    },
+    "hipfireScale": 1.25,
+    "hipfireMoveScale": 0.5,
+    "hipfireRecoilScale": 1.0,
+    "showDynamicHipfire":true
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.8,
+      "yOffset": 16.20,
+      "zOffset": 2
+    }
+  }
+}

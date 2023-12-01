@@ -1,7 +1,10 @@
 package me.xjqsh.lesraisinsadd.client.listener;
 
-import com.tac.guns.entity.DamageSourceProjectile;
-import me.xjqsh.lesraisinsadd.client.particle.Hun100Particle;
+
+import com.tac.guns.client.Keys;
+import com.tac.guns.client.render.animation.module.GunAnimationController;
+import com.tac.guns.item.TransitionalTypes.TimelessGunItem;
+import me.xjqsh.lesraisinsadd.Config;
 import me.xjqsh.lesraisinsadd.event.ItemCooldownEvent;
 import me.xjqsh.lesraisinsadd.init.ModItems;
 import me.xjqsh.lesraisinsadd.init.ModParticleTypes;
@@ -9,19 +12,22 @@ import me.xjqsh.lesraisinsadd.init.ModSounds;
 import me.xjqsh.lesraisinsadd.item.shield.FlashShieldItem;
 import me.xjqsh.lesraisinsadd.item.shield.RiotShieldItem;
 import me.xjqsh.lesraisinsadd.network.message.SDefeatSpEffect;
+import net.minecraft.client.AbstractOption;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.particle.Particle;
-import net.minecraft.entity.Entity;
+import net.minecraft.client.gui.screen.MouseSettingsScreen;
+import net.minecraft.client.gui.widget.list.OptionsRowList;
+import net.minecraft.client.settings.BooleanOption;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.SoundCategory;
-import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.client.event.GuiScreenEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -87,4 +93,53 @@ public class ClientPlayHandler {
                     ModSounds.hun_100.get(), SoundCategory.PLAYERS,5.0f,1.0f,true);
         }
     }
+
+    private static boolean isInGame() {
+        Minecraft mc = Minecraft.getInstance();
+        if (mc.player != null) {
+            if (mc.overlay != null) {
+                return false;
+            } else if (mc.screen != null) {
+                return false;
+            } else {
+                return mc.mouseHandler.isMouseGrabbed() && mc.isWindowActive();
+            }
+        } else {
+            return false;
+        }
+    }
+
+    @SubscribeEvent
+    public static void onTick(TickEvent.ClientTickEvent event){
+        if(event.phase!= TickEvent.Phase.END)return;
+        if(!Config.client.autoReload.get())return;
+        if (isInGame()) {
+            Minecraft mc = Minecraft.getInstance();
+            PlayerEntity player = mc.player;
+            if (player != null) {
+                ItemStack heldItem = player.getMainHandItem();
+                if (heldItem.getItem() instanceof TimelessGunItem) {
+                    if(GunAnimationController.fromItem(heldItem.getItem()).isAnimationRunning())return;
+                    if (heldItem.getOrCreateTag().getInt("AmmoCount") == 0) {
+                        Keys.RELOAD.setDown(true);
+                        Keys.RELOAD.setDown(false);
+                    }
+                }
+
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onScreenInit(GuiScreenEvent.InitGuiEvent.Post event) {
+        if (event.getGui() instanceof MouseSettingsScreen) {
+            MouseSettingsScreen screen = (MouseSettingsScreen) event.getGui();
+            OptionsRowList list = screen.list;
+            list.addSmall(new AbstractOption[]{
+                new BooleanOption("button.lesraisins.auto_reload",unused-> Config.client.autoReload.get(),
+                        (unused, newValue)->Config.client.autoReload.set(newValue))
+            });
+        }
+    }
+
 }

@@ -4,21 +4,21 @@ package me.xjqsh.lesraisinsadd;
 import com.tac.guns.client.render.gun.ModelOverrides;
 import com.tac.guns.common.ProjectileManager;
 import com.tac.guns.entity.MissileEntity;
-
 import me.xjqsh.lesraisinsadd.client.LRKeys;
+import me.xjqsh.lesraisinsadd.client.animation.*;
 import me.xjqsh.lesraisinsadd.client.render.ArrowRender;
 import me.xjqsh.lesraisinsadd.client.render.ModelLoader;
-import me.xjqsh.lesraisinsadd.client.render.animation.*;
 import me.xjqsh.lesraisinsadd.client.render.model.gun.*;
 import me.xjqsh.lesraisinsadd.entity.CrossBowArrowEntity;
-import me.xjqsh.lesraisinsadd.init.ModEntities;
-import me.xjqsh.lesraisinsadd.init.ModItems;
-import me.xjqsh.lesraisinsadd.init.ModParticleTypes;
-import me.xjqsh.lesraisinsadd.init.ModSounds;
+import me.xjqsh.lesraisinsadd.init.*;
 import me.xjqsh.lesraisinsadd.network.PacketHandler;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
@@ -31,18 +31,21 @@ public class LesRaisinsTaCAddon {
     private static final Logger LOGGER = LogManager.getLogger();
 
     public LesRaisinsTaCAddon() {
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.clientSpec);
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.REGISTER.register(bus);
         ModSounds.REGISTER.register(bus);
         ModEntities.REGISTER.register(bus);
         ModParticleTypes.REGISTER.register(bus);
+        ModBlocks.REGISTER.register(bus);
 
         bus.addListener(this::onClientSetup);
         bus.addListener(this::onCommonSetup);
         bus.addListener(this::onCommonSetupComplete);
-        ModelLoader.init();
 
+        ModelLoader.init();
+        ModTags.init();
     }
     private void onCommonSetup(FMLCommonSetupEvent event){
         PacketHandler.init();
@@ -108,7 +111,16 @@ public class LesRaisinsTaCAddon {
                 new ace_of_spades_animation());
         ModelOverrides.register(ModItems.FLINTLOCK.get(),
                 new flintlock_animation());
-
+        ModelOverrides.register(ModItems.ENCORE.get(),
+                new encore_animation());
+        ModelOverrides.register(ModItems.MG42.get(),
+                new mg42_animation());
+        ModelOverrides.register(ModItems.NTW20.get(),
+                new ntw20_animation());
+        ModelOverrides.register(ModItems.BULLDOG.get(),
+                new bulldog_animation());
+        ModelOverrides.register(ModItems.HK433.get(),
+                new hk433_animation());
 
         P90AnimationController.getInstance();
         PP19AnimationController.getInstance();
@@ -126,9 +138,17 @@ public class LesRaisinsTaCAddon {
         THEFIRSTCURSEAnimationController.getInstance();
         ACEOFSPADESAnimationController.getInstance();
         FLINTLOCKAnimationController.getInstance();
+        ENCOREAnimationController.getInstance();
+        MG42AnimationController.getInstance();
+        NTW20AnimationController.getInstance();
+        BULLDOGAnimationController.getInstance();
+        HK433AnimationController.getInstance();
 
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.ARROW.get(), ArrowRender::new);
 
         LRKeys.init();
+        event.enqueueWork(() -> {
+            RenderTypeLookup.setRenderLayer(ModBlocks.obj15Block.get(), RenderType.cutout());
+        });
     }
 }

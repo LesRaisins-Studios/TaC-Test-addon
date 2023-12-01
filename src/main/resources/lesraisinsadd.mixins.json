@@ -6,7 +6,8 @@
   "refmap": "lesraisinsadd.refmap.json",
   "mixins": [
     "GunModifierHelperMixin",
-    "LivingEntityMixin"
+    "LivingEntityMixin",
+    "ProjectileEntityMixin"
   ],
   "client": [
     "CooldownTrackerMixin"

@@ -1,0 +1,29 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "lesraisinsadd:items/hotbar_icons/angle"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-0.32, 2.21, 4.35],
+			"translation": [0.25, 0, -1.25],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"thirdperson_lefthand": {
+			"translation": [-1.75, 1.25, -3.25],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"firstperson_righthand": {
+			"translation": [-3, -0.25, -13.5]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"scale": [0.6, 0.6, 0.6]
+		}
+	}
+}

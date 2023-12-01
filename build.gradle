@@ -33,12 +33,10 @@ minecraft {
     mappings channel: mapping_channel, version: mapping_version
 
     copyIdeResources = true
-
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
     runs {
         // applies to all the run configs below
         configureEach {
-            workingDirectory project.file('run')
-
             property 'forge.logging.markers', 'REGISTRIES'
 
             property 'forge.logging.console.level', 'debug'
@@ -52,12 +50,13 @@ minecraft {
 
         client {
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
+            workingDirectory project.file('run')
             property 'forge.enabledGameTestNamespaces', mod_id
         }
 
         server {
+            workingDirectory project.file('server')
             property 'forge.enabledGameTestNamespaces', mod_id
-            args '--nogui'
         }
 
         gameTestServer {

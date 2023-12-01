@@ -51,13 +51,26 @@ public class ModelLoader {
     public static SkinLoader THE_FIRST_CURSE = register(new SkinLoader(ModItems.THE_FIRST_CURSE.getId(),
             BODY,BULLET,MAG_1,MAG_2,MAG_3));
     public static SkinLoader ACE_OF_SPADES = register(new SkinLoader(ModItems.ACE_OF_SPADES.getId(),
-            BODY,BULLET,MAG_1,MAG_2,MAG_3,SIGHT_LEFT,SIGHT_RIGHT));
+            BODY,BULLET,MAG_1,MAG_2,MAG_3,SIGHT_LEFT,SIGHT_RIGHT,SMOKE));
 
     public static SkinLoader FLINTLOCK = register(new SkinLoader(ModItems.FLINTLOCK.getId(),
             BODY,BOTTLE,BULLET,HAMMER,PLATE,STICK,
             GRIP_LIGHT,GRIP_TACTICAL,
             RAIL_DEFAULT,RAIL_EXTENDED,
             STOCK_DEFAULT,STOCK_HEAVY,STOCK_LIGHT,STOCK_TACTICAL));
+    public static SkinLoader ENCORE = register(new SkinLoader(ModItems.ENCORE.getId(),
+            BODY,BULLET,HAMMER,RAIL_DEFAULT,BULLET_HEAD));
+    public static SkinLoader MG42 = register(new SkinLoader(ModItems.MG42.getId(),
+            BODY,BOLT,BULLET_CHAIN,CAP,MAG_STANDARD));
+    public static SkinLoader NTW20 = register(new SkinLoader(ModItems.NTW20.getId(),
+            BODY,BOLT,BARREL,BULLET,MAG_STANDARD,RAIL_DEFAULT));
+    public static SkinLoader BULLDOG = register(new SkinLoader(ModItems.BULLDOG.getId(),
+            BODY,HAMMER,MAG_STANDARD,RAIL_DEFAULT));
+    public static SkinLoader HK433 = register(new SkinLoader(ModItems.BULLDOG.getId(),
+            BODY,BOLT,HANDLE,
+            MAG_STANDARD,MAG_EXTENDED,
+            MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT,MUZZLE_SILENCER,
+            STOCK_LIGHT,STOCK_HEAVY,STOCK_TACTICAL));
 
     public static SkinLoader register(SkinLoader skinLoader){
         SkinLoader.register(skinLoader.getGun(),skinLoader);

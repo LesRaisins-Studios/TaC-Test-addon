@@ -6,15 +6,13 @@ import com.tac.guns.client.gunskin.SkinManager;
 import com.tac.guns.client.render.animation.module.PlayerHandAnimation;
 import com.tac.guns.client.render.gun.SkinAnimationModel;
 import com.tac.guns.client.util.RenderUtil;
-import me.xjqsh.lesraisinsadd.client.render.animation.LOK1AnimationController;
-import me.xjqsh.lesraisinsadd.client.render.animation.M202AnimationController;
+import me.xjqsh.lesraisinsadd.client.animation.LOK1AnimationController;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.model.ItemCameraTransforms;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.vector.Vector3f;
 
 import java.awt.*;

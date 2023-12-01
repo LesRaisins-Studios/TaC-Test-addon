@@ -1,0 +1,105 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 720,
+    "rateSelector": [2, 1],
+    "gripType": "tac:two_handed_ak47",
+    "recoilAngle": 2.65,
+    "horizontalRecoilAngle": 0.95,
+    "recoilKick": 1.885,
+    "recoilAdsReduction": 0.25,
+    "weaponRecoilOffset": 0.7125,
+    "cameraRecoilModifier": 1.275,
+    "recoilDuration": 0.315,
+    "weightKilo": 5.3,
+
+    "spread": 1.4,
+    "firstShotSpread": 0.005,
+    "hipFireInaccuracy": 3.55,
+    "projToMinAccuracy": 8,
+    "msToAccuracyReset": 250,
+    "movementInaccuracy": 0.3
+  },
+  "projectile": {
+    "item": "tac:nato_556_bullet",
+    "visible": false,
+    "damage": 8.8,
+    "decayStart": 0.05,
+    "minDecayMultiplier": 0.2,
+    "decayEnd": 0.75,
+    "size": 0.1,
+    "speed": 100,
+    "trailLengthMultiplier": 2.875,
+    "life": 2
+  },
+  "reloads": {
+    "magFed": true,
+    "maxAmmo": 30,
+    "reloadMagTimer": 36,
+    "additionalReloadEmptyMagTimer": 20,
+    "maxAdditionalAmmoPerOC": [5, 7, 10],
+    "preReloadPauseTicks": 0
+  },
+  "sounds": {
+    "fire": "lesraisinsadd:item.aug_fire",
+    "reloadNormal": "lesraisinsadd:item.aug_reload_norm",
+    "reloadEmpty": "lesraisinsadd:item.aug_reload_empty",
+    "draw": "tac:animation.ak47_draw",
+    "inspect": "lesraisinsadd:item.aug_inspect",
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "tac:item.ak47_fire_s"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 9.0,
+      "zOffset": -20.75,
+      "trailAdjust": 1.325,
+      "size": 0.8
+    },
+    "shellCasing": {
+      "tickLife":10,
+      "yOffset": 1,
+      "xOffset": 0,
+      "zOffset": 7,
+      "scale": 1,
+      "velocityX": 8,
+      "velocityY": 1,
+      "velocityZ": -0.5,
+      "rVelocityX": 0,
+      "rVelocityY": 1.25,
+      "rVelocityZ": 0.0,
+      "aVelocityX": 45.0,
+      "aVelocityY": -90.0,
+      "aVelocityZ": 15.0,
+      "casingModel": "tac:special/shell_large"
+    },
+    "hipfireScale": 1.25,
+    "hipfireMoveScale": 0.5,
+    "hipfireRecoilScale": 1.0,
+    "showDynamicHipfire":true
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.8,
+      "yOffset": 11.7,
+      "zOffset": -0.8
+    },
+    "attachments": {
+      "barrel": {
+        "yOffset": -100829.84,
+        "zOffset": -11.55,
+        "scale": 1.00
+      },
+      "extendedMag": {
+        "yOffset": 1000.89,
+        "zOffset": 5.35,
+        "scale": 0.0
+      },
+      "scope": {
+        "yOffset": 9.97,
+        "zOffset": 2.0,
+        "scale": 1.0
+      }
+    }
+  }
+}

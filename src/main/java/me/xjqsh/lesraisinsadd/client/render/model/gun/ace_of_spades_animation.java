@@ -11,8 +11,7 @@ import com.tac.guns.client.render.animation.module.PlayerHandAnimation;
 import com.tac.guns.client.render.gun.SkinAnimationModel;
 import com.tac.guns.client.util.RenderUtil;
 import de.javagl.jgltf.model.animation.AnimationRunner;
-import me.xjqsh.lesraisinsadd.client.render.animation.ACEOFSPADESAnimationController;
-import me.xjqsh.lesraisinsadd.client.render.animation.THELASTWORDAnimationController;
+import me.xjqsh.lesraisinsadd.client.animation.ACEOFSPADESAnimationController;
 import me.xjqsh.lesraisinsadd.item.AceItem;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.model.ItemCameraTransforms;
@@ -45,7 +44,7 @@ public class ace_of_spades_animation extends SkinAnimationModel {
         }
         matrices.popPose();
 
-        int mg = 15728880;
+        boolean flag = true;
         if(AceItem.isEnhanced(stack)){
             if (controller.isAnimationRunning()) {
                 AnimationMeta meta = controller.getPreviousAnimation();
@@ -54,12 +53,17 @@ public class ace_of_spades_animation extends SkinAnimationModel {
                     if (runner == null) return;
                     float current = runner.getAnimationManager().getCurrentTimeS();
                     if(current<1.85f){
-                        mg = light;
+                        flag = false;
                     }
                 }
             }
         }else {
-            mg = light;
+            flag = false;
+        }
+        int mg = light;
+        if(flag){
+            mg = 15728880;
+            renderSinglePart(SMOKE,ACEOFSPADESAnimationController.INDEX_MAG_3,transformType, stack, matrices, renderBuffer, mg, overlay, controller, skin);
         }
 
         renderSinglePart(BULLET,ACEOFSPADESAnimationController.INDEX_BULLET,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
