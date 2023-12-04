@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "lesraisinsadd:items/hotbar_icons/qsz92"
+		"layer0": "lesraisinsadd:items/hotbar_icons/bulldog"
 	},
 	"display": {
 		"thirdperson_righthand": {
@@ -15,7 +15,7 @@
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"firstperson_righthand": {
-			"translation": [-3.25, -2.25, -16.75]
+			"translation": [-3.25, 3, -6.75]
 		},
 		"ground": {
 			"translation": [0, 3, 0],

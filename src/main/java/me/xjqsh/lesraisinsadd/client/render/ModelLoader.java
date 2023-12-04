@@ -9,6 +9,7 @@ import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.LOADER;
 import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.WHEEL_L;
 import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.WHEEL_R;
 
+@SuppressWarnings("unused")
 public class ModelLoader {
     public static SkinLoader P90 = register(new SkinLoader(ModItems.P90.getId(),
             BODY,MAG_STANDARD,BOLT,
@@ -66,7 +67,7 @@ public class ModelLoader {
             BODY,BOLT,BARREL,BULLET,MAG_STANDARD,RAIL_DEFAULT));
     public static SkinLoader BULLDOG = register(new SkinLoader(ModItems.BULLDOG.getId(),
             BODY,HAMMER,MAG_STANDARD,RAIL_DEFAULT));
-    public static SkinLoader HK433 = register(new SkinLoader(ModItems.BULLDOG.getId(),
+    public static SkinLoader HK433 = register(new SkinLoader(ModItems.HK433.getId(),
             BODY,BOLT,HANDLE,
             MAG_STANDARD,MAG_EXTENDED,
             MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT,MUZZLE_SILENCER,

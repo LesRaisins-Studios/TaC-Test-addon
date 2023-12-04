@@ -23,7 +23,7 @@
   "projectile": {
     "item": "lesraisinsadd:origin_bullet",
     "visible": false,
-    "damage": 12,
+    "damage": 40,
     "decayStart": 0.15,
     "minDecayMultiplier": 0.2,
     "decayEnd": 0.75,
@@ -43,17 +43,17 @@
     "openBolt": true
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.ace_of_spades_fire",
-    "reloadNormal": "lesraisinsadd:item.ace_of_spades_reload",
-    "reloadEmpty": "lesraisinsadd:item.ace_of_spades_reload",
-    "draw": "lesraisinsadd:item.ace_of_spades_draw",
-    "inspect": "lesraisinsadd:item.ace_of_spades_inspect",
+    "fire": "lesraisinsadd:item.encore_fire",
+    "reloadNormal": "lesraisinsadd:item.encore_reload",
+    "reloadEmpty": "lesraisinsadd:item.encore_reload",
+    "draw": "lesraisinsadd:item.encore_draw",
+    "inspect": "lesraisinsadd:item.encore_inspect",
     "cock": "tac:item.pistol.cock"
   },
   "display": {
     "flash": {
-      "yOffset": 18.0,
-      "zOffset": -15.75,
+      "yOffset": 9.0,
+      "zOffset": -20.75,
       "trailAdjust": 1.325,
       "size": 0.8
     },
@@ -65,8 +65,15 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 16.20,
-      "zOffset": 2
+      "yOffset": 13.20,
+      "zOffset": -10
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 9.97,
+        "zOffset": 2.0,
+        "scale": 1.0
+      }
     }
   }
 }

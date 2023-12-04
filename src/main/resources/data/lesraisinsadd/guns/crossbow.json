@@ -22,15 +22,15 @@
   },
   "projectile": {
     "item": "lesraisinsadd:crossbow_arrow",
-    "visible": true,
-    "gravity": false,
+    "visible": false,
     "damage": 36,
-    "size": 1,
-    "speed": 4,
-    "trailLengthMultiplier": 0,
-    "life": 40,
-    "damageReduceOverLife": false,
-    "ricochet": false
+    "decayStart": 0.02,
+    "minDecayMultiplier": 0.2,
+    "decayEnd": 0.6,
+    "size": 0.125,
+    "speed": 10.5,
+    "life": 18,
+    "trailLengthMultiplier": 0
   },
   "reloads": {
     "magFed": true,

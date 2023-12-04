@@ -23,7 +23,7 @@ public class NTW20AnimationController extends BoltActionAnimationController{
     public static final AnimationMeta RELOAD_EMPTY = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/ntw20_reload_empty.gltf"));
     public static final AnimationMeta RELOAD_NORM = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/ntw20_reload_norm.gltf"));
 
-    public static final AnimationMeta PULL_BOLT = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/ntw20_fire.gltf"));
+    public static final AnimationMeta PULL_BOLT = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/ntw20_bolt.gltf"));
     public static final AnimationMeta INSPECT = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/ntw20_inspect.gltf"));
     public static final AnimationMeta DRAW = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/ntw20_draw.gltf"));
     public static final AnimationMeta STATIC = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/ntw20_static.gltf"));

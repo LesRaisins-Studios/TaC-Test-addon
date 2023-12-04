@@ -34,33 +34,34 @@
   },
   "reloads": {
     "magFed": true,
-    "maxAmmo": 30,
+    "maxAmmo": 60,
     "reloadMagTimer": 36,
     "additionalReloadEmptyMagTimer": 20,
     "maxAdditionalAmmoPerOC": [5, 7, 10],
-    "preReloadPauseTicks": 0
+    "preReloadPauseTicks": 0,
+    "openBolt": true
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.aug_fire",
-    "reloadNormal": "lesraisinsadd:item.aug_reload_norm",
-    "reloadEmpty": "lesraisinsadd:item.aug_reload_empty",
-    "draw": "tac:animation.ak47_draw",
-    "inspect": "lesraisinsadd:item.aug_inspect",
+    "fire": "lesraisinsadd:item.mg42_fire",
+    "reloadNormal": "lesraisinsadd:item.mg42_reload",
+    "reloadEmpty": "lesraisinsadd:item.mg42_reload",
+    "draw": "lesraisinsadd:item.mg42_draw",
+    "inspect": "lesraisinsadd:item.mg42_inspect",
     "cock": "tac:item.pistol.cock",
     "silencedFire": "tac:item.ak47_fire_s"
   },
   "display": {
     "flash": {
-      "yOffset": 9.0,
-      "zOffset": -20.75,
+      "yOffset": 5.0,
+      "zOffset": -23.75,
       "trailAdjust": 1.325,
       "size": 0.8
     },
     "shellCasing": {
       "tickLife":10,
-      "yOffset": 1,
+      "yOffset": -1.5,
       "xOffset": 0,
-      "zOffset": 7,
+      "zOffset": 4,
       "scale": 1,
       "velocityX": 8,
       "velocityY": 1,
@@ -81,7 +82,7 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 11.7,
+      "yOffset": 8.8,
       "zOffset": -0.8
     },
     "attachments": {

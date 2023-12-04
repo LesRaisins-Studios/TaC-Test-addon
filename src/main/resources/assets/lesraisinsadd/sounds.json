@@ -406,5 +406,107 @@
       "sounds": [
          { "name": "lesraisinsadd:item/flintlock_reload" }
       ]
+   },
+   "item.encore_draw": {
+      "subtitle": "subtitle.lesraisinsadd.encore_draw",
+      "sounds": [
+         { "name": "lesraisinsadd:item/encore_draw" }
+      ]
+   },
+   "item.encore_fire": {
+      "subtitle": "subtitle.lesraisinsadd.encore_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/encore_fire" }
+      ]
+   },
+   "item.encore_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.encore_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/encore_inspect" }
+      ]
+   },
+   "item.encore_reload": {
+      "subtitle": "subtitle.lesraisinsadd.encore_reload",
+      "sounds": [
+         { "name": "lesraisinsadd:item/encore_reload" }
+      ]
+   },
+   "item.ntw20_draw": {
+      "subtitle": "subtitle.lesraisinsadd.ntw20_draw",
+      "sounds": [
+         { "name": "lesraisinsadd:item/ntw20_draw" }
+      ]
+   },
+   "item.ntw20_fire": {
+      "subtitle": "subtitle.lesraisinsadd.ntw20_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/ntw20_fire" }
+      ]
+   },
+   "item.ntw20_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.ntw20_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/ntw20_inspect" }
+      ]
+   },
+   "item.ntw20_reload_norm": {
+      "subtitle": "subtitle.lesraisinsadd.ntw20_reload_norm",
+      "sounds": [
+         { "name": "lesraisinsadd:item/ntw20_reload_norm" }
+      ]
+   },
+   "item.ntw20_reload_empty": {
+      "subtitle": "subtitle.lesraisinsadd.ntw20_reload_empty",
+      "sounds": [
+         { "name": "lesraisinsadd:item/ntw20_reload_empty" }
+      ]
+   },
+   "item.ntw20_bolt": {
+      "subtitle": "subtitle.lesraisinsadd.ntw20_bolt",
+      "sounds": [
+         { "name": "lesraisinsadd:item/ntw20_bolt" }
+      ]
+   },
+   "item.mg42_draw": {
+      "subtitle": "subtitle.lesraisinsadd.mg42_draw",
+      "sounds": [
+         { "name": "lesraisinsadd:item/mg42_draw" }
+      ]
+   },
+   "item.mg42_fire": {
+      "subtitle": "subtitle.lesraisinsadd.mg42_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/mg42_fire" }
+      ]
+   },
+   "item.mg42_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.mg42_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/mg42_inspect" }
+      ]
+   },
+   "item.mg42_reload": {
+      "subtitle": "subtitle.lesraisinsadd.mg42_reload",
+      "sounds": [
+         { "name": "lesraisinsadd:item/mg42_reload" }
+      ]
+   },
+   "item.bulldog_fire": {
+      "subtitle": "subtitle.lesraisinsadd.bulldog_fire",
+      "sounds": [
+         { "name": "lesraisinsadd:item/bulldog_fire" }
+      ]
+   },
+   "item.bulldog_inspect": {
+      "subtitle": "subtitle.lesraisinsadd.bulldog_inspect",
+      "sounds": [
+         { "name": "lesraisinsadd:item/bulldog_inspect" }
+      ]
+   },
+   "item.bulldog_reload": {
+      "subtitle": "subtitle.lesraisinsadd.bulldog_reload",
+      "sounds": [
+         { "name": "lesraisinsadd:item/bulldog_reload" }
+      ]
    }
 }

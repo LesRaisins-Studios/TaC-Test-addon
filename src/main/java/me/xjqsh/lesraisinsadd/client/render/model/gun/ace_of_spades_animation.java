@@ -45,13 +45,14 @@ public class ace_of_spades_animation extends SkinAnimationModel {
         matrices.popPose();
 
         boolean flag = true;
+        float current = 3;
         if(AceItem.isEnhanced(stack)){
             if (controller.isAnimationRunning()) {
                 AnimationMeta meta = controller.getPreviousAnimation();
                 if (meta!=null && meta.equals(ACEOFSPADESAnimationController.RELOAD)){
                     AnimationRunner runner = Animations.getAnimationRunner(meta.getResourceLocation());
                     if (runner == null) return;
-                    float current = runner.getAnimationManager().getCurrentTimeS();
+                    current = runner.getAnimationManager().getCurrentTimeS();
                     if(current<1.85f){
                         flag = false;
                     }
@@ -63,7 +64,9 @@ public class ace_of_spades_animation extends SkinAnimationModel {
         int mg = light;
         if(flag){
             mg = 15728880;
-            renderSinglePart(SMOKE,ACEOFSPADESAnimationController.INDEX_MAG_3,transformType, stack, matrices, renderBuffer, mg, overlay, controller, skin);
+            if(current>2.0) {
+                renderSinglePart(SMOKE,ACEOFSPADESAnimationController.INDEX_BODY,transformType, stack, matrices, renderBuffer, mg, overlay, controller, skin);
+            }
         }
 
         renderSinglePart(BULLET,ACEOFSPADESAnimationController.INDEX_BULLET,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);

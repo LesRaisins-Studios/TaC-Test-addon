@@ -23,7 +23,7 @@
   "projectile": {
     "item": "tac:762x54",
     "visible": false,
-    "damage": 32,
+    "damage": 70,
     "decayStart": 0.12,
     "minDecayMultiplier": 0.55,
     "decayEnd": 1,
@@ -42,19 +42,18 @@
     "preReloadPauseTicks": 0
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.svd_fire",
-    "reloadNormal": "lesraisinsadd:item.svd_reload_norm",
-    "reloadEmpty": "lesraisinsadd:item.svd_reload_empty",
-    "draw": "tac:animation.ak47_draw",
-    "inspect": "lesraisinsadd:item.svd_inspect",
+    "fire": "lesraisinsadd:item.ntw20_fire",
+    "reloadNormal": "lesraisinsadd:item.ntw20_reload_norm",
+    "reloadEmpty": "lesraisinsadd:item.ntw20_reload_empty",
+    "draw": "lesraisinsadd:item.ntw20_draw",
+    "inspect": "lesraisinsadd:item.ntw20_inspect",
     "cock": "lesraisinsadd:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s",
-    "pullBolt": "tac:animation.m24_bolt"
+    "pullBolt": "lesraisinsadd:item.ntw20_bolt"
   },
   "display": {
     "flash": {
-      "yOffset": 6.0,
-      "zOffset": -20.75,
+      "yOffset": 8.0,
+      "zOffset": -60.75,
       "trailAdjust": 1.325,
       "size": 0.8
     },
@@ -83,18 +82,18 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 8.10,
-      "zOffset": -1.8
+      "yOffset": 12.50,
+      "zOffset": 4.8
     },
     "attachments": {
       "scope": {
-        "yOffset": 7.3,
-        "zOffset": 9.0,
+        "yOffset": 11.3,
+        "zOffset": -16.0,
         "scale": 1.0
       },
       "pistolScope": {
-        "yOffset": 7.35,
-        "zOffset": 10.2,
+        "yOffset": 8.35,
+        "zOffset": -3.2,
         "scale": 1.0,
         "doRenderMount": true,
         "doOnSlideMovement": false

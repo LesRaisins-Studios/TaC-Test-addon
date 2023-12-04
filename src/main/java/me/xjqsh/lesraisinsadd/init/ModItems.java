@@ -95,6 +95,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> ORIGIN = REGISTER.register("origin_bullet",
             TimelessAmmoItem::new);
+    public static final RegistryObject<Item> FLINTLOCK_BULLET = REGISTER.register("flintlock_bullet",
+            TimelessAmmoItem::new);
 
     public static final RegistryObject<Item> M202_ROCKET = REGISTER.register("m202_rocket",
             () -> new AmmoItem(new Item.Properties().stacksTo(6).tab(GunMod.AMMO)));

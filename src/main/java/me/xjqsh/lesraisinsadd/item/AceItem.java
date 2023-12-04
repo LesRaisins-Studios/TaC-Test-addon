@@ -99,6 +99,11 @@ public class AceItem extends TimelessGunItem implements IReloadAction, IDefeatAc
                     .withStyle(TextFormatting.BOLD)
                     .withStyle(isEnhanced(stack) ? TextFormatting.AQUA : TextFormatting.WHITE));
 
+            tooltip.add(new TranslationTextComponent("sp.lesraisins.firefly")
+                    .withStyle(TextFormatting.UNDERLINE)
+                    .withStyle(TextFormatting.BOLD)
+                    .withStyle(TextFormatting.WHITE));
+
             String text = (new KeybindTextComponent("key.tac.more_info_hold")).getString().toUpperCase(Locale.ENGLISH);
             tooltip.add((new TranslationTextComponent("info.tac.more_info_gunitem", text)).withStyle(TextFormatting.YELLOW));
             String text2 = (new KeybindTextComponent("key.lesraisinsadd.more_effect_hold")).getString().toUpperCase(Locale.ENGLISH);
@@ -138,6 +143,11 @@ public class AceItem extends TimelessGunItem implements IReloadAction, IDefeatAc
             tooltip.add(new TranslationTextComponent("sp.lesraisins.memento_mori.desc"));
             ITextComponent component = new StringTextComponent(""+getEnhancedAmmo(stack)).withStyle(TextFormatting.AQUA);
             tooltip.add(new TranslationTextComponent("sp.lesraisins.memento_mori.desc_2",component));
+            tooltip.add(new TranslationTextComponent("sp.lesraisins.firefly")
+                    .withStyle(TextFormatting.UNDERLINE)
+                    .withStyle(TextFormatting.BOLD)
+                    .withStyle(isEnhanced(stack) ? TextFormatting.AQUA : TextFormatting.WHITE));
+            tooltip.add(new TranslationTextComponent("sp.lesraisins.firefly.desc"));
         }
     }
 

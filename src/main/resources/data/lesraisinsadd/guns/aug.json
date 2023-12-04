@@ -18,19 +18,19 @@
     "hipFireInaccuracy": 3.55,
     "projToMinAccuracy": 8,
     "msToAccuracyReset": 250,
-    "movementInaccuracy": 0.3
+    "movementInaccuracy": 0.5
   },
   "projectile": {
     "item": "tac:nato_556_bullet",
     "visible": false,
-    "damage": 8.8,
+    "damage": 8.75,
     "decayStart": 0.05,
     "minDecayMultiplier": 0.2,
     "decayEnd": 0.75,
     "size": 0.1,
-    "speed": 100,
+    "speed": 22.5,
     "trailLengthMultiplier": 2.875,
-    "life": 2
+    "life": 8
   },
   "reloads": {
     "magFed": true,

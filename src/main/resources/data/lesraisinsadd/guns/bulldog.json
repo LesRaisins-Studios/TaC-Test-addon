@@ -33,43 +33,26 @@
   },
   "reloads": {
     "magFed": true,
-    "maxAmmo": 15,
+    "maxAmmo": 4,
     "reloadMagTimer": 36,
     "additionalReloadEmptyMagTimer": 0,
     "maxAdditionalAmmoPerOC": [5, 7, 10],
     "preReloadPauseTicks": 0
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.qsz92_fire",
-    "reloadNormal": "lesraisinsadd:item.qsz92_reload_norm",
-    "reloadEmpty": "lesraisinsadd:item.qsz92_reload_empty",
+    "fire": "lesraisinsadd:item.bulldog_fire",
+    "reloadNormal": "lesraisinsadd:item.bulldog_reload",
+    "reloadEmpty": "lesraisinsadd:item.bulldog_reload",
     "draw": "lesraisinsadd:item.qsz92_draw",
-    "inspect": "lesraisinsadd:item.qsz92_inspect",
+    "inspect": "lesraisinsadd:item.bulldog_inspect",
     "cock": "tac:item.pistol.cock"
   },
   "display": {
     "flash": {
-      "yOffset": 9.0,
-      "zOffset": -20.75,
+      "yOffset": 5.0,
+      "zOffset": -18.75,
       "trailAdjust": 1.325,
       "size": 0.8
-    },
-    "shellCasing": {
-      "tickLife":10,
-      "yOffset": 5,
-      "xOffset": 0,
-      "zOffset": -2,
-      "scale": 1,
-      "velocityX": 8,
-      "velocityY": 1,
-      "velocityZ": -0.5,
-      "rVelocityX": 0,
-      "rVelocityY": 1.25,
-      "rVelocityZ": 0.0,
-      "aVelocityX": 45.0,
-      "aVelocityY": -90.0,
-      "aVelocityZ": 15.0,
-      "casingModel": "tac:special/shell_small"
     },
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,
@@ -79,8 +62,8 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 13.00,
-      "zOffset": -6
+      "yOffset": 9.50,
+      "zOffset": -2
     }
   }
 }

@@ -1,17 +1,8 @@
 package me.xjqsh.lesraisinsadd.util;
 
-import com.tac.guns.Config;
-import com.tac.guns.entity.IExplosionProvider;
-import com.tac.guns.interfaces.IExplosionDamageable;
 import com.tac.guns.world.ProjectileExplosion;
-import me.xjqsh.lesraisinsadd.block.interfaces.IBulletHit;
-import me.xjqsh.lesraisinsadd.init.ModBlocks;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.network.play.server.SExplosionPacket;
-import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;

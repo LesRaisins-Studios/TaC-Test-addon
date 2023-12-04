@@ -12,8 +12,6 @@ import net.minecraft.client.renderer.model.ItemCameraTransforms;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 
-import java.awt.*;
-
 import static com.tac.guns.client.gunskin.ModelComponent.*;
 import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.BULLETS;
 import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.LOADER;

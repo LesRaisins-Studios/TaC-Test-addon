@@ -2,6 +2,7 @@ package me.xjqsh.lesraisinsadd.client.listener;
 
 
 import com.tac.guns.client.Keys;
+import com.tac.guns.client.handler.ReloadHandler;
 import com.tac.guns.client.render.animation.module.GunAnimationController;
 import com.tac.guns.item.TransitionalTypes.TimelessGunItem;
 import me.xjqsh.lesraisinsadd.Config;
@@ -120,6 +121,7 @@ public class ClientPlayHandler {
                 ItemStack heldItem = player.getMainHandItem();
                 if (heldItem.getItem() instanceof TimelessGunItem) {
                     if(GunAnimationController.fromItem(heldItem.getItem()).isAnimationRunning())return;
+                    if(ReloadHandler.get().isReloading())return;
                     if (heldItem.getOrCreateTag().getInt("AmmoCount") == 0) {
                         Keys.RELOAD.setDown(true);
                         Keys.RELOAD.setDown(false);

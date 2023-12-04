@@ -1,36 +1,36 @@
 {
   "general": {
     "auto": true,
-    "rate": 50,
+    "rate": 25,
     "rateSelector": [1],
     "gripType": "tac:two_handed_ak47",
-    "recoilAngle": 2.65,
+    "recoilAngle": 1.325,
     "horizontalRecoilAngle": 0.95,
-    "recoilKick": 1.885,
-    "recoilAdsReduction": 0.25,
-    "weaponRecoilOffset": 0.7125,
-    "cameraRecoilModifier": 1.275,
-    "recoilDuration": 0.315,
-    "weightKilo": 5.3,
+    "recoilKick": 1.225,
+    "recoilAdsReduction": 0.45,
+    "weaponRecoilOffset": 0.75,
+    "cameraRecoilModifier": 1.15,
+    "recoilDuration": 0.35,
+    "weightKilo": 2.2,
 
-    "spread": 1.4,
-    "firstShotSpread": 0.005,
-    "hipFireInaccuracy": 3.55,
-    "projToMinAccuracy": 8,
+    "spread": 0.15,
+    "firstShotSpread": 0.15,
+    "hipFireInaccuracy": 0,
+    "projToMinAccuracy": 1,
     "msToAccuracyReset": 250,
-    "movementInaccuracy": 0.3
+    "movementInaccuracy": 0.25
   },
   "projectile": {
     "item": "tac:nato_556_bullet",
     "visible": false,
-    "damage": 20,
+    "damage": 24,
     "decayStart": 0.05,
     "minDecayMultiplier": 0.2,
-    "decayEnd": 0.75,
+    "decayEnd": 0.9,
     "size": 0.1,
-    "speed": 100,
+    "speed": 13.5,
     "trailLengthMultiplier": 2.875,
-    "life": 2
+    "life": 5
   },
   "reloads": {
     "magFed": true,

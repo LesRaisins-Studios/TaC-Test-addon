@@ -1,0 +1,32 @@
+{
+  "type": "tac:workbench",
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 10
+    },
+    {
+      "item": {
+        "tag": "minecraft:logs"
+      },
+      "count": 15
+    },
+    {
+      "item": {
+        "tag": "minecraft:flint"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "tag": "lesraisinsadd:object_15"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "lesraisinsadd:flintlock"
+  }
+}
