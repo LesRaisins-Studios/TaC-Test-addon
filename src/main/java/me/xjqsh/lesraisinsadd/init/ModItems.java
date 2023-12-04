@@ -34,8 +34,10 @@ public class ModItems {
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> FLINTLOCK = REGISTER.register("flintlock",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
-    public static final RegistryObject<GunItem> HK433 = REGISTER.register("hk433",
+    public static final RegistryObject<GunItem> FLINTLOCK_ROYAL = REGISTER.register("flintlock_royal",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
+//    public static final RegistryObject<GunItem> HK433 = REGISTER.register("hk433",
+//            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
 
     public static final RegistryObject<GunItem> SVD = REGISTER.register("svd",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SNIPER)));
@@ -57,7 +59,7 @@ public class ModItems {
     public static final RegistryObject<GunItem> ANGEL = REGISTER.register("angel",
             () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
     public static final RegistryObject<GunItem> ENCORE = REGISTER.register("encore",
-            () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL)));
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.PISTOL)));
     public static final RegistryObject<GunItem> THE_LAST_WORD = REGISTER.register("the_last_word",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.PISTOL).rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<GunItem> THE_FIRST_CURSE = REGISTER.register("the_first_curse",

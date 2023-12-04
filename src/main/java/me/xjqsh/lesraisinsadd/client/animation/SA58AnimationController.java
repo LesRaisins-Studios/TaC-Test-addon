@@ -16,11 +16,11 @@ import java.io.IOException;
 
 @OnlyIn(Dist.CLIENT)
 public class SA58AnimationController extends GunAnimationController {
-    public static int INDEX_BODY = 4;
-    public static int INDEX_LEFT_HAND = 6;
+    public static int INDEX_BODY = 6;
+    public static int INDEX_LEFT_HAND = 8;
     public static int INDEX_RIGHT_HAND = 0;
-    public static int INDEX_MAGAZINE = 2;
-    public static int INDEX_HANDEL = 3;
+    public static int INDEX_MAGAZINE = 4;
+    public static int INDEX_HANDEL = 5;
 
     public static final AnimationMeta RELOAD_NORM = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/sa58_reload_norm.gltf"));
     public static final AnimationMeta RELOAD_EMPTY = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/sa58_reload_empty.gltf"));

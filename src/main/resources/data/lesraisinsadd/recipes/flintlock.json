@@ -15,13 +15,13 @@
     },
     {
       "item": {
-        "tag": "minecraft:flint"
+        "item": "minecraft:flint"
       },
       "count": 1
     },
     {
       "item": {
-        "tag": "lesraisinsadd:object_15"
+        "item": "lesraisinsadd:object_15"
       },
       "count": 1
     }

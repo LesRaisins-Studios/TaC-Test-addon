@@ -13,12 +13,12 @@ import java.io.IOException;
 
 @OnlyIn(Dist.CLIENT)
 public class NTW20AnimationController extends BoltActionAnimationController{
-    public static int INDEX_BODY = 3;
+    public static int INDEX_BODY = 5;
     public static int INDEX_LEFT_HAND = 7;
-    public static int INDEX_RIGHT_HAND = 4;
-    public static int INDEX_BOLT = 0;
-    public static int INDEX_MAG = 2;
-    public static int INDEX_BULLET = 1;
+    public static int INDEX_RIGHT_HAND = 0;
+    public static int INDEX_BOLT = 2;
+    public static int INDEX_MAG = 4;
+    public static int INDEX_BULLET = 3;
 
     public static final AnimationMeta RELOAD_EMPTY = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/ntw20_reload_empty.gltf"));
     public static final AnimationMeta RELOAD_NORM = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/ntw20_reload_norm.gltf"));

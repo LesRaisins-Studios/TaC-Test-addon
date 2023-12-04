@@ -59,6 +59,8 @@ public class ModelLoader {
             GRIP_LIGHT,GRIP_TACTICAL,
             RAIL_DEFAULT,RAIL_EXTENDED,
             STOCK_DEFAULT,STOCK_HEAVY,STOCK_LIGHT,STOCK_TACTICAL));
+    public static SkinLoader FLINTLOCK_ROYAL = register(new SkinLoader(ModItems.FLINTLOCK_ROYAL.getId(),
+            BODY,BOTTLE,BULLET,HAMMER,PLATE,STICK));
     public static SkinLoader ENCORE = register(new SkinLoader(ModItems.ENCORE.getId(),
             BODY,BULLET,HAMMER,RAIL_DEFAULT,BULLET_HEAD));
     public static SkinLoader MG42 = register(new SkinLoader(ModItems.MG42.getId(),
@@ -67,11 +69,11 @@ public class ModelLoader {
             BODY,BOLT,BARREL,BULLET,MAG_STANDARD,RAIL_DEFAULT));
     public static SkinLoader BULLDOG = register(new SkinLoader(ModItems.BULLDOG.getId(),
             BODY,HAMMER,MAG_STANDARD,RAIL_DEFAULT));
-    public static SkinLoader HK433 = register(new SkinLoader(ModItems.HK433.getId(),
-            BODY,BOLT,HANDLE,
-            MAG_STANDARD,MAG_EXTENDED,
-            MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT,MUZZLE_SILENCER,
-            STOCK_LIGHT,STOCK_HEAVY,STOCK_TACTICAL));
+//    public static SkinLoader HK433 = register(new SkinLoader(ModItems.HK433.getId(),
+//            BODY,BOLT,HANDLE,
+//            MAG_STANDARD,MAG_EXTENDED,
+//            MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT,MUZZLE_SILENCER,
+//            STOCK_LIGHT,STOCK_HEAVY,STOCK_TACTICAL));
 
     public static SkinLoader register(SkinLoader skinLoader){
         SkinLoader.register(skinLoader.getGun(),skinLoader);

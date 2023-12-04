@@ -1,0 +1,89 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 25,
+    "rateSelector": [1],
+    "gripType": "tac:two_handed_ak47",
+    "recoilAngle": 1.325,
+    "horizontalRecoilAngle": 0.95,
+    "recoilKick": 1.225,
+    "recoilAdsReduction": 0.45,
+    "weaponRecoilOffset": 0.75,
+    "cameraRecoilModifier": 1.15,
+    "recoilDuration": 0.35,
+    "weightKilo": 2.2,
+
+    "spread": 0.15,
+    "firstShotSpread": 0.15,
+    "hipFireInaccuracy": 0,
+    "projToMinAccuracy": 1,
+    "msToAccuracyReset": 250,
+    "movementInaccuracy": 0.25
+  },
+  "projectile": {
+    "item": "tac:nato_556_bullet",
+    "visible": false,
+    "damage": 24,
+    "decayStart": 0.05,
+    "minDecayMultiplier": 0.2,
+    "decayEnd": 0.9,
+    "size": 0.1,
+    "speed": 13.5,
+    "trailLengthMultiplier": 2.875,
+    "life": 5
+  },
+  "reloads": {
+    "magFed": true,
+    "maxAmmo": 1,
+    "reloadMagTimer": 166,
+    "additionalReloadEmptyMagTimer": 0,
+    "maxAdditionalAmmoPerOC": [5, 7, 10],
+    "preReloadPauseTicks": 0,
+    "openBolt": true
+  },
+  "sounds": {
+    "fire": "lesraisinsadd:item.flintlock_fire",
+    "reloadNormal": "lesraisinsadd:item.flintlock_reload",
+    "reloadEmpty": "lesraisinsadd:item.flintlock_reload",
+    "draw": "lesraisinsadd:item.flintlock_draw",
+    "inspect": "lesraisinsadd:item.flintlock_inspect",
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "tac:item.ak47_fire_s"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 9.0,
+      "zOffset": -20.75,
+      "trailAdjust": 1.325,
+      "size": 0.8
+    },
+    "hipfireScale": 1.25,
+    "hipfireMoveScale": 0.5,
+    "hipfireRecoilScale": 1.0,
+    "showDynamicHipfire":true
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.8,
+      "yOffset": 8.4,
+      "zOffset": -4.8
+    },
+    "attachments": {
+      "stock": {
+        "yOffset": 7.75,
+        "zOffset": -22.05,
+        "scale": 0.00
+      },
+      "scope": {
+        "yOffset": 7.7,
+        "zOffset": 0.0,
+        "scale": 1.0
+      },
+      "underBarrel": {
+        "yOffset": 7.799,
+        "zOffset": -2.35,
+        "scale": 0.00
+      }
+    }
+  }
+}
