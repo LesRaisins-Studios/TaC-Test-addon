@@ -75,10 +75,20 @@ public class ClientPlayHandler {
     public static void addInformationEvent(ItemTooltipEvent event) {
         ItemStack stack= event.getItemStack();
         Item item = stack.getItem();
+
         if(item.equals(ModItems.THE_LAST_WORD.get())){
             event.getToolTip().add(new TranslationTextComponent("tooltip.lesraisins.the_last_word_1")
                     .withStyle(TextFormatting.ITALIC));
             event.getToolTip().add(new TranslationTextComponent("tooltip.lesraisins.the_last_word_2")
+                    .withStyle(TextFormatting.ITALIC));
+        }else if(item.equals(ModItems.ACE_OF_SPADES.get())){
+            event.getToolTip().add(new TranslationTextComponent("tooltip.lesraisins.ace_of_spades")
+                    .withStyle(TextFormatting.ITALIC));
+        }else if(item.equals(ModItems.ANGEL.get())){
+            event.getToolTip().add(new TranslationTextComponent("tooltip.lesraisins.angel")
+                    .withStyle(TextFormatting.ITALIC));
+        }else if(item.equals(ModItems.SA58.get())){
+            event.getToolTip().add(new TranslationTextComponent("tooltip.lesraisins.sa58")
                     .withStyle(TextFormatting.ITALIC));
         }
     }

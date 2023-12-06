@@ -21,7 +21,7 @@
     "movementInaccuracy": 0.25
   },
   "projectile": {
-    "item": "tac:nato_556_bullet",
+    "item": "lesraisinsadd:flintlock_bullet",
     "visible": false,
     "damage": 24,
     "decayStart": 0.05,
@@ -60,7 +60,8 @@
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,
     "hipfireRecoilScale": 1.0,
-    "showDynamicHipfire":true
+    "showDynamicHipfire":true,
+    "weaponType": 0
   },
   "modules": {
     "zoom": {

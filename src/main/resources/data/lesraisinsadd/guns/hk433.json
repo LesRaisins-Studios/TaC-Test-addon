@@ -1,8 +1,8 @@
 {
   "general": {
     "auto": true,
-    "rate": 120,
-    "rateSelector": [1],
+    "rate": 850,
+    "rateSelector": [1,2],
     "gripType": "tac:two_handed_ak47",
     "recoilAngle": 5.15,
     "horizontalRecoilAngle": 3.35,
@@ -23,7 +23,7 @@
   "projectile": {
     "item": "tac:762x54",
     "visible": false,
-    "damage": 32,
+    "damage": 8,
     "decayStart": 0.12,
     "minDecayMultiplier": 0.55,
     "decayEnd": 1,
@@ -35,7 +35,7 @@
   },
   "reloads": {
     "magFed": true,
-    "maxAmmo": 10,
+    "maxAmmo": 30,
     "reloadMagTimer": 36,
     "additionalReloadEmptyMagTimer": 20,
     "maxAdditionalAmmoPerOC": [5, 7, 10],
@@ -77,26 +77,30 @@
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,
     "hipfireRecoilScale": 1.0,
-    "showDynamicHipfire":true
+    "showDynamicHipfire":true,
+    "weaponType": 0
   },
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 8.10,
+      "yOffset": 14.40,
       "zOffset": -1.8
     },
     "attachments": {
-      "scope": {
-        "yOffset": 7.3,
-        "zOffset": 9.0,
-        "scale": 1.0
+      "barrel": {
+        "yOffset": -100829.84,
+        "zOffset": -11.55,
+        "scale": 1.00
       },
-      "pistolScope": {
-        "yOffset": 7.35,
-        "zOffset": 10.2,
-        "scale": 1.0,
-        "doRenderMount": true,
-        "doOnSlideMovement": false
+      "stock": {
+        "yOffset": 7.75,
+        "zOffset": -22.05,
+        "scale": 0.00
+      },
+      "scope": {
+        "yOffset": 12.0,
+        "zOffset": -1.0,
+        "scale": 1.0
       }
     }
   }

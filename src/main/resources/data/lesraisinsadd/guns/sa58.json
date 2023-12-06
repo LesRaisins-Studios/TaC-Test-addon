@@ -28,15 +28,15 @@
     "minDecayMultiplier": 0.3,
     "decayEnd": 1,
     "size": 0.125,
-    "speed": 100,
-    "life": 2,
+    "speed": 22.5,
+    "life": 9,
     "trailLengthMultiplier": 2.5
   },
   "reloads": {
     "magFed": true,
     "maxAmmo": 30,
-    "reloadMagTimer": 36,
-    "additionalReloadEmptyMagTimer": 20,
+    "reloadMagTimer": 48,
+    "additionalReloadEmptyMagTimer": 10,
     "maxAdditionalAmmoPerOC": [5, 7, 10],
     "preReloadPauseTicks": 0
   },
@@ -76,7 +76,8 @@
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,
     "hipfireRecoilScale": 1.0,
-    "showDynamicHipfire":true
+    "showDynamicHipfire":true,
+    "weaponType": 0
   },
   "modules": {
     "zoom": {

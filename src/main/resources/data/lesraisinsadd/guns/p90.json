@@ -35,9 +35,9 @@
     "decayStart": 0.05,
     "minDecayMultiplier": 0.15,
     "decayEnd": 0.6,
-    "speed": 80,
+    "speed": 19.5,
     "size": 0.05,
-    "life": 2,
+    "life": 6,
     "trailLengthMultiplier": 2.5,
     "ricochet": true
   },
@@ -60,7 +60,8 @@
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,
     "hipfireRecoilScale": 1.0,
-    "showDynamicHipfire":true
+    "showDynamicHipfire":true,
+    "weaponType": 4
   },
   "modules": {
     "zoom": {

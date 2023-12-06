@@ -3,14 +3,14 @@
     "rate": 600,
     "rateSelector": [1],
     "gripType": "tac:one_handed_m1911",
-    "recoilAngle": 7.355,
+    "recoilAngle": 6.525,
     "horizontalRecoilAngle": 5.25,
-    "recoilKick": 1.85,
-    "recoilAdsReduction": 0.2,
+    "recoilKick": 1.35,
+    "recoilAdsReduction": 0.25,
     "weaponRecoilOffset": 0.635,
-    "cameraRecoilModifier": 3.5,
+    "cameraRecoilModifier": 3.225,
     "recoilDuration": 0.225,
-    "weightKilo": 0.95,
+    "weightKilo": 0.85,
 
     "spread": 1.75,
     "firstShotSpread": 0.115,
@@ -22,7 +22,7 @@
   "projectile": {
     "item": "tac:9mm_round",
     "visible": false,
-    "damage": 8,
+    "damage": 18,
     "decayStart": 0.15,
     "minDecayMultiplier": 0.2,
     "decayEnd": 0.75,
@@ -34,7 +34,7 @@
   "reloads": {
     "magFed": true,
     "maxAmmo": 4,
-    "reloadMagTimer": 36,
+    "reloadMagTimer": 45,
     "additionalReloadEmptyMagTimer": 0,
     "maxAdditionalAmmoPerOC": [5, 7, 10],
     "preReloadPauseTicks": 0
@@ -57,7 +57,8 @@
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,
     "hipfireRecoilScale": 1.0,
-    "showDynamicHipfire":true
+    "showDynamicHipfire":true,
+    "weaponType": 2
   },
   "modules": {
     "zoom": {

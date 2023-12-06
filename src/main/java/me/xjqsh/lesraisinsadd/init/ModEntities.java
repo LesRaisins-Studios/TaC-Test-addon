@@ -1,6 +1,7 @@
 package me.xjqsh.lesraisinsadd.init;
 
 import me.xjqsh.lesraisinsadd.Reference;
+import me.xjqsh.lesraisinsadd.entity.BeamEntity;
 import me.xjqsh.lesraisinsadd.entity.CrossBowArrowEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityClassification;
@@ -20,11 +21,12 @@ public class ModEntities
     public static final DeferredRegister<EntityType<?>> REGISTER = DeferredRegister.create(ForgeRegistries.ENTITIES, Reference.MOD_ID);
 
     public static final RegistryObject<EntityType<CrossBowArrowEntity>> ARROW = registerBasic("crossbow_arrow", CrossBowArrowEntity::new);
+    public static final RegistryObject<EntityType<BeamEntity>> BEAM = registerBasic("beam", BeamEntity::new);
 
     private static <T extends Entity> RegistryObject<EntityType<T>> registerBasic(String id, BiFunction<EntityType<T>, World, T> function) {
         EntityType<T> type = EntityType.Builder.of(function::apply, EntityClassification.MISC)
                 .sized(0.25F, 0.25F).setTrackingRange(100).setUpdateInterval(1)
-                .noSummon()
+//                .noSummon()
                 .fireImmune()
                 .setShouldReceiveVelocityUpdates(true)
                 .build(id);

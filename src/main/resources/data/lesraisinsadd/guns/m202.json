@@ -12,19 +12,19 @@
     "weaponRecoilOffset": 0.5,
     "cameraRecoilModifier": 1.35,
     "recoilDuration": 0.35,
-    "weightKilo": 10.3,
+    "weightKilo": 11.35,
 
-    "spread": 2.0,
-    "firstShotSpread": 0.125,
-    "hipFireInaccuracy": 4.0,
-    "projToMinAccuracy": 6,
+    "spread": 1.5,
+    "firstShotSpread": 0.10,
+    "hipFireInaccuracy": 2.25,
+    "projToMinAccuracy": 2,
     "msToAccuracyReset": 720,
-    "movementInaccuracy": 0.55
+    "movementInaccuracy": 0.4
   },
   "reloads": {
     "magFed": true,
     "maxAmmo": 4,
-    "reloadMagTimer": 74,
+    "reloadMagTimer": 77,
     "additionalReloadEmptyMagTimer": 0,
     "preReloadPauseTicks": 0,
     "openBolt": true
@@ -33,7 +33,7 @@
     "item": "lesraisinsadd:m202_rocket",
     "visible": true,
     "gravity": false,
-    "damage": 100,
+    "damage": 20,
     "size": 1,
     "speed": 4,
     "trailLengthMultiplier": 0,

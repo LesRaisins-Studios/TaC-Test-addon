@@ -1,6 +1,14 @@
 {
   "replace": false,
   "values": [
-    "minecraft:witch"
+    "minecraft:witch",
+    "minecraft:ender_dragon",
+    "minecraft:guardian",
+    "minecraft:elder_guardian",
+    "minecraft:wither_skeleton",
+    "minecraft:wither",
+    "minecraft:evoker",
+    "minecraft:vex",
+    "minecraft:blaze"
   ]
 }

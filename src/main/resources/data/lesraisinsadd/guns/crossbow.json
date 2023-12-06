@@ -35,11 +35,14 @@
   "reloads": {
     "magFed": true,
     "maxAmmo": 1,
-    "reloadMagTimer": 36,
+    "reloadMagTimer": 40,
     "additionalReloadEmptyMagTimer": 0,
     "maxAdditionalAmmoPerOC": [5, 7, 10],
     "preReloadPauseTicks": 0,
     "openBolt": true
+  },
+  "display": {
+    "weaponType": 5
   },
   "sounds": {
     "fire": "lesraisinsadd:item.crossbow_fire",

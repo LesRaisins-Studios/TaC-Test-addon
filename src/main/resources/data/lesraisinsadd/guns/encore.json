@@ -4,21 +4,21 @@
     "rate": 270,
     "rateSelector": [1],
     "gripType": "tac:one_handed_m1911",
-    "recoilAngle": 7.355,
-    "horizontalRecoilAngle": 5.25,
-    "recoilKick": 1.85,
-    "recoilAdsReduction": 0.2,
-    "weaponRecoilOffset": 0.635,
-    "cameraRecoilModifier": 3.5,
-    "recoilDuration": 0.225,
-    "weightKilo": 0.95,
+    "recoilAngle": 12.225,
+    "horizontalRecoilAngle": 4.35,
+    "recoilKick": 1.425,
+    "recoilAdsReduction": 0.20,
+    "weaponRecoilOffset": 0.65,
+    "cameraRecoilModifier": 2.85,
+    "recoilDuration": 0.235,
+    "weightKilo": 1.725,
 
-    "spread": 1.75,
-    "firstShotSpread": 0.115,
-    "hipFireInaccuracy": 5.05,
-    "projToMinAccuracy": 4,
+    "spread": 0.65,
+    "firstShotSpread": 0.085,
+    "hipFireInaccuracy": 1.25,
+    "projToMinAccuracy": 1,
     "msToAccuracyReset": 500,
-    "movementInaccuracy": 0.75
+    "movementInaccuracy": 0.5
   },
   "projectile": {
     "item": "lesraisinsadd:origin_bullet",
@@ -28,15 +28,15 @@
     "minDecayMultiplier": 0.2,
     "decayEnd": 0.75,
     "size": 0.125,
-    "speed": 20,
-    "life": 2,
+    "speed": 18.5,
+    "life": 8,
     "trailLengthMultiplier": 2.75,
     "trailColor": -65281
   },
   "reloads": {
     "magFed": true,
     "maxAmmo": 1,
-    "reloadMagTimer": 36,
+    "reloadMagTimer": 50,
     "additionalReloadEmptyMagTimer": 0,
     "maxAdditionalAmmoPerOC": [5, 7, 10],
     "preReloadPauseTicks": 0,
@@ -60,7 +60,8 @@
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,
     "hipfireRecoilScale": 1.0,
-    "showDynamicHipfire":true
+    "showDynamicHipfire":true,
+    "weaponType": 2
   },
   "modules": {
     "zoom": {
@@ -70,9 +71,9 @@
     },
     "attachments": {
       "scope": {
-        "yOffset": 9.97,
-        "zOffset": 2.0,
-        "scale": 1.0
+        "yOffset": 11.9,
+        "zOffset": 1.0,
+        "scale": 1.5
       }
     }
   }
