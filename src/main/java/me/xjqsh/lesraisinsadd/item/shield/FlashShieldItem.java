@@ -7,6 +7,10 @@ import me.xjqsh.lesraisinsadd.init.ModSounds;
 import me.xjqsh.lesraisinsadd.item.IAmmoable;
 import me.xjqsh.lesraisinsadd.util.EntityUtil;
 import me.xjqsh.lesraisinsadd.util.SightTraceUtil;
+import net.minecraft.client.GameSettings;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.settings.KeyBinding;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ai.attributes.Attribute;
@@ -18,7 +22,16 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.CooldownTracker;
 import net.minecraft.util.Hand;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.KeybindTextComponent;
+import net.minecraft.util.text.TextFormatting;
+import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+
+import javax.annotation.Nullable;
+import java.util.List;
 
 public class FlashShieldItem extends RiotShieldItem implements IAmmoable {
     public FlashShieldItem(Properties properties, Multimap<Attribute, AttributeModifier> modifiers) {
@@ -100,4 +113,11 @@ public class FlashShieldItem extends RiotShieldItem implements IAmmoable {
         }
     }
 
+    @OnlyIn(Dist.CLIENT)
+    @Override
+    public void appendHoverText(ItemStack p_77624_1_, @Nullable World p_77624_2_, List<ITextComponent> p_77624_3_, ITooltipFlag p_77624_4_) {
+        KeybindTextComponent key = new KeybindTextComponent(Minecraft.getInstance().options.keyUse.getName());
+        p_77624_3_.add(new TranslationTextComponent("tooltip.lesraisins.flash_shield",key)
+                .withStyle(TextFormatting.YELLOW));
+    }
 }

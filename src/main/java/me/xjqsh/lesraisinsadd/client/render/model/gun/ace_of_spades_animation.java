@@ -40,7 +40,7 @@ public class ace_of_spades_animation extends SkinAnimationModel {
         {
             controller.applySpecialModelTransform(getModelComponent(skin, BODY), ACEOFSPADESAnimationController.INDEX_BODY, transformType, matrices);
             RenderUtil.renderModel(getModelComponent(skin, BODY), stack, matrices, renderBuffer, light, overlay);
-
+            RenderUtil.renderModel(getModelComponent(skin, SIGHT), stack, matrices, renderBuffer, 15728880, overlay);
         }
         matrices.popPose();
 

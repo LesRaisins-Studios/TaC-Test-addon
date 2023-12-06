@@ -2,12 +2,12 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "lesraisinsadd:items/hotbar_icons/aug"
+		"layer0": "lesraisinsadd:items/hotbar_icons/mg42"
 	},
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, 10.5, 0],
-			"translation": [0.5, 0.75, -3.5],
+			"translation": [0.5, 2, -5.25],
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"thirdperson_lefthand": {

@@ -28,8 +28,8 @@
     "minDecayMultiplier": 0.25,
     "decayEnd": 0.9,
     "size": 0.125,
-    "speed": 120,
-    "life": 2,
+    "speed": 16.5,
+    "life": 11,
     "trailLengthMultiplier": 2.75
   },
   "reloads": {
@@ -60,6 +60,7 @@
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,
     "hipfireRecoilScale": 1.0,
+    "weaponType": 2,
     "showDynamicHipfire":true
   },
   "modules": {

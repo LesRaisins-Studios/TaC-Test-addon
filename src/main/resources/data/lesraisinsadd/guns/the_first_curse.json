@@ -8,7 +8,7 @@
     "horizontalRecoilAngle": 5.45,
     "recoilKick": 1.485,
     "recoilAdsReduction": 0.275,
-    "weaponRecoilOffset": 0.225,
+    "weaponRecoilOffset": 0.665,
     "cameraRecoilModifier": 2.15,
     "recoilDuration": 0.19,
     "weightKilo": 1.85,
@@ -29,14 +29,14 @@
     "minDecayMultiplier": 0.25,
     "decayEnd": 0.9,
     "size": 0.125,
-    "speed": 13.5,
-    "life": 6,
+    "speed": 15.5,
+    "life": 7,
     "trailLengthMultiplier": 2.75
   },
   "reloads": {
     "magFed": true,
     "maxAmmo": 12,
-    "reloadMagTimer": 36,
+    "reloadMagTimer": 48,
     "additionalReloadEmptyMagTimer": 0,
     "maxAdditionalAmmoPerOC": [5, 7, 10],
     "preReloadPauseTicks": 0,
@@ -60,7 +60,8 @@
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,
     "hipfireRecoilScale": 1.0,
-    "showDynamicHipfire":true
+    "showDynamicHipfire":true,
+    "weaponType": 2
   },
   "modules": {
     "zoom": {

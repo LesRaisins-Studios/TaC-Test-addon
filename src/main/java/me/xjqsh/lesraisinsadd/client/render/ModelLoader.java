@@ -52,7 +52,7 @@ public class ModelLoader {
     public static SkinLoader THE_FIRST_CURSE = register(new SkinLoader(ModItems.THE_FIRST_CURSE.getId(),
             BODY,BULLET,MAG_1,MAG_2,MAG_3));
     public static SkinLoader ACE_OF_SPADES = register(new SkinLoader(ModItems.ACE_OF_SPADES.getId(),
-            BODY,BULLET,MAG_1,MAG_2,MAG_3,SIGHT_LEFT,SIGHT_RIGHT,SMOKE));
+            BODY,BULLET,MAG_1,MAG_2,MAG_3,SIGHT_LEFT,SIGHT_RIGHT,SIGHT,SMOKE));
 
     public static SkinLoader FLINTLOCK = register(new SkinLoader(ModItems.FLINTLOCK.getId(),
             BODY,BOTTLE,BULLET,HAMMER,PLATE,STICK,

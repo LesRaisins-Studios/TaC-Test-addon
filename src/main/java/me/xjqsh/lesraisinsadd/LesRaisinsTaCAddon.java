@@ -7,6 +7,7 @@ import com.tac.guns.entity.MissileEntity;
 import me.xjqsh.lesraisinsadd.client.LRKeys;
 import me.xjqsh.lesraisinsadd.client.animation.*;
 import me.xjqsh.lesraisinsadd.client.render.ArrowRender;
+import me.xjqsh.lesraisinsadd.client.render.BeamRender;
 import me.xjqsh.lesraisinsadd.client.render.ModelLoader;
 import me.xjqsh.lesraisinsadd.client.render.model.gun.*;
 import me.xjqsh.lesraisinsadd.entity.CrossBowArrowEntity;
@@ -57,7 +58,7 @@ public class LesRaisinsTaCAddon {
         ProjectileManager.getInstance().registerFactory(ModItems.M202_ROCKET.get(),
                 (worldIn, entity, weapon, item, modifiedGun, randP, randY) ->
                     new MissileEntity(com.tac.guns.init.ModEntities.RPG7_MISSILE.get(),
-                            worldIn, entity, weapon, item, modifiedGun, 1.5F)
+                            worldIn, entity, weapon, item, modifiedGun)
 
         );
     }
@@ -148,6 +149,7 @@ public class LesRaisinsTaCAddon {
         FLINTLOCKRAnimationController.getInstance();
 
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.ARROW.get(), ArrowRender::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntities.BEAM.get(), BeamRender::new);
 
         LRKeys.init();
         event.enqueueWork(() -> {

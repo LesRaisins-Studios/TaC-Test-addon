@@ -21,7 +21,7 @@
     "movementInaccuracy": 0.25
   },
   "projectile": {
-    "item": "tac:nato_556_bullet",
+    "item": "lesraisinsadd:flintlock_bullet",
     "visible": false,
     "damage": 24,
     "decayStart": 0.05,
@@ -67,23 +67,6 @@
       "fovModifier": 0.8,
       "yOffset": 8.4,
       "zOffset": -4.8
-    },
-    "attachments": {
-      "stock": {
-        "yOffset": 7.75,
-        "zOffset": -22.05,
-        "scale": 0.00
-      },
-      "scope": {
-        "yOffset": 7.7,
-        "zOffset": 0.0,
-        "scale": 1.0
-      },
-      "underBarrel": {
-        "yOffset": 7.799,
-        "zOffset": -2.35,
-        "scale": 0.00
-      }
     }
   }
 }

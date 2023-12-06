@@ -2,7 +2,6 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
-		"5": "lesraisinsadd:items/ace_of_spades/aiming",
 		"7": "lesraisinsadd:items/ace_of_spades/spade_1",
 		"8": "lesraisinsadd:items/ace_of_spades/spade_2",
 		"9": "lesraisinsadd:items/ace_of_spades/pattern1",
@@ -3912,14 +3911,6 @@
 			}
 		},
 		{
-			"from": [7.875, 15.90968, -11.62142],
-			"to": [8.125, 16.15968, -11.62142],
-			"rotation": {"angle": 0, "axis": "y", "origin": [7.95313, 16.0936, -11.54229]},
-			"faces": {
-				"south": {"uv": [5.25, 4.625, 10.78125, 10.15625], "texture": "#5"}
-			}
-		},
-		{
 			"from": [7.78086, 15.47218, 3.91084],
 			"to": [7.93913, 15.84002, 4.12959],
 			"rotation": {"angle": 45, "axis": "y", "origin": [7.85999, 15.6561, 4.02022]},
@@ -5095,30 +5086,14 @@
 							"name": "Sight",
 							"origin": [7.99861, 18.54672, 14.83224],
 							"color": 7,
-							"children": [
-								{
-									"name": "Sight-3",
-									"origin": [7.99861, 18.54672, 14.83224],
-									"color": 0,
-									"children": [293]
-								},
-								294,
-								295,
-								296,
-								297,
-								298,
-								299,
-								300,
-								301,
-								302,
-								303
-							]
+							"children": [293, 294, 295, 296, 297, 298, 299, 300, 301, 302]
 						},
 						{
 							"name": "white",
 							"origin": [8, 19.5823, 14.30212],
 							"color": 0,
 							"children": [
+								303,
 								304,
 								305,
 								306,
@@ -5174,8 +5149,7 @@
 								356,
 								357,
 								358,
-								359,
-								360
+								359
 							]
 						}
 					]

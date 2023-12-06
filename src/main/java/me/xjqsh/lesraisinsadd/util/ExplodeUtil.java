@@ -18,7 +18,7 @@ public class ExplodeUtil {
 
 
         ProjectileExplosion explosion = new ProjectileExplosion(world, null, null, null,
-                blockPos.getX(), blockPos.getY(), blockPos.getZ(), power, Explosion.Mode.NONE);
+                blockPos.getX(), blockPos.getY(), blockPos.getZ(), power,3, Explosion.Mode.NONE);
 
         if (ForgeEventFactory.onExplosionStart(world, explosion))
             return null;

@@ -18,10 +18,10 @@ public abstract class ProjectileEntityMixin {
     @Shadow(remap = false) public abstract ItemStack getWeapon();
 
     @Inject(method = "onHitBlock",remap = false,at=@At("RETURN"))
-    public void onHitBlock(BlockState state, BlockPos pos, Direction face, double x, double y, double z, CallbackInfo ci){
+    public void onHitBlock(BlockState state, BlockPos pos, Direction face, Vector3d hitVec, CallbackInfo ci){
         if(state.getBlock() instanceof IBulletHit){
             ((IBulletHit) state.getBlock()).onBulletHit(getWeapon(),(ProjectileEntity)(Object)this,
-                    state,pos,face,new Vector3d(x,y,z));
+                    state,pos,face,hitVec);
         }
     }
 }
