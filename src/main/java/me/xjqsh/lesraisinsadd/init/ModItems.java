@@ -11,6 +11,7 @@ import me.xjqsh.lesraisinsadd.Reference;
 import me.xjqsh.lesraisinsadd.item.AceItem;
 import me.xjqsh.lesraisinsadd.item.BulletProofVestItem;
 import me.xjqsh.lesraisinsadd.item.CustomArmorMaterial;
+import me.xjqsh.lesraisinsadd.item.TestBeamItem;
 import me.xjqsh.lesraisinsadd.item.shield.FlashShieldItem;
 import me.xjqsh.lesraisinsadd.item.shield.RiotShieldItem;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -36,8 +37,8 @@ public class ModItems {
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> FLINTLOCK_ROYAL = REGISTER.register("flintlock_royal",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
-//    public static final RegistryObject<GunItem> HK433 = REGISTER.register("hk433",
-//            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
+    public static final RegistryObject<GunItem> HK433 = REGISTER.register("hk433",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
 
     public static final RegistryObject<GunItem> SVD = REGISTER.register("svd",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SNIPER)));
@@ -51,6 +52,8 @@ public class ModItems {
     public static final RegistryObject<GunItem> PP19 = REGISTER.register("pp19",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
     public static final RegistryObject<GunItem> PPK20 = REGISTER.register("ppk20",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
+    public static final RegistryObject<GunItem> MP18 = REGISTER.register("mp18",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
 
 
@@ -111,4 +114,7 @@ public class ModItems {
     public static final RegistryObject<Item> object15 = REGISTER.register("object_15",
             () -> new BlockItem(ModBlocks.obj15Block.get(), new Item.Properties().tab(GunMod.GROUP)));
 
+    /*test*/
+    public static final RegistryObject<Item> test = REGISTER.register("test_beam",
+            () -> new TestBeamItem(new Item.Properties()));
 }

@@ -11,6 +11,7 @@ import me.xjqsh.lesraisinsadd.item.interfaces.IReloadAction;
 import me.xjqsh.lesraisinsadd.item.shield.RiotShieldItem;
 import me.xjqsh.lesraisinsadd.network.PacketHandler;
 import me.xjqsh.lesraisinsadd.network.message.SDefeatSpEffect;
+import me.xjqsh.lesraisinsadd.network.message.SPlayerReload;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -89,10 +90,15 @@ public class ServerPlayHandler {
     public static void onGunReload(GunReloadEvent.Post event){
         if(event.isCanceled() || event.getEntity().level.isClientSide())return;
         ItemStack weapon = event.getStack();
+
         if(event.getStack().getItem() instanceof IReloadAction){
             ((IReloadAction) event.getStack().getItem()).onGunReload(event,weapon);
         }
 
+        PacketHandler.getPlayChannel().send(
+                PacketDistributor.DIMENSION.with(()-> event.getPlayer().level.dimension()),
+                new SPlayerReload(event.getPlayer().getUUID())
+        );
     }
 
     @SubscribeEvent

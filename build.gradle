@@ -90,6 +90,10 @@ repositories {
     maven {
         url = "https://www.cursemaven.com"
     }
+
+    maven {
+        url "file://D:/Minecraft/Dev/LesRaisins/LesRaisinsTaCAddon/libs"
+    }
 }
 
 dependencies {

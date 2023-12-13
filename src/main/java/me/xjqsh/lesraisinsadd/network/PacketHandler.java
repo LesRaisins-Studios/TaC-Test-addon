@@ -3,6 +3,8 @@ package me.xjqsh.lesraisinsadd.network;
 
 import me.xjqsh.lesraisinsadd.Reference;
 import me.xjqsh.lesraisinsadd.network.message.SDefeatSpEffect;
+import me.xjqsh.lesraisinsadd.network.message.SPlayerReload;
+import me.xjqsh.lesraisinsadd.network.message.SSpawnBeamMsg;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.network.NetworkRegistry;
 import net.minecraftforge.fml.network.simple.SimpleChannel;
@@ -25,6 +27,17 @@ public class PacketHandler {
                 .decoder(SDefeatSpEffect::decode)
                 .consumer(SDefeatSpEffect::handle)
                 .add();
+
+        playChannel.messageBuilder(SPlayerReload.class,nextMessageId++)
+                .encoder(SPlayerReload::encode)
+                .decoder(SPlayerReload::decode)
+                .consumer(SPlayerReload::handle)
+                .add();
+//        playChannel.messageBuilder(SSpawnBeamMsg.class,nextMessageId++)
+//                .encoder(SSpawnBeamMsg::encode)
+//                .decoder(SSpawnBeamMsg::decode)
+//                .consumer(SSpawnBeamMsg::handle)
+//                .add();
     }
 
     public static SimpleChannel getPlayChannel() {

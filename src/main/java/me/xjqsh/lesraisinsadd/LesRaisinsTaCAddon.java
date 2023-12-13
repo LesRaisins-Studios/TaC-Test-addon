@@ -122,8 +122,10 @@ public class LesRaisinsTaCAddon {
                 new ntw20_animation());
         ModelOverrides.register(ModItems.BULLDOG.get(),
                 new bulldog_animation());
-//        ModelOverrides.register(ModItems.HK433.get(),
-//                new hk433_animation());
+        ModelOverrides.register(ModItems.HK433.get(),
+                new hk433_animation());
+        ModelOverrides.register(ModItems.MP18.get(),
+                new mp18_animation());
 
         P90AnimationController.getInstance();
         PP19AnimationController.getInstance();
@@ -145,8 +147,9 @@ public class LesRaisinsTaCAddon {
         MG42AnimationController.getInstance();
         NTW20AnimationController.getInstance();
         BULLDOGAnimationController.getInstance();
-//        HK433AnimationController.getInstance();
+        HK433AnimationController.getInstance();
         FLINTLOCKRAnimationController.getInstance();
+        MP18AnimationController.getInstance();
 
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.ARROW.get(), ArrowRender::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.BEAM.get(), BeamRender::new);

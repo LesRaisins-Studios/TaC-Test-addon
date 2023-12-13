@@ -69,11 +69,13 @@ public class ModelLoader {
             BODY,BOLT,BARREL,BULLET,MAG_STANDARD,RAIL_DEFAULT));
     public static SkinLoader BULLDOG = register(new SkinLoader(ModItems.BULLDOG.getId(),
             BODY,HAMMER,MAG_STANDARD,RAIL_DEFAULT));
-//    public static SkinLoader HK433 = register(new SkinLoader(ModItems.HK433.getId(),
-//            BODY,BOLT,HANDLE,
-//            MAG_STANDARD,MAG_EXTENDED,
-//            MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT,MUZZLE_SILENCER,
-//            STOCK_LIGHT,STOCK_HEAVY,STOCK_TACTICAL));
+    public static SkinLoader HK433 = register(new SkinLoader(ModItems.HK433.getId(),
+            BODY,BOLT,HANDLE,SIGHT,SIGHT_FOLDED,
+            MAG_STANDARD,MAG_EXTENDED,
+            MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT,MUZZLE_SILENCER,
+            STOCK_LIGHT,STOCK_HEAVY,STOCK_TACTICAL));
+    public static SkinLoader MP18 = register(new SkinLoader(ModItems.MP18.getId(),
+            BODY,BOLT,MAG_STANDARD,MAG_EXTENDED));
 
     public static SkinLoader register(SkinLoader skinLoader){
         SkinLoader.register(skinLoader.getGun(),skinLoader);

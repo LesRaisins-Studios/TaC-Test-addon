@@ -6,6 +6,7 @@ import com.tac.guns.client.handler.ReloadHandler;
 import com.tac.guns.client.render.animation.module.GunAnimationController;
 import com.tac.guns.item.TransitionalTypes.TimelessGunItem;
 import me.xjqsh.lesraisinsadd.Config;
+import me.xjqsh.lesraisinsadd.client.particle.ReloadingParticle;
 import me.xjqsh.lesraisinsadd.event.ItemCooldownEvent;
 import me.xjqsh.lesraisinsadd.init.ModItems;
 import me.xjqsh.lesraisinsadd.init.ModParticleTypes;
@@ -13,6 +14,7 @@ import me.xjqsh.lesraisinsadd.init.ModSounds;
 import me.xjqsh.lesraisinsadd.item.shield.FlashShieldItem;
 import me.xjqsh.lesraisinsadd.item.shield.RiotShieldItem;
 import me.xjqsh.lesraisinsadd.network.message.SDefeatSpEffect;
+import me.xjqsh.lesraisinsadd.network.message.SPlayerReload;
 import net.minecraft.client.AbstractOption;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screen.MouseSettingsScreen;
@@ -93,7 +95,7 @@ public class ClientPlayHandler {
         }
     }
 
-    public static void handle(SDefeatSpEffect effect){
+    public static void handleSpEffect(SDefeatSpEffect effect){
         if (Minecraft.getInstance().level != null) {
 
             Minecraft.getInstance().level.addParticle(ModParticleTypes.Hun100.get(),
@@ -142,6 +144,38 @@ public class ClientPlayHandler {
         }
     }
 
+    public static void handleReload(SPlayerReload msg){
+        if (Minecraft.getInstance().level == null) return;
+
+        for(PlayerEntity entity : Minecraft.getInstance().level.players()){
+            if(entity.getUUID().equals(msg.getUUID())){
+
+                ReloadingParticle particle = (ReloadingParticle) Minecraft.getInstance().particleEngine.createParticle(ModParticleTypes.Reloading.get(),
+                        entity.getX(),entity.getY()+1.2, entity.getZ(),
+                        0,0.4,0);
+
+                if (particle != null) {
+                    particle.setPlayer(entity);
+                }
+
+            }
+        }
+
+    }
+
+//    @SubscribeEvent
+//    public static void onTick(EntityJoinWorldEvent event){
+//        if(!event.getWorld().isClientSide) return;
+//
+//        ReloadingParticle particle = (ReloadingParticle) Minecraft.getInstance().particleEngine.createParticle(ModParticleTypes.Reloading.get(),
+//                event.getEntity().getX(),event.getEntity().getY()+1.2, event.getEntity().getZ(),
+//                0,0.4,0);
+//
+//        if (particle != null) {
+//            particle.setPlayer(event.getEntity());
+//        }
+//    }
+
     @SubscribeEvent
     public static void onScreenInit(GuiScreenEvent.InitGuiEvent.Post event) {
         if (event.getGui() instanceof MouseSettingsScreen) {
@@ -153,5 +187,6 @@ public class ClientPlayHandler {
             });
         }
     }
+
 
 }

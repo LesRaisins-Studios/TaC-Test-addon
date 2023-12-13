@@ -38,7 +38,7 @@ public class SDefeatSpEffect {
         NetworkEvent.Context context = supplier.get();
         context.setPacketHandled(true);
         context.enqueueWork(()-> {
-            ClientPlayHandler.handle(msg);
+            ClientPlayHandler.handleSpEffect(msg);
         });
     }
 
