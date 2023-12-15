@@ -6,9 +6,10 @@ import com.tac.guns.common.ProjectileManager;
 import com.tac.guns.entity.MissileEntity;
 import me.xjqsh.lesraisinsadd.client.LRKeys;
 import me.xjqsh.lesraisinsadd.client.animation.*;
-import me.xjqsh.lesraisinsadd.client.render.ArrowRender;
-import me.xjqsh.lesraisinsadd.client.render.BeamRender;
+import me.xjqsh.lesraisinsadd.client.render.entity.ArrowRender;
+import me.xjqsh.lesraisinsadd.client.render.entity.BeamRender;
 import me.xjqsh.lesraisinsadd.client.render.ModelLoader;
+import me.xjqsh.lesraisinsadd.client.render.entity.ThrowableItemRenderer;
 import me.xjqsh.lesraisinsadd.client.render.model.gun.*;
 import me.xjqsh.lesraisinsadd.client.render.model.scope.af6_scope;
 import me.xjqsh.lesraisinsadd.entity.CrossBowArrowEntity;
@@ -16,6 +17,7 @@ import me.xjqsh.lesraisinsadd.init.*;
 import me.xjqsh.lesraisinsadd.network.PacketHandler;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.client.renderer.entity.AreaEffectCloudRenderer;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -41,6 +43,7 @@ public class LesRaisinsTaCAddon {
         ModEntities.REGISTER.register(bus);
         ModParticleTypes.REGISTER.register(bus);
         ModBlocks.REGISTER.register(bus);
+        ModEffects.REGISTER.register(bus);
 
         bus.addListener(this::onClientSetup);
         bus.addListener(this::onCommonSetup);
@@ -158,6 +161,10 @@ public class LesRaisinsTaCAddon {
 
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.ARROW.get(), ArrowRender::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.BEAM.get(), BeamRender::new);
+
+        RenderingRegistry.registerEntityRenderingHandler(ModEntities.THROWABLE_SMOKE_GRENADE.get(), ThrowableItemRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntities.THROWABLE_EFFECT_GRENADE.get(), ThrowableItemRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntities.EFFECT_CLOUD.get(), AreaEffectCloudRenderer::new);
 
         LRKeys.init();
         event.enqueueWork(() -> {

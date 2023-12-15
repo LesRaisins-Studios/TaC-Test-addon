@@ -2,6 +2,7 @@ package me.xjqsh.lesraisinsadd.init;
 
 
 import me.xjqsh.lesraisinsadd.Reference;
+import me.xjqsh.lesraisinsadd.client.particle.GrenadeSmokeParticle;
 import me.xjqsh.lesraisinsadd.client.particle.Hun100Particle;
 import me.xjqsh.lesraisinsadd.client.particle.ReloadingParticle;
 import net.minecraft.client.Minecraft;
@@ -22,6 +23,7 @@ public class ModParticleTypes
     public static final DeferredRegister<ParticleType<?>> REGISTER = DeferredRegister.create(ForgeRegistries.PARTICLE_TYPES, Reference.MOD_ID);
     public static final RegistryObject<BasicParticleType> Hun100 = REGISTER.register("hun100", () -> new BasicParticleType(true));
     public static final RegistryObject<BasicParticleType> Reloading = REGISTER.register("reloading", () -> new BasicParticleType(true));
+    public static final RegistryObject<BasicParticleType> GRENADE_SMOKE = REGISTER.register("grenade_smoke", ()->new BasicParticleType(true));
 
 
     @SubscribeEvent
@@ -30,5 +32,6 @@ public class ModParticleTypes
         ParticleManager particleManager = Minecraft.getInstance().particleEngine;
         particleManager.register(Hun100.get(), Hun100Particle.Factory::new);
         particleManager.register(Reloading.get(), ReloadingParticle.Factory::new);
+        particleManager.register(ModParticleTypes.GRENADE_SMOKE.get(), GrenadeSmokeParticle.Factory::new);
     }
 }

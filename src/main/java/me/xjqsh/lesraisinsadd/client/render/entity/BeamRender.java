@@ -1,4 +1,4 @@
-package me.xjqsh.lesraisinsadd.client.render;
+package me.xjqsh.lesraisinsadd.client.render.entity;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;

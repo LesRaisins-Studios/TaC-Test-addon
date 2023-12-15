@@ -1,4 +1,4 @@
-package me.xjqsh.lesraisinsadd.item;
+package me.xjqsh.lesraisinsadd.item.armor;
 
 import me.xjqsh.lesraisinsadd.client.render.model.armor.BulletProofVest;
 import net.minecraft.client.renderer.entity.model.BipedModel;

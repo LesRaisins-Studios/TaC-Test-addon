@@ -1,4 +1,4 @@
-package me.xjqsh.lesraisinsadd.item;
+package me.xjqsh.lesraisinsadd.item.interfaces;
 
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ItemStackHelper;

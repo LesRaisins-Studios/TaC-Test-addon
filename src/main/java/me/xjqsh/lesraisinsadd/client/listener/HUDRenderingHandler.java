@@ -4,8 +4,7 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.tac.guns.Config;
 import me.xjqsh.lesraisinsadd.Reference;
-import me.xjqsh.lesraisinsadd.item.IAmmoable;
-import me.xjqsh.lesraisinsadd.item.shield.FlashShieldItem;
+import me.xjqsh.lesraisinsadd.item.interfaces.IAmmoable;
 import me.xjqsh.lesraisinsadd.item.shield.RiotShieldItem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.player.ClientPlayerEntity;
@@ -25,7 +24,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import org.lwjgl.opengl.GL11;
 
-import java.awt.*;
 import java.awt.Color;
 
 /**Referenced the ammo hud of tac, used as a temporary placeholder*/

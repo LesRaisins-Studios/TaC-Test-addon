@@ -1,4 +1,4 @@
-package me.xjqsh.lesraisinsadd.item;
+package me.xjqsh.lesraisinsadd.item.armor;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
