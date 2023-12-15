@@ -16,14 +16,20 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.resource.ISelectiveResourceReloadListener;
 
 @Mod.EventBusSubscriber(modid = Reference.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class ModelReg {
-    private static final ResourceLocation beam = new ResourceLocation("lesraisinsadd", "entity/beam");
-    private static IBakedModel cachedModel;
+public enum ModelCaches {
+    BEAM("entity/beam"),
+    AF6("special/af6_scope"),
+    AF6_LIGHT("special/af6_scope_light");
 
+    private final ResourceLocation rl;
+    private IBakedModel cachedModel;
+    ModelCaches(String rl){
+        this.rl = new ResourceLocation("lesraisinsadd", rl);
+    }
     @OnlyIn(Dist.CLIENT)
-    public static IBakedModel getModel() {
+    public IBakedModel getModel() {
         if (cachedModel == null) {
-            IBakedModel model = Minecraft.getInstance().getModelManager().getModel(beam);
+            IBakedModel model = Minecraft.getInstance().getModelManager().getModel(rl);
             if (model == Minecraft.getInstance().getModelManager().getMissingModel()) {
                 return model;
             }
@@ -31,13 +37,20 @@ public class ModelReg {
         }
         return cachedModel;
     }
+
     @SubscribeEvent
     @OnlyIn(Dist.CLIENT)
     public static void register(ModelRegistryEvent event) {
-        ModelLoader.addSpecialModel(beam);
+        for (ModelCaches c : ModelCaches.values()) {
+            ModelLoader.addSpecialModel(c.rl);
+        }
         IResourceManager manager = Minecraft.getInstance().getResourceManager();
         ((SimpleReloadableResourceManager) manager).registerReloadListener(
-                (ISelectiveResourceReloadListener) (resourceManager, resourcePredicate) -> cachedModel=null
+                (ISelectiveResourceReloadListener) (resourceManager, resourcePredicate) -> {
+                    for (ModelCaches c : ModelCaches.values()) {
+                        c.cachedModel = null;
+                    }
+                }
         );
     }
 }

@@ -53,6 +53,7 @@ public class mp18_animation extends SkinAnimationModel {
             RenderUtil.renderModel(getModelComponent(skin, BOLT), stack, matrices, renderBuffer, light, overlay);
         }
         matrices.popPose();
+
         PlayerHandAnimation.render(controller, transformType, matrices, renderBuffer, light);
     }
 

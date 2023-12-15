@@ -30,6 +30,7 @@
     "item.lesraisinsadd.origin_bullet": "起源弹",
     "item.lesraisinsadd.flintlock_bullet": "燧发枪弹丸",
     "item.lesraisinsadd.flintlock_royal": "皇家燧发枪",
+    "item.lesraisinsadd.mp18": "Quis ut Deus",
     "info.lesraisins.more_effect_gunitem": "按住 [%s] 以查看特殊效果",
     "key.lesraisins.more_effect_hold": "显示枪械特殊效果",
     "button.lesraisins.auto_reload": "自动换弹",
@@ -49,7 +50,8 @@
 
     "tooltip.lesraisins.sa58": "山雨欲来",
 
-    "tooltip.lesraisins.ace_of_spades": "“盖牌认输永远不在选择之列”"
+    "tooltip.lesraisins.ace_of_spades": "“盖牌认输永远不在选择之列”",
 
-
+    "tooltip.lesraisins.mp18_1": "未花喜爱的冲锋枪。",
+    "tooltip.lesraisins.mp18_2": "无论何时何地，这件武器都会为了未花而大展身手。"
 }

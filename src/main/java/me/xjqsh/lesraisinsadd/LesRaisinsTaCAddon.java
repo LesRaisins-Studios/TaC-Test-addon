@@ -10,6 +10,7 @@ import me.xjqsh.lesraisinsadd.client.render.ArrowRender;
 import me.xjqsh.lesraisinsadd.client.render.BeamRender;
 import me.xjqsh.lesraisinsadd.client.render.ModelLoader;
 import me.xjqsh.lesraisinsadd.client.render.model.gun.*;
+import me.xjqsh.lesraisinsadd.client.render.model.scope.af6_scope;
 import me.xjqsh.lesraisinsadd.entity.CrossBowArrowEntity;
 import me.xjqsh.lesraisinsadd.init.*;
 import me.xjqsh.lesraisinsadd.network.PacketHandler;
@@ -52,15 +53,17 @@ public class LesRaisinsTaCAddon {
         PacketHandler.init();
     }
     private void onCommonSetupComplete(FMLLoadCompleteEvent event) {
-        ProjectileManager.getInstance().registerFactory(ModItems.CROSSBOW_ARROW.get(),
-                new CrossBowArrowEntity.ArrowFactory());
+        event.enqueueWork(()->{
+            ProjectileManager.getInstance().registerFactory(ModItems.CROSSBOW_ARROW.get(),
+                    new CrossBowArrowEntity.ArrowFactory());
 
-        ProjectileManager.getInstance().registerFactory(ModItems.M202_ROCKET.get(),
-                (worldIn, entity, weapon, item, modifiedGun, randP, randY) ->
-                    new MissileEntity(com.tac.guns.init.ModEntities.RPG7_MISSILE.get(),
-                            worldIn, entity, weapon, item, modifiedGun)
+            ProjectileManager.getInstance().registerFactory(ModItems.M202_ROCKET.get(),
+                    (worldIn, entity, weapon, item, modifiedGun, randP, randY) ->
+                            new MissileEntity(com.tac.guns.init.ModEntities.RPG7_MISSILE.get(),
+                                    worldIn, entity, weapon, item, modifiedGun)
 
-        );
+            );
+        });
     }
 
     private void onClientSetup(FMLClientSetupEvent event) {
@@ -126,6 +129,8 @@ public class LesRaisinsTaCAddon {
                 new hk433_animation());
         ModelOverrides.register(ModItems.MP18.get(),
                 new mp18_animation());
+        ModelOverrides.register(ModItems.AF6.get(),
+                new af6_scope());
 
         P90AnimationController.getInstance();
         PP19AnimationController.getInstance();

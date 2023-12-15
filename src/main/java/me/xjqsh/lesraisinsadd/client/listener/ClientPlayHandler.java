@@ -92,6 +92,11 @@ public class ClientPlayHandler {
         }else if(item.equals(ModItems.SA58.get())){
             event.getToolTip().add(new TranslationTextComponent("tooltip.lesraisins.sa58")
                     .withStyle(TextFormatting.ITALIC));
+        } else if (item.equals(ModItems.MP18.get())) {
+            event.getToolTip().add(new TranslationTextComponent("tooltip.lesraisins.mp18_1")
+                    .withStyle(TextFormatting.ITALIC));
+            event.getToolTip().add(new TranslationTextComponent("tooltip.lesraisins.mp18_2")
+                    .withStyle(TextFormatting.ITALIC));
         }
     }
 

@@ -2,7 +2,7 @@ package me.xjqsh.lesraisinsadd.client.render;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
-import me.xjqsh.lesraisinsadd.client.listener.ModelReg;
+import me.xjqsh.lesraisinsadd.client.listener.ModelCaches;
 import me.xjqsh.lesraisinsadd.entity.BeamEntity;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.ItemRenderer;
@@ -57,7 +57,7 @@ public class BeamRender extends EntityRenderer<BeamEntity> {
             matrixStack.translate(0,0,20);
             matrixStack.scale(1,1,40f);
 
-            IBakedModel model = ModelReg.getModel();
+            IBakedModel model = ModelCaches.BEAM.getModel();
             if(model!=null){
                 IVertexBuilder builder;
                 builder = ItemRenderer.getFoilBufferDirect(buffer, TEST, true, false);

@@ -4,9 +4,12 @@ import com.tac.guns.GunMod;
 import com.tac.guns.common.GunModifiers;
 import com.tac.guns.item.AmmoItem;
 import com.tac.guns.item.GunItem;
+import com.tac.guns.item.ScopeItem;
 import com.tac.guns.item.TransitionalTypes.TimelessAmmoItem;
 import com.tac.guns.item.TransitionalTypes.TimelessGunItem;
 import com.tac.guns.item.TransitionalTypes.TimelessPistolGunItem;
+import com.tac.guns.item.attachment.impl.Scope;
+import com.tac.guns.item.attachment.impl.ScopeZoomData;
 import me.xjqsh.lesraisinsadd.Reference;
 import me.xjqsh.lesraisinsadd.item.AceItem;
 import me.xjqsh.lesraisinsadd.item.BulletProofVestItem;
@@ -18,6 +21,7 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Rarity;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -105,6 +109,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> M202_ROCKET = REGISTER.register("m202_rocket",
             () -> new AmmoItem(new Item.Properties().stacksTo(6).tab(GunMod.AMMO)));
+
+    public static final RegistryObject<Item> AF6 = REGISTER.register("af6_scope",
+            () -> new ScopeItem(Scope.create(new ScopeZoomData[]{new ScopeZoomData(0.00F, 0.00F)}, 1.875F, 0.325F, "coyote",
+                    new ResourceLocation("lesraisins:af6")).viewFinderOffset(0.415).viewFinderOffsetSpecial(0.415), new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
 
 
     public static final RegistryObject<Item> SEAL = REGISTER.register("seal",
