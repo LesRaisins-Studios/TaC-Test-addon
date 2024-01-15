@@ -8,11 +8,12 @@ import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.model.ItemCameraTransforms;
 import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.entity.Pose;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.vector.Vector3f;
 
-public class ThrowableItemRenderer extends EntityRenderer<ThrowableItemEntity<?>> {
-    public ThrowableItemRenderer(EntityRendererManager renderManager) {
+public class NoRotGrenadeRenderer extends EntityRenderer<ThrowableItemEntity<?>> {
+    public NoRotGrenadeRenderer(EntityRendererManager renderManager) {
         super(renderManager);
     }
 
@@ -25,6 +26,10 @@ public class ThrowableItemRenderer extends EntityRenderer<ThrowableItemEntity<?>
             stack.translate(0.0, 0.15, 0.0);
             stack.mulPose(Vector3f.XP.rotationDegrees(-rotation));
             stack.translate(0.0, -0.15, 0.0);
+
+            stack.translate(0, entity.getDimensionsForge(Pose.STANDING).height / 2, 0);
+            stack.mulPose(Vector3f.ZP.rotationDegrees(-90F));
+            stack.translate(0, -entity.getDimensionsForge(Pose.STANDING).height / 2, 0);
 
             stack.translate(0.0, 0.5, 0.0);
             Minecraft.getInstance().getItemRenderer()

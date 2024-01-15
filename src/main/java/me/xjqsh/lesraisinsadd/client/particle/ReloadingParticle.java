@@ -28,7 +28,7 @@ public class ReloadingParticle extends SpriteTexturedParticle {
         this.xd = motionX;
         this.yd = motionY;
         this.zd = motionZ;
-        this.quadSize = 0.3f;
+        this.quadSize = 0.1f;
         this.yOffset = 1.1;
         this.lifetime = 1200;
         this.hasPhysics = false;
@@ -48,7 +48,7 @@ public class ReloadingParticle extends SpriteTexturedParticle {
         this.y = player.getY()+yOffset;
         this.z = player.getZ();
         yd *= 0.7f;
-        quadSize = Math.min(quadSize + 0.1f, 0.8f);
+        quadSize = Math.min(quadSize + 0.05f, 0.4f);
         if (this.age++ >= this.lifetime || !player.isAlive() || !SyncedPlayerData.instance().get(player, ModSyncedDataKeys.RELOADING)) {
             this.remove();
         } else {
@@ -63,6 +63,7 @@ public class ReloadingParticle extends SpriteTexturedParticle {
         Vector3f v = new Vector3f(renderInfo.getLookVector().x(),0,renderInfo.getLookVector().z());
         v.transform(new Quaternion(Vector3f.YN.rotationDegrees(90)));
         v.normalize();
+        v.mul(0.55f);
 
         float x = (float)(MathHelper.lerp(partialTicks, this.xo, this.x) - projectedView.x() - v.x());
         float y = (float)(MathHelper.lerp(partialTicks, this.yo, this.y) - projectedView.y());

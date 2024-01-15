@@ -9,15 +9,19 @@ import me.xjqsh.lesraisinsadd.client.animation.*;
 import me.xjqsh.lesraisinsadd.client.render.entity.ArrowRender;
 import me.xjqsh.lesraisinsadd.client.render.entity.BeamRender;
 import me.xjqsh.lesraisinsadd.client.render.ModelLoader;
+import me.xjqsh.lesraisinsadd.client.render.entity.NoRotGrenadeRenderer;
 import me.xjqsh.lesraisinsadd.client.render.entity.ThrowableItemRenderer;
 import me.xjqsh.lesraisinsadd.client.render.model.gun.*;
 import me.xjqsh.lesraisinsadd.client.render.model.scope.af6_scope;
 import me.xjqsh.lesraisinsadd.entity.CrossBowArrowEntity;
 import me.xjqsh.lesraisinsadd.init.*;
+import me.xjqsh.lesraisinsadd.item.grenades.ThrowableItem;
 import me.xjqsh.lesraisinsadd.network.PacketHandler;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.entity.AreaEffectCloudRenderer;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.projectile.ThrowableEntity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -27,12 +31,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @Mod(Reference.MOD_ID)
 public class LesRaisinsTaCAddon {
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public LesRaisinsTaCAddon() {
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.clientSpec);
@@ -163,7 +168,11 @@ public class LesRaisinsTaCAddon {
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.BEAM.get(), BeamRender::new);
 
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.THROWABLE_SMOKE_GRENADE.get(), ThrowableItemRenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(ModEntities.THROWABLE_EFFECT_GRENADE.get(), ThrowableItemRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntities.THROWABLE_EXPLODE_GRENADE.get(), ThrowableItemRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntities.HOLY_GRENADE.get(), ThrowableItemRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntities.DECOY_GRENADE.get(), NoRotGrenadeRenderer::new);
+
+//        RenderingRegistry.registerEntityRenderingHandler(ModEntities.THROWABLE_EFFECT_GRENADE.get(), ThrowableItemRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.EFFECT_CLOUD.get(), AreaEffectCloudRenderer::new);
 
         LRKeys.init();

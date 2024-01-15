@@ -1,34 +1,36 @@
 package me.xjqsh.lesraisinsadd.entity.throwable;
 
 import me.xjqsh.lesraisinsadd.entity.ModifiedAreaEffectCloud;
+import me.xjqsh.lesraisinsadd.item.grenades.data.SmokeGrenadeMeta;
 import me.xjqsh.lesraisinsadd.init.ModEntities;
-import me.xjqsh.lesraisinsadd.init.ModItems;
 import me.xjqsh.lesraisinsadd.init.ModParticleTypes;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.particle.Particle;
 import net.minecraft.client.particle.ParticleManager;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.world.World;
 
 import java.util.List;
 
-public class ThrowableSmokeGrenadeEntity extends ThrowableItemEntity {
-    public ThrowableSmokeGrenadeEntity(EntityType<? extends ThrowableItemEntity> entityType, World worldIn) {
+public class SmokeGrenadeEntity extends ThrowableItemEntity<SmokeGrenadeMeta> {
+    public SmokeGrenadeEntity(EntityType<? extends ThrowableItemEntity> entityType, World worldIn) {
         super(entityType, worldIn);
-        this.setItem(new ItemStack(ModItems.SMOKE_GRENADE.get()));
-        this.setMaxLife(640);
-        this.setShouldBounce(true);
-        this.setGravityVelocity(0.055F);
     }
 
-    public ThrowableSmokeGrenadeEntity(World world, LivingEntity player) {
-        super(ModEntities.THROWABLE_SMOKE_GRENADE.get(), world, player);
-        this.setItem(new ItemStack(ModItems.SMOKE_GRENADE.get()));
-        this.setShouldBounce(true);
-        this.setGravityVelocity(0.055F);
+    public SmokeGrenadeEntity(World world, LivingEntity player,int useTick, SmokeGrenadeMeta meta) {
+        super(ModEntities.THROWABLE_SMOKE_GRENADE.get(), world, player, meta);
+    }
+
+    @Override
+    public SmokeGrenadeMeta createEmptyMeta() {
+        return new SmokeGrenadeMeta();
+    }
+
+    @Override
+    public SmokeGrenadeMeta getMeta(){
+        return super.getMeta();
     }
 
     @Override
@@ -93,10 +95,4 @@ public class ThrowableSmokeGrenadeEntity extends ThrowableItemEntity {
 //        SoundEvent sound = ModSounds.ENTITY_SMOKE_GRENADE_HIT.get();
 //        this.world.playSound(null, result.getHitVec().x, result.getHitVec().y, result.getHitVec().z, sound, SoundCategory.AMBIENT, 1.0F, 1.0F);
 //    }
-
-    @Override
-    public void onDeath(){
-
-    }
-
 }

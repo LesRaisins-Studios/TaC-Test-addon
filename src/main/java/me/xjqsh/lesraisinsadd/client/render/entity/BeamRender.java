@@ -43,19 +43,17 @@ public class BeamRender extends EntityRenderer<BeamEntity> {
         {
             matrixStack.translate(0,0.125,0);
 
-            BeamEntity.BeamInfo info = entity.getBeamInfo();
+            matrixStack.mulPose(Vector3f.YN.rotationDegrees(entity.getYr()));
+            matrixStack.mulPose(Vector3f.XP.rotationDegrees(entity.getXr()));
 
-            matrixStack.mulPose(Vector3f.YN.rotationDegrees(info.getYr()));
-            matrixStack.mulPose(Vector3f.XP.rotationDegrees(info.getXr()));
-
-            matrixStack.mulPose(Vector3f.ZP.rotationDegrees((entity.tickCount*info.getRotateSpeed() / 2f) % 20 * 18));
+            matrixStack.mulPose(Vector3f.ZP.rotationDegrees((entity.tickCount*entity.getRotateSpeed() / 2f) % 20 * 18));
 
 //            matrixStack.translate(0,0,10-entity.getLength()*5);
 //            matrixStack.scale(info.getScaleMultiplier(),info.getScaleMultiplier(),1.0f);
-//            matrixStack.scale(entity.calcScale(),entity.calcScale(),10f*entity.getLength());
+            matrixStack.scale(entity.calcScale(),entity.calcScale(),1);
 
-            matrixStack.translate(0,0,20);
-            matrixStack.scale(1,1,40f);
+            matrixStack.translate(0,0,10);
+            matrixStack.scale(1,1,20f);
 
             IBakedModel model = ModelCaches.BEAM.getModel();
             if(model!=null){
@@ -72,12 +70,12 @@ public class BeamRender extends EntityRenderer<BeamEntity> {
                     for (Direction direction : var9) {
                         random.setSeed(42L);
                         renderQuads(matrixStack, builder, model.getQuads(null, direction, random),
-                                15728880, OverlayTexture.NO_OVERLAY, info.getColor());
+                                15728880, OverlayTexture.NO_OVERLAY, entity.getColor());
                     }
 
                     random.setSeed(42L);
                     renderQuads(matrixStack, builder, model.getQuads(null, null, random),
-                            15728880, OverlayTexture.NO_OVERLAY, info.getColor());
+                            15728880, OverlayTexture.NO_OVERLAY, entity.getColor());
                 }
                 matrixStack.popPose();
 

@@ -1,0 +1,16 @@
+{
+  "canCook": true,
+  "shouldRot": true,
+  "shouldBounce": true,
+  "brokeOnGround": false,
+  "gravityVelocity": 0.03,
+  "speed": 2.0,
+  "maxCookTime": 120,
+  "maxLife": 120,
+  "bounceFactor": 0.5,
+  "power": 2.0,
+  "radius": 5.0,
+  "createBeam": false,
+  "hostileDamage": 20.0,
+  "friendlyHeal": 12.0
+}

@@ -1,0 +1,11 @@
+{
+  "canCook": true,
+  "shouldRot": true,
+  "shouldBounce": true,
+  "brokeOnGround": false,
+  "gravityVelocity": 0.03,
+  "speed": 1.0,
+  "maxCookTime": 200,
+  "maxLife": 400,
+  "bounceFactor": 0.5
+}

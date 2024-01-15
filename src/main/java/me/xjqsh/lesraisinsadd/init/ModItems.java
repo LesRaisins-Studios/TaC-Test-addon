@@ -11,19 +11,24 @@ import com.tac.guns.item.TransitionalTypes.TimelessPistolGunItem;
 import com.tac.guns.item.attachment.impl.Scope;
 import com.tac.guns.item.attachment.impl.ScopeZoomData;
 import me.xjqsh.lesraisinsadd.Reference;
+import me.xjqsh.lesraisinsadd.entity.throwable.DecoyGrenadeEntity;
+import me.xjqsh.lesraisinsadd.entity.throwable.HolyGrenadeEntity;
+import me.xjqsh.lesraisinsadd.entity.throwable.SmokeGrenadeEntity;
 import me.xjqsh.lesraisinsadd.item.AceItem;
+import me.xjqsh.lesraisinsadd.item.TestBeamItem;
 import me.xjqsh.lesraisinsadd.item.armor.BulletProofVestItem;
 import me.xjqsh.lesraisinsadd.item.armor.CustomArmorMaterial;
-import me.xjqsh.lesraisinsadd.item.TestBeamItem;
-import me.xjqsh.lesraisinsadd.item.grenades.EffectGrenadeItem;
-import me.xjqsh.lesraisinsadd.item.grenades.SmokeGrenadeItem;
+import me.xjqsh.lesraisinsadd.item.grenades.ThrowableItem;
+import me.xjqsh.lesraisinsadd.item.grenades.data.ExplodeGrenadeMeta;
+import me.xjqsh.lesraisinsadd.item.grenades.data.HolyGrenadeMeta;
+import me.xjqsh.lesraisinsadd.item.grenades.data.SmokeGrenadeMeta;
+import me.xjqsh.lesraisinsadd.item.grenades.data.ThrowableMeta;
 import me.xjqsh.lesraisinsadd.item.shield.FlashShieldItem;
 import me.xjqsh.lesraisinsadd.item.shield.RiotShieldItem;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Rarity;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -131,15 +136,24 @@ public class ModItems {
 
     /*throwable*/
     public static final RegistryObject<Item> SMOKE_GRENADE = REGISTER.register("smoke_grenade",
-            () -> new SmokeGrenadeItem(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES), 20 * 7, 1.425f, 2.1f));
-    public static final RegistryObject<Item> MOLOTOV = REGISTER.register("molotov",
-            () ->{
-                EffectGrenadeItem item = new EffectGrenadeItem(
-                    new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),  1.85f, EffectGrenadeItem.MOLOTOV);
-                item.setExtinguishBySmoke(true);
-                item.setMinRadius(2.0f);
-                item.setMaxRadius(4.0f);
-                item.setAreaDuration(300);
-                item.setParticle(()-> ParticleTypes.FLAME);
-                return item;} );
+            () -> new ThrowableItem<SmokeGrenadeMeta>(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),
+                    SmokeGrenadeEntity::new
+            ){});
+    public static final RegistryObject<Item> HOLY_GRENADE = REGISTER.register("holy_grenade",
+            () -> new ThrowableItem<HolyGrenadeMeta>(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),
+                    HolyGrenadeEntity::new){});
+    public static final RegistryObject<Item> DECOY_GRENADE = REGISTER.register("decoy_grenade",
+            () -> new ThrowableItem<ThrowableMeta>(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),
+                    DecoyGrenadeEntity::new){});
+
+//    public static final RegistryObject<Item> MOLOTOV = REGISTER.register("molotov",
+//            () ->{
+//                EffectGrenadeItem item = new EffectGrenadeItem(
+//                    new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),  1.85f, EffectGrenadeItem.MOLOTOV);
+//                item.setExtinguishBySmoke(true);
+//                item.setMinRadius(2.0f);
+//                item.setMaxRadius(4.0f);
+//                item.setAreaDuration(300);
+//                item.setParticle(()-> ParticleTypes.FLAME);
+//                return item;} );
 }
