@@ -40,7 +40,3 @@ jobs:
       uses: actions/upload-artifact@v3.1.2
       with:
         path: build/libs/*.jar
-
-    # See: https://github.com/gradle/actions/blob/main/dependency-submission/README.md
-    - name: Generate and submit dependency graph
-      uses: gradle/actions/dependency-submission@ec92e829475ac0c2315ea8f9eced72db85bb337a # v3.0.0
