@@ -5,46 +5,31 @@ import com.tac.guns.entity.DamageSourceExplosion;
 import com.tac.guns.entity.IExplosionProvider;
 import me.xjqsh.lesraisinsadd.entity.BeamEntity;
 import me.xjqsh.lesraisinsadd.init.ModEntities;
-import me.xjqsh.lesraisinsadd.item.grenades.data.ExplodeGrenadeMeta;
-import me.xjqsh.lesraisinsadd.item.grenades.data.HolyGrenadeMeta;
+import me.xjqsh.lesraisinsadd.common.data.grenades.HolyGrenadeMeta;
+import me.xjqsh.lesraisinsadd.item.grenades.ThrowableItem;
 import me.xjqsh.lesraisinsadd.util.EntityUtil;
-import me.xjqsh.lesraisinsadd.util.ExplodeUtil;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.particles.ParticleTypes;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
-import net.minecraft.util.Rotation;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.vector.Vector3f;
 import net.minecraft.world.World;
-import net.minecraftforge.common.Tags;
 
 import java.awt.*;
-import java.util.Random;
 
 public class HolyGrenadeEntity extends ThrowableItemEntity<HolyGrenadeMeta> implements IExplosionProvider {
     public HolyGrenadeEntity(EntityType<? extends ThrowableItemEntity> entityType, World worldIn) {
         super(entityType, worldIn);
     }
 
-    public HolyGrenadeEntity(World world, LivingEntity player, int useTick, HolyGrenadeMeta meta) {
+    public HolyGrenadeEntity(World world, LivingEntity player, int useTick, ThrowableItem<HolyGrenadeMeta> meta) {
         super(ModEntities.HOLY_GRENADE.get(), world, player, meta);
-        this.maxLife = meta.getMaxLife() - useTick;
-    }
-
-    @Override
-    public HolyGrenadeMeta createEmptyMeta() {
-        return new HolyGrenadeMeta();
+        this.maxLife = meta.getMeta().getMaxLife() - useTick;
     }
 
     @Override
@@ -73,8 +58,8 @@ public class HolyGrenadeEntity extends ThrowableItemEntity<HolyGrenadeMeta> impl
             this.level.addParticle(ParticleTypes.EXPLOSION_EMITTER,center.x,center.y+0.2,center.z,
                     0,0,0);
 
-            this.level.playLocalSound(center.x, center.y, center.z, SoundEvents.GENERIC_EXPLODE, SoundCategory.BLOCKS, 4.0F, (1.0F + (this.level.random.nextFloat() - this.level.random.nextFloat()) * 0.2F) * 0.7F, false);
-
+            this.level.playLocalSound(center.x, center.y, center.z, SoundEvents.GENERIC_EXPLODE, SoundCategory.BLOCKS, 4.0F,
+                    (1.0F + (this.level.random.nextFloat() - this.level.random.nextFloat()) * 0.2F) * 0.7F, false);
 
             for (int i = 0; i < 128; i++) {
                 Vector3f v = new Vector3f(this.random.nextFloat()-0.5f,0,this.random.nextFloat()-0.5f);

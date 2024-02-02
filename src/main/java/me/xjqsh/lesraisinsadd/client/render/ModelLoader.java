@@ -19,7 +19,7 @@ public class ModelLoader {
     public static SkinLoader PPK20 = register(new SkinLoader(ModItems.PPK20.getId(),
             BODY,MAG_STANDARD,BOLT));
     public static SkinLoader SVD = register(new SkinLoader(ModItems.SVD.getId(),
-            BODY,MAG_STANDARD,BOLT,RAIL_SCOPE));
+            BODY,MAG_STANDARD,BOLT,RAIL_SCOPE,BULLET));
     public static SkinLoader AUG = register(new SkinLoader(ModItems.AUG.getId(),
             BODY,MAG_STANDARD,MAG_EXTENDED,BOLT,
             MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT,MUZZLE_SILENCER,
@@ -76,6 +76,20 @@ public class ModelLoader {
             STOCK_LIGHT,STOCK_HEAVY,STOCK_TACTICAL));
     public static SkinLoader MP18 = register(new SkinLoader(ModItems.MP18.getId(),
             BODY,BOLT,MAG_STANDARD,MAG_EXTENDED));
+    public static SkinLoader X26 = register(new SkinLoader(ModItems.X26.getId(),
+            BODY,MAG_STANDARD));
+    public static SkinLoader BAM4 = register(new SkinLoader(ModItems.BAM4.getId(),
+            BODY,BOLT,SIGHT,
+            MAG_STANDARD,MAG_EXTENDED,
+            MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT,MUZZLE_SILENCER,
+            STOCK_LIGHT,STOCK_TACTICAL));
+
+    public static SkinLoader ALEX = register(new SkinLoader(ModItems.ALEX.getId(),
+            BODY,W_HEAD,W_ARM_L,W_ARM_R,W_LEG_L,W_LEG_R));
+    public static SkinLoader XM8 = register(new SkinLoader(ModItems.XM8.getId(),
+            BODY,BOLT,MAG_STANDARD,PULL));
+    public static SkinLoader M1892 = register(new SkinLoader(ModItems.M1892.getId(),
+            BODY,HAMMER,BULLET,CYLINDER,BULLET_SHELL));
 
     public static SkinLoader register(SkinLoader skinLoader){
         SkinLoader.register(skinLoader.getGun(),skinLoader);

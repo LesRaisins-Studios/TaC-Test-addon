@@ -10,7 +10,8 @@
     "ProjectileEntityMixin"
   ],
   "client": [
-    "CooldownTrackerMixin"
+    "CooldownTrackerMixin",
+    "OverlayRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

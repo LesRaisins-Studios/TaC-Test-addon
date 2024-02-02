@@ -4,8 +4,8 @@ package me.xjqsh.lesraisinsadd.entity.throwable;
 import com.tac.guns.entity.DamageSourceExplosion;
 import com.tac.guns.entity.IExplosionProvider;
 import me.xjqsh.lesraisinsadd.init.ModEntities;
-import me.xjqsh.lesraisinsadd.item.grenades.data.ExplodeGrenadeMeta;
-import me.xjqsh.lesraisinsadd.item.grenades.data.ThrowableMeta;
+import me.xjqsh.lesraisinsadd.common.data.grenades.ExplodeGrenadeMeta;
+import me.xjqsh.lesraisinsadd.item.grenades.ThrowableItem;
 import me.xjqsh.lesraisinsadd.util.ExplodeUtil;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -16,14 +16,9 @@ public class ExplodeGrenadeEntity extends ThrowableItemEntity<ExplodeGrenadeMeta
         super(entityType, worldIn);
     }
 
-    public ExplodeGrenadeEntity(World world, LivingEntity player, ExplodeGrenadeMeta meta, int useTick) {
+    public ExplodeGrenadeEntity(World world, LivingEntity player, ThrowableItem<ExplodeGrenadeMeta> meta, int useTick) {
         super(ModEntities.THROWABLE_EXPLODE_GRENADE.get(), world, player, meta);
-        this.maxLife = meta.getMaxLife() - useTick;
-    }
-
-    @Override
-    public ExplodeGrenadeMeta createEmptyMeta() {
-        return new ExplodeGrenadeMeta();
+        this.maxLife = meta.getMeta().getMaxLife() - useTick;
     }
 
     @Override

@@ -4,10 +4,8 @@ import me.xjqsh.lesraisinsadd.Reference;
 import me.xjqsh.lesraisinsadd.entity.BeamEntity;
 import me.xjqsh.lesraisinsadd.entity.CrossBowArrowEntity;
 import me.xjqsh.lesraisinsadd.entity.ModifiedAreaEffectCloud;
-import me.xjqsh.lesraisinsadd.entity.throwable.DecoyGrenadeEntity;
-import me.xjqsh.lesraisinsadd.entity.throwable.ExplodeGrenadeEntity;
-import me.xjqsh.lesraisinsadd.entity.throwable.HolyGrenadeEntity;
-import me.xjqsh.lesraisinsadd.entity.throwable.SmokeGrenadeEntity;
+import me.xjqsh.lesraisinsadd.entity.X26HookEntity;
+import me.xjqsh.lesraisinsadd.entity.throwable.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
@@ -30,8 +28,10 @@ public class ModEntities
     public static final RegistryObject<EntityType<ExplodeGrenadeEntity>> THROWABLE_EXPLODE_GRENADE = registerBasic("explode_grenade", ExplodeGrenadeEntity::new);
     public static final RegistryObject<EntityType<HolyGrenadeEntity>> HOLY_GRENADE = registerBasic("holy_grenade", HolyGrenadeEntity::new);
     public static final RegistryObject<EntityType<DecoyGrenadeEntity>> DECOY_GRENADE = registerBasic("decoy_grenade", DecoyGrenadeEntity::new);
+    public static final RegistryObject<EntityType<X26HookEntity>> X26_HOOK = registerBasic("x26_hook", X26HookEntity::new);
 
-    //    public static final RegistryObject<EntityType<EffectCloudGrenadeEntity>> THROWABLE_EFFECT_GRENADE = registerBasic("throwable_effect_grenade", EffectCloudGrenadeEntity::new);
+    public static final RegistryObject<EntityType<AreaGrenadeEntity>> AREA_GRENADE = registerBasic("area_grenade", AreaGrenadeEntity::new);
+    public static final RegistryObject<EntityType<EffectGrenadeEntity>> EFFECT_GRENADE = registerBasic("effect_grenade", EffectGrenadeEntity::new);
     public static final RegistryObject<EntityType<ModifiedAreaEffectCloud>> EFFECT_CLOUD = registerBasic("modified_effect_cloud",ModifiedAreaEffectCloud::new);
     private static <T extends Entity> RegistryObject<EntityType<T>> registerBeam(String id, BiFunction<EntityType<T>, World, T> function) {
         EntityType<T> type = EntityType.Builder.of(function::apply, EntityClassification.MISC)

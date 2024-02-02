@@ -31,6 +31,7 @@
     "item.lesraisinsadd.flintlock_bullet": "燧发枪弹丸",
     "item.lesraisinsadd.flintlock_royal": "皇家燧发枪",
     "item.lesraisinsadd.mp18": "Quis ut Deus",
+    "item.lesraisinsadd.bam4": "Et Omnia Vanitas",
     "info.lesraisins.more_effect_gunitem": "按住 [%s] 以查看特殊效果",
     "key.lesraisins.more_effect_hold": "显示枪械特殊效果",
     "button.lesraisins.auto_reload": "自动换弹",
@@ -51,7 +52,16 @@
     "tooltip.lesraisins.sa58": "山雨欲来",
 
     "tooltip.lesraisins.ace_of_spades": "“盖牌认输永远不在选择之列”",
+    "tooltip.lesraisins.bam4_1": "梓的步枪。",
+    "tooltip.lesraisins.bam4_2": "“一切皆虚”的谎言被打破，少女迎来了她的明天。",
+    "tooltip.lesraisins.hg_1": "色色！不可以！死刑！",
+
+
 
     "tooltip.lesraisins.mp18_1": "未花喜爱的冲锋枪。",
-    "tooltip.lesraisins.mp18_2": "无论何时何地，这件武器都会为了未花而大展身手。"
+    "tooltip.lesraisins.mp18_2": "无论何时何地，这件武器都会为了未花而大展身手。",
+
+    "death.attack.lesraisins.poison": "%1$s被有毒气体腐蚀殆尽",
+    "death.attack.lesraisins.poison.drown": "%1$s在有毒气体中窒息了"
+
 }

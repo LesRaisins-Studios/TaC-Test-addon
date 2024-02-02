@@ -1,8 +1,16 @@
 package me.xjqsh.lesraisinsadd.common;
 
+import com.tac.guns.Config;
+import com.tac.guns.common.Gun;
 import com.tac.guns.entity.DamageSourceProjectile;
 import com.tac.guns.event.GunFireEvent;
 import com.tac.guns.event.GunReloadEvent;
+import com.tac.guns.item.GunItem;
+import com.tac.guns.network.message.MessageGunSound;
+import com.tac.guns.util.GunModifierHelper;
+import me.xjqsh.lesraisinsadd.common.data.NetworkDataManager;
+import me.xjqsh.lesraisinsadd.entity.X26HookEntity;
+import me.xjqsh.lesraisinsadd.entity.throwable.AreaGrenadeEntity;
 import me.xjqsh.lesraisinsadd.init.ModItems;
 import me.xjqsh.lesraisinsadd.init.ModTags;
 import me.xjqsh.lesraisinsadd.item.interfaces.IDefeatAction;
@@ -10,23 +18,44 @@ import me.xjqsh.lesraisinsadd.item.interfaces.IFireAction;
 import me.xjqsh.lesraisinsadd.item.interfaces.IReloadAction;
 import me.xjqsh.lesraisinsadd.item.shield.RiotShieldItem;
 import me.xjqsh.lesraisinsadd.network.PacketHandler;
+import me.xjqsh.lesraisinsadd.network.message.SCustomMeta;
 import me.xjqsh.lesraisinsadd.network.message.SDefeatSpEffect;
 import me.xjqsh.lesraisinsadd.network.message.SPlayerReload;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
+
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.Hand;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.world.World;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.OnDatapackSyncEvent;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.network.PacketDistributor;
 
 @Mod.EventBusSubscriber
 public class ServerPlayHandler {
+    @SubscribeEvent
+    public static void onDatapackSync(OnDatapackSyncEvent e) {
+        if (e.getPlayer() == null) {
+            PacketHandler.getPlayChannel().send(PacketDistributor.ALL.noArg(),
+                    new SCustomMeta(NetworkDataManager.getInstance().getMetaMap()));
+            return;
+        }
+
+        PacketHandler.getPlayChannel().send(PacketDistributor.PLAYER.with(e::getPlayer),
+                new SCustomMeta(NetworkDataManager.getInstance().getMetaMap()));
+    }
+
     @SubscribeEvent
     public static void onLivingAttack(LivingAttackEvent event){
         if(event.isCanceled())return;
@@ -99,6 +128,56 @@ public class ServerPlayHandler {
                 PacketDistributor.DIMENSION.with(()-> event.getPlayer().level.dimension()),
                 new SPlayerReload(event.getPlayer().getUUID())
         );
+    }
+
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    public static void onX26GunFire(GunFireEvent.Pre event){
+        if(event.isCanceled() || event.getEntity().level.isClientSide())return;
+        ItemStack weapon = event.getStack();
+        if(ModItems.X26.get().getItem().equals(weapon.getItem())){
+            World world = event.getPlayer().level;
+
+            GunItem item = (GunItem) weapon.getItem();
+            Gun modifiedGun = item.getModifiedGun(weapon);
+
+            PlayerEntity player = event.getPlayer();
+            event.setCanceled(true);
+
+            X26HookEntity hook = new X26HookEntity(event.getPlayer());
+
+            hook.shootFromRotation(event.getPlayer(), event.getPlayer().xRot, event.getPlayer().yRot,
+                    0.0F, 5.0f, 2.5F);
+
+            event.getPlayer().level.addFreshEntity(hook);
+
+            boolean silenced = GunModifierHelper.isSilencedFire(weapon);
+            ResourceLocation fireSound = silenced ? modifiedGun.getSounds().getSilencedFire() : modifiedGun.getSounds().getFire();
+            if (fireSound != null) {
+                double posX = player.getX();
+                double posY = player.getY() + player.getEyeHeight();
+                double posZ = player.getZ();
+                float volume = GunModifierHelper.getFireSoundVolume(weapon);
+
+                // PATCH NOTE: Neko required to remove the random pitch effect in sound
+                final float pitch = 0.9F + world.random.nextFloat() * 0.125F;
+
+                double radius = GunModifierHelper.getModifiedFireSoundRadius(weapon, Config.SERVER.gunShotMaxDistance.get());
+                boolean muzzle = modifiedGun.getDisplay().getFlash() != null;
+                MessageGunSound messageSound = new MessageGunSound(fireSound, SoundCategory.PLAYERS,
+                        (float) posX, (float) posY, (float) posZ, volume, pitch, player.getId(), muzzle, false);
+                PacketDistributor.TargetPoint targetPoint = new PacketDistributor.TargetPoint(posX, posY, posZ, radius, player.level.dimension());
+                com.tac.guns.network.PacketHandler.getPlayChannel().send(PacketDistributor.NEAR.with(() -> targetPoint), messageSound);
+            }
+
+            if (!player.isCreative()) {
+                CompoundNBT tag = weapon.getOrCreateTag();
+                if (!tag.getBoolean("IgnoreAmmo")) {
+                    tag.putInt("AmmoCount", Math.max(0, tag.getInt("AmmoCount") - 1));
+                }
+            }
+
+            MinecraftForge.EVENT_BUS.post(new GunFireEvent.Post(event.getPlayer(), weapon));
+        }
     }
 
     @SubscribeEvent

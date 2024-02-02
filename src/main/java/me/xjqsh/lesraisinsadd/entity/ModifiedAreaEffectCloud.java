@@ -7,6 +7,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.Pose;
 import net.minecraft.network.IPacket;
 import net.minecraft.network.PacketBuffer;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
 import net.minecraftforge.fml.network.NetworkHooks;
@@ -19,6 +20,7 @@ public class ModifiedAreaEffectCloud extends AreaEffectCloudEntity implements IE
 
     public ModifiedAreaEffectCloud(EntityType<? extends AreaEffectCloudEntity> cloud, World world) {
         super(cloud, world);
+        this.setParticle(ParticleTypes.FLAME);
     }
     private float height = 1.0f;
     private float maxRadius = 4.0f;
@@ -46,28 +48,25 @@ public class ModifiedAreaEffectCloud extends AreaEffectCloudEntity implements IE
     }
 
     @Override
-    public void writeSpawnData(PacketBuffer buffer)
-    {
+    public void writeSpawnData(PacketBuffer buffer) {
         buffer.writeFloat(this.height);
         buffer.writeFloat(this.maxRadius);
     }
 
     @Override
-    public void readSpawnData(PacketBuffer buffer)
-    {
+    public void readSpawnData(PacketBuffer buffer) {
         height = buffer.readFloat();
         maxRadius = buffer.readFloat();
     }
 
     @Override
-    public IPacket<?> getAddEntityPacket()
-    {
+    public IPacket<?> getAddEntityPacket() {
         return NetworkHooks.getEntitySpawningPacket(this);
     }
 
     @Override
     public void setRadius(float radiusIn) {
-        if(radiusIn<maxRadius){
+        if(radiusIn < maxRadius){
             super.setRadius(radiusIn);
         }
     }

@@ -5,24 +5,23 @@ import com.tac.guns.common.GunModifiers;
 import com.tac.guns.item.AmmoItem;
 import com.tac.guns.item.GunItem;
 import com.tac.guns.item.ScopeItem;
-import com.tac.guns.item.TransitionalTypes.TimelessAmmoItem;
-import com.tac.guns.item.TransitionalTypes.TimelessGunItem;
-import com.tac.guns.item.TransitionalTypes.TimelessPistolGunItem;
+import com.tac.guns.item.transition.TimelessAmmoItem;
+import com.tac.guns.item.transition.TimelessGunItem;
+import com.tac.guns.item.transition.TimelessPistolGunItem;
 import com.tac.guns.item.attachment.impl.Scope;
 import com.tac.guns.item.attachment.impl.ScopeZoomData;
 import me.xjqsh.lesraisinsadd.Reference;
-import me.xjqsh.lesraisinsadd.entity.throwable.DecoyGrenadeEntity;
-import me.xjqsh.lesraisinsadd.entity.throwable.HolyGrenadeEntity;
-import me.xjqsh.lesraisinsadd.entity.throwable.SmokeGrenadeEntity;
+import me.xjqsh.lesraisinsadd.common.data.grenades.AreaGrenadeMeta;
+import me.xjqsh.lesraisinsadd.entity.throwable.*;
 import me.xjqsh.lesraisinsadd.item.AceItem;
+import me.xjqsh.lesraisinsadd.item.BaGunItem;
 import me.xjqsh.lesraisinsadd.item.TestBeamItem;
 import me.xjqsh.lesraisinsadd.item.armor.BulletProofVestItem;
 import me.xjqsh.lesraisinsadd.item.armor.CustomArmorMaterial;
+import me.xjqsh.lesraisinsadd.item.grenades.SThrowableItem;
 import me.xjqsh.lesraisinsadd.item.grenades.ThrowableItem;
-import me.xjqsh.lesraisinsadd.item.grenades.data.ExplodeGrenadeMeta;
-import me.xjqsh.lesraisinsadd.item.grenades.data.HolyGrenadeMeta;
-import me.xjqsh.lesraisinsadd.item.grenades.data.SmokeGrenadeMeta;
-import me.xjqsh.lesraisinsadd.item.grenades.data.ThrowableMeta;
+import me.xjqsh.lesraisinsadd.common.data.grenades.SmokeGrenadeMeta;
+import me.xjqsh.lesraisinsadd.common.data.grenades.ThrowableMeta;
 import me.xjqsh.lesraisinsadd.item.shield.FlashShieldItem;
 import me.xjqsh.lesraisinsadd.item.shield.RiotShieldItem;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -51,13 +50,23 @@ public class ModItems {
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> HK433 = REGISTER.register("hk433",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
-
+    public static final RegistryObject<GunItem> BAM4 = REGISTER.register("bam4",
+            () -> new BaGunItem(properties -> properties.tab(GunMod.RIFLE)));
+    public static final RegistryObject<GunItem> XM8 = REGISTER.register("xm8",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
+    public static final RegistryObject<GunItem> MCX = REGISTER.register("mcx",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> SVD = REGISTER.register("svd",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SNIPER)));
     public static final RegistryObject<GunItem> NTW20 = REGISTER.register("ntw20",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SNIPER)));
     public static final RegistryObject<GunItem> CROSSBOW = REGISTER.register("crossbow",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SNIPER)));
+    public static final RegistryObject<GunItem> M200 = REGISTER.register("m200",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.SNIPER)));
+    public static final RegistryObject<GunItem> DVL10 = REGISTER.register("dvl10",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.SNIPER)));
+
 
     public static final RegistryObject<GunItem> P90 = REGISTER.register("p90",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
@@ -67,12 +76,15 @@ public class ModItems {
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
     public static final RegistryObject<GunItem> MP18 = REGISTER.register("mp18",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
-
+    public static final RegistryObject<GunItem> NAIL_GUN = REGISTER.register("nailgun",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.SMG)));
 
     public static final RegistryObject<GunItem> QSZ92 = REGISTER.register("qsz92",
             () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
     public static final RegistryObject<GunItem> ANGEL = REGISTER.register("angel",
             () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
+    public static final RegistryObject<GunItem> X26 = REGISTER.register("x26",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.PISTOL),GunModifiers.PISTOL_MOD));
     public static final RegistryObject<GunItem> ENCORE = REGISTER.register("encore",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.PISTOL)));
     public static final RegistryObject<GunItem> THE_LAST_WORD = REGISTER.register("the_last_word",
@@ -83,6 +95,15 @@ public class ModItems {
             () -> new AceItem(properties -> properties.tab(GunMod.PISTOL).rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<GunItem> BULLDOG = REGISTER.register("bulldog",
             () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL)));
+    public static final RegistryObject<GunItem> ALEX = REGISTER.register("alex",
+            () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL)));
+    public static final RegistryObject<GunItem> M1892 = REGISTER.register("m1892",
+            () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL)));
+    public static final RegistryObject<GunItem> COLT_M1873 = REGISTER.register("colt_m1873",
+            () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL)));
+    public static final RegistryObject<GunItem> SW_MODEL3 = REGISTER.register("sw_model3",
+            () -> new TimelessPistolGunItem(properties -> properties.tab(GunMod.PISTOL)));
+
 
     public static final RegistryObject<GunItem> MG42 = REGISTER.register("mg42",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.HEAVY_MATERIAL)));
@@ -140,11 +161,23 @@ public class ModItems {
                     SmokeGrenadeEntity::new
             ){});
     public static final RegistryObject<Item> HOLY_GRENADE = REGISTER.register("holy_grenade",
-            () -> new ThrowableItem<HolyGrenadeMeta>(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),
-                    HolyGrenadeEntity::new){});
+            () -> new SThrowableItem(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),
+                    HolyGrenadeEntity::new));
     public static final RegistryObject<Item> DECOY_GRENADE = REGISTER.register("decoy_grenade",
             () -> new ThrowableItem<ThrowableMeta>(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),
                     DecoyGrenadeEntity::new){});
+
+    public static final RegistryObject<Item> CHEMICAL_GRENADE = REGISTER.register("chemical_grenade",
+            () -> new ThrowableItem<AreaGrenadeMeta>(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),
+                    AreaGrenadeEntity::new){});
+
+    public static final RegistryObject<Item> GAS_GRENADE = REGISTER.register("gas_grenade",
+            () -> new ThrowableItem<AreaGrenadeMeta>(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),
+                    AreaGrenadeEntity::new){});
+    public static final RegistryObject<Item> MOLOTOV = REGISTER.register("molotov",
+            () -> new ThrowableItem<AreaGrenadeMeta>(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),
+                    EffectGrenadeEntity::new){});
+
 
 //    public static final RegistryObject<Item> MOLOTOV = REGISTER.register("molotov",
 //            () ->{

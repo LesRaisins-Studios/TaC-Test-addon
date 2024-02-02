@@ -1,9 +1,10 @@
 package me.xjqsh.lesraisinsadd.entity.throwable;
 
 import me.xjqsh.lesraisinsadd.entity.ModifiedAreaEffectCloud;
-import me.xjqsh.lesraisinsadd.item.grenades.data.SmokeGrenadeMeta;
+import me.xjqsh.lesraisinsadd.common.data.grenades.SmokeGrenadeMeta;
 import me.xjqsh.lesraisinsadd.init.ModEntities;
 import me.xjqsh.lesraisinsadd.init.ModParticleTypes;
+import me.xjqsh.lesraisinsadd.item.grenades.ThrowableItem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.particle.Particle;
 import net.minecraft.client.particle.ParticleManager;
@@ -19,18 +20,8 @@ public class SmokeGrenadeEntity extends ThrowableItemEntity<SmokeGrenadeMeta> {
         super(entityType, worldIn);
     }
 
-    public SmokeGrenadeEntity(World world, LivingEntity player,int useTick, SmokeGrenadeMeta meta) {
+    public SmokeGrenadeEntity(World world, LivingEntity player,int useTick, ThrowableItem<SmokeGrenadeMeta> meta) {
         super(ModEntities.THROWABLE_SMOKE_GRENADE.get(), world, player, meta);
-    }
-
-    @Override
-    public SmokeGrenadeMeta createEmptyMeta() {
-        return new SmokeGrenadeMeta();
-    }
-
-    @Override
-    public SmokeGrenadeMeta getMeta(){
-        return super.getMeta();
     }
 
     @Override

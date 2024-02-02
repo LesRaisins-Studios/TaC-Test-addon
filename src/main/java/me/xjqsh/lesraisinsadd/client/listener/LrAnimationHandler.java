@@ -25,7 +25,7 @@ public class LrAnimationHandler {
         if (!event.getPlayer().getUUID().equals(Minecraft.getInstance().player.getUUID())) return;
         GunAnimationController controller = GunAnimationController.fromItem(event.getStack().getItem());
         if (controller instanceof IFireController) {
-            if(((IFireController) controller).isFireAnimationRunning()){
+            if(((IFireController) controller).isFireAnimationRunning() || controller.isAnimationRunning(GunAnimationController.AnimationLabel.PUMP)){
                 controller.stopAnimation();
             }
             ((IFireController) controller).runFireAnimation();

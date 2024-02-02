@@ -26,4 +26,8 @@ public class BulletProofVestItem extends ArmorItem {
         return model.applySlot(EquipmentSlotType.CHEST);
     }
 
+    @Override
+    public boolean isValidRepairItem(ItemStack p_82789_1_, ItemStack p_82789_2_) {
+        return false;
+    }
 }

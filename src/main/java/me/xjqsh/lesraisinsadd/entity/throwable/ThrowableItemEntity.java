@@ -1,10 +1,12 @@
 package me.xjqsh.lesraisinsadd.entity.throwable;
 
-import me.xjqsh.lesraisinsadd.item.grenades.data.ThrowableMeta;
+import me.xjqsh.lesraisinsadd.common.data.grenades.ThrowableMeta;
+import me.xjqsh.lesraisinsadd.item.grenades.ThrowableItem;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ThrowableEntity;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.IPacket;
 import net.minecraft.network.PacketBuffer;
@@ -24,21 +26,18 @@ public abstract class ThrowableItemEntity<T extends ThrowableMeta> extends Throw
     public float rotation;
     protected int maxLife;
     private ItemStack item = ItemStack.EMPTY;
-    private T throwableMeta;
+    private ThrowableItem<T> metaHolder;
 
     public ThrowableItemEntity(EntityType<? extends ThrowableItemEntity> entityType, World worldIn) {
         super(entityType, worldIn);
-        this.throwableMeta = createEmptyMeta();
     }
-
-    public ThrowableItemEntity(EntityType<? extends ThrowableItemEntity> entityType, World world, LivingEntity player, T meta) {
+    public ThrowableItemEntity(EntityType<? extends ThrowableItemEntity> entityType, World world, LivingEntity player, ThrowableItem<T> meta) {
         super(entityType, player, world);
-        this.throwableMeta = meta;
-        this.maxLife = meta.getMaxLife();
+        this.metaHolder = meta;
+        this.maxLife = getMeta().getMaxLife();
     }
-    public abstract T createEmptyMeta();
     public T getMeta() {
-        return throwableMeta;
+        return metaHolder.getMeta();
     }
 
     public ItemStack getItem() {
@@ -133,14 +132,15 @@ public abstract class ThrowableItemEntity<T extends ThrowableMeta> extends Throw
     @Override
     public void writeSpawnData(PacketBuffer buffer) {
         buffer.writeItemStack(item,true);
-        throwableMeta.writeBuffer(buffer);
         buffer.writeInt(maxLife);
+        buffer.writeRegistryId(this.metaHolder);
     }
     @Override
     public void readSpawnData(PacketBuffer buffer) {
         this.setItem(buffer.readItem());
-        throwableMeta.readBuffer(buffer);
         this.maxLife = buffer.readInt();
+        this.metaHolder = (ThrowableItem<T>) buffer.readRegistryIdSafe(Item.class);
+
     }
     @Override
     public IPacket<?> getAddEntityPacket() {

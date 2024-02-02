@@ -28,7 +28,13 @@ public enum LrModelComponent implements IModelComponent {
     BOTTLE("bottle"),
     STICK("stick"),
     PLATE("plate"),
-    SMOKE("smoke")
+    SMOKE("smoke"),
+    W_HEAD("w_head"),
+    W_ARM_L("arm_left"),
+    W_ARM_R("arm_right"),
+    W_LEG_L("leg_left"),
+    W_LEG_R("leg_right"),
+    CYLINDER("cylinder")
     ;
     public final String key;
     LrModelComponent(String key){

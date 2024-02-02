@@ -22,7 +22,7 @@ public class MG42AnimationController extends GunAnimationController {
 
     public static int INDEX_BULLET_CHAIN = 2;
     public static int INDEX_MAG = 3;
-    public static int INDEX_BLOT = 4;
+    public static int INDEX_BOLT = 4;
     public static int INDEX_CAP = 5;
 
     public static final AnimationMeta RELOAD = new AnimationMeta(new ResourceLocation(Reference.MOD_ID,"animations/mg42_reload.gltf"));

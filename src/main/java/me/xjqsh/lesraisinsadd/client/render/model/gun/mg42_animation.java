@@ -42,7 +42,7 @@ public class mg42_animation extends SkinAnimationModel {
         renderSinglePart(BULLET_CHAIN,MG42AnimationController.INDEX_BULLET_CHAIN,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
         renderSinglePart(MAG_STANDARD,MG42AnimationController.INDEX_MAG,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
         renderSinglePart(CAP,MG42AnimationController.INDEX_CAP,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
-        renderSinglePart(BOLT,MG42AnimationController.INDEX_BLOT,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
+        renderSinglePart(BOLT,MG42AnimationController.INDEX_BOLT,transformType, stack, matrices, renderBuffer, light, overlay, controller, skin);
 
         PlayerHandAnimation.render(controller, transformType, matrices, renderBuffer, light);
     }

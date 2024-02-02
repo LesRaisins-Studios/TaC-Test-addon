@@ -4,7 +4,7 @@ package me.xjqsh.lesraisinsadd.client.listener;
 import com.tac.guns.client.Keys;
 import com.tac.guns.client.handler.ReloadHandler;
 import com.tac.guns.client.render.animation.module.GunAnimationController;
-import com.tac.guns.item.TransitionalTypes.TimelessGunItem;
+import com.tac.guns.item.transition.TimelessGunItem;
 import me.xjqsh.lesraisinsadd.Config;
 import me.xjqsh.lesraisinsadd.client.particle.ReloadingParticle;
 import me.xjqsh.lesraisinsadd.event.ItemCooldownEvent;
@@ -97,6 +97,14 @@ public class ClientPlayHandler {
                     .withStyle(TextFormatting.ITALIC));
             event.getToolTip().add(new TranslationTextComponent("tooltip.lesraisins.mp18_2")
                     .withStyle(TextFormatting.ITALIC));
+        } else if (item.equals(ModItems.BAM4.get())) {
+            event.getToolTip().add(new TranslationTextComponent("tooltip.lesraisins.bam4_1")
+                    .withStyle(TextFormatting.ITALIC));
+            event.getToolTip().add(new TranslationTextComponent("tooltip.lesraisins.bam4_2")
+                    .withStyle(TextFormatting.ITALIC));
+        } else if (item.equals(ModItems.HOLY_GRENADE.get())) {
+            event.getToolTip().add(new TranslationTextComponent("tooltip.lesraisins.hg_1")
+                    .withStyle(TextFormatting.ITALIC));
         }
     }
 
@@ -136,7 +144,7 @@ public class ClientPlayHandler {
             PlayerEntity player = mc.player;
             if (player != null) {
                 ItemStack heldItem = player.getMainHandItem();
-                if (heldItem.getItem() instanceof TimelessGunItem) {
+                if (heldItem.getItem() instanceof TimelessGunItem && !ModItems.X26.get().getItem().equals(heldItem.getItem())) {
                     if(GunAnimationController.fromItem(heldItem.getItem()).isAnimationRunning())return;
                     if(ReloadHandler.get().isReloading())return;
                     if (heldItem.getOrCreateTag().getInt("AmmoCount") == 0) {
