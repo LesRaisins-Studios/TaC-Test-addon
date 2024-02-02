@@ -1,12 +1,30 @@
-# TaC-Test-addon
+# TaC-LesRaisins 
 An experimental TaC addon.  
-As of now, some features of TaC used in this project have not been merged into the official version of TaC.  
-If you want to try it, please use our unoffical fork of TaC as dependency: 
-[TaC-LesRaisins](https://github.com/LesRaisins-Studios/TimelessandClassics_Reforged)
+Dev for our server of the same name "LesRaisins" at first, and now released as a publicly available mod.
 
-Please note that, none of this addon or the “TaC-LesRaisins” have undergone comprehensive testing.  
-The content related to survival mode has not been added yet, and overall it has not reached playable status.  
-We strongly DO NOT recommend using it in a production environment, especially servers or the save you are playing with.  
-Possible risks include save corruption or incompatibility, etc.
+The addon no longer need LesRaisins forked TaC as dependency now.  
 
-If you insist on doing so, it's ON YOUR OWN RISK.
+## Dependency
+The TaC versions required for the addon are shown in the table below
+
+<table>
+    <tr>
+        <th>Minecraft version</th>
+        <th>Addon version</th>
+        <th>TaC version</th>
+    </tr>
+    <tr>
+        <td rowspan="3">1.16.5</td>
+        <td>0.1.2.x</td>
+        <td>0.3.9.2 <a href="https://github.com/LesRaisins-Studios/TimelessandClassics_Reforged">(LesRaisins forked)</a></td>
+    </tr>
+    <tr>
+        <td>0.1.3</td>
+        <td>0.3.10.5</td>
+    </tr>
+    <tr>
+        <td>0.1.4</td>
+        <td>0.3.11.2</td>
+    </tr>
+</table>
+
