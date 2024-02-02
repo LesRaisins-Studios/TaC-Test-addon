@@ -12,19 +12,15 @@ import com.tac.guns.client.util.RenderUtil;
 import com.tac.guns.common.Gun;
 import com.tac.guns.item.GunItem;
 import me.xjqsh.lesraisinsadd.client.animation.SVDAnimationController;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.model.ItemCameraTransforms;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.Util;
-import net.minecraft.util.text.StringTextComponent;
 
 import static com.tac.guns.client.gunskin.ModelComponent.*;
 
 
 public class svd_animation extends SkinAnimationModel {
-    public static float x;
 
     @Override
     public void render(float v, ItemCameraTransforms.TransformType transformType, ItemStack stack, ItemStack parent, LivingEntity entity, MatrixStack matrices, IRenderTypeBuffer renderBuffer, int light, int overlay) {

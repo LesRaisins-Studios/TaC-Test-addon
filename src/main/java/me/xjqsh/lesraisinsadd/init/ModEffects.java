@@ -5,7 +5,6 @@ import me.xjqsh.lesraisinsadd.Reference;
 import me.xjqsh.lesraisinsadd.effect.BurnedEffect;
 import me.xjqsh.lesraisinsadd.effect.PoisionEffect;
 import me.xjqsh.lesraisinsadd.effect.VirusEffect;
-import net.minecraft.entity.ai.attributes.Attribute;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.potion.Effect;

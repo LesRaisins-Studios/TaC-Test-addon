@@ -5,7 +5,6 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.math.EntityRayTraceResult;
 import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -83,7 +82,7 @@ public abstract class AbstractProjectileEntity extends Entity{
     }
 
     public void shoot(double p_70186_1_, double p_70186_3_, double p_70186_5_, float p_70186_7_, float p_70186_8_) {
-        Vector3d vector3d = (new Vector3d(p_70186_1_, p_70186_3_, p_70186_5_)).normalize().add(this.random.nextGaussian() * (double)0.0075F * (double)p_70186_8_, this.random.nextGaussian() * (double)0.0075F * (double)p_70186_8_, this.random.nextGaussian() * (double)0.0075F * (double)p_70186_8_).scale((double)p_70186_7_);
+        Vector3d vector3d = (new Vector3d(p_70186_1_, p_70186_3_, p_70186_5_)).normalize().add(this.random.nextGaussian() * (double)0.0075F * (double)p_70186_8_, this.random.nextGaussian() * (double)0.0075F * (double)p_70186_8_, this.random.nextGaussian() * (double)0.0075F * (double)p_70186_8_).scale(p_70186_7_);
         this.setDeltaMovement(vector3d);
         float f = MathHelper.sqrt(getHorizontalDistanceSqr(vector3d));
         this.yRot = (float)(MathHelper.atan2(vector3d.x, vector3d.z) * (double)(180F / (float)Math.PI));
@@ -110,7 +109,7 @@ public abstract class AbstractProjectileEntity extends Entity{
         this.setDeltaMovement(p_70016_1_, p_70016_3_, p_70016_5_);
         if (this.xRotO == 0.0F && this.yRotO == 0.0F) {
             float f = MathHelper.sqrt(p_70016_1_ * p_70016_1_ + p_70016_5_ * p_70016_5_);
-            this.xRot = (float)(MathHelper.atan2(p_70016_3_, (double)f) * (double)(180F / (float)Math.PI));
+            this.xRot = (float)(MathHelper.atan2(p_70016_3_, f) * (double)(180F / (float)Math.PI));
             this.yRot = (float)(MathHelper.atan2(p_70016_1_, p_70016_5_) * (double)(180F / (float)Math.PI));
             this.xRotO = this.xRot;
             this.yRotO = this.yRot;
@@ -131,7 +130,7 @@ public abstract class AbstractProjectileEntity extends Entity{
     protected void updateRotation() {
         Vector3d vector3d = this.getDeltaMovement();
         float f = MathHelper.sqrt(getHorizontalDistanceSqr(vector3d));
-        this.xRot = lerpRotation(this.xRotO, (float)(MathHelper.atan2(vector3d.y, (double)f) * (double)(180F / (float)Math.PI)));
+        this.xRot = lerpRotation(this.xRotO, (float)(MathHelper.atan2(vector3d.y, f) * (double)(180F / (float)Math.PI)));
         this.yRot = lerpRotation(this.yRotO, (float)(MathHelper.atan2(vector3d.x, vector3d.z) * (double)(180F / (float)Math.PI)));
     }
 

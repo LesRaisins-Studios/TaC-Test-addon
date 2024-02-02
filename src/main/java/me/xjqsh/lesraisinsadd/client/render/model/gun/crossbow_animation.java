@@ -18,14 +18,9 @@ import net.minecraft.nbt.CompoundNBT;
 import static com.tac.guns.client.gunskin.ModelComponent.BODY;
 import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.*;
 
-/*
- * Because the revolver has a rotating chamber, we need to render it in a
- * different way than normal items. In this case we are overriding the model.
- */
 
-/**
- * Author: Timeless Development, and associates.
- */
+
+
 public class crossbow_animation extends SkinAnimationModel {
 
     @Override

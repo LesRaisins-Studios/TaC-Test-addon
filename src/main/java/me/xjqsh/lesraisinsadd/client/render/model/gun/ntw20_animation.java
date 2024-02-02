@@ -17,14 +17,7 @@ import net.minecraft.util.math.vector.Vector3d;
 
 import static com.tac.guns.client.gunskin.ModelComponent.*;
 
-/*
- * Because the revolver has a rotating chamber, we need to render it in a
- * different way than normal items. In this case we are overriding the model.
- */
 
-/**
- * Author: Timeless Development, and associates.
- */
 public class ntw20_animation extends SkinAnimationModel {
     private static Vector3d v1 = new Vector3d(0,0,-2.671875);
     private static Vector3d v2 = new Vector3d(0,0,-0.25);

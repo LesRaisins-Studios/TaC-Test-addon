@@ -5,9 +5,7 @@ import me.xjqsh.lesraisinsadd.Reference;
 import me.xjqsh.lesraisinsadd.network.message.SCustomMeta;
 import me.xjqsh.lesraisinsadd.network.message.SDefeatSpEffect;
 import me.xjqsh.lesraisinsadd.network.message.SPlayerReload;
-import me.xjqsh.lesraisinsadd.network.message.SSpawnBeamMsg;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.network.FMLHandshakeHandler;
 import net.minecraftforge.fml.network.NetworkRegistry;
 import net.minecraftforge.fml.network.simple.SimpleChannel;
 

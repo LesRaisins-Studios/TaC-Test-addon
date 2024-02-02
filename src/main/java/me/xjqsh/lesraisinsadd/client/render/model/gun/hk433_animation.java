@@ -81,7 +81,7 @@ public class hk433_animation extends SkinAnimationModel {
 
     private void renderComponentWithOffset(ItemStack stack, MatrixStack matrices, IRenderTypeBuffer renderBuffer, int light, int overlay, GunSkin skin, IModelComponent modelComponent) {
         if (this.extraOffset.containsKey(modelComponent)) {
-            Vector3d x = (Vector3d)this.extraOffset.get(modelComponent);
+            Vector3d x = this.extraOffset.get(modelComponent);
             matrices.pushPose();
             matrices.translate(x.x(), x.y(), x.z());
             RenderUtil.renderModel(this.getModelComponent(skin, modelComponent), stack, matrices, renderBuffer, light, overlay);

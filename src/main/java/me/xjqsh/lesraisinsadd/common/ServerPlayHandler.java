@@ -10,7 +10,6 @@ import com.tac.guns.network.message.MessageGunSound;
 import com.tac.guns.util.GunModifierHelper;
 import me.xjqsh.lesraisinsadd.common.data.NetworkDataManager;
 import me.xjqsh.lesraisinsadd.entity.X26HookEntity;
-import me.xjqsh.lesraisinsadd.entity.throwable.AreaGrenadeEntity;
 import me.xjqsh.lesraisinsadd.init.ModItems;
 import me.xjqsh.lesraisinsadd.init.ModTags;
 import me.xjqsh.lesraisinsadd.item.interfaces.IDefeatAction;

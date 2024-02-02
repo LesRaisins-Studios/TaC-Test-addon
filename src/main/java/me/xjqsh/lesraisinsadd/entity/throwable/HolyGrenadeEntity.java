@@ -8,7 +8,6 @@ import me.xjqsh.lesraisinsadd.init.ModEntities;
 import me.xjqsh.lesraisinsadd.common.data.grenades.HolyGrenadeMeta;
 import me.xjqsh.lesraisinsadd.item.grenades.ThrowableItem;
 import me.xjqsh.lesraisinsadd.util.EntityUtil;
-import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.monster.MonsterEntity;

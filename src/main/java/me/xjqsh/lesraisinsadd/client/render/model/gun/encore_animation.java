@@ -16,14 +16,9 @@ import net.minecraft.item.ItemStack;
 
 import static com.tac.guns.client.gunskin.ModelComponent.*;
 
-/*
- * Because the revolver has a rotating chamber, we need to render it in a
- * different way than normal items. In this case we are overriding the model.
- */
 
-/**
- * Author: Timeless Development, and associates.
- */
+
+
 public class encore_animation extends SkinAnimationModel {
 
     @Override

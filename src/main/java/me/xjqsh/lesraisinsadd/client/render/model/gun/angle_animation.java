@@ -16,14 +16,7 @@ import static com.tac.guns.client.gunskin.ModelComponent.*;
 import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.BULLETS;
 import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.LOADER;
 
-/*
- * Because the revolver has a rotating chamber, we need to render it in a
- * different way than normal items. In this case we are overriding the model.
- */
 
-/**
- * Author: Timeless Development, and associates.
- */
 public class angle_animation extends SkinAnimationModel {
 
     @Override

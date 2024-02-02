@@ -79,7 +79,7 @@ public class af6_scope implements IOverrideModel {
             double invertProgress = 1.0 - AimingHandler.get().getNormalisedAdsProgress();
             matrixStack.translate(-0.04 * invertProgress, 0.01 * invertProgress, 0.0);
             double scale = 0.7824947999999998 + (double)scopeData.getReticleSizeMod();
-            matrixStack.translate((double)(size / 2.0F), (double)(size / 2.0F), 0.0);
+            matrixStack.translate(size / 2.0F, size / 2.0F, 0.0);
             matrixStack.translate(-((double)size / scale) / 2.0, -((double)size / scale) / 2.0, 0.0);
             matrixStack.translate(0.0, 0.0, 1.0E-4);
 

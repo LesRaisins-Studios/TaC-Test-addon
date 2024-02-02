@@ -11,14 +11,12 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.Explosion;
-import net.minecraft.world.ExplosionContext;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.event.ForgeEventFactory;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class ExplodeUtil {
     public static Explosion createExplosion(World world, BlockPos blockPos, float power) {
@@ -79,7 +77,7 @@ public class ExplodeUtil {
 
                 for (ServerPlayerEntity player : ((ServerWorld) world).players()) {
                     if (player.distanceToSqr(entity.getX(), entity.getY(), entity.getZ()) < 4096.0) {
-                        player.connection.send(new SExplosionPacket(entity.getX(), entity.getY(), entity.getZ(), radius, explosion.getToBlow(), (Vector3d) explosion.getHitPlayers().get(player)));
+                        player.connection.send(new SExplosionPacket(entity.getX(), entity.getY(), entity.getZ(), radius, explosion.getToBlow(), explosion.getHitPlayers().get(player)));
                     }
                 }
 
