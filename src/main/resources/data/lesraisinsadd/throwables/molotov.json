@@ -1,11 +1,28 @@
 {
   "canCook": true,
-  "shouldRot": true,
+  "shouldRot": false,
   "shouldBounce": true,
-  "brokeOnGround": false,
+  "brokeOnGround": true,
   "gravityVelocity": 0.03,
   "speed": 1.0,
   "maxCookTime": 150,
   "maxLife": 150,
-  "bounceFactor": 0.5
+  "bounceFactor": 0.5,
+  "effect": "lesraisinsadd:burned",
+  "effectAmplifier": 0,
+  "specialEffectInstance": true,
+  "onlyAffectPlayer": true,
+  "effectDuration": 100,
+  "tailParticle": "minecraft:flame",
+
+  "cloud": {
+    "extinguishBySmoke": true,
+    "cloudLifeTime": 600,
+    "particle": "minecraft:flame",
+    "height": 1.2,
+    "startRadius": 2.5,
+    "maxRadius": 8,
+    "radiusPerTick": 0.05
+  }
+
 }

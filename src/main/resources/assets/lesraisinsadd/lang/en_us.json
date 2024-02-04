@@ -65,5 +65,9 @@
     "tooltip.lesraisins.mg42": "MG42 (A Wheelchair Gun)",
     "tooltip.lesraisins.flintlock_bullet": "Ammunition suitable for flintlock rifles", 
     "tooltip.lesraisins.flintlock_royal": "Centuries have not been able to erase the luster of gold.", 
-    "button.lesraisins.auto_reload": "auto-reloading"
+    "button.lesraisins.auto_reload": "auto-reloading",
+    "death.attack.lesraisins.poison": "%1$s has been corrupted by toxic gases.",
+    "death.attack.lesraisins.poison.drown": "%1$s suffocated in toxic gases.",
+    "death.attack.lesraisins.burned": "%1$s failed to put out the fire in his body."
+
 }

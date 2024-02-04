@@ -15,7 +15,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class VirusEffect extends Effect implements ITickEffect {
-    public static final DamageSource source = new DamageSource("lesraisins.virus");
+    public static final DamageSource source = new DamageSource("lesraisins.virus").bypassArmor();
     public VirusEffect(EffectType typeIn, int liquidColorIn) {
         super(typeIn, liquidColorIn);
     }

@@ -57,11 +57,12 @@
     "tooltip.lesraisins.hg_1": "色色！不可以！死刑！",
 
 
-
     "tooltip.lesraisins.mp18_1": "未花喜爱的冲锋枪。",
     "tooltip.lesraisins.mp18_2": "无论何时何地，这件武器都会为了未花而大展身手。",
 
     "death.attack.lesraisins.poison": "%1$s被有毒气体腐蚀殆尽",
-    "death.attack.lesraisins.poison.drown": "%1$s在有毒气体中窒息了"
+    "death.attack.lesraisins.poison.drown": "%1$s在有毒气体中窒息了",
+    "death.attack.lesraisins.burned": "%1$s无法熄灭身上的火焰"
+
 
 }

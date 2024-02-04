@@ -12,6 +12,7 @@ import com.tac.guns.item.attachment.impl.Scope;
 import com.tac.guns.item.attachment.impl.ScopeZoomData;
 import me.xjqsh.lesraisinsadd.Reference;
 import me.xjqsh.lesraisinsadd.common.data.grenades.AreaGrenadeMeta;
+import me.xjqsh.lesraisinsadd.common.data.grenades.CloudGrenadeMeta;
 import me.xjqsh.lesraisinsadd.entity.throwable.*;
 import me.xjqsh.lesraisinsadd.item.AceItem;
 import me.xjqsh.lesraisinsadd.item.BaGunItem;
@@ -175,8 +176,8 @@ public class ModItems {
             () -> new ThrowableItem<AreaGrenadeMeta>(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),
                     AreaGrenadeEntity::new){});
     public static final RegistryObject<Item> MOLOTOV = REGISTER.register("molotov",
-            () -> new ThrowableItem<AreaGrenadeMeta>(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),
-                    EffectGrenadeEntity::new){});
+            () -> new ThrowableItem<CloudGrenadeMeta>(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),
+                    CloudGrenadeEntity::new){});
 
 
 //    public static final RegistryObject<Item> MOLOTOV = REGISTER.register("molotov",

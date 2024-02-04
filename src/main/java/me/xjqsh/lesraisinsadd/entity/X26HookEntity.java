@@ -203,9 +203,9 @@ public class X26HookEntity extends AbstractProjectileEntity implements IEntityAd
         }
     }
 
-    protected void onHitBlock(BlockRayTraceResult p_230299_1_) {
-        this.lastState = this.level.getBlockState(p_230299_1_.getBlockPos());
-        Vector3d vector3d = p_230299_1_.getLocation().subtract(this.getX(), this.getY(), this.getZ());
+    protected void onHitBlock(BlockRayTraceResult result) {
+        this.lastState = this.level.getBlockState(result.getBlockPos());
+        Vector3d vector3d = result.getLocation().subtract(this.getX(), this.getY(), this.getZ());
         this.setDeltaMovement(vector3d);
         Vector3d vector3d1 = vector3d.normalize().scale(0.05F);
         this.setPosRaw(this.getX() - vector3d1.x, this.getY() - vector3d1.y, this.getZ() - vector3d1.z);

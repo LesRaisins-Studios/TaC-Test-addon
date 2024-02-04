@@ -69,40 +69,24 @@ public class LesRaisinsTaCAddon {
     }
 
     private void onClientSetup(FMLClientSetupEvent event) {
-        ModelOverrides.register(
-                ModItems.P90.get(),
-                new p90_animation()
-        );
-        ModelOverrides.register(
-                ModItems.PP19.get(),
-                new pp19_animation()
-        );
-        ModelOverrides.register(
-                ModItems.PPK20.get(),
-                new ppk20_animation()
-        );
-        ModelOverrides.register(
-                ModItems.SVD.get(),
-                new svd_animation()
-        );
-        ModelOverrides.register(
-                ModItems.AUG.get(),
-                new aug_animation()
-        );
-        ModelOverrides.register(
-                ModItems.QSZ92.get(),
-                new qsz92_animation()
-        );
-        ModelOverrides.register(
-                ModItems.ANGEL.get(),
-                new angle_animation()
-        );
+        ModelOverrides.register(ModItems.P90.get(),
+                new p90_animation());
+        ModelOverrides.register(ModItems.PP19.get(),
+                new pp19_animation());
+        ModelOverrides.register(ModItems.PPK20.get(),
+                new ppk20_animation());
+        ModelOverrides.register(ModItems.SVD.get(),
+                new svd_animation());
+        ModelOverrides.register(ModItems.AUG.get(),
+                new aug_animation());
+        ModelOverrides.register(ModItems.QSZ92.get(),
+                new qsz92_animation());
+        ModelOverrides.register(ModItems.ANGEL.get(),
+                new angle_animation());
         ModelOverrides.register(ModItems.SA58.get(),
-                new sa58_animation()
-        );
+                new sa58_animation());
         ModelOverrides.register(ModItems.CROSSBOW.get(),
-                new crossbow_animation()
-        );
+                new crossbow_animation());
         ModelOverrides.register(ModItems.MARLIN_1895.get(),
                 new marlin_1895_animation());
         ModelOverrides.register(ModItems.M202.get(),
@@ -143,6 +127,18 @@ public class LesRaisinsTaCAddon {
                 new xm8_animation());
         ModelOverrides.register(ModItems.M1892.get(),
                 new m1892_animation());
+        ModelOverrides.register(ModItems.COLT_M1873.get(),
+                new colt_m1873_animation());
+        ModelOverrides.register(ModItems.SW_MODEL3.get(),
+                new sw_model3_animation());
+        ModelOverrides.register(ModItems.NAIL_GUN.get(),
+                new nailgun_animation());
+        ModelOverrides.register(ModItems.MCX.get(),
+                new mcx_animation());
+        ModelOverrides.register(ModItems.M200.get(),
+                new m200_animation());
+        ModelOverrides.register(ModItems.DVL10.get(),
+                new dvl10_animation());
 
         P90AnimationController.getInstance();
         PP19AnimationController.getInstance();
@@ -172,6 +168,12 @@ public class LesRaisinsTaCAddon {
         AlexAnimationController.getInstance();
         XM8AnimationController.getInstance();
         M1892AnimationController.getInstance();
+        COLT_M1873AnimationController.getInstance();
+        SW_MODEL3AnimationController.getInstance();
+        NailgunAnimationController.getInstance();
+        MCXAnimationController.getInstance();
+        M200AnimationController.getInstance();
+        DVL10AnimationController.getInstance();
 
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.ARROW.get(), ArrowRender::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.BEAM.get(), BeamRender::new);

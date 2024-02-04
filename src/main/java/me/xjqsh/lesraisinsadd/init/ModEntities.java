@@ -31,7 +31,7 @@ public class ModEntities
     public static final RegistryObject<EntityType<X26HookEntity>> X26_HOOK = registerBasic("x26_hook", X26HookEntity::new);
 
     public static final RegistryObject<EntityType<AreaGrenadeEntity>> AREA_GRENADE = registerBasic("area_grenade", AreaGrenadeEntity::new);
-    public static final RegistryObject<EntityType<EffectGrenadeEntity>> EFFECT_GRENADE = registerBasic("effect_grenade", EffectGrenadeEntity::new);
+    public static final RegistryObject<EntityType<CloudGrenadeEntity>> EFFECT_GRENADE = registerBasic("effect_grenade", CloudGrenadeEntity::new);
     public static final RegistryObject<EntityType<ModifiedAreaEffectCloud>> EFFECT_CLOUD = registerBasic("modified_effect_cloud",ModifiedAreaEffectCloud::new);
     private static <T extends Entity> RegistryObject<EntityType<T>> registerBeam(String id, BiFunction<EntityType<T>, World, T> function) {
         EntityType<T> type = EntityType.Builder.of(function::apply, EntityClassification.MISC)

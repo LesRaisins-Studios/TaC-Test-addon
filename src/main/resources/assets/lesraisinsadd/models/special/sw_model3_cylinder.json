@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"3": "sw_model3",
-		"particle": "sw_model3_r"
+		"3": "lesraisinsadd:items/sw_model3/sw_model3",
+		"particle": "lesraisinsadd:items/sw_model3/sw_model3"
 	},
 	"elements": [
 		{

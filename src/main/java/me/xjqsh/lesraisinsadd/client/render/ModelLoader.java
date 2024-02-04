@@ -90,7 +90,32 @@ public class ModelLoader {
             BODY,BOLT,MAG_STANDARD,PULL));
     public static SkinLoader M1892 = register(new SkinLoader(ModItems.M1892.getId(),
             BODY,HAMMER,BULLET,CYLINDER,BULLET_SHELL));
+    public static SkinLoader COLT_M1873 = register(new SkinLoader(ModItems.COLT_M1873.getId(),
+            BODY,HAMMER,BULLET,CYLINDER,BULLET_SHELL,MAG,PULL));
+    public static SkinLoader SW_MODEL3 = register(new SkinLoader(ModItems.SW_MODEL3.getId(),
+            BODY,HAMMER,BULLET,CYLINDER,BULLET_SHELL,FRONT));
 
+    public static SkinLoader NAIL_GUN = register(new SkinLoader(ModItems.NAIL_GUN.getId(),
+            BODY,HANDLE,
+            MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_SILENCER,
+            RAIL_SCOPE,SIGHT_LIGHT,
+            STOCK_DEFAULT,STOCK_HEAVY,STOCK_LIGHT,STOCK_TACTICAL,
+            MAG_STANDARD,MAG_EXTENDED));
+
+    public static SkinLoader MCX = register(new SkinLoader(ModItems.MCX.getId(),
+            BODY,BOLT,PULL,
+            MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_SILENCER,MUZZLE_DEFAULT,
+            SIGHT,SIGHT_LIGHT,
+            STOCK_HEAVY,STOCK_LIGHT,STOCK_TACTICAL,
+            GRIP_LIGHT,GRIP_TACTICAL,
+            MAG_STANDARD,MAG_EXTENDED));
+
+    public static SkinLoader M200 = register(new SkinLoader(ModItems.M200.getId(),
+            BODY,MAG_STANDARD,BOLT));
+
+    public static SkinLoader DVL10 = register(new SkinLoader(ModItems.DVL10.getId(),
+            BODY,BOLT,BULLET,BARREL,
+            MAG_STANDARD,MAG_EXTENDED));
     public static SkinLoader register(SkinLoader skinLoader){
         SkinLoader.register(skinLoader.getGun(),skinLoader);
         return skinLoader;

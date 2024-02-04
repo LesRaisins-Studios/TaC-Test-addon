@@ -4,13 +4,17 @@ import me.xjqsh.lesraisinsadd.entity.ModifiedAreaEffectCloud;
 import me.xjqsh.lesraisinsadd.common.data.grenades.SmokeGrenadeMeta;
 import me.xjqsh.lesraisinsadd.init.ModEntities;
 import me.xjqsh.lesraisinsadd.init.ModParticleTypes;
+import me.xjqsh.lesraisinsadd.init.ModSounds;
 import me.xjqsh.lesraisinsadd.item.grenades.ThrowableItem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.particle.Particle;
 import net.minecraft.client.particle.ParticleManager;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
 
 import java.util.List;
@@ -29,7 +33,9 @@ public class SmokeGrenadeEntity extends ThrowableItemEntity<SmokeGrenadeMeta> {
         super.tick();
         double y = this.getY() + 0.15;
         if(tickCount==45){
-//            this.level.playSound(null, this.getPosX(), y, this.getPosZ(), ModSounds.ENTITY_SMOKE_GRENADE_EXPLOSION.get(), SoundCategory.BLOCKS, 3, (1 + (world.rand.nextFloat() - world.rand.nextFloat()) * 0.2F) * 0.7F);
+            this.level.playSound(null, this.getX(), y, this.getZ(),
+                    ModSounds.ENTITY_SMOKE_GRENADE_EXPLOSION.get(), SoundCategory.BLOCKS,
+                    3, (1 + (level.random.nextFloat() - level.random.nextFloat()) * 0.2F) * 0.7F);
         }
         if (this.level.isClientSide()) {
             Minecraft mc = Minecraft.getInstance();
@@ -80,10 +86,11 @@ public class SmokeGrenadeEntity extends ThrowableItemEntity<SmokeGrenadeMeta> {
             }
         }
     }
-//
-//    @Override
-//    public void playImpactSound(BlockRayTraceResult result){
-//        SoundEvent sound = ModSounds.ENTITY_SMOKE_GRENADE_HIT.get();
-//        this.world.playSound(null, result.getHitVec().x, result.getHitVec().y, result.getHitVec().z, sound, SoundCategory.AMBIENT, 1.0F, 1.0F);
-//    }
+
+    @Override
+    public void playImpactSound(BlockRayTraceResult result){
+        SoundEvent sound = ModSounds.ENTITY_SMOKE_GRENADE_HIT.get();
+        this.level.playSound(null, result.getLocation().x, result.getLocation().y, result.getLocation().z,
+                sound, SoundCategory.AMBIENT, 1.0F, 1.0F);
+    }
 }

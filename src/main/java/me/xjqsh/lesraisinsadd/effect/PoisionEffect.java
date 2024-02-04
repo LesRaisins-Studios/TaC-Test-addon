@@ -10,8 +10,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class PoisionEffect extends Effect implements ITickEffect {
-    public static final DamageSource source = new DamageSource("lesraisins.poison");
-    public static final DamageSource drown = new DamageSource("lesraisins.poison.drown");
+    public static final DamageSource source = new DamageSource("lesraisins.poison").bypassArmor();
+    public static final DamageSource drown = new DamageSource("lesraisins.poison.drown").bypassArmor();
     public PoisionEffect(EffectType typeIn, int liquidColorIn) {
         super(typeIn, liquidColorIn);
     }

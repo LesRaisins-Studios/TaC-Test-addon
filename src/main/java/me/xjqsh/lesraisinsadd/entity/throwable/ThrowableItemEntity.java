@@ -10,6 +10,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.IPacket;
 import net.minecraft.network.PacketBuffer;
+import net.minecraft.particles.IParticleData;
+import net.minecraft.particles.ParticleType;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.Direction;
 import net.minecraft.util.SoundCategory;
@@ -20,8 +22,10 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
 import net.minecraftforge.fml.network.NetworkHooks;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public abstract class ThrowableItemEntity<T extends ThrowableMeta> extends ThrowableEntity implements IEntityAdditionalSpawnData {
+    private IParticleData particleData;
     public float prevRotation;
     public float rotation;
     protected int maxLife;
@@ -75,8 +79,18 @@ public abstract class ThrowableItemEntity<T extends ThrowableMeta> extends Throw
     }
 
     public void renderTrailing(){
-        this.level.addParticle(ParticleTypes.SMOKE, true, this.getX(), this.getY() + 0.25, this.getZ(),
+        if(particleData==null){
+            ParticleType<?> type = ForgeRegistries.PARTICLE_TYPES.getValue(this.getMeta().getTailParticle());
+            if (type instanceof IParticleData) {
+                this.particleData = (IParticleData) type;
+            } else {
+                this.particleData = ParticleTypes.SMOKE;
+            }
+        }
+
+        this.level.addParticle(particleData, true, this.getX(), this.getY() + 0.25, this.getZ(),
                 0, 0.1, 0);
+
     }
 
     public void onDeath() {}

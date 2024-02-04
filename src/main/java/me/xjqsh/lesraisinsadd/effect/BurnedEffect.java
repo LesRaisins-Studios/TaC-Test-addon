@@ -4,11 +4,13 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectType;
+import net.minecraft.util.DamageSource;
 
 import java.util.Collections;
 import java.util.List;
 
 public class BurnedEffect extends Effect {
+    public static final DamageSource burned = new DamageSource("lesraisins.burned").bypassArmor().setIsFire();
     public BurnedEffect(EffectType typeIn, int liquidColorIn)
     {
         super(typeIn, liquidColorIn);
@@ -20,9 +22,9 @@ public class BurnedEffect extends Effect {
     }
 
     @Override
-    public void applyEffectTick(LivingEntity entityLivingBaseIn, int amplifier){
-        if(!entityLivingBaseIn.fireImmune()){
-
+    public void applyEffectTick(LivingEntity entity, int amplifier){
+        if(!entity.fireImmune()){
+            entity.hurt(burned,2f + amplifier);
         }
     }
 

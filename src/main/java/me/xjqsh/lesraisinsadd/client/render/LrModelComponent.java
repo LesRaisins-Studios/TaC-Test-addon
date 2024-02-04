@@ -34,7 +34,8 @@ public enum LrModelComponent implements IModelComponent {
     W_ARM_R("arm_right"),
     W_LEG_L("leg_left"),
     W_LEG_R("leg_right"),
-    CYLINDER("cylinder")
+    CYLINDER("cylinder"),
+    FRONT("front")
     ;
     public final String key;
     LrModelComponent(String key){

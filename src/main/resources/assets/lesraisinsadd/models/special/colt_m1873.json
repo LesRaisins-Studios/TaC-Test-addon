@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
-		"1": "lesraisinsadd:m1873",
+		"1": "lesraisinsadd:items/colt_m1873/m1873",
 		"particle": "lr_m1873_r"
 	},
 	"elements": [

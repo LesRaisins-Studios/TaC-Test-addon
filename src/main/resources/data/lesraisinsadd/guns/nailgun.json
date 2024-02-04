@@ -1,0 +1,73 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 720,
+    "rateSelector": [2, 1],
+    "gripType": "tac:two_handed_ak47",
+    "recoilAngle": 2.325,
+    "horizontalRecoilAngle": 1.15,
+    "recoilKick": 2.05,
+    "recoilAdsReduction": 0.25,
+    "weaponRecoilOffset": 0.875,
+    "cameraRecoilModifier": 1.125,
+    "recoilDuration": 0.3,
+    "weightKilo": 4.8,
+
+    "spread": 1.65,
+    "firstShotSpread": 0.135,
+    "hipFireInaccuracy": 3.85,
+    "projToMinAccuracy": 8,
+    "msToAccuracyReset": 350,
+    "movementInaccuracy": 0.6
+  },
+  "reloads": {
+    "magFed": true,
+    "maxAmmo": 50,
+    "reloadMagTimer": 40,
+    "additionalReloadEmptyMagTimer": 8,
+    "maxAdditionalAmmoPerOC": [5, 12, 20],
+    "preReloadPauseTicks": 0
+  },
+  "projectile": {
+    "item": "tac:9mm_round",
+    "visible": false,
+    "damage": 7.25,
+    "decayStart": 0.05,
+    "minDecayMultiplier": 0.15,
+    "decayEnd": 0.6,
+    "speed": 18.5,
+    "size": 0.05,
+    "life": 11,
+    "trailLengthMultiplier": 2.5,
+    "ricochet": true
+  },
+  "sounds": {
+    "fire": "lesraisinsadd:item.lok1_fire",
+    "reloadNormal": "lesraisinsadd:item.lok1_reload_norm",
+    "reloadEmpty": "lesraisinsadd:item.lok1_reload_empty",
+    "draw": "lesraisinsadd:item.p90_draw",
+    "inspect": "lesraisinsadd:item.lok1_inspect",
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "tac:item.ak47_fire_s"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 8.0,
+      "zOffset": -15,
+      "trailAdjust": 1.325,
+      "size": 0.8
+    },
+    "hipfireScale": 1.25,
+    "hipfireMoveScale": 0.5,
+    "hipfireRecoilScale": 1.0,
+    "showDynamicHipfire":true,
+    "weaponType": 0
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.8,
+      "yOffset": 12.850,
+      "zOffset": 5.0
+    }
+  }
+}
