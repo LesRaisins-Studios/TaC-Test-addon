@@ -116,6 +116,12 @@ public class ModelLoader {
     public static SkinLoader DVL10 = register(new SkinLoader(ModItems.DVL10.getId(),
             BODY,BOLT,BULLET,BARREL,
             MAG_STANDARD,MAG_EXTENDED));
+    public static SkinLoader RFB = register(new SkinLoader(ModItems.RFB.getId(),
+            BODY,BOLT,
+            MAG_STANDARD,MAG_EXTENDED,
+            MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT,MUZZLE_SILENCER));
+    public static SkinLoader TXC = register(new SkinLoader(ModItems.TXC.getId(),
+            BODY,MAG));
     public static SkinLoader register(SkinLoader skinLoader){
         SkinLoader.register(skinLoader.getGun(),skinLoader);
         return skinLoader;

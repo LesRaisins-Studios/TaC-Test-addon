@@ -139,6 +139,10 @@ public class LesRaisinsTaCAddon {
                 new m200_animation());
         ModelOverrides.register(ModItems.DVL10.get(),
                 new dvl10_animation());
+        ModelOverrides.register(ModItems.RFB.get(),
+                new rfb_animation());
+        ModelOverrides.register(ModItems.TXC.get(),
+                new txc_animation());
 
         P90AnimationController.getInstance();
         PP19AnimationController.getInstance();
@@ -174,6 +178,8 @@ public class LesRaisinsTaCAddon {
         MCXAnimationController.getInstance();
         M200AnimationController.getInstance();
         DVL10AnimationController.getInstance();
+        RFBAnimationController.getInstance();
+        TXCAnimationController.getInstance();
 
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.ARROW.get(), ArrowRender::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntities.BEAM.get(), BeamRender::new);

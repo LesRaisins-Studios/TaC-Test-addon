@@ -57,6 +57,10 @@ public class ModItems {
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> MCX = REGISTER.register("mcx",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
+    public static final RegistryObject<GunItem> RFB = REGISTER.register("rfb",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
+    public static final RegistryObject<GunItem> TXC = REGISTER.register("txc",
+            () -> new TimelessGunItem(properties -> properties.tab(GunMod.RIFLE)));
     public static final RegistryObject<GunItem> SVD = REGISTER.register("svd",
             () -> new TimelessGunItem(properties -> properties.tab(GunMod.SNIPER)));
     public static final RegistryObject<GunItem> NTW20 = REGISTER.register("ntw20",
@@ -134,6 +138,12 @@ public class ModItems {
 
     public static final RegistryObject<Item> ORIGIN = REGISTER.register("origin_bullet",
             TimelessAmmoItem::new);
+    public static final RegistryObject<Item> FUSION_CELL = REGISTER.register("fusion_cell",
+            TimelessAmmoItem::new);
+    public static final RegistryObject<Item> M993 = REGISTER.register("m993",
+            TimelessAmmoItem::new);
+    public static final RegistryObject<Item> NAIL = REGISTER.register("nail",
+            TimelessAmmoItem::new);
     public static final RegistryObject<Item> FLINTLOCK_BULLET = REGISTER.register("flintlock_bullet",
             TimelessAmmoItem::new);
 
@@ -179,15 +189,4 @@ public class ModItems {
             () -> new ThrowableItem<CloudGrenadeMeta>(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),
                     CloudGrenadeEntity::new){});
 
-
-//    public static final RegistryObject<Item> MOLOTOV = REGISTER.register("molotov",
-//            () ->{
-//                EffectGrenadeItem item = new EffectGrenadeItem(
-//                    new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),  1.85f, EffectGrenadeItem.MOLOTOV);
-//                item.setExtinguishBySmoke(true);
-//                item.setMinRadius(2.0f);
-//                item.setMaxRadius(4.0f);
-//                item.setAreaDuration(300);
-//                item.setParticle(()-> ParticleTypes.FLAME);
-//                return item;} );
 }

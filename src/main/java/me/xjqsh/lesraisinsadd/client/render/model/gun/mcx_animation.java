@@ -33,6 +33,7 @@ public class mcx_animation extends SkinAnimationModel {
 
             renderBarrelWithDefault(stack,matrices,renderBuffer,light,overlay,skin);
             renderStock(stack,matrices,renderBuffer,light,overlay,skin);
+            renderGrip(stack,matrices,renderBuffer,light,overlay,skin);
 
             if (Gun.getScope(stack) == null) {
                 this.renderComponentWithOffset(stack, matrices, renderBuffer, light, overlay, skin, ModelComponent.SIGHT);
