@@ -27,9 +27,9 @@ public class NoRotGrenadeRenderer extends EntityRenderer<ThrowableItemEntity<?>>
             stack.mulPose(Vector3f.XP.rotationDegrees(-rotation));
             stack.translate(0.0, -0.15, 0.0);
 
-            stack.translate(0, entity.getDimensionsForge(Pose.STANDING).height / 2, 0);
+            stack.translate(0, entity.getDimensions(Pose.STANDING).height / 2, 0);
             stack.mulPose(Vector3f.ZP.rotationDegrees(-90F));
-            stack.translate(0, -entity.getDimensionsForge(Pose.STANDING).height / 2, 0);
+            stack.translate(0, -entity.getDimensions(Pose.STANDING).height / 2, 0);
 
             stack.translate(0.0, 0.5, 0.0);
             Minecraft.getInstance().getItemRenderer()

@@ -1,0 +1,55 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "lesraisinsadd:entity/x26_ammo"
+	},
+	"elements": [
+		{
+			"from": [8, 6.75, 1.75],
+			"to": [8, 8.25, 4.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [2, 2, 2, 3], "texture": "#0"},
+				"east": {"uv": [0, 2, 2, 3], "texture": "#0"},
+				"south": {"uv": [4, 2, 4, 3], "texture": "#0"},
+				"west": {"uv": [2, 2, 4, 3], "texture": "#0"},
+				"up": {"uv": [2, 2, 2, 0], "texture": "#0"},
+				"down": {"uv": [2, 0, 2, 2], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.25, 7.5, 1.75],
+			"to": [8.75, 7.5, 4.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [2, 2, 3, 2], "texture": "#0"},
+				"east": {"uv": [0, 2, 2, 2], "texture": "#0"},
+				"south": {"uv": [5, 2, 6, 2], "texture": "#0"},
+				"west": {"uv": [3, 2, 5, 2], "texture": "#0"},
+				"up": {"uv": [3, 2, 2, 0], "texture": "#0"},
+				"down": {"uv": [4, 0, 3, 2], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.25, 6.75, 4.75],
+			"to": [8.75, 8.25, 10.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 4, 5, 5], "texture": "#0"},
+				"east": {"uv": [0, 4, 4, 5], "texture": "#0"},
+				"south": {"uv": [9, 4, 10, 5], "texture": "#0"},
+				"west": {"uv": [5, 4, 9, 5], "texture": "#0"},
+				"up": {"uv": [5, 4, 4, 0], "texture": "#0"},
+				"down": {"uv": [6, 0, 5, 4], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "bone",
+			"origin": [9, 0.5, 8],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

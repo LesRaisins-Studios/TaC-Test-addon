@@ -1,6 +1,7 @@
 package me.xjqsh.lesraisinsadd.entity;
 
 import com.tac.guns.common.ReloadTracker;
+import com.tac.guns.item.transition.TimelessGunItem;
 import me.xjqsh.lesraisinsadd.init.ModEntities;
 import me.xjqsh.lesraisinsadd.init.ModItems;
 import net.minecraft.block.BlockState;
@@ -15,6 +16,7 @@ import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.Timer;
 import net.minecraft.util.math.*;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.vector.Vector3d;
@@ -123,9 +125,8 @@ public class X26HookEntity extends AbstractProjectileEntity implements IEntityAd
                     this.hooked = null;
                 } else {
                     if(!this.level.isClientSide()){
-
                         if(power>0){
-                            boolean s = this.hooked.hurt(DamageSource.indirectMagic(this,this.getPlayerOwner()),20f);
+                            boolean s = this.hooked.hurt(DamageSource.indirectMagic(this,this.getPlayerOwner()), 10);
                             if(s)power--;
                         }
                     }

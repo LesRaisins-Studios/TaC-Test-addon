@@ -19,7 +19,8 @@ import net.minecraftforge.resource.ISelectiveResourceReloadListener;
 public enum ModelCaches {
     BEAM("entity/beam"),
     AF6("special/af6_scope"),
-    AF6_LIGHT("special/af6_scope_light");
+    AF6_LIGHT("special/af6_scope_light"),
+    X26("entity/x26_hook");
 
     private final ResourceLocation rl;
     private IBakedModel cachedModel;
