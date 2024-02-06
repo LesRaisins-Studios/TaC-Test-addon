@@ -3,9 +3,9 @@
   "materials": [
     {
       "item": {
-        "tag": "forge:ingots/iron"
+        "item": "carrot"
       },
-      "count": 15
+      "count": 64
     },
     {
       "item": {

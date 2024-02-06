@@ -1,0 +1,32 @@
+{
+    "type": "tac:workbench",
+    "materials": [
+      {
+        "item": {
+          "item": "minecraft:skeleton_skull"
+        },
+        "count": 1
+      },
+      {
+        "item": {
+          "item": "minecraft:bone"
+        },
+        "count": 8
+      },
+      {
+        "item": {
+          "item": "minecraft:nether_star"
+        },
+        "count": 1
+      },
+      {
+        "item": {
+          "item": "minecraft:experience_bottle"
+        },
+        "count": 4
+      }
+    ],
+    "result": {
+      "item": "lesraisinsadd:alex"
+    }
+  }

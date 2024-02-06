@@ -2,12 +2,12 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "lesraisinsadd:items/hotbar_icons/ntw20"
+		"layer0": "lesraisinsadd:items/hotbar_icons/dvl10"
 	},
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, 10.75, 0],
-			"translation": [0, 2.25, -0.5],
+			"translation": [0, 0, -9.25],
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"thirdperson_lefthand": {
@@ -15,7 +15,7 @@
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"firstperson_righthand": {
-			"translation": [-5.25, 3.25, -2.25]
+			"translation": [-5.25, 2, -2.25]
 		},
 		"firstperson_lefthand": {
 			"translation": [-6, 0, -5]

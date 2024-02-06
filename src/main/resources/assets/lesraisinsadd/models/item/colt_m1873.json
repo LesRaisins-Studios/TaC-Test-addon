@@ -2,12 +2,12 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "lesraisinsadd:items/hotbar_icons/angle"
+		"layer0": "lesraisinsadd:items/hotbar_icons/colt_m1873"
 	},
 	"display": {
 		"thirdperson_righthand": {
-			"rotation": [-0.32, 2.21, 4.35],
-			"translation": [0.25, 0, -1.25],
+			"rotation": [-0.09, 2.21, -1.4],
+			"translation": [0.25, -0.75, 0.75],
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"thirdperson_lefthand": {
@@ -15,11 +15,12 @@
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"firstperson_righthand": {
-			"translation": [-3, -0.25, -13.5]
+			"translation": [-3, -2.75, -6.5]
 		},
 		"ground": {
+			"rotation": [-17.76, -1.26, 3.04],
 			"translation": [0, 3, 0],
-			"scale": [0.55, 0.55, 0.55]
+			"scale": [0.4, 0.4, 0.4]
 		},
 		"fixed": {
 			"rotation": [0, 90, 0],

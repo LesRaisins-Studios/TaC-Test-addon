@@ -118,12 +118,12 @@ public class X26HookRenderer extends EntityRenderer<X26HookEntity> {
                     for (Direction direction : var9) {
                         random.setSeed(42L);
                             renderQuads(stack, builder2, model.getQuads(null, direction, random),
-                                15728880, OverlayTexture.NO_OVERLAY);
+                                light, OverlayTexture.NO_OVERLAY);
                     }
 
                     random.setSeed(42L);
                         renderQuads(stack, builder2, model.getQuads(null, null, random),
-                            15728880, OverlayTexture.NO_OVERLAY);
+                            light, OverlayTexture.NO_OVERLAY);
                 }
                 stack.popPose();
 

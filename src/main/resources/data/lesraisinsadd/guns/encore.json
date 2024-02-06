@@ -23,7 +23,9 @@
   "projectile": {
     "item": "lesraisinsadd:origin_bullet",
     "visible": false,
-    "damage": 40,
+    "damage": 30,
+    "headDamage": 1.5,
+    "armorIgnore":2,
     "decayStart": 0.15,
     "minDecayMultiplier": 0.2,
     "decayEnd": 0.75,

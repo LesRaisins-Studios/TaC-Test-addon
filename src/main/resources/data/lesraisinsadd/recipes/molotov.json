@@ -1,0 +1,33 @@
+{
+    "type": "tac:workbench",
+    "materials": [
+      {
+        "item": {
+          "item": "blaze_powder"
+        },
+        "count": 1
+      },
+      {
+        "item": {
+          "item": "ghast_tear"
+        },
+        "count": 1
+      },
+      {
+        "item": {
+          "item": "paper"
+        },
+        "count": 1
+      },
+      {
+        "item": {
+          "item": "glass"
+        },
+        "count": 2
+      }
+    ],
+    "result": {
+      "item": "lesraisinsadd:molotov",
+      "count":2
+    }
+  }

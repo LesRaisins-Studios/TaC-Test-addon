@@ -25,6 +25,7 @@ public class BurnedEffect extends Effect {
     public void applyEffectTick(LivingEntity entity, int amplifier){
         if(!entity.fireImmune()){
             entity.hurt(burned,2f + amplifier);
+            entity.setSecondsOnFire(2);
         }
     }
 

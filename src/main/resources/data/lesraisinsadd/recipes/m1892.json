@@ -1,0 +1,20 @@
+{
+    "type": "tac:workbench",
+    "materials": [
+      {
+        "item": {
+          "tag": "forge:ingots/iron"
+        },
+        "count": 22
+      },
+      {
+        "item": {
+          "tag": "minecraft:logs"
+        },
+        "count": 4
+      }
+    ],
+    "result": {
+      "item": "lesraisinsadd:m1892"
+    }
+  }

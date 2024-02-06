@@ -24,16 +24,16 @@ public class BeamEntity extends Entity implements IEntityAdditionalSpawnData {
 
     @Override
     public void tick() {
-        if(this.tickCount> 20){
+        if(this.tickCount > 6){
             this.remove();
         }
     }
 
     public float calcScale(){
-        if(tickCount < 5){
-            return ((float)tickCount)/ 5;
-        } else if (tickCount>= 15) {
-            return ((float) 20 -tickCount)/ 5;
+        if(tickCount < 2){
+            return ((float)tickCount) / 2;
+        } else if (tickCount>= 4) {
+            return ((float) 6 - tickCount) / 2;
         }else{
             return 1.0f;
         }
@@ -86,7 +86,7 @@ public class BeamEntity extends Entity implements IEntityAdditionalSpawnData {
     }
 
     public int getColor() {
-        return new Color(210, 226, 255,255).getRGB();
+        return new Color(255, 238, 79,255).getRGB();
     }
 }
 

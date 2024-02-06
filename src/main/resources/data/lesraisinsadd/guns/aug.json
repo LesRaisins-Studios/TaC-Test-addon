@@ -24,6 +24,7 @@
     "item": "tac:nato_556_bullet",
     "visible": false,
     "damage": 8.75,
+    "armorIgnore":1.25,
     "decayStart": 0.05,
     "minDecayMultiplier": 0.2,
     "decayEnd": 0.75,

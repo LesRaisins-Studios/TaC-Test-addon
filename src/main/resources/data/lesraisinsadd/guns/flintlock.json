@@ -23,7 +23,9 @@
   "projectile": {
     "item": "lesraisinsadd:flintlock_bullet",
     "visible": false,
-    "damage": 24,
+    "damage": 20,
+    "armorIgnore":0.65,
+    "headDamage": 0.75,
     "decayStart": 0.05,
     "minDecayMultiplier": 0.2,
     "decayEnd": 0.9,

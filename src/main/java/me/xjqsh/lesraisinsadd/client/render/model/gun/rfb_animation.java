@@ -8,6 +8,8 @@ import com.tac.guns.client.render.animation.module.GunAnimationController;
 import com.tac.guns.client.render.animation.module.PlayerHandAnimation;
 import com.tac.guns.client.render.gun.SkinAnimationModel;
 import com.tac.guns.client.util.RenderUtil;
+import com.tac.guns.common.Gun;
+import com.tac.guns.util.GunModifierHelper;
 import me.xjqsh.lesraisinsadd.client.animation.DVL10AnimationController;
 import me.xjqsh.lesraisinsadd.client.animation.RFBAnimationController;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
@@ -31,6 +33,9 @@ public class rfb_animation extends SkinAnimationModel {
             controller.applySpecialModelTransform(getModelComponent(skin, BODY), RFBAnimationController.INDEX_BODY, transformType, matrices);
             RenderUtil.renderModel(getModelComponent(skin, BODY), stack, matrices, renderBuffer, light, overlay);
             renderBarrelWithDefault(stack,matrices,renderBuffer,light,overlay,skin);
+            if(Gun.getScope(stack)==null){
+                RenderUtil.renderModel(getModelComponent(skin,SIGHT), stack, matrices, renderBuffer, light, overlay);
+            }
         }
         matrices.popPose();
 

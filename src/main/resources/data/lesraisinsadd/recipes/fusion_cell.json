@@ -1,0 +1,33 @@
+{
+    "type": "tac:workbench",
+    "materials": [
+      {
+        "item": {
+          "item": "magma_cream"
+        },
+        "count": 4
+      },
+      {
+        "item": {
+          "tag": "forge:rods/blaze"
+        },
+        "count": 2
+      },
+      {
+        "item": {
+          "tag": "forge:ingots/gold"
+        },
+        "count": 6
+      },
+      {
+        "item": {
+          "item": "magma_block"
+        },
+        "count": 10
+      }
+    ],
+    "result": {
+      "item": "lesraisinsadd:fusion_cell",
+      "count": 60
+    }
+  }

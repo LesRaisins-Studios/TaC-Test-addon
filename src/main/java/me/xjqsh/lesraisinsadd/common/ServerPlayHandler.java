@@ -9,7 +9,9 @@ import com.tac.guns.item.GunItem;
 import com.tac.guns.network.message.MessageGunSound;
 import com.tac.guns.util.GunModifierHelper;
 import me.xjqsh.lesraisinsadd.common.data.NetworkDataManager;
+import me.xjqsh.lesraisinsadd.entity.BeamEntity;
 import me.xjqsh.lesraisinsadd.entity.X26HookEntity;
+import me.xjqsh.lesraisinsadd.init.ModEntities;
 import me.xjqsh.lesraisinsadd.init.ModItems;
 import me.xjqsh.lesraisinsadd.init.ModTags;
 import me.xjqsh.lesraisinsadd.item.interfaces.IDefeatAction;
@@ -177,6 +179,15 @@ public class ServerPlayHandler {
 
             MinecraftForge.EVENT_BUS.post(new GunFireEvent.Post(event.getPlayer(), weapon));
         }
+//        else if(ModItems.TXC.get().getItem().equals(weapon.getItem())){
+//            BeamEntity entity = new BeamEntity(ModEntities.BEAM.get(),event.getPlayer().level,
+//                    event.getPlayer().getEyePosition(1.0f)
+//                            .add(0,-0.15,0)
+//                            .add(event.getPlayer().getForward().multiply(0.2,0.2,0.2)));
+//            entity.xRot = event.getPlayer().getViewXRot(1.0f);
+//            entity.yRot = event.getPlayer().getViewYRot(1.0f);
+//            event.getPlayer().level.addFreshEntity(entity);
+//        }
     }
 
     @SubscribeEvent

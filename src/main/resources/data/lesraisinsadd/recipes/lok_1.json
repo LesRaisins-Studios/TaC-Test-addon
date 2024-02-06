@@ -5,13 +5,37 @@
       "item": {
         "tag": "forge:ingots/iron"
       },
-      "count": 15
+      "count": 20
     },
     {
       "item": {
         "tag": "forge:ingots/gold"
       },
-      "count": 3
+      "count": 24
+    },
+    {
+      "item": {
+        "tag": "forge:gems/diamond"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "forge:dusts/redstone"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "forge:glass_panes/colorless"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "item": "repeater"
+      },
+      "count": 1
     }
   ],
   "result": {

@@ -4,33 +4,35 @@
     "rate": 150,
     "rateSelector": [1],
     "gripType": "tac:one_handed",
-    "recoilAngle": 28.5,
-    "horizontalRecoilAngle": 3.15,
+    "recoilAngle": 24.85,
+    "horizontalRecoilAngle": 6.3,
     "recoilKick": 1.5,
-    "recoilAdsReduction": 0.225,
-    "weaponRecoilOffset": 0.535,
-    "cameraRecoilModifier": 4.135,
-    "recoilDuration": 0.215,
-    "weightKilo": 2.4,
+    "recoilAdsReduction": 0.25,
+    "weaponRecoilOffset": 0.575,
+    "cameraRecoilModifier": 3.25,
+    "recoilDuration": 0.395,
+    "weightKilo": 1.05,
 
-    "spread": 1.45,
-    "firstShotSpread": 0.085,
-    "hipFireInaccuracy": 5.35,
+    "spread": 1.225,
+    "firstShotSpread": 0.135,
+    "hipFireInaccuracy": 2.75,
     "projToMinAccuracy": 3,
-    "msToAccuracyReset": 660,
+    "msToAccuracyReset": 540,
     "movementInaccuracy": 0.25
   },
   "projectile": {
-    "item": "tac:ae50",
+    "item": "tac:round45",
     "visible": false,
-    "damage": 18,
+    "damage": 12,
     "decayStart": 0.1,
     "minDecayMultiplier": 0.25,
     "decayEnd": 0.9,
     "size": 0.125,
     "speed": 16.5,
     "life": 11,
-    "trailLengthMultiplier": 2.75
+    "trailLengthMultiplier": 2.75,
+    "headDamage": 1.25,
+    "armorIgnore":0.75
   },
   "reloads": {
     "magFed": false,
@@ -42,17 +44,18 @@
     "openBolt": true
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.angle_fire",
-    "reloadNormal": "lesraisinsadd:item.angle_reload",
-    "reloadEmpty": "lesraisinsadd:item.angle_reload",
-    "draw": "lesraisinsadd:item.angle_draw",
-    "inspect": "lesraisinsadd:item.angle_inspect",
+    "fire": "lesraisinsadd:item.colt_m1873_fire",
+    "reloadIntro": "lesraisinsadd:item.colt_m1873_reload_intro",
+    "reloadLoop": "lesraisinsadd:item.colt_m1873_reload_loop",
+    "reloadEnd": "lesraisinsadd:item.colt_m1873_reload_end",
+    "draw": "lesraisinsadd:item.colt_m1873_draw",
+    "inspect": "lesraisinsadd:item.colt_m1873_inspect",
     "cock": "tac:item.pistol.cock",
     "silencedFire": "tac:item.ak47_fire_s"
   },
   "display": {
     "flash": {
-      "yOffset": 9.0,
+      "yOffset": 14.0,
       "zOffset": -20.75,
       "trailAdjust": 1.325,
       "size": 0.8
@@ -66,8 +69,8 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 13.2,
-      "zOffset": -8
+      "yOffset": 15.8,
+      "zOffset": -1
     }
   }
 }

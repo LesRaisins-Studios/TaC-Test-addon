@@ -23,8 +23,10 @@
   "projectile": {
     "item": "tac:762x54",
     "visible": false,
-    "damage": 32,
+    "damage": 26,
     "decayStart": 0.12,
+    "armorIgnore":1.5,
+    "headDamage": 1.4,
     "minDecayMultiplier": 0.55,
     "decayEnd": 1,
     "size": 0.15,

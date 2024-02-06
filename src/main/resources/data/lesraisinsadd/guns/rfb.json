@@ -1,37 +1,39 @@
 {
   "general": {
     "auto": true,
-    "rate": 850,
-    "rateSelector": [1,2],
+    "rate": 700,
+    "rateSelector": [2,1],
     "gripType": "tac:two_handed_ak47",
-    "recoilAngle": 5.15,
-    "horizontalRecoilAngle": 3.35,
-    "recoilKick": 1.675,
-    "recoilAdsReduction": 0.25,
-    "weaponRecoilOffset": 0.725,
-    "cameraRecoilModifier": 1.625,
-    "recoilDuration": 0.255,
-    "weightKilo": 5.6,
+    "recoilAngle": 1.925,
+    "horizontalRecoilAngle": 1.875,
+    "recoilKick": 2.35,
+    "recoilAdsReduction": 0.225,
+    "weaponRecoilOffset": 0.825,
+    "cameraRecoilModifier": 1.2,
+    "recoilDuration": 0.235,
+    "weightKilo": 3.95,
 
-    "spread": 0.1,
-    "firstShotSpread": 0.035,
+    "spread": 2.1,
+    "firstShotSpread": 0.15,
     "hipFireInaccuracy": 4.5,
-    "projToMinAccuracy": 2,
-    "msToAccuracyReset": 500,
-    "movementInaccuracy": 0.6
+    "projToMinAccuracy": 7,
+    "msToAccuracyReset": 530,
+    "movementInaccuracy": 0.5
   },
   "projectile": {
-    "item": "tac:762x54",
+    "item": "tac:762x39",
     "visible": false,
-    "damage": 8,
-    "decayStart": 0.12,
-    "minDecayMultiplier": 0.55,
-    "decayEnd": 1,
-    "size": 0.15,
-    "speed": 150,
-    "life": 2,
-    "trailLengthMultiplier": 3.5,
-    "ricochet": true
+    "damage": 9,
+    "decayStart": 0.15,
+    "minDecayMultiplier": 0.45,
+    "decayEnd": 0.9,
+    "size": 0.135,
+    "speed": 21.5,
+    "life": 12,
+    "trailLengthMultiplier": 1.95,
+    "ricochet": true,
+    "armorIgnore":1,
+    "headDamage": 1.25
   },
   "reloads": {
     "magFed": true,
@@ -42,13 +44,13 @@
     "preReloadPauseTicks": 0
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.svd_fire",
-    "reloadNormal": "lesraisinsadd:item.svd_reload_norm",
-    "reloadEmpty": "lesraisinsadd:item.svd_reload_empty",
-    "draw": "tac:animation.ak47_draw",
-    "inspect": "lesraisinsadd:item.svd_inspect",
+    "fire": "lesraisinsadd:item.rfb_fire",
+    "reloadNormal": "lesraisinsadd:item.rfb_reload_norm",
+    "reloadEmpty": "lesraisinsadd:item.rfb_reload_empty",
+    "draw": "lesraisinsadd:item.rfb_draw",
+    "inspect": "lesraisinsadd:item.rfb_inspect",
     "cock": "lesraisinsadd:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "silencedFire": "lesraisinsadd:item.rfb_fire_s"
   },
   "display": {
     "flash": {
@@ -58,20 +60,20 @@
       "size": 0.8
     },
     "shellCasing": {
-      "tickLife":10,
+      "tickLife":3,
       "yOffset": 1,
       "xOffset": 0,
-      "zOffset": 0,
+      "zOffset": -16,
       "scale": 1,
-      "velocityX": 8,
+      "velocityX": 2,
       "velocityY": 1,
-      "velocityZ": -0.5,
+      "velocityZ": -5,
       "rVelocityX": 0,
       "rVelocityY": 1.25,
       "rVelocityZ": 0.0,
-      "aVelocityX": 45.0,
-      "aVelocityY": -90.0,
-      "aVelocityZ": 15.0,
+      "aVelocityX": 0.0,
+      "aVelocityY": 0.0,
+      "aVelocityZ": 0.0,
       "casingModel": "tac:special/shell_steel"
     },
     "hipfireScale": 1.25,
@@ -83,7 +85,7 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 14.40,
+      "yOffset": 11.650,
       "zOffset": -1.8
     },
     "attachments": {
@@ -92,13 +94,8 @@
         "zOffset": -11.55,
         "scale": 1.00
       },
-      "stock": {
-        "yOffset": 7.75,
-        "zOffset": -22.05,
-        "scale": 0.00
-      },
       "scope": {
-        "yOffset": 12.0,
+        "yOffset": 9.25,
         "zOffset": -1.0,
         "scale": 1.0
       }

@@ -1,0 +1,32 @@
+{
+  "type": "tac:workbench",
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 78
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "forge:gems/diamond"
+      },
+      "count": 1
+    },
+    {
+      "item": {
+        "tag": "forge:gems/quartz"
+      },
+      "count": 10
+    }
+  ],
+  "result": {
+    "item": "lesraisinsadd:hk433"
+  }
+}

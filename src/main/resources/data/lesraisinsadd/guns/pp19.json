@@ -1,7 +1,7 @@
 {
   "general": {
     "auto": true,
-    "rate": 840,
+    "rate": 720,
     "rateSelector": [2, 1],
     "gripType": "tac:two_handed_ak47",
     "recoilAngle": 1.85,
@@ -33,6 +33,8 @@
     "visible": false,
     "damage": 6.2,
     "decayStart": 0.1,
+    "headDamage": 0.75,
+    "armorIgnore":0.6,
     "minDecayMultiplier": 0.1,
     "decayEnd": 0.6,
     "speed": 16,
@@ -98,6 +100,11 @@
         "scale": 1.0,
         "doRenderMount": true,
         "doOnSlideMovement": false
+      },
+      "gunSkin": {
+        "yOffset": 7.799,
+        "zOffset": -2.35,
+        "scale": 0.00
       }
     }
   }

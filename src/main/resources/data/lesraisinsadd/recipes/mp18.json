@@ -1,0 +1,38 @@
+{
+  "type": "tac:workbench",
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:nether_stars"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "minecraft:logs"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 48
+    },
+    {
+      "item": {
+        "tag": "forge:nuggets/gold"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "item": "minecraft:quartz_block"
+      },
+      "count": 16
+    }
+  ],
+  "result": {
+    "item": "lesraisinsadd:mp18"
+  }
+}

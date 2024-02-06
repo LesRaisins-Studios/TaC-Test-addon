@@ -5,13 +5,37 @@
       "item": {
         "tag": "forge:ingots/iron"
       },
-      "count": 15
+      "count": 26
     },
     {
       "item": {
-        "tag": "forge:ingots/gold"
+        "tag": "forge:gems/quartz"
       },
-      "count": 3
+      "count": 28
+    },
+    {
+      "item": {
+        "item": "minecraft:obsidian"
+      },
+      "count": 12
+    },
+    {
+      "item": {
+        "tag": "forge:gems/diamond"
+      },
+      "count": 7
+    },
+    {
+      "item": {
+        "tag": "forge:rods/blaze"
+      },
+      "count": 6
+    },
+    {
+      "item": {
+        "item": "minecraft:nether_star"
+      },
+      "count": 1
     }
   ],
   "result": {

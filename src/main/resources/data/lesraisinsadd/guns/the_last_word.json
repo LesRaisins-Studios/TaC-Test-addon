@@ -21,10 +21,11 @@
     "movementInaccuracy": 0.35
   },
   "projectile": {
-    "item": "tac:9mm_round",
+    "item": "tac:ae50",
     "visible": false,
     "damage": 16,
     "headDamage": 1.25,
+    "armorIgnore":1.25,
     "decayStart": 0.1,
     "minDecayMultiplier": 0.25,
     "decayEnd": 0.9,

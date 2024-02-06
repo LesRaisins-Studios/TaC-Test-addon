@@ -33,15 +33,13 @@
     "item": "lesraisinsadd:m202_rocket",
     "visible": true,
     "gravity": false,
-    "damage": 20,
+    "damage": 100,
     "size": 1,
     "speed": 4,
     "trailLengthMultiplier": 0,
     "life": 25,
     "damageReduceOverLife": false,
-    "ricochet": false,
-    "blastDamage": 60,
-    "blastRadius": 2.5
+    "ricochet": false
   },
   "sounds": {
     "fire": "lesraisinsadd:item.m202_fire",

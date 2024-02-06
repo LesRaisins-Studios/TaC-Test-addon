@@ -2,12 +2,12 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "lesraisinsadd:items/hotbar_icons/svd"
+		"layer0": "lesraisinsadd:items/hotbar_icons/m200"
 	},
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, 10.75, 0],
-			"translation": [0, 1.75, -7.75],
+			"translation": [0, -3.25, -6.75],
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"thirdperson_lefthand": {
@@ -15,7 +15,7 @@
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"firstperson_righthand": {
-			"translation": [-4.25, -3.5, -4],
+			"translation": [-5.5, -4.5, -3.5],
 			"scale": [1, 1, 0.6]
 		},
 		"firstperson_lefthand": {

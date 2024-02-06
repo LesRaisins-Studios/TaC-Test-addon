@@ -24,12 +24,14 @@
     "item": "lesraisinsadd:crossbow_arrow",
     "visible": false,
     "damage": 36,
+    "headDamage": 1.75,
+    "armorIgnore":0.5,
     "decayStart": 0.02,
     "minDecayMultiplier": 0.2,
     "decayEnd": 0.6,
     "size": 0.125,
-    "speed": 10.5,
-    "life": 18,
+    "speed": 12.5,
+    "life": 16,
     "trailLengthMultiplier": 0
   },
   "reloads": {

@@ -1,0 +1,19 @@
+{
+    "type": "tac:workbench",
+    "materials": [
+      {
+        "item": {
+          "tag": "forge:ingots/iron"
+        },
+        "count": 26
+      },
+      {
+        "item": {
+          "item": "piston"
+        }
+      }
+    ],
+    "result": {
+      "item": "lesraisinsadd:nailgun"
+    }
+  }

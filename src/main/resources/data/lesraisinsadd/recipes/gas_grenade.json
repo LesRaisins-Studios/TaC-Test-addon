@@ -1,0 +1,32 @@
+{
+    "type": "tac:workbench",
+    "materials": [
+      {
+        "item": {
+          "item": "fermented_spider_eye"
+        },
+        "count": 2
+      },
+      {
+        "item": {
+          "item": "pufferfish"
+        },
+        "count": 1
+      },
+      {
+        "item": {
+          "item": "dragon_breath"
+        },
+        "count": 1
+      },
+      {
+        "item": {
+          "tag": "forge:ingots/iron"
+        },
+        "count": 1
+      }
+    ],
+    "result": {
+      "item": "lesraisinsadd:gas_grenade"
+    }
+  }

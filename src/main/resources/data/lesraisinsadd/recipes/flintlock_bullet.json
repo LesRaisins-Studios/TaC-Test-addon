@@ -1,0 +1,15 @@
+{
+  "type": "tac:workbench",
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "item": "lesraisinsadd:flintlock_bullet",
+    "count": 5
+  }
+}

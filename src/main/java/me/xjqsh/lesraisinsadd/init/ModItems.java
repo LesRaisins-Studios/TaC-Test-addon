@@ -4,7 +4,9 @@ import com.tac.guns.GunMod;
 import com.tac.guns.common.GunModifiers;
 import com.tac.guns.item.AmmoItem;
 import com.tac.guns.item.GunItem;
+import com.tac.guns.item.GunSkinItem;
 import com.tac.guns.item.ScopeItem;
+import com.tac.guns.item.attachment.impl.GunSkin;
 import com.tac.guns.item.transition.TimelessAmmoItem;
 import com.tac.guns.item.transition.TimelessGunItem;
 import com.tac.guns.item.transition.TimelessPistolGunItem;
@@ -189,4 +191,17 @@ public class ModItems {
             () -> new ThrowableItem<CloudGrenadeMeta>(new Item.Properties().stacksTo(4).tab(GunMod.EXPLOSIVES),
                     CloudGrenadeEntity::new){});
 
+    public static final RegistryObject<Item> skin_pp19_cyrex = REGISTER.register("skin_pp19_cyrex",
+            () -> new GunSkinItem(GunSkin.create(new ResourceLocation("lesraisinsadd:skin_pp19_cyrex")),
+                    new Item.Properties().stacksTo(1).tab(GunMod.SKINS)));
+    public static final RegistryObject<Item> skin_pp19_osiris = REGISTER.register("skin_pp19_osiris",
+            () -> new GunSkinItem(GunSkin.create(new ResourceLocation("lesraisinsadd:skin_pp19_osiris")),
+                    new Item.Properties().stacksTo(1).tab(GunMod.SKINS)));
+    public static final RegistryObject<Item> skin_pp19_runic = REGISTER.register("skin_pp19_runic",
+            () -> new GunSkinItem(GunSkin.create(new ResourceLocation("lesraisinsadd:skin_pp19_runic")),
+                    new Item.Properties().stacksTo(1).tab(GunMod.SKINS)));
+
+    public static final RegistryObject<Item> skin_m200_silent = REGISTER.register("skin_m200_silent",
+            () -> new GunSkinItem(GunSkin.create(new ResourceLocation("lesraisinsadd:skin_m200_silent")),
+                    new Item.Properties().stacksTo(1).tab(GunMod.SKINS)));
 }

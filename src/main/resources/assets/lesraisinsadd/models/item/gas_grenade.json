@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
-		"3": "lesraisinsadd:items/gas_grenade"
+		"3": "lesraisinsadd:items/gas_grenade",
+		"particle": "lesraisinsadd:items/grenade/gas_grenade"
 	},
 	"elements": [
 		{
@@ -1346,6 +1347,33 @@
 			}
 		}
 	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, -2.75, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, -3.5, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_righthand": {
+			"translation": [0, 2.25, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 17, 0],
+			"translation": [0, 2.25, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"gui": {
+			"rotation": [0, -56.25, 0],
+			"translation": [0, -6.25, 0]
+		},
+		"fixed": {
+			"rotation": [180, -90, 180],
+			"translation": [0, -6, 0]
+		}
+	},
 	"groups": [
 		{
 			"name": "gas_grenade",

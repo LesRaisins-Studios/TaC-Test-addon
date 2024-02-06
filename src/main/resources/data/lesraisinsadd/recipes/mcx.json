@@ -1,0 +1,26 @@
+{
+    "type": "tac:workbench",
+    "materials": [
+      {
+        "item": {
+          "tag": "forge:ingots/gold"
+        },
+        "count": 8
+      },
+      {
+        "item": {
+          "tag": "forge:ingots/iron"
+        },
+        "count": 58
+      },
+      {
+        "item": {
+          "tag": "forge:gems/quartz"
+        },
+        "count": 4
+      }
+    ],
+    "result": {
+      "item": "lesraisinsadd:mcx"
+    }
+  }

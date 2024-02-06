@@ -24,5 +24,15 @@
       "icon": "lesraisinsadd:gunskin/icon/pp19_runic",
       "mini_icon": "lesraisinsadd:gunskin/icon/mini/pp19_runic"
     }
+  },
+  "lesraisinsadd:m200": {
+    "silent": {
+      "type": "custom",
+      "models": {
+        "auto": "lesraisinsadd:gunskin/m200/m200_silent"
+      },
+      "icon": "lesraisinsadd:gunskin/icon/m200_silent",
+      "mini_icon": "lesraisinsadd:gunskin/icon/mini/m200_silent"
+    }
   }
 }

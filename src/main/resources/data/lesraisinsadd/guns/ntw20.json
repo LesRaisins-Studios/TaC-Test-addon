@@ -23,7 +23,9 @@
   "projectile": {
     "item": "tac:50bmg",
     "visible": false,
-    "damage": 38,
+    "damage": 65,
+    "armorIgnore": 2.0,
+    "headDamage": 2,
     "decayStart": 0.12,
     "minDecayMultiplier": 0.55,
     "decayEnd": 1,

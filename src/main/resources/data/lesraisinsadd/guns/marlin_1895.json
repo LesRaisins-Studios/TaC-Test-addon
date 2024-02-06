@@ -24,6 +24,7 @@
     "item": "tac:win_30-30",
     "visible": false,
     "damage": 15,
+    "armorIgnore":0.8,
     "decayStart": 0.05,
     "minDecayMultiplier": 0.2,
     "decayEnd": 0.9,

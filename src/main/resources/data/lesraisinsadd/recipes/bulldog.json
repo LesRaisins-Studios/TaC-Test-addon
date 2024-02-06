@@ -5,13 +5,25 @@
       "item": {
         "tag": "forge:ingots/iron"
       },
-      "count": 15
+      "count": 30
     },
     {
       "item": {
         "tag": "forge:ingots/gold"
       },
-      "count": 3
+      "count": 14
+    },
+    {
+      "item": {
+        "tag": "forge:gems/diamond"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "tag": "forge:rods/blaze"
+      },
+      "count": 5
     }
   ],
   "result": {

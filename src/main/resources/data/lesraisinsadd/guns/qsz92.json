@@ -23,12 +23,14 @@
     "item": "tac:9mm_round",
     "visible": false,
     "damage": 8,
+    "headDamage": 0.8,
+    "armorIgnore":0.55,
     "decayStart": 0.15,
     "minDecayMultiplier": 0.2,
     "decayEnd": 0.75,
     "size": 0.125,
-    "speed": 60,
-    "life": 2,
+    "speed": 16,
+    "life": 5,
     "trailLengthMultiplier": 2.75
   },
   "reloads": {

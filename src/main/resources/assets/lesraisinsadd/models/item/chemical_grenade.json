@@ -1388,6 +1388,14 @@
 	"display": {
 		"thirdperson_righthand": {
 			"translation": [0, 10.25, 10.5]
+		},
+		"gui": {
+			"translation": [0, -5.75, 0],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"fixed": {
+			"translation": [0, -5.25, 0],
+			"scale": [1.5, 1.5, 1.5]
 		}
 	},
 	"groups": [

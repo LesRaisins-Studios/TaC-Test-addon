@@ -5,11 +5,29 @@
       "item": {
         "tag": "forge:ingots/iron"
       },
-      "count": 15
+      "count": 32
     },
     {
       "item": {
         "tag": "forge:ingots/gold"
+      },
+      "count": 6
+    },
+    {
+      "item": {
+        "item": "obsidian"
+      },
+      "count": 6
+    },
+    {
+      "item": {
+        "tag": "forge:gems/quartz"
+      },
+      "count": 20
+    },
+    {
+      "item": {
+        "tag": "forge:gems/diamond"
       },
       "count": 3
     }

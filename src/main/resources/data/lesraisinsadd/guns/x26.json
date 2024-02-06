@@ -3,31 +3,31 @@
     "rate": 600,
     "rateSelector": [1],
     "gripType": "tac:one_handed_m1911",
-    "recoilAngle": 7.355,
-    "horizontalRecoilAngle": 5.25,
-    "recoilKick": 1.85,
-    "recoilAdsReduction": 0.2,
-    "weaponRecoilOffset": 0.635,
-    "cameraRecoilModifier": 3.5,
-    "recoilDuration": 0.225,
-    "weightKilo": 0.95,
+    "recoilAngle": 0.15,
+    "horizontalRecoilAngle": 0.15,
+    "recoilKick": 0.5,
+    "recoilAdsReduction": 0,
+    "weaponRecoilOffset": 0.4,
+    "cameraRecoilModifier": 5,
+    "recoilDuration": 0.35,
+    "weightKilo": 0.3,
 
-    "spread": 1.75,
-    "firstShotSpread": 0.115,
-    "hipFireInaccuracy": 5.05,
-    "projToMinAccuracy": 4,
-    "msToAccuracyReset": 500,
-    "movementInaccuracy": 0.75
+    "spread": 0.005,
+    "firstShotSpread": 0.005,
+    "hipFireInaccuracy": 0.05,
+    "projToMinAccuracy": 1,
+    "msToAccuracyReset": 100,
+    "movementInaccuracy": 0.05
   },
   "projectile": {
-    "item": "tac:9mm_round",
+    "item": "lesraisinsadd:fusion_cell",
     "visible": false,
-    "damage": 8,
-    "decayStart": 0.15,
-    "minDecayMultiplier": 0.2,
-    "decayEnd": 0.75,
+    "damage": 20,
+    "decayStart": 0,
+    "minDecayMultiplier": 0,
+    "decayEnd": 1,
     "size": 0.125,
-    "speed": 60,
+    "speed": 5,
     "life": 2,
     "trailLengthMultiplier": 2.75
   },
@@ -40,11 +40,11 @@
     "openBolt": true
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.qsz92_fire",
-    "reloadNormal": "lesraisinsadd:item.qsz92_reload_norm",
-    "reloadEmpty": "lesraisinsadd:item.qsz92_reload_empty",
-    "draw": "lesraisinsadd:item.qsz92_draw",
-    "inspect": "lesraisinsadd:item.qsz92_inspect",
+    "fire": "lesraisinsadd:item.x26_fire",
+    "reloadNormal": "lesraisinsadd:item.x26_reload",
+    "reloadEmpty": "lesraisinsadd:item.x26_reload",
+    "draw": "lesraisinsadd:item.x26_draw",
+    "inspect": "lesraisinsadd:item.x26_inspect",
     "cock": "tac:item.pistol.cock"
   },
   "display": {
@@ -57,8 +57,8 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 13.00,
-      "zOffset": -6
+      "yOffset": 8.50,
+      "zOffset": -12
     }
   }
 }

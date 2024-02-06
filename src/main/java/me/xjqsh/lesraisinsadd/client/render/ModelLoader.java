@@ -117,7 +117,7 @@ public class ModelLoader {
             BODY,BOLT,BULLET,BARREL,
             MAG_STANDARD,MAG_EXTENDED));
     public static SkinLoader RFB = register(new SkinLoader(ModItems.RFB.getId(),
-            BODY,BOLT,
+            BODY,BOLT,SIGHT,
             MAG_STANDARD,MAG_EXTENDED,
             MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT,MUZZLE_SILENCER));
     public static SkinLoader TXC = register(new SkinLoader(ModItems.TXC.getId(),

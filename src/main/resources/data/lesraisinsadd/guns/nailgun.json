@@ -1,24 +1,24 @@
 {
   "general": {
     "auto": true,
-    "rate": 720,
+    "rate": 750,
     "rateSelector": [2, 1],
     "gripType": "tac:two_handed_ak47",
-    "recoilAngle": 2.325,
-    "horizontalRecoilAngle": 1.15,
-    "recoilKick": 2.05,
+    "recoilAngle": 1.35,
+    "horizontalRecoilAngle": 1.125,
+    "recoilKick": 1.05,
     "recoilAdsReduction": 0.25,
-    "weaponRecoilOffset": 0.875,
-    "cameraRecoilModifier": 1.125,
-    "recoilDuration": 0.3,
-    "weightKilo": 4.8,
+    "weaponRecoilOffset": 0.65,
+    "cameraRecoilModifier": 1.3,
+    "recoilDuration": 0.4,
+    "weightKilo": 1.75,
 
-    "spread": 1.65,
-    "firstShotSpread": 0.135,
-    "hipFireInaccuracy": 3.85,
-    "projToMinAccuracy": 8,
-    "msToAccuracyReset": 350,
-    "movementInaccuracy": 0.6
+    "spread": 3.15,
+    "firstShotSpread": 0.385,
+    "hipFireInaccuracy": 3.05,
+    "projToMinAccuracy": 4,
+    "msToAccuracyReset": 320,
+    "movementInaccuracy": 0.15
   },
   "reloads": {
     "magFed": true,
@@ -29,45 +29,58 @@
     "preReloadPauseTicks": 0
   },
   "projectile": {
-    "item": "tac:9mm_round",
+    "item": "lesraisinsadd:nail",
     "visible": false,
-    "damage": 7.25,
+    "damage": 6,
     "decayStart": 0.05,
     "minDecayMultiplier": 0.15,
-    "decayEnd": 0.6,
-    "speed": 18.5,
+    "decayEnd": 0.75,
+    "speed": 9,
     "size": 0.05,
-    "life": 11,
-    "trailLengthMultiplier": 2.5,
-    "ricochet": true
+    "life": 6,
+    "trailLengthMultiplier": 1.25,
+    "ricochet": true,
+    "headDamage": 0.75,
+    "armorIgnore":0.25
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.lok1_fire",
-    "reloadNormal": "lesraisinsadd:item.lok1_reload_norm",
-    "reloadEmpty": "lesraisinsadd:item.lok1_reload_empty",
+    "fire": "lesraisinsadd:item.nailgun_fire",
+    "reloadNormal": "lesraisinsadd:item.nailgun_reload_norm",
+    "reloadEmpty": "lesraisinsadd:item.nailgun_reload_empty",
     "draw": "lesraisinsadd:item.p90_draw",
-    "inspect": "lesraisinsadd:item.lok1_inspect",
+    "inspect": "lesraisinsadd:item.nailgun_inspect",
     "cock": "tac:item.pistol.cock",
     "silencedFire": "tac:item.ak47_fire_s"
   },
   "display": {
-    "flash": {
-      "yOffset": 8.0,
-      "zOffset": -15,
-      "trailAdjust": 1.325,
-      "size": 0.8
-    },
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,
     "hipfireRecoilScale": 1.0,
     "showDynamicHipfire":true,
-    "weaponType": 0
+    "weaponType": 4
   },
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 12.850,
-      "zOffset": 5.0
+      "yOffset": 13.20,
+      "zOffset": -1.0
+    },
+    "attachments": {
+      "barrel": {
+        "yOffset": -100829.84,
+        "zOffset": -11.55,
+        "scale": 1.00
+      },
+      "stock": {
+        "yOffset": 7.75,
+        "zOffset": -22.05,
+        "scale": 0.00
+      },
+      "scope": {
+        "yOffset": 12.5,
+        "zOffset": 5.0,
+        "scale": 1.0
+      }
     }
   }
 }

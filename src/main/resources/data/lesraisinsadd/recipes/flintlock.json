@@ -14,11 +14,15 @@
       "count": 15
     },
     {
-      "item": "minecraft:flint",
+      "item": {
+        "item": "flint"
+      },
       "count": 1
     },
     {
-      "item": "lesraisinsadd:object_15",
+      "item": {
+        "item": "lesraisinsadd:object_15"
+      },
       "count": 1
     }
   ],

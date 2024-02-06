@@ -5,7 +5,19 @@
       "item": {
         "tag": "forge:ingots/iron"
       },
-      "count": 30
+      "count": 45
+    },
+    {
+      "item": {
+        "tag": "forge:gems/lapis"
+      },
+      "count": 16
+    },
+    {
+      "item": {
+        "tag": "forge:gems/quartz"
+      },
+      "count": 3
     }
   ],
   "result": {

@@ -12,6 +12,12 @@
         "tag": "forge:dusts/glowstone"
       },
       "count": 8
+    },
+    {
+      "item": {
+        "tag": "forge:dusts/redstone"
+      },
+      "count": 4
     }
   ],
   "result": {

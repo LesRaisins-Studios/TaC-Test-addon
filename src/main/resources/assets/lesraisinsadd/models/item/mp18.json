@@ -2,20 +2,20 @@
 	"credit": "Made with Blockbench",
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "lesraisinsadd:items/hotbar_icons/sa58"
+		"layer0": "lesraisinsadd:items/hotbar_icons/mp18"
 	},
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, 16.25, 0],
-			"translation": [0, 0.5, -4],
-			"scale": [0.55, 0.55, 0.55]
+			"translation": [0, 1.25, -4],
+			"scale": [0.65, 0.65, 0.65]
 		},
 		"thirdperson_lefthand": {
 			"translation": [0, 0, -3.25],
 			"scale": [0.55, 0.55, 0.55]
 		},
 		"firstperson_righthand": {
-			"translation": [-5.5, 3, -5]
+			"translation": [-5.5, 3.75, -3]
 		},
 		"firstperson_lefthand": {
 			"translation": [-6, 0, -5]

@@ -1,7 +1,7 @@
 {
   "general": {
     "auto": true,
-    "rate": 720,
+    "rate": 600,
     "rateSelector": [2, 1],
     "gripType": "tac:two_handed_ak47",
     "recoilAngle": 2.35,
@@ -24,6 +24,8 @@
     "item": "tac:9mm_round",
     "visible": false,
     "damage": 7.8,
+    "headDamage": 0.8,
+    "armorIgnore":0.9,
     "decayStart": 0.1,
     "minDecayMultiplier": 0.2,
     "decayEnd": 0.7,

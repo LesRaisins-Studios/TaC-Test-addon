@@ -13,12 +13,18 @@ import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.model.ItemCameraTransforms;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.vector.Vector3d;
 
 import static com.tac.guns.client.gunskin.ModelComponent.*;
 import static me.xjqsh.lesraisinsadd.client.render.LrModelComponent.LEVER;
 
 
 public class marlin_1895_animation extends SkinAnimationModel {
+    public marlin_1895_animation(){
+        this.extraOffset.put(MUZZLE_SILENCER,new Vector3d(0,0,-10*0.0625));
+        this.extraOffset.put(MUZZLE_BRAKE,new Vector3d(0,0,-2*0.0625));
+        this.extraOffset.put(MUZZLE_COMPENSATOR,new Vector3d(0,0,-3*0.0625));
+    }
 
     @Override
     public void render(float v, ItemCameraTransforms.TransformType transformType, ItemStack stack, ItemStack parent, LivingEntity entity, MatrixStack matrices, IRenderTypeBuffer renderBuffer, int light, int overlay) {

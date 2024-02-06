@@ -1,0 +1,7 @@
+{
+  "skin": "lesraisinsadd:silent",
+  "hideLimitInfo": false,
+  "canApplyOn": [
+    "lesraisinsadd:m200"
+  ]
+}

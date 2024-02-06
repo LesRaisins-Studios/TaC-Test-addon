@@ -1,6 +1,6 @@
 {
   "general": {
-    "rate": 600,
+    "rate": 120,
     "rateSelector": [1],
     "gripType": "tac:one_handed_m1911",
     "recoilAngle": 6.525,
@@ -20,12 +20,14 @@
     "movementInaccuracy": 0.75
   },
   "projectile": {
-    "item": "tac:9mm_round",
+    "item": "tac:ae50",
     "visible": false,
     "damage": 18,
-    "decayStart": 0.15,
-    "minDecayMultiplier": 0.2,
-    "decayEnd": 0.75,
+    "decayStart": 0.1,
+    "minDecayMultiplier": 0.25,
+    "decayEnd": 0.9,
+    "headDamage":1.25,
+    "armorIgnore":1.25,
     "size": 0.125,
     "speed": 60,
     "life": 2,
@@ -37,7 +39,8 @@
     "reloadMagTimer": 45,
     "additionalReloadEmptyMagTimer": 0,
     "maxAdditionalAmmoPerOC": [5, 7, 10],
-    "preReloadPauseTicks": 0
+    "preReloadPauseTicks": 0,
+    "openBolt": true
   },
   "sounds": {
     "fire": "lesraisinsadd:item.bulldog_fire",

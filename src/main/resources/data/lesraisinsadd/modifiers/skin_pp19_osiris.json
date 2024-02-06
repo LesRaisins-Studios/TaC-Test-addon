@@ -1,0 +1,7 @@
+{
+  "skin": "lesraisinsadd:osiris",
+  "hideLimitInfo": false,
+  "canApplyOn": [
+    "lesraisinsadd:pp19"
+  ]
+}

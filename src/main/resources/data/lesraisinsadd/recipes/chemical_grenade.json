@@ -1,0 +1,26 @@
+{
+    "type": "tac:workbench",
+    "materials": [
+      {
+        "item": {
+          "item": "spider_eye"
+        },
+        "count": 3
+      },
+      {
+        "item": {
+          "item": "dragon_breath"
+        },
+        "count": 1
+      },
+      {
+        "item": {
+          "tag": "forge:ingots/iron"
+        },
+        "count": 1
+      }
+    ],
+    "result": {
+      "item": "lesraisinsadd:chemical_grenade"
+    }
+  }

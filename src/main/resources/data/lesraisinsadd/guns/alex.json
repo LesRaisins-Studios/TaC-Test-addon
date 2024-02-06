@@ -1,36 +1,38 @@
 {
   "general": {
     "auto": true,
-    "rate": 850,
-    "rateSelector": [1,2],
+    "rate": 400,
+    "rateSelector": [2,1],
     "gripType": "tac:two_handed_ak47",
-    "recoilAngle": 5.15,
-    "horizontalRecoilAngle": 3.35,
-    "recoilKick": 1.675,
+    "recoilAngle": 2.75,
+    "horizontalRecoilAngle": 1.265,
+    "recoilKick": 1.335,
     "recoilAdsReduction": 0.25,
-    "weaponRecoilOffset": 0.725,
-    "cameraRecoilModifier": 1.625,
-    "recoilDuration": 0.255,
-    "weightKilo": 5.6,
+    "weaponRecoilOffset": 0.425,
+    "cameraRecoilModifier": 1.275,
+    "recoilDuration": 0.315,
+    "weightKilo": 10.0,
 
-    "spread": 0.1,
-    "firstShotSpread": 0.035,
-    "hipFireInaccuracy": 4.5,
-    "projToMinAccuracy": 2,
-    "msToAccuracyReset": 500,
-    "movementInaccuracy": 0.6
+    "spread": 0.35,
+    "firstShotSpread": 0.001,
+    "hipFireInaccuracy": -0.335,
+    "projToMinAccuracy": 10,
+    "msToAccuracyReset": 350,
+    "movementInaccuracy": 0.25
   },
   "projectile": {
-    "item": "tac:762x54",
+    "item": "minecraft:wheat_seeds",
     "visible": false,
-    "damage": 8,
-    "decayStart": 0.12,
-    "minDecayMultiplier": 0.55,
-    "decayEnd": 1,
-    "size": 0.15,
-    "speed": 150,
-    "life": 2,
-    "trailLengthMultiplier": 3.5,
+    "damage": 5,
+    "armorIgnore": 0,
+    "headDamage": 0.57257,
+    "decayStart": 0.14,
+    "minDecayMultiplier": 0.514,
+    "decayEnd": 0.91,
+    "size": 0.1919,
+    "speed": 5.14,
+    "trailLengthMultiplier": 0.01,
+    "life": 19,
     "ricochet": true
   },
   "reloads": {
@@ -42,38 +44,15 @@
     "preReloadPauseTicks": 0
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.svd_fire",
-    "reloadNormal": "lesraisinsadd:item.svd_reload_norm",
-    "reloadEmpty": "lesraisinsadd:item.svd_reload_empty",
-    "draw": "tac:animation.ak47_draw",
-    "inspect": "lesraisinsadd:item.svd_inspect",
+    "fire": "lesraisinsadd:item.alex_fire",
+    "reloadNormal": "lesraisinsadd:item.alex_reload",
+    "reloadEmpty": "lesraisinsadd:item.alex_reload",
+    "draw": "lesraisinsadd:item.alex_draw",
+    "inspect": "lesraisinsadd:item.alex_inspect",
     "cock": "lesraisinsadd:item.pistol.cock",
     "silencedFire": "tac:item.ak47_fire_s"
   },
   "display": {
-    "flash": {
-      "yOffset": 6.0,
-      "zOffset": -20.75,
-      "trailAdjust": 1.325,
-      "size": 0.8
-    },
-    "shellCasing": {
-      "tickLife":10,
-      "yOffset": 1,
-      "xOffset": 0,
-      "zOffset": 0,
-      "scale": 1,
-      "velocityX": 8,
-      "velocityY": 1,
-      "velocityZ": -0.5,
-      "rVelocityX": 0,
-      "rVelocityY": 1.25,
-      "rVelocityZ": 0.0,
-      "aVelocityX": 45.0,
-      "aVelocityY": -90.0,
-      "aVelocityZ": 15.0,
-      "casingModel": "tac:special/shell_steel"
-    },
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,
     "hipfireRecoilScale": 1.0,
@@ -85,23 +64,6 @@
       "fovModifier": 0.8,
       "yOffset": 14.40,
       "zOffset": -1.8
-    },
-    "attachments": {
-      "barrel": {
-        "yOffset": -100829.84,
-        "zOffset": -11.55,
-        "scale": 1.00
-      },
-      "stock": {
-        "yOffset": 7.75,
-        "zOffset": -22.05,
-        "scale": 0.00
-      },
-      "scope": {
-        "yOffset": 12.0,
-        "zOffset": -1.0,
-        "scale": 1.0
-      }
     }
   }
 }
