@@ -33,6 +33,16 @@ public class X26HookEntity extends AbstractProjectileEntity implements IEntityAd
     private int power = 5;
     private static final DataParameter<Integer> DATA_HOOKED_ENTITY = EntityDataManager.defineId(X26HookEntity.class, DataSerializers.INT);
     private int inGroundTime = 0;
+    private float damage = 10;
+
+    public float getDamage() {
+        return damage;
+    }
+
+    public X26HookEntity setDamage(float damage) {
+        this.damage = damage;
+        return this;
+    }
 
     public X26HookEntity(EntityType<? extends AbstractProjectileEntity> p_i231584_1_, World p_i231584_2_) {
         super(p_i231584_1_, p_i231584_2_);
@@ -126,7 +136,7 @@ public class X26HookEntity extends AbstractProjectileEntity implements IEntityAd
                 } else {
                     if(!this.level.isClientSide()){
                         if(power>0){
-                            boolean s = this.hooked.hurt(DamageSource.indirectMagic(this,this.getPlayerOwner()), 10);
+                            boolean s = this.hooked.hurt(DamageSource.indirectMagic(this,this.getPlayerOwner()), damage);
                             if(s)power--;
                         }
                     }

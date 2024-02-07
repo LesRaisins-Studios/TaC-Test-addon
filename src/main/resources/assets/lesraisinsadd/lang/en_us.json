@@ -87,6 +87,7 @@
     "death.attack.lesraisins.poison": "%1$s corroded by toxic gases",
     "death.attack.lesraisins.poison.drown": "%1$s suffocated in the toxic gas",
     "death.attack.lesraisins.burned": "%1$s has been roasted outer charred and inner tender",
+    "death.attack.lesraisins.virus": "%1$s finally don't have to suffer from the disease anymore",
 
     "effect.lesraisinsadd.virus": "Infected",
     "effect.lesraisinsadd.burned": "Burned"

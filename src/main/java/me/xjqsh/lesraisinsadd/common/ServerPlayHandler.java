@@ -151,6 +151,8 @@ public class ServerPlayHandler {
             hook.shootFromRotation(event.getPlayer(), event.getPlayer().xRot, event.getPlayer().yRot,
                     0.0F, 5.0f, 2.5F);
 
+            hook.setDamage(modifiedGun.getProjectile().getDamage());
+
             event.getPlayer().level.addFreshEntity(hook);
 
             boolean silenced = GunModifierHelper.isSilencedFire(weapon);

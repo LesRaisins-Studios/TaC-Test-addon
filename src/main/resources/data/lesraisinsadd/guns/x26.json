@@ -22,7 +22,7 @@
   "projectile": {
     "item": "lesraisinsadd:fusion_cell",
     "visible": false,
-    "damage": 20,
+    "damage": 10,
     "decayStart": 0,
     "minDecayMultiplier": 0,
     "decayEnd": 1,
