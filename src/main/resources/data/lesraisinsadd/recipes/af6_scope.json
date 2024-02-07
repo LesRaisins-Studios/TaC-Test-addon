@@ -1,0 +1,25 @@
+{
+    "type": "tac:workbench",
+    "materials": [
+      {
+        "item": {
+          "tag": "forge:ingots/iron"
+        },
+        "count": 12
+      },
+      {
+        "item": {
+          "tag": "forge:glass_panes/colorless"
+        },
+        "count": 4
+      },
+      {
+        "item": {
+          "tag": "forge:gems/lapis"
+        }
+      }
+    ],
+    "result": {
+      "item": "lesraisinsadd:af6_scope"
+    }
+  }

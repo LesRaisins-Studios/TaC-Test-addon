@@ -21,18 +21,18 @@
     "movementInaccuracy": 0.5
   },
   "projectile": {
-    "item": "tac:bullet68",
+    "item": "tac:nato_556_bullet",
     "visible": false,
-    "damage": 9,
-    "armorIgnore": 1.5,
+    "damage": 8.5,
+    "armorIgnore": 1.25,
     "headDamage": 1.0,
-    "decayStart": 0.15,
-    "minDecayMultiplier": 0.3,
+    "decayStart": 0.1,
+    "minDecayMultiplier": 0.25,
     "decayEnd": 0.95,
     "size": 0.1,
-    "speed": 25,
-    "life": 8,
-    "trailLengthMultiplier": 2.75,
+    "speed": 23.5,
+    "life": 11,
+    "trailLengthMultiplier": 2.35,
     "ricochet": true
   },
   "reloads": {

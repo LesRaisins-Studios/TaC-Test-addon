@@ -2,7 +2,7 @@
   "general": {
     "auto": true,
     "rate": 700,
-    "rateSelector": [2,1],
+    "rateSelector": [1],
     "gripType": "tac:two_handed_ak47",
     "recoilAngle": 1.925,
     "horizontalRecoilAngle": 1.875,
@@ -21,14 +21,14 @@
     "movementInaccuracy": 0.5
   },
   "projectile": {
-    "item": "tac:762x39",
+    "item": "tac:bullet_308",
     "visible": false,
-    "damage": 9,
+    "damage": 10.5,
     "decayStart": 0.15,
     "minDecayMultiplier": 0.45,
     "decayEnd": 0.9,
     "size": 0.135,
-    "speed": 21.5,
+    "speed": 22.5,
     "life": 12,
     "trailLengthMultiplier": 1.95,
     "ricochet": true,
@@ -37,7 +37,7 @@
   },
   "reloads": {
     "magFed": true,
-    "maxAmmo": 30,
+    "maxAmmo": 20,
     "reloadMagTimer": 36,
     "additionalReloadEmptyMagTimer": 20,
     "maxAdditionalAmmoPerOC": [5, 7, 10],

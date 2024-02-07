@@ -21,7 +21,7 @@
     "particle": "minecraft:flame",
     "height": 1.2,
     "startRadius": 2.5,
-    "maxRadius": 8,
+    "maxRadius": 5.5,
     "radiusPerTick": 0.05
   }
 

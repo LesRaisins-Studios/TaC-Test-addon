@@ -34,11 +34,11 @@ public class HolyGrenadeEntity extends ThrowableItemEntity<HolyGrenadeMeta> impl
     @Override
     public void onDeath() {
         if(!this.level.isClientSide()){
-            for (LivingEntity s : EntityUtil.getEntitiesInRadius(this.level, LivingEntity.class, this.getPosition(1.0f),5)){
+            for (LivingEntity s : EntityUtil.getEntitiesInRadius(this.level, LivingEntity.class, this.position(),5)){
                 if(s instanceof MonsterEntity){
                     if(this.getMeta().createBeam()){
                         BeamEntity entity = new BeamEntity(ModEntities.BEAM.get(),this.level,
-                                new Vector3d(s.getX(),s.getY(),s.getZ()));
+                                this.position());
 
                         entity.xRot = -90;
                         entity.yRot = 0;
@@ -51,7 +51,7 @@ public class HolyGrenadeEntity extends ThrowableItemEntity<HolyGrenadeMeta> impl
                 }
             }
         }else {
-            Vector3d center = this.getPosition(1.0f);
+            Vector3d center = this.position();
             Color color = new Color(253, 218, 0,255);
 
             this.level.addParticle(ParticleTypes.EXPLOSION_EMITTER,center.x,center.y+0.2,center.z,
