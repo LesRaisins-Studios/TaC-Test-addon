@@ -1,10 +1,6 @@
 package me.xjqsh.lesraisinsadd.util;
 
-import com.tac.guns.client.audio.GunShotSound;
-import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.vector.Vector3d;
@@ -27,9 +23,4 @@ public class EntityUtil {
         return world.getEntitiesOfClass(type,aabb);
     }
 
-    public static void playSound(ResourceLocation rl,float x,float y,float z) {
-        Minecraft.getInstance().getSoundManager()
-                .play(new GunShotSound(rl, SoundCategory.PLAYERS,
-                        x,y,z, 2, 1, false));
-    }
 }

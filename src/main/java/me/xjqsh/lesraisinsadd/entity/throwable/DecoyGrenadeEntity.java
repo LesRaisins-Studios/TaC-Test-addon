@@ -4,7 +4,7 @@ package me.xjqsh.lesraisinsadd.entity.throwable;
 import me.xjqsh.lesraisinsadd.common.data.grenades.ThrowableMeta;
 import me.xjqsh.lesraisinsadd.init.ModEntities;
 import me.xjqsh.lesraisinsadd.item.grenades.ThrowableItem;
-import me.xjqsh.lesraisinsadd.util.EntityUtil;
+import me.xjqsh.lesraisinsadd.util.SoundUtil;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.network.PacketBuffer;
@@ -56,7 +56,7 @@ public class DecoyGrenadeEntity extends ThrowableItemEntity<ThrowableMeta> {
         super.tick();
         if(this.level.isClientSide()){
             if(shouldPlaySound()){
-                EntityUtil.playSound(getSound(), (float) this.getX(), (float) this.getY(), (float) this.getZ());
+                SoundUtil.playSound(getSound(), (float) this.getX(), (float) this.getY(), (float) this.getZ());
             }
         }
     }

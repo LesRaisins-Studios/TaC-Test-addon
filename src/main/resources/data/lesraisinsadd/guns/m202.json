@@ -41,7 +41,8 @@
     "damageReduceOverLife": false,
     "ricochet": false,
     "blastDamage": 60,
-    "blastRadius": 2.5
+    "blastRadius": 2.5,
+    "hasBlastDamage": true
   },
   "sounds": {
     "fire": "lesraisinsadd:item.m202_fire",
