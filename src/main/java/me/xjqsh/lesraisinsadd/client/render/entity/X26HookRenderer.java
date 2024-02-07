@@ -67,7 +67,7 @@ public class X26HookRenderer extends EntityRenderer<X26HookEntity> {
                     vector3d = vector3d.yRot(-MathHelper.lerp(0, player.yRotO, player.yRot) * ((float) Math.PI / 180F));
 
                     x1 = MathHelper.lerp(partialTicks, player.xo, player.getX()) + vector3d.x;
-                    y1 = MathHelper.lerp(partialTicks, player.yo, player.getY()) + vector3d.y;
+                    y1 = MathHelper.lerp(partialTicks, player.yo, player.getY()) + vector3d.y + 0.15;
                     z1 = MathHelper.lerp(partialTicks, player.zo, player.getZ()) + vector3d.z;
 
                     y1 += player.getEyeHeight();

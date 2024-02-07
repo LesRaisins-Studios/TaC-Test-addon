@@ -125,10 +125,12 @@ public class ServerPlayHandler {
             ((IReloadAction) event.getStack().getItem()).onGunReload(event,weapon);
         }
 
-        PacketHandler.getPlayChannel().send(
-                PacketDistributor.DIMENSION.with(()-> event.getPlayer().level.dimension()),
-                new SPlayerReload(event.getPlayer().getUUID())
-        );
+        if(ModItems.BAM4.get().equals(weapon.getItem()) || ModItems.MP18.get().equals(weapon.getItem())){
+            PacketHandler.getPlayChannel().send(
+                    PacketDistributor.DIMENSION.with(()-> event.getPlayer().level.dimension()),
+                    new SPlayerReload(event.getPlayer().getUUID())
+            );
+        }
     }
 
     @SubscribeEvent(priority = EventPriority.LOWEST)
