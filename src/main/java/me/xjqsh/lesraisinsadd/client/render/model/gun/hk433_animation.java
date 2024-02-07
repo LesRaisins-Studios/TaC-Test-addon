@@ -44,18 +44,23 @@ public class hk433_animation extends SkinAnimationModel {
 
         matrices.pushPose();
         {
-            controller.applySpecialModelTransform(getModelComponent(skin, BODY), HK433AnimationController.INDEX_MAGAZINE_2, transformType, matrices);
-            if (GunModifierHelper.getAmmoCapacityWeight(stack) > -1) {
-                this.renderComponentWithOffset(stack, matrices, renderBuffer, light, overlay, skin, ModelComponent.MAG_EXTENDED);
-            } else {
-                this.renderComponentWithOffset(stack, matrices, renderBuffer, light, overlay, skin, ModelComponent.MAG_STANDARD);
+            if(controller.isAnimationRunning(GunAnimationController.AnimationLabel.RELOAD_NORMAL) ||
+                    controller.isAnimationRunning(GunAnimationController.AnimationLabel.RELOAD_EMPTY))
+            {
+                controller.applySpecialModelTransform(getModelComponent(skin, BODY), HK433AnimationController.INDEX_MAGAZINE, transformType, matrices);
+                if (GunModifierHelper.getAmmoCapacityWeight(stack) > -1) {
+                    this.renderComponentWithOffset(stack, matrices, renderBuffer, light, overlay, skin, ModelComponent.MAG_EXTENDED);
+                } else {
+                    this.renderComponentWithOffset(stack, matrices, renderBuffer, light, overlay, skin, ModelComponent.MAG_STANDARD);
+                }
             }
+
         }
         matrices.popPose();
 
         matrices.pushPose();
         {
-            controller.applySpecialModelTransform(getModelComponent(skin, BODY), HK433AnimationController.INDEX_MAGAZINE, transformType, matrices);
+            controller.applySpecialModelTransform(getModelComponent(skin, BODY), HK433AnimationController.INDEX_MAGAZINE_2, transformType, matrices);
             if (GunModifierHelper.getAmmoCapacityWeight(stack) > -1) {
                 this.renderComponentWithOffset(stack, matrices, renderBuffer, light, overlay, skin, ModelComponent.MAG_EXTENDED);
             } else {

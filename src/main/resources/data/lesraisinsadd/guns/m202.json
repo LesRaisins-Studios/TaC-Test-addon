@@ -39,7 +39,9 @@
     "trailLengthMultiplier": 0,
     "life": 25,
     "damageReduceOverLife": false,
-    "ricochet": false
+    "ricochet": false,
+    "blastDamage": 60,
+    "blastRadius": 2.5
   },
   "sounds": {
     "fire": "lesraisinsadd:item.m202_fire",

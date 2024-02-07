@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Random;
 
 public class BeamRender extends EntityRenderer<BeamEntity> {
-    private static final RenderType TEST = RenderType.create("test",
+    private static final RenderType LRBEAM = RenderType.create("lrbeam",
             DefaultVertexFormats.BLOCK, 7, 131072, true, false, RenderType.State.builder()
                     .setShadeModelState(new RenderState.ShadeModelState(false))
                     .setLightmapState(new RenderState.LightmapState(true))
@@ -58,7 +58,7 @@ public class BeamRender extends EntityRenderer<BeamEntity> {
             IBakedModel model = ModelCaches.BEAM.getModel();
             if(model!=null){
                 IVertexBuilder builder;
-                builder = ItemRenderer.getFoilBufferDirect(buffer, TEST, true, false);
+                builder = ItemRenderer.getFoilBufferDirect(buffer, LRBEAM, true, false);
 
 
                 matrixStack.pushPose();

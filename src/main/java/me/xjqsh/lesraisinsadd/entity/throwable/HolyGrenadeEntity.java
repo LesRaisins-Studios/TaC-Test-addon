@@ -38,7 +38,7 @@ public class HolyGrenadeEntity extends ThrowableItemEntity<HolyGrenadeMeta> impl
                 if(s instanceof MonsterEntity){
                     if(this.getMeta().createBeam()){
                         BeamEntity entity = new BeamEntity(ModEntities.BEAM.get(),this.level,
-                                s.getPosition(1.0f).add(0,0,0));
+                                new Vector3d(s.getX(),s.getY(),s.getZ()));
 
                         entity.xRot = -90;
                         entity.yRot = 0;
