@@ -49,8 +49,8 @@
     "reloadEmpty": "lesraisinsadd:item.m200_reload_empty",
     "draw": "lesraisinsadd:item.m200_draw",
     "inspect": "lesraisinsadd:item.m200_inspect",
-    "cock": "lesraisinsadd:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s",
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "lesraisinsadd:item.m200_fire",
     "pullBolt": "lesraisinsadd:item.m200_bolt"
   },
   "display": {

@@ -49,7 +49,7 @@
     "reloadEmpty": "lesraisinsadd:item.dvl10_reload_empty",
     "draw": "lesraisinsadd:item.dvl10_draw",
     "inspect": "lesraisinsadd:item.dvl10_inspect",
-    "cock": "lesraisinsadd:item.pistol.cock",
+    "cock": "tac:item.pistol.cock",
     "pullBolt": "lesraisinsadd:item.dvl10_bolt"
   },
   "display": {
@@ -58,23 +58,6 @@
       "zOffset": -60.75,
       "trailAdjust": 1.325,
       "size": 0.8
-    },
-    "shellCasing": {
-      "tickLife":10,
-      "yOffset": 1,
-      "xOffset": 0,
-      "zOffset": 0,
-      "scale": 1,
-      "velocityX": 8,
-      "velocityY": 1,
-      "velocityZ": -0.5,
-      "rVelocityX": 0,
-      "rVelocityY": 1.25,
-      "rVelocityZ": 0.0,
-      "aVelocityX": 45.0,
-      "aVelocityY": -90.0,
-      "aVelocityZ": 15.0,
-      "casingModel": "tac:special/shell_steel"
     },
     "hipfireScale": 1.25,
     "hipfireMoveScale": 0.5,

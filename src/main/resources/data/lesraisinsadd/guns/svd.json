@@ -49,8 +49,8 @@
     "reloadEmpty": "lesraisinsadd:item.svd_reload_empty",
     "draw": "tac:animation.ak47_draw",
     "inspect": "lesraisinsadd:item.svd_inspect",
-    "cock": "lesraisinsadd:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "lesraisinsadd:item.svd_fire"
   },
   "display": {
     "flash": {

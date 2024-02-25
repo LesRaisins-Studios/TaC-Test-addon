@@ -49,7 +49,7 @@
     "reloadEmpty": "lesraisinsadd:item.rfb_reload_empty",
     "draw": "lesraisinsadd:item.rfb_draw",
     "inspect": "lesraisinsadd:item.rfb_inspect",
-    "cock": "lesraisinsadd:item.pistol.cock",
+    "cock": "tac:item.pistol.cock",
     "silencedFire": "lesraisinsadd:item.rfb_fire_s"
   },
   "display": {

@@ -49,7 +49,7 @@
     "reloadEmpty": "lesraisinsadd:item.ntw20_reload_empty",
     "draw": "lesraisinsadd:item.ntw20_draw",
     "inspect": "lesraisinsadd:item.ntw20_inspect",
-    "cock": "lesraisinsadd:item.pistol.cock",
+    "cock": "tac:item.pistol.cock",
     "pullBolt": "lesraisinsadd:item.ntw20_bolt"
   },
   "display": {

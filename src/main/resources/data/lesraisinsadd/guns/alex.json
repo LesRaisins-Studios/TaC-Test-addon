@@ -49,8 +49,8 @@
     "reloadEmpty": "lesraisinsadd:item.alex_reload",
     "draw": "lesraisinsadd:item.alex_draw",
     "inspect": "lesraisinsadd:item.alex_inspect",
-    "cock": "lesraisinsadd:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "lesraisinsadd:item.alex_fire"
   },
   "display": {
     "hipfireScale": 1.25,

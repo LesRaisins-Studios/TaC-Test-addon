@@ -52,8 +52,8 @@
     "reloadEmpty": "lesraisinsadd:item.mp18_reload",
     "draw": "lesraisinsadd:item.mp18_draw",
     "inspect": "lesraisinsadd:item.mp18_inspect",
-    "cock": "lesraisinsadd:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "lesraisinsadd:item.mp18_fire"
   },
   "display": {
     "flash": {

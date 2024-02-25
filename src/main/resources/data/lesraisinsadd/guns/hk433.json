@@ -41,13 +41,13 @@
     "preReloadPauseTicks": 8
   },
   "sounds": {
-    "fire": "lesraisinsadd:item.svd_fire",
-    "reloadNormal": "lesraisinsadd:item.svd_reload_norm",
-    "reloadEmpty": "lesraisinsadd:item.svd_reload_empty",
-    "draw": "tac:animation.ak47_draw",
-    "inspect": "lesraisinsadd:item.svd_inspect",
-    "cock": "lesraisinsadd:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "fire": "lesraisinsadd:item.hk433_fire",
+    "reloadNormal": "lesraisinsadd:item.hk433_reload_norm",
+    "reloadEmpty": "lesraisinsadd:item.hk433_reload_empty",
+    "draw": "lesraisinsadd:item.hk433_draw",
+    "inspect": "lesraisinsadd:item.hk433_inspect",
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "lesraisinsadd:item.hk433_fire_s"
   },
   "display": {
     "flash": {

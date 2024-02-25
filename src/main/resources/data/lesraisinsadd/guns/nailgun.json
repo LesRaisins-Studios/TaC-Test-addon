@@ -47,10 +47,10 @@
     "fire": "lesraisinsadd:item.nailgun_fire",
     "reloadNormal": "lesraisinsadd:item.nailgun_reload_norm",
     "reloadEmpty": "lesraisinsadd:item.nailgun_reload_empty",
-    "draw": "lesraisinsadd:item.p90_draw",
+    "draw": "lesraisinsadd:item.nailgun_draw",
     "inspect": "lesraisinsadd:item.nailgun_inspect",
     "cock": "tac:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "silencedFire": "tac:item.m4a1_fire_s"
   },
   "display": {
     "hipfireScale": 1.25,

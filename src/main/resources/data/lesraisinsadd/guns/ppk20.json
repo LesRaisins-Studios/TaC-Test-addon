@@ -46,10 +46,10 @@
     "fire": "lesraisinsadd:item.ppk20_fire",
     "reloadNormal": "lesraisinsadd:item.ppk20_reload_norm",
     "reloadEmpty": "lesraisinsadd:item.ppk20_reload_empty",
-    "draw": "lesraisinsadd:animation.ak47_draw",
-    "inspect": "lesraisinsadd:animation.ak47_inspect",
-    "cock": "lesraisinsadd:item.pistol.cock",
-    "silencedFire": "lesraisinsadd:item.ak47_fire_s"
+    "draw": "tac:animation.ak47_draw",
+    "inspect": "tac:animation.ak47_inspect",
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "lesraisinsadd:item.ppk20_fire"
   },
   "display": {
     "flash": {

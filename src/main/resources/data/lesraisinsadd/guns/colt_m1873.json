@@ -51,7 +51,7 @@
     "draw": "lesraisinsadd:item.colt_m1873_draw",
     "inspect": "lesraisinsadd:item.colt_m1873_inspect",
     "cock": "tac:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "silencedFire": "lesraisinsadd:item.colt_m1873_fire"
   },
   "display": {
     "flash": {

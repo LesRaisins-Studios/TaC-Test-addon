@@ -50,8 +50,8 @@
     "reloadEmpty": "lesraisinsadd:item.xm8_reload_empty",
     "draw": "lesraisinsadd:item.xm8_draw",
     "inspect": "lesraisinsadd:item.xm8_inspect",
-    "cock": "lesraisinsadd:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "lesraisinsadd:item.xm8_fire"
   },
   "display": {
     "flash": {

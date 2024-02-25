@@ -49,9 +49,9 @@
     "reloadEnd": "lesraisinsadd:item.marlin_1895_reload_end",
     "reloadEndEmpty": "lesraisinsadd:item.marlin_1895_reload_end",
     "draw": "lesraisinsadd:item.marlin_1895_draw",
-    "inspect": "lesraisinsadd:item.svd_inspect",
-    "cock": "lesraisinsadd:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "inspect": "lesraisinsadd:item.marlin_1895_inspect",
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "tac:item.m4a1_fire_s"
   },
   "display": {
     "flash": {

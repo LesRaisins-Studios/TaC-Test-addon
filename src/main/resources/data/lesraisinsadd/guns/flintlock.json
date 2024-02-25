@@ -50,7 +50,7 @@
     "draw": "lesraisinsadd:item.flintlock_draw",
     "inspect": "lesraisinsadd:item.flintlock_inspect",
     "cock": "tac:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "silencedFire": "lesraisinsadd:item.flintlock_fire"
   },
   "display": {
     "flash": {

@@ -4,8 +4,8 @@
   "shouldBounce": true,
   "brokeOnGround": false,
   "gravityVelocity": 0.03,
-  "speed": 1.0,
+  "speed": 1.5,
   "maxCookTime": 200,
   "maxLife": 400,
-  "bounceFactor": 0.5
+  "bounceFactor": 0.75
 }

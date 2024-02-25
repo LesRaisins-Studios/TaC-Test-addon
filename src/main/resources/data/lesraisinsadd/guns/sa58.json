@@ -49,7 +49,7 @@
     "draw": "tac:animation.ak47_draw",
     "inspect": "lesraisinsadd:item.sa58_inspect",
     "cock": "tac:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "silencedFire": "lesraisinsadd:item.sa58_fire_s"
   },
   "display": {
     "flash": {

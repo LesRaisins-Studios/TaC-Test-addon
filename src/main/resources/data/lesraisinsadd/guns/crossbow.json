@@ -32,7 +32,7 @@
     "size": 0.125,
     "speed": 12.5,
     "life": 16,
-    "trailLengthMultiplier": 0
+    "trailLengthMultiplier": 0.001
   },
   "reloads": {
     "magFed": true,
@@ -53,7 +53,7 @@
     "draw": "tac:animation.ak47_draw",
     "inspect": "lesraisinsadd:item.crossbow_inspect",
     "cock": "tac:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "silencedFire": "lesraisinsadd:item.crossbow_fire"
   },
   "modules": {
     "zoom": {

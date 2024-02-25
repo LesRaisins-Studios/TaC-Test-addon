@@ -82,7 +82,7 @@ public class ModelLoader {
             BODY,BOLT,SIGHT,
             MAG_STANDARD,MAG_EXTENDED,
             MUZZLE_BRAKE,MUZZLE_COMPENSATOR,MUZZLE_DEFAULT,MUZZLE_SILENCER,
-            STOCK_LIGHT,STOCK_TACTICAL));
+            STOCK_LIGHT,STOCK_TACTICAL,STOCK_HEAVY));
 
     public static SkinLoader ALEX = register(new SkinLoader(ModItems.ALEX.getId(),
             BODY,W_HEAD,W_ARM_L,W_ARM_R,W_LEG_L,W_LEG_R));

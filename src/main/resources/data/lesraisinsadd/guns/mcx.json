@@ -37,7 +37,7 @@
   },
   "reloads": {
     "magFed": true,
-    "maxAmmo": 30,
+    "maxAmmo": 20,
     "reloadMagTimer": 36,
     "additionalReloadEmptyMagTimer": 20,
     "maxAdditionalAmmoPerOC": [5, 7, 10],
@@ -49,8 +49,8 @@
     "reloadEmpty": "lesraisinsadd:item.mcx_reload_empty",
     "draw": "lesraisinsadd:item.mcx_draw",
     "inspect": "lesraisinsadd:item.mcx_inspect",
-    "cock": "lesraisinsadd:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "lesraisinsadd:item.mcx_fire_s"
   },
   "display": {
     "flash": {

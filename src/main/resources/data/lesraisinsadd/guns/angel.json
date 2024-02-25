@@ -50,7 +50,7 @@
     "draw": "lesraisinsadd:item.angle_draw",
     "inspect": "lesraisinsadd:item.angle_inspect",
     "cock": "tac:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "silencedFire": "lesraisinsadd:item.angle_fire"
   },
   "display": {
     "flash": {

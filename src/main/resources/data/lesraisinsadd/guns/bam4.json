@@ -50,7 +50,7 @@
     "reloadEmpty": "lesraisinsadd:item.bam4_reload",
     "draw": "lesraisinsadd:item.bam4_draw",
     "inspect": "lesraisinsadd:item.bam4_inspect",
-    "cock": "lesraisinsadd:item.pistol.cock",
+    "cock": "tac:item.pistol.cock",
     "silencedFire": "lesraisinsadd:item.bam4_fire_s"
   },
   "display": {

@@ -50,7 +50,7 @@
     "draw": "lesraisinsadd:item.p90_draw",
     "inspect": "lesraisinsadd:item.p90_inspect",
     "cock": "tac:item.pistol.cock",
-    "silencedFire": "tac:item.ak47_fire_s"
+    "silencedFire": "lesraisinsadd:item.p90_fire_s"
   },
   "display": {
     "flash": {
