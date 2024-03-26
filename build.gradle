@@ -100,7 +100,8 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
     implementation fg.deobf('curse.maven:obfuscate-289380:3336021')
-    implementation fg.deobf("curse.maven:timeless-and-classic-guns-tac-491264:5128430")
+    implementation fg.deobf("curse.maven:timeless-and-classic-guns-tac-491264:5194531")
+//    implementation fg.deobf("curse.maven:timeless-and-classic-guns-tac-491264:5128430")
 //    implementation fg.deobf("curse.maven:timeless-and-classic-guns-tac-491264:4920013")
     //0.3.11.2
 //    implementation fg.deobf("curse.maven:timeless-and-classic-guns-tac-491264:5054005")
