@@ -54,9 +54,9 @@ public class ToolTipUtil {
         CompoundNBT tagCompound = stack.getTag();
         GunItem gun = (GunItem) stack.getItem();
         if (tagCompound != null) {
-            double armorPen = gun.getGun().getProjectile().getGunArmorIgnore() >= 0.0F ? Math.min(Config.COMMON.gameplay.percentDamageIgnoresStandardArmor.get() * (double)gun.getGun().getProjectile().getGunArmorIgnore() * 100.0, 100.0) : 0.0;
+            double armorPen = gun.getGun().getProjectile().getGunArmorIgnore() >= 0.0F ? Math.min(Config.SERVER.gameplay.percentDamageIgnoresStandardArmor.get() * (double)gun.getGun().getProjectile().getGunArmorIgnore() * 100.0, 100.0) : 0.0;
             tooltip.add((new TranslationTextComponent("info.tac.armorPen", (new TranslationTextComponent(String.format("%.1f", armorPen) + "%")).withStyle(TextFormatting.RED))).withStyle(TextFormatting.DARK_AQUA));
-            int headDamgeModifier = Config.COMMON.gameplay.headShotDamageMultiplier.get() * (double)gun.getGun().getProjectile().getGunHeadDamage() >= 0.0 ? (int)(Config.COMMON.gameplay.headShotDamageMultiplier.get() * (double)gun.getGun().getProjectile().getGunHeadDamage() * 100.0) : 0;
+            int headDamgeModifier = Config.SERVER.gameplay.headShotDamageMultiplier.get() * (double)gun.getGun().getProjectile().getGunHeadDamage() >= 0.0 ? (int)(Config.SERVER.gameplay.headShotDamageMultiplier.get() * (double)gun.getGun().getProjectile().getGunHeadDamage() * 100.0) : 0;
             tooltip.add((new TranslationTextComponent("info.tac.headDamageModifier", (new TranslationTextComponent(String.format("%d", headDamgeModifier) + "%")).withStyle(TextFormatting.RED))).withStyle(TextFormatting.DARK_AQUA));
             float speed = ServerPlayHandler.calceldGunWeightSpeed(gun.getGun(), stack);
             speed = Math.max(Math.min(speed, 0.1F), 0.075F);

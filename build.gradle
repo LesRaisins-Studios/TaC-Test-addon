@@ -83,6 +83,18 @@ mixin {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        forRepositories(fg.repository) // Only add this if you're using ForgeGradle, otherwise remove this line
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
     maven {
 //        url "file://D:/Minecraft/Dev/TimelessandClassics_Reforged/build/maven"
         url "file://D:/Minecraft/temp/TimelessandClassics_Reforged/build/maven"
@@ -100,7 +112,9 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
     implementation fg.deobf('curse.maven:obfuscate-289380:3336021')
-    implementation fg.deobf("curse.maven:timeless-and-classic-guns-tac-491264:5194531")
+    implementation fg.deobf('maven.modrinth:timeless-and-classics-guns:0.3.14.2')
+
+//    implementation fg.deobf("curse.maven:timeless-and-classic-guns-tac-491264:5194531")
 //    implementation fg.deobf("curse.maven:timeless-and-classic-guns-tac-491264:5128430")
 //    implementation fg.deobf("curse.maven:timeless-and-classic-guns-tac-491264:4920013")
     //0.3.11.2

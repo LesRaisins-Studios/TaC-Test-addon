@@ -47,7 +47,7 @@ public class ExplodeUtil {
     public static void createExplosion(Entity entity, float power, float radius, @Nullable Vector3d hitVec) {
         World world = entity.level;
         if (!world.isClientSide()) {
-            Explosion.Mode mode = Config.COMMON.gameplay.enableExplosionBreak.get() ? Explosion.Mode.BREAK : Explosion.Mode.NONE;
+            Explosion.Mode mode = Config.SERVER.gameplay.enableExplosionBreak.get() ? Explosion.Mode.BREAK : Explosion.Mode.NONE;
             DamageSource source = null;
             if (entity instanceof IExplosionProvider) {
                 source = ((IExplosionProvider)entity).createDamageSource();

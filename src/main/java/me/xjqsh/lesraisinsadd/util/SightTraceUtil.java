@@ -55,7 +55,7 @@ public class SightTraceUtil {
         }
 
         // Verify that light can pass through all blocks obstructing the entity's line of sight to the flash shield
-        if(effect != ModEffects.BLINDED.get() || !Config.COMMON.stunGrenades.blind.criteria.raytraceOpaqueBlocks.get()
+        if(effect != ModEffects.BLINDED.get() || !Config.SERVER.stunGrenades.blind.criteria.raytraceOpaqueBlocks.get()
                 || rayTraceOpaqueBlocks(starter,target.level, eyes, p, false, false, false) == null) {
             // Duration attenuated by distance
             int mx = criteria.durationMax.get();

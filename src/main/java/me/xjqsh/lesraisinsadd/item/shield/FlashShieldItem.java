@@ -82,21 +82,21 @@ public class FlashShieldItem extends RiotShieldItem implements IAmmoable {
 
             if(!world.isClientSide()) {
                 // Calculate bounds of area where potentially effected players may be
-                double diameter = Math.max(Config.COMMON.stunGrenades.deafen.criteria.radius.get(), Config.COMMON.stunGrenades.blind.criteria.radius.get()) * 2 + 1;
+                double diameter = Math.max(Config.SERVER.stunGrenades.deafen.criteria.radius.get(), Config.SERVER.stunGrenades.blind.criteria.radius.get()) * 2 + 1;
                 for(LivingEntity target : EntityUtil.getEntitiesInRadius(world, LivingEntity.class, caster.position(), diameter)) {
                     if(caster.ignoreExplosion())
                         continue;
 
                     // Apply effects as determined by their criteria
                     if(SightTraceUtil.calculateAndApplyEffect(ModEffects.DEAFENED.get(),
-                            Config.COMMON.stunGrenades.deafen.criteria, caster, target)
-                            && Config.COMMON.stunGrenades.deafen.panicMobs.get()) {
+                            Config.SERVER.stunGrenades.deafen.criteria, caster, target)
+                            && Config.SERVER.stunGrenades.deafen.panicMobs.get()) {
                         caster.setLastHurtByMob(caster);
                     }
 
                     if(SightTraceUtil.calculateAndApplyEffect(ModEffects.BLINDED.get(),
-                            Config.COMMON.stunGrenades.blind.criteria, caster, target)
-                            && Config.COMMON.stunGrenades.blind.blindMobs.get()
+                            Config.SERVER.stunGrenades.blind.criteria, caster, target)
+                            && Config.SERVER.stunGrenades.blind.blindMobs.get()
                             && target instanceof MobEntity) {
                         ((MobEntity) target).setTarget(null);
                     }
