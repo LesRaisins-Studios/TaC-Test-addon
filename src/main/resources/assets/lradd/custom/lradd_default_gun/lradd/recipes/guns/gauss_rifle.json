@@ -1,0 +1,32 @@
+{
+    "materials": [
+      {
+        "item": {
+          "tag": "forge:gems/diamond"
+        },
+        "count": 5
+      },
+      {
+        "item": {
+          "tag": "forge:ingots/gold"
+        },
+        "count": 30
+      },
+      {
+        "item": {
+          "tag": "forge:ingots/iron"
+        },
+        "count": 75
+      },
+      {
+        "item": {
+          "tag": "forge:dusts/redstone"
+        },
+        "count":40
+      }
+    ],
+    "result": {
+      "type": "gun",
+      "id": "lradd:gauss_rifle"
+    }
+  }

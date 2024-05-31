@@ -1,0 +1,37 @@
+{
+    "model": "lradd:gun/acr_geo",
+    "texture": "lradd:gun/uv/acr",
+    "lod": {
+        "model": "lradd:gun/lod/acr_lod",
+        "texture": "lradd:gun/lod/acr_lod"
+    },
+    "hud": "lradd:gun/hud/acr",
+    "slot": "lradd:gun/slot/acr",
+    "animation": "lradd:acr",
+    "use_default_animation": "rifle",
+    "third_person_animation": "default",
+    "transform": {
+        "scale": {
+            "thirdperson": [0.45, 0.45, 0.45],
+            "ground": [0.45, 0.45, 0.45],
+            "fixed": [0.6, 0.6, 0.6]
+        }
+    },
+    "shell": {
+        "initial_velocity": [8.0, 5.0, -0.5],
+        "random_velocity": [2.5, 1.5, 0.25],
+        "acceleration": [0.0, -20, 0.0],
+        "angular_velocity": [720, 720, 90],
+        "living_time": 1.0
+    },
+    "sounds": {
+        "shoot": "lradd:item/acr_fire",
+        "silence": "lradd:item/acr_fire_s",
+        "reload_empty": "lradd:item/acr_reload_empty",
+        "reload_tactical": "lradd:item/acr_reload_norm",
+        "inspect": "lradd:item/acr_inspect",
+        "inspect_empty": "lradd:item/acr_inspect_empty",
+        "draw": "lradd:item/acr_draw",
+        "put_away": "tac:m4a1/m4a1_put_away"
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.xjqsh.lradd.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "LesRaisinsAddon_1201.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

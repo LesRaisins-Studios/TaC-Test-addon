@@ -1,0 +1,21 @@
+{
+    "materials": [
+      {
+        "item": {
+          "tag": "forge:ingots/iron"
+        },
+        "count": 10
+      },
+      {
+        "item": {
+          "tag": "forge:dusts/redstone"
+        },
+        "count": 5
+      }
+    ],
+    "result": {
+      "type": "ammo",
+      "id": "lradd:2mm_ec",
+      "count": 30
+    }
+  }

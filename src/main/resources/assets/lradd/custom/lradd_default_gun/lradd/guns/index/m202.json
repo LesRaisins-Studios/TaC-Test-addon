@@ -1,0 +1,10 @@
+{
+    // 枪械的显示名称，支持本地化
+    "name": "lradd.gun.m202.name",
+    // 枪械的本地数据
+    "display": "lradd:m202_display",
+    // 枪械参数
+    "data": "lradd:m202_data",
+    // 枪械种类，标准待定
+    "type": "rpg"
+}

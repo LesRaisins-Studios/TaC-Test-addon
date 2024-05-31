@@ -1,0 +1,32 @@
+{
+    "materials": [
+        {
+          "item": {
+            "tag": "forge:ingots/netherite"
+          },
+          "count": 4
+        },
+        {
+          "item": {
+            "tag": "forge:ingots/gold"
+          },
+          "count": 8
+        },
+        {
+          "item": {
+            "tag": "forge:nether_stars"
+          },
+          "count": 1
+        },
+        {
+          "item": {
+            "tag": "forge:ingots/iron"
+          },
+          "count": 60
+        }
+      ],
+    "result": {
+      "type": "gun",
+      "id": "lradd:bam4"
+    }
+  }

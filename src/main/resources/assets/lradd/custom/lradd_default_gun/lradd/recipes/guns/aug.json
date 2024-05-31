@@ -1,0 +1,26 @@
+{
+    "materials": [
+        {
+          "item": {
+            "tag": "forge:ingots/iron"
+          },
+          "count": 45
+        },
+        {
+          "item": {
+            "tag": "forge:gems/lapis"
+          },
+          "count": 16
+        },
+        {
+          "item": {
+            "tag": "forge:gems/quartz"
+          },
+          "count": 3
+        }
+      ],
+    "result": {
+      "type": "gun",
+      "id": "lradd:aug"
+    }
+  }

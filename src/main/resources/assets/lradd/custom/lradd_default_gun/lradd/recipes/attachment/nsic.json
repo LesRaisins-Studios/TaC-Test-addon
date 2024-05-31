@@ -1,0 +1,32 @@
+{
+    "materials": [
+      {
+        "item": {
+          "tag": "forge:ingots/iron"
+        },
+        "count": 12
+      },
+      {
+        "item": {
+          "tag": "forge:gems/quartz"
+        },
+        "count": 3
+      },
+      {
+        "item": {
+          "tag": "forge:dusts/redstone"
+        },
+        "count": 3
+      },
+      {
+        "item": {
+          "tag": "forge:glass"
+        },
+        "count": 4
+      }
+    ],
+    "result": {
+      "type": "attachment",
+      "id": "lradd:nsic_sight"
+    }
+  }

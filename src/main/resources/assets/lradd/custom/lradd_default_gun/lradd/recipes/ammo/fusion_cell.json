@@ -1,0 +1,21 @@
+{
+    "materials": [
+      {
+        "item": {
+          "tag": "forge:ingots/copper"
+        },
+        "count": 12
+      },
+      {
+        "item": {
+          "tag": "forge:dusts/redstone"
+        },
+        "count": 8
+      }
+    ],
+    "result": {
+      "type": "ammo",
+      "id": "lradd:fusion_cell",
+      "count": 40
+    }
+  }

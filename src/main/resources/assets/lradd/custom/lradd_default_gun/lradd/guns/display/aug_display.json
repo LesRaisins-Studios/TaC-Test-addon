@@ -1,0 +1,37 @@
+{
+    "model": "lradd:gun/aug_geo",
+    "texture": "lradd:gun/uv/aug",
+    "lod": {
+        "model": "lradd:gun/lod/aug_lod",
+        "texture": "lradd:gun/lod/aug_lod"
+    },
+    "hud": "lradd:gun/hud/aug",
+    "slot": "lradd:gun/slot/aug",
+    "animation": "lradd:aug",
+    "use_default_animation": "rifle",
+    "third_person_animation": "default",
+    "transform": {
+        "scale": {
+            "thirdperson": [0.45, 0.45, 0.45],
+            "ground": [0.45, 0.45, 0.45],
+            "fixed": [0.6, 0.6, 0.6]
+        }
+    },
+    "shell": {
+        "initial_velocity": [8.0, 5.0, -0.5],
+        "random_velocity": [2.5, 1.5, 0.25],
+        "acceleration": [0.0, -20, 0.0],
+        "angular_velocity": [720, 720, 90],
+        "living_time": 1.0
+    },
+    "sounds": {
+        "shoot": "lradd:item/aug_fire",
+        "silence": "lradd:item/aug_fire_s",
+        "reload_empty": "lradd:item/aug_reload_empty",
+        "reload_tactical": "lradd:item/aug_reload_norm",
+        "inspect": "lradd:item/aug_inspect",
+        "inspect_empty": "lradd:item/aug_inspect_empty",
+        "draw": "lradd:item/aug_draw",
+        "put_away": "tac:m4a1/m4a1_put_away"
+    }
+}

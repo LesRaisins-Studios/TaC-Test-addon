@@ -1,0 +1,11 @@
+{
+  "slot": "lradd:attachment/slot/grip_vg1",
+  // 配件的默认模型，不可为空
+  "model": "lradd:attachment/grip_vg1_geo",
+  // 配件默认模型使用的材质，不可为空
+  "texture": "lradd:attachment/uv/grip_vg1",
+  "sounds": {
+    "install": "tacz:attachments/attachment_general_b",
+    "uninstall": "tacz:attachments/attachment_general_uninstall"
+  }
+}

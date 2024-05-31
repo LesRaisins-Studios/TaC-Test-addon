@@ -1,0 +1,6 @@
+{
+    "name": "lradd.gun.gauss_rifle.name",
+    "display": "lradd:gauss_rifle_display",
+    "data": "lradd:gauss_rifle_data",
+    "type": "sniper"
+}

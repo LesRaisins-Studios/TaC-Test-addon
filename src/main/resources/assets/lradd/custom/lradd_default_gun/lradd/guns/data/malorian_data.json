@@ -1,0 +1,96 @@
+{
+  
+  "ammo": "tacz:magnum_r",
+
+  "ammo_amount": 10,
+  "bolt": "open_bolt",
+  "rpm": 180,
+  "bullet": {
+    // 寿命，单位秒
+    "life": 0.75,
+    // 用于霰弹，默认为 1，每发的伤害 / bullet_amount，每次射击扣除一发子弹
+    "bullet_amount": 1,
+    // 伤害
+    "damage": 15,
+    // 曳光弹间隔数量，没有此字段则不发射曳光弹
+    // 设置为 0 则是每发都是曳光弹
+    "tracer_count_interval": 0,
+    // 额外伤害的内容，为空则表示没有任何额外伤害计算内容
+    "extra_damage": {
+      // 护甲穿透率，默认为 0，也就是没有穿甲伤害
+      "armor_ignore": 0.35,
+      // 爆头伤害 x1.5
+      "head_shot_multiplier": 2,
+      // 距离-伤害分段常函数
+      "damage_adjust": [
+        // 这样就能写抵近伤害了
+        {"distance": 1.2, "damage": 16.5},
+        {"distance": 8, "damage": 15},
+        {"distance": 22, "damage": 13.5},
+        {"distance": 34, "damage": 11.5},
+        // 如果你忘记写这个无穷，那么超过上述距离，我就认为是 0
+        {"distance": "infinite", "damage": 10}
+      ]
+    },
+    // 速度 m/s
+    "speed": 210,
+    // 重力
+    "gravity": 0.0245,
+    // 击退效果
+    "knockback": 0,
+    // 阻力
+    "friction": 0.01,
+    // 点燃目标
+    "ignite": false,
+    // 穿透数
+    "pierce": 1
+    // 是否爆炸，没有此字段时为 false
+    //"explosion": {
+    //  "radius": 5
+    //}
+  },
+  "reload": {
+    "type": "magazine",
+    "feed": {
+      "empty": 3,
+      "tactical": 2
+    },
+    "cooldown": {
+      "empty": 3.2917,
+      "tactical": 2.625
+    }
+  },
+  "draw_time": 1.5833,
+  "put_away_time": 1.2917,
+  "aim_time": 0.2,
+  "sprint_time": 0.3,
+  "fire_mode": [
+    "semi"
+  ],
+  "recoil": {
+    "pitch": [
+      {"time": 0, "value": [1.35, 1.35]},
+      {"time": 0.3, "value": [1.35, 1.35]},
+      {"time": 0.55, "value": [-0.1, -0.1]},
+      {"time": 0.85, "value": [0.13, 0.13]},
+      {"time": 1.0, "value": [0, 0]},
+      {"time": 1.12, "value": [0, 0]}
+    ],
+    "yaw": [
+      {"time": 0, "value": [-0.25, 0.25]},
+      {"time": 0.4, "value": [0, 0]}
+    ]
+  },
+  "inaccuracy": {
+    "stand": 0.625,
+    "move": 0.865,
+    "sneak": 0.5,
+    "lie": 0.325,
+    "aim": 0.15
+  },
+  "move_speed": {
+    "base": 0.94,
+    // 瞄准情况
+    "aim": 0.9
+  }
+}

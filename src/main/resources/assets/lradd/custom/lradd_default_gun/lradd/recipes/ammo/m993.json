@@ -1,0 +1,27 @@
+{
+    "materials": [
+      {
+        "item": {
+          "tag": "forge:ingots/copper"
+        },
+        "count": 26
+      },
+      {
+        "item": {
+          "tag": "forge:gems/lapis"
+        },
+        "count":1
+      },
+      {
+        "item": {
+          "tag": "forge:gunpowder"
+        },
+        "count": 10
+      }
+    ],
+    "result": {
+      "type": "ammo",
+      "id": "lradd:m993",
+      "count": 30
+    }
+  }

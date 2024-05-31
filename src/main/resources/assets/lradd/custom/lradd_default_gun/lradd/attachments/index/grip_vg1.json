@@ -1,0 +1,7 @@
+{
+  "name": "lradd.attachment.grip_vg1.name",
+  "tooltip": "lradd.attachment.grip_vg1.tooltip",
+  "display": "lradd:grip_vg1_display",
+  "data": "lradd:grip_vg1_data",
+  "type": "grip"
+}

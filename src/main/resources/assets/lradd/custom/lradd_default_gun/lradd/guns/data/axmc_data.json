@@ -1,0 +1,104 @@
+{
+  
+  "ammo": "tacz:338",
+
+  "ammo_amount": 8,
+  "bolt": "manual_action",
+  "rpm": 200,
+  "bullet": {
+    // 寿命，单位秒
+    "life": 1.2,
+    // 用于霰弹，默认为 1，每发的伤害 / bullet_amount，每次射击扣除一发子弹
+    "bullet_amount": 1,
+    // 伤害
+    "damage": 36.5,
+    // 曳光弹间隔数量，没有此字段则不发射曳光弹
+    // 设置为 0 则是每发都是曳光弹
+    "tracer_count_interval": 0,
+    // 额外伤害的内容，为空则表示没有任何额外伤害计算内容
+    "extra_damage": {
+      // 护甲穿透率，默认为 0，也就是没有穿甲伤害
+      "armor_ignore": 0.65,
+      // 爆头伤害 x1.5
+      "head_shot_multiplier": 2,
+      // 距离-伤害分段常函数
+      "damage_adjust": [
+        // 这样就能写抵近伤害了
+        {"distance": 4, "damage": 46},
+        {"distance": 10, "damage": 42.5},
+        {"distance": 60, "damage": 36.5},
+        {"distance": 85, "damage": 32},
+        // 如果你忘记写这个无穷，那么超过上述距离，我就认为是 0
+        {"distance": "infinite", "damage": 27.5}
+      ]
+    },
+    // 速度 m/s
+    "speed": 400,
+    // 重力
+    "gravity": 0.0245,
+    // 击退效果
+    "knockback": 0,
+    // 阻力
+    "friction": 0.008,
+    // 点燃目标
+    "ignite": false,
+    // 穿透数
+    "pierce": 3
+    // 是否爆炸，没有此字段时为 false
+    //"explosion": {
+    //  "radius": 5
+    //}
+  },
+  "reload": {
+    "type": "magazine",
+    "feed": {
+      "empty": 4,
+      "tactical": 3
+    },
+    "cooldown": {
+      "empty": 4.1667,
+      "tactical": 3.125
+    }
+  },
+  "draw_time": 1,
+  "put_away_time": 0.75,
+  "aim_time": 0.2,
+  "sprint_time": 0.3,
+  "fire_mode": [
+    "semi"
+  ],
+  "recoil": {
+    "pitch": [
+      {"time": 0, "value": [1.95, 1.95]},
+      {"time": 0.26, "value": [1.95, 1.95]},
+      {"time": 0.45, "value": [-0.35, -0.35]},
+      {"time": 0.75, "value": [0.1, 0.1]},
+      {"time": 1.02, "value": [0, 0]},
+      {"time": 1.21, "value": [0, 0]}
+    ],
+    "yaw": [
+      {"time": 0, "value": [-0.6, -0.5]},
+      {"time": 0.32, "value": [-0.6, -0.5]},
+      {"time": 0.57, "value": [0, 0]}
+    ]
+  },
+  "inaccuracy": {
+    "stand": 7.5,
+    "move": 13,
+    "sneak": 5.5,
+    "lie": 3.5,
+    "aim": 0.015
+  },
+  "move_speed": {
+    "base": 0.76,
+    // 瞄准情况
+    "aim": 0.52
+  },
+  // 开放的配件槽。未指定的槽位默认关闭。全部配件槽类型有:
+  // scope, stock, muzzle, grip, laser, extended_mag
+  "allow_attachment_types": [
+    "scope",
+    "stock",
+    "muzzle"
+  ]
+}

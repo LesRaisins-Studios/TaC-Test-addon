@@ -1,0 +1,15 @@
+{
+    "materials": [
+      {
+        "item": {
+          "tag": "forge:ingots/iron"
+        },
+        "count": 12
+      }
+    ],
+    "result": {
+      "type": "ammo",
+      "id": "lradd:flintlock_bullet",
+      "count": 30
+    }
+  }
