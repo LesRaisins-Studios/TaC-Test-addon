@@ -4244,6 +4244,13 @@
 							}
 						},
 						{
+							"origin": [-8.25, 13.6875, 13],
+							"size": [0.5, 0.5, 0],
+							"uv": {
+								"south": {"uv": [77.5, 81], "uv_size": [47, 47]}
+							}
+						},
+						{
 							"origin": [-9.26545, 12.9558, 12.14063],
 							"size": [0.16797, 0.66797, 0.16406],
 							"uv": {
@@ -5109,7 +5116,7 @@
 				{
 					"name": "iron_view",
 					"parent": "positioning",
-					"pivot": [-7.975, 14.075, 19.675]
+					"pivot": [-7.975, 13.8875, 19.675]
 				},
 				{
 					"name": "view",
@@ -5118,19 +5125,19 @@
 				{
 					"name": "refit_view",
 					"parent": "view",
-					"pivot": [10, 8, 9],
+					"pivot": [19, 10, 9],
 					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "refit_muzzle_view",
 					"parent": "view",
-					"pivot": [0, 9, -14],
+					"pivot": [-2, 9, -19],
 					"rotation": [0, 120, 0]
 				},
 				{
 					"name": "refit_extended_mag_view",
 					"parent": "view",
-					"pivot": [-4, 6, 8],
+					"pivot": [1, -2, 8],
 					"rotation": [0, 90, 35]
 				}
 			]

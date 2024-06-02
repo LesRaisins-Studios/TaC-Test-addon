@@ -1,0 +1,7 @@
+{
+  "name": "lradd.attachment.scope_re.name",
+  "tooltip": "lradd.attachment.scope_re.tooltip",
+  "display": "lradd:scope_re_display",
+  "data": "lradd:scope_re_data",
+  "type": "scope"
+}

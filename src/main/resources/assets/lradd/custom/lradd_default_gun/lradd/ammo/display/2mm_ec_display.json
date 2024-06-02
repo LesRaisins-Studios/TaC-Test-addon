@@ -1,4 +1,5 @@
 {
-  "slot": "lradd:ammo/slot/2mm_ec"
+  "slot": "lradd:ammo/slot/2mm_ec",
+  "tracer_color": "#4db4da"
 }
     

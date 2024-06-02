@@ -3,6 +3,11 @@
   "ammo": "lradd:nail",
 
   "ammo_amount": 30,
+  "extended_mag_ammo_amount": [
+    40,
+    45,
+    50
+  ],
   "bolt": "open_bolt",
   "rpm": 720,
   "bullet": {

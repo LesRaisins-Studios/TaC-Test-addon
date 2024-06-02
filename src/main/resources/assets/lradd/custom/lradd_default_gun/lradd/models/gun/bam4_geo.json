@@ -8549,31 +8549,31 @@
 				{
 					"name": "refit_view",
 					"parent": "view",
-					"pivot": [10, 9, 9],
+					"pivot": [12, 9, 9],
 					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "refit_muzzle_view",
 					"parent": "view",
-					"pivot": [0, 9, -10],
+					"pivot": [-2, 10, -15],
 					"rotation": [0, 120, 0]
 				},
 				{
 					"name": "refit_stock_view",
 					"parent": "view",
-					"pivot": [-2, 9, 19],
+					"pivot": [2, 10, 19],
 					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "refit_scope_view",
 					"parent": "view",
-					"pivot": [-2, 11.5, 11.3],
+					"pivot": [-3, 11.5, 14.3],
 					"rotation": [0, 50, 0]
 				},
 				{
 					"name": "refit_extended_mag_view",
 					"parent": "view",
-					"pivot": [-4, 6, 7],
+					"pivot": [1, 1, 7],
 					"rotation": [0, 90, 35]
 				}
 			]

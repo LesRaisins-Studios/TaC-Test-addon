@@ -8936,8 +8936,6 @@
 						{
 							"origin": [-0.78125, -1.72809, 1.87159],
 							"size": [1.5625, 0.375, 0.16406],
-							"pivot": [0, -2.60309, 1.91066],
-							"rotation": [0, 0, 0],
 							"uv": {
 								"north": {"uv": [18, 67], "uv_size": [2, 1]},
 								"east": {"uv": [22, 84], "uv_size": [1, 1]},
@@ -10483,13 +10481,13 @@
 				{
 					"name": "refit_view",
 					"parent": "view",
-					"pivot": [20, 2, 2],
+					"pivot": [33, 2, 2],
 					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "refit_scope_view",
 					"parent": "view",
-					"pivot": [6, 4.5, 8.3],
+					"pivot": [8, 4.5, 11.3],
 					"rotation": [0, 50, 0]
 				},
 				{

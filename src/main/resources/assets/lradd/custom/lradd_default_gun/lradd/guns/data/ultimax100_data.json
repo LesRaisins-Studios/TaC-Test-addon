@@ -6,8 +6,8 @@
   // 扩容弹夹弹药总数
   "extended_mag_ammo_amount": [
     45,
-    70,
-    100
+    60,
+    80
   ],
   "bolt": "open_bolt",
   "rpm": 720,

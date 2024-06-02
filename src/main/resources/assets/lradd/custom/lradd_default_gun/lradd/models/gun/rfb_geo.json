@@ -6964,19 +6964,19 @@
 				{
 					"name": "refit_muzzle_view",
 					"parent": "view",
-					"pivot": [0, 9, -8],
+					"pivot": [-1, 7.75, -9],
 					"rotation": [0, 120, 0]
 				},
 				{
 					"name": "refit_scope_view",
 					"parent": "view",
-					"pivot": [-2, 10.5, 9.3],
+					"pivot": [-3, 10.5, 11.3],
 					"rotation": [0, 50, 0]
 				},
 				{
 					"name": "refit_extended_mag_view",
 					"parent": "view",
-					"pivot": [-4, 6, 16],
+					"pivot": [1, 0, 16],
 					"rotation": [0, 90, 35]
 				}
 			]

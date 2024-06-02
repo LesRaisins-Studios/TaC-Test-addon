@@ -8412,37 +8412,37 @@
 				{
 					"name": "refit_view",
 					"parent": "view",
-					"pivot": [10, 9, 10],
+					"pivot": [18, 9, 12],
 					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "refit_muzzle_view",
 					"parent": "view",
-					"pivot": [0, 9, -8],
+					"pivot": [0, 11, -14],
 					"rotation": [0, 120, 0]
 				},
 				{
 					"name": "refit_stock_view",
 					"parent": "view",
-					"pivot": [-2, 9, 21],
+					"pivot": [5, 9, 26],
 					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "refit_scope_view",
 					"parent": "view",
-					"pivot": [-2, 11.5, 11.3],
+					"pivot": [-2, 12.5, 18.3],
 					"rotation": [0, 50, 0]
 				},
 				{
 					"name": "refit_extended_mag_view",
 					"parent": "view",
-					"pivot": [-4, 5, 11],
+					"pivot": [3, -1, 11],
 					"rotation": [0, 90, 35]
 				},
 				{
 					"name": "refit_grip_view",
 					"parent": "view",
-					"pivot": [-4.2, 5.4, 2],
+					"pivot": [-3.2, 5.4, 2],
 					"rotation": [0, 90, 0]
 				},
 				{

@@ -1,8 +1,13 @@
 {
   
   "ammo": "tacz:45acp",
-
-  "ammo_amount": 30,
+  
+  "ammo_amount": 25,
+  "extended_mag_ammo_amount": [
+    30,
+    35,
+    40
+  ],
   "bolt": "open_bolt",
   "rpm": 720,
   "bullet": {

@@ -6982,30 +6982,31 @@
 				{
 					"name": "refit_muzzle_view",
 					"parent": "view",
-					"pivot": [8, 7, -22],
+					"pivot": [6, 7, -21],
 					"rotation": [0, 120, 0]
 				},
 				{
 					"name": "refit_stock_view",
 					"parent": "view",
-					"pivot": [10, 7, 19]
+					"pivot": [11, 7, 13],
+					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "refit_scope_view",
 					"parent": "view",
-					"pivot": [8, 14.125, 10.3],
+					"pivot": [5, 8.125, 10.3],
 					"rotation": [0, 50, 0]
 				},
 				{
 					"name": "refit_extended_mag_view",
 					"parent": "view",
-					"pivot": [10, -2.5, 0],
+					"pivot": [8, -1.5, 0],
 					"rotation": [0, 90, 35]
 				},
 				{
 					"name": "refit_laser_view",
 					"parent": "view",
-					"pivot": [7, 6, -9],
+					"pivot": [7, 6, -2],
 					"rotation": [0, 70, 0]
 				},
 				{

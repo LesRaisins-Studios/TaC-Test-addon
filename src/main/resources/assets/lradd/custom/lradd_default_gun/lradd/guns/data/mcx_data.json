@@ -3,6 +3,11 @@
   "ammo": "tacz:68x51fury",
 
   "ammo_amount": 30,
+  "extended_mag_ammo_amount": [
+    35,
+    40,
+    50
+  ],
   "bolt": "open_bolt",
   "rpm": 600,
   "bullet": {
@@ -99,8 +104,6 @@
     "scope",
     "stock",
     "muzzle",
-    "grip",
-    "laser",
     "extended_mag"
   ]
 }

@@ -3529,25 +3529,25 @@
 				{
 					"name": "refit_view",
 					"parent": "view",
-					"pivot": [10, 11, 4],
+					"pivot": [10, 8, 4],
 					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "refit_muzzle_view",
 					"parent": "view",
-					"pivot": [0, 9, -8],
+					"pivot": [-1, 8, -13],
 					"rotation": [0, 120, 0]
 				},
 				{
 					"name": "refit_scope_view",
 					"parent": "view",
-					"pivot": [-2, 12.5, 0.3],
+					"pivot": [-2, 12.5, 4.3],
 					"rotation": [0, 50, 0]
 				},
 				{
 					"name": "refit_laser_view",
 					"parent": "view",
-					"pivot": [-4, 11, -4],
+					"pivot": [-4, 11, -1],
 					"rotation": [0, 70, 0]
 				},
 				{

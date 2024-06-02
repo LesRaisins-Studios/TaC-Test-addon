@@ -5977,25 +5977,25 @@
 				{
 					"name": "refit_view",
 					"parent": "view",
-					"pivot": [10, 8, 1],
+					"pivot": [27, 8, 1],
 					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "refit_muzzle_view",
 					"parent": "view",
-					"pivot": [0, 9, -27],
+					"pivot": [1, 9, -39],
 					"rotation": [0, 120, 0]
 				},
 				{
 					"name": "refit_stock_view",
 					"parent": "view",
-					"pivot": [-2, 6, 18],
-					"rotation": [0, 90, 0]
+					"pivot": [8, 6, 30],
+					"rotation": [0, 45, 0]
 				},
 				{
 					"name": "refit_scope_view",
 					"parent": "view",
-					"pivot": [-2, 10.5, 3.3],
+					"pivot": [5, 10.5, 12.3],
 					"rotation": [0, 50, 0]
 				},
 				{

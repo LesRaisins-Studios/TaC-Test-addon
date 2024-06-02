@@ -5,7 +5,7 @@
   "ammo_amount": 20,
   // 扩容弹夹弹药总数
   "extended_mag_ammo_amount": [
-    25,
+    26,
     32,
     40
   ],

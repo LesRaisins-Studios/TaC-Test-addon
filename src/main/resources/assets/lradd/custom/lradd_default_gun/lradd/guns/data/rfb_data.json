@@ -3,6 +3,11 @@
   "ammo": "tacz:762x39",
 
   "ammo_amount": 20,
+  "extended_mag_ammo_amount": [
+    25,
+    30,
+    40
+  ],
   "bolt": "open_bolt",
   "rpm": 600,
   "bullet": {
@@ -98,7 +103,6 @@
   "allow_attachment_types": [
     "scope",
     "muzzle",
-    "laser",
     "extended_mag"
   ]
 }

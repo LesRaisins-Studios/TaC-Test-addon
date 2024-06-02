@@ -11590,7 +11590,7 @@
 				{
 					"name": "refit_view",
 					"parent": "view",
-					"pivot": [12, 8, 9],
+					"pivot": [19, 8, 9],
 					"rotation": [0, 90, 0]
 				}
 			]

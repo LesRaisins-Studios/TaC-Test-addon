@@ -32,6 +32,10 @@
             "fixed": [0.6, 0.6, 0.6]
         }
     },
+    "muzzle_flash": {
+      "texture": "tacz:flash/common_muzzle_flash",
+      "scale": 1
+    },
     // 抛壳的渲染数据，可为空，若为空，则枪械不抛壳
     "shell": {
         // 抛壳的初速度

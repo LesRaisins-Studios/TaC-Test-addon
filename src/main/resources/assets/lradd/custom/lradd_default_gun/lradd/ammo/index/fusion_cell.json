@@ -1,6 +1,6 @@
 {
   "name": "lradd.ammo.fusion_cell.name",
   "display": "lradd:fusion_cell_display",
-  "slraddk_size": 60
+  "stack_size": 60
 }
     
