@@ -1,0 +1,32 @@
+{
+    "materials": [
+      {
+        "item": {
+          "tag": "forge:ingots/iron"
+        },
+        "count": 15
+      },
+      {
+        "item": {
+          "tag": "forge:gems/quartz"
+        },
+        "count": 5
+      },
+      {
+        "item": {
+          "tag": "forge:dusts/redstone"
+        },
+        "count": 2
+      },
+      {
+        "item": {
+          "tag": "forge:glass"
+        },
+        "count": 5
+      }
+    ],
+    "result": {
+      "type": "attachment",
+      "id": "lradd:scope_holosun"
+    }
+  }

@@ -14,7 +14,7 @@
     // 用于霰弹，默认为 1，每发的伤害 / bullet_amount，每次射击扣除一发子弹
     "bullet_amount": 1,
     // 伤害
-    "damage": 6.8,
+    "damage": 8.8,
     // 曳光弹间隔数量，没有此字段则不发射曳光弹
     // 设置为 0 则是每发都是曳光弹
     "tracer_count_interval": 0,
@@ -23,14 +23,15 @@
       // 护甲穿透率，默认为 0，也就是没有穿甲伤害
       "armor_ignore": 0.35,
       // 爆头伤害 x1.5
-      "head_shot_multiplier": 1.8,
+      "head_shot_multiplier": 2.4,
       // 距离-伤害分段常函数
       "damage_adjust": [
         // 这样就能写抵近伤害了
-        {"distance": 1, "damage": 7.45},
-        {"distance": 8.5, "damage": 6.75},
-        {"distance": 17.5, "damage": 6.3},
-        {"distance": 32, "damage": 5.6},
+        {"distance": 5, "damage": 9.25},
+        {"distance": 15, "damage": 8.8},
+        {"distance": 30, "damage": 8.35},
+        {"distance": 45, "damage": 7.85},
+        {"distance": 60, "damage": 7.35},
         // 如果你忘记写这个无穷，那么超过上述距离，我就认为是 0
         {"distance": "infinite", "damage": 5.0}
       ]
@@ -63,33 +64,33 @@
       "tactical": 3
     }
   },
-  "draw_time": 0.35,
-  "put_away_time": 0.5,
-  "aim_time": 0.2,
-  "sprint_time": 0.3,
+  "draw_time": 0.5,
+  "put_away_time": 0.4,
+  "aim_time": 0.15,
+  "sprint_time": 0.25,
   "fire_mode": [
     "auto",
     "semi"
   ],
   "recoil": {
     "pitch": [
-      {"time": 0, "value": [0.725, 0.725]},
-      {"time": 0.26, "value": [0.725, 0.725]},
-      {"time": 0.48, "value": [-0.215, -0.215]},
-      {"time": 0.72, "value": [0, 0]}
+      {"time": 0, "value": [0.95, 0.95]},
+      {"time": 0.05, "value": [0.95, 0.95]},
+      {"time": 0.3, "value": [0.15, 0.15]},
+      {"time": 0.55, "value": [0.35, 0.35]}
     ],
     "yaw": [
-      {"time": 0, "value": [-0.15, 0.45]},
-      {"time": 0.43, "value": [0, 0.1]},
-      {"time": 0.6, "value": [0, 0]}
+      {"time": 0, "value": [-0.15, 0.15]},
+      {"time": 0.25, "value": [0, 0]},
+      {"time": 0.4, "value": [-0.05, 0.05]}
     ]
   },
   "inaccuracy": {
-    "stand": 1.45,
-    "move": 2.25,
-    "sneak": 0.9,
-    "lie": 0.6,
-    "aim": 0.12
+    "stand": 0.45,
+    "move": 1.8,
+    "sneak": 0.4,
+    "lie": 0.3,
+    "aim": 0.1
   },
   "move_speed": {
     "base": 0.92,
@@ -100,6 +101,7 @@
   "allow_attachment_types": [
     "scope",
     "muzzle",
+    "laser",
     "extended_mag"
   ]
 }

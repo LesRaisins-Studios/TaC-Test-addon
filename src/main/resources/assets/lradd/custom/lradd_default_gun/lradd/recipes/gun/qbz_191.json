@@ -1,0 +1,38 @@
+{
+    "materials": [
+      {
+        "item": {
+          "tag": "forge:gems/diamond"
+        },
+        "count": 8
+      },
+      {
+        "item": {
+          "tag": "forge:ingots/gold"
+        },
+        "count": 22
+      },
+      {
+        "item": {
+          "tag": "forge:ingots/iron"
+        },
+        "count": 40
+      },
+      {
+        "item": {
+          "tag": "forge:dusts/redstone"
+        },
+        "count":30
+      },
+      {
+        "item": {
+          "tag": "forge:gems/amethyst"
+        },
+        "count": 16
+      }
+    ],
+    "result": {
+      "type": "gun",
+      "id": "lradd:qbz191_em"
+    }
+  }

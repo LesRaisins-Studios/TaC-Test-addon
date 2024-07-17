@@ -10,7 +10,6 @@ import org.slf4j.Logger;
 @Mod(LesRaisinsAddon.MOD_ID)
 public class LesRaisinsAddon {
 
-    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "lradd";
     public static final String DEFAULT_PACK_NAME = "lradd_default_gun";
     public static final Logger LOGGER = LogUtils.getLogger();

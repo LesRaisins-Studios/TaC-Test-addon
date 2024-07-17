@@ -103,6 +103,7 @@
   "allow_attachment_types": [
     "scope",
     "muzzle",
+    "laser",
     "extended_mag"
   ]
 }

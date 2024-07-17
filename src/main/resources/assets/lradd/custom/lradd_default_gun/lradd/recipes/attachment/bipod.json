@@ -1,0 +1,20 @@
+{
+    "materials": [
+      {
+        "item": {
+          "tag": "forge:ingots/iron"
+        },
+        "count": 15
+      },
+      {
+        "item": {
+          "tag": "forge:gems/quartz"
+        },
+        "count": 5
+      }
+    ],
+    "result": {
+      "type": "attachment",
+      "id": "lradd:grip_bipod"
+    }
+  }

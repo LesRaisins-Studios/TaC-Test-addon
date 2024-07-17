@@ -1,0 +1,11 @@
+{
+  "slot": "lradd:attachment/slot/laser_hs507c",
+  // 配件的默认模型，不可为空
+  "model": "lradd:attachment/laser_hs507c_geo",
+  // 配件默认模型使用的材质，不可为空
+  "texture": "lradd:attachment/uv/laser_hs507c",
+  "sounds": {
+    "install": "tacz:attachments/attachment_general_b",
+    "uninstall": "tacz:attachments/attachment_general_uninstall"
+  }
+}

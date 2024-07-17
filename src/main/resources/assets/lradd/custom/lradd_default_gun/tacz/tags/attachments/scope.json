@@ -1,4 +1,8 @@
 [
   "lradd:scope_re",
-  "lradd:nsic_sight"
+  "lradd:nsic_sight",
+  "lradd:scope_holosun",
+  "lradd:sight_holosun_reddot",
+  "lradd:sight_romeo1",
+  "lradd:scope_strikefire2"
 ]

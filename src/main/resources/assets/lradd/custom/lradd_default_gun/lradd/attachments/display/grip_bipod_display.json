@@ -1,0 +1,11 @@
+{
+  "slot": "lradd:attachment/slot/grip_bipod",
+  // 配件的默认模型，不可为空
+  "model": "lradd:attachment/grip_bipod_geo",
+  // 配件默认模型使用的材质，不可为空
+  "texture": "lradd:attachment/uv/grip_bipod",
+  "sounds": {
+    "install": "tacz:attachments/attachment_general_b",
+    "uninstall": "tacz:attachments/attachment_general_uninstall"
+  }
+}

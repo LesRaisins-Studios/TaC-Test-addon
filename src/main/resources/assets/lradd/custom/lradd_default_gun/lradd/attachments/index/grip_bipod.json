@@ -1,0 +1,7 @@
+{
+  "name": "lradd.attachment.grip_bipod.name",
+  "tooltip": "lradd.attachment.grip_bipod.tooltip",
+  "display": "lradd:grip_bipod_display",
+  "data": "lradd:grip_bipod_data",
+  "type": "grip"
+}

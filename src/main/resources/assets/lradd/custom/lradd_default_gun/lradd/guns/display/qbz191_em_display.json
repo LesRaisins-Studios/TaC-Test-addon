@@ -1,0 +1,53 @@
+{
+    "model": "lradd:gun/qbz191_em_geo",
+    "texture": "lradd:gun/uv/qbz191_em",
+    "lod": {
+        "model": "lradd:gun/lod/qbz191_em_lod",
+        "texture": "lradd:gun/lod/qbz191_em_lod"
+    },
+    "hud": "lradd:gun/hud/qbz191_em",
+    "slot": "lradd:gun/slot/qbz191_em",
+    "animation": "lradd:qbz191_em",
+    "use_default_animation": "rifle",
+    "third_person_animation": "default",
+    "transform": {
+        "scale": {
+            "thirdperson": [0.45, 0.45, 0.45],
+            "ground": [0.45, 0.45, 0.45],
+            "fixed": [0.6, 0.6, 0.6]
+        }
+    },
+    "muzzle_flash": {
+      "texture": "lradd:flash/railgun_flash",
+      "scale": 1
+    },
+    "shell": {
+        "initial_velocity": [8.0, 5.0, -0.5],
+        "random_velocity": [2.5, 1.5, 0.25],
+        "acceleration": [0.0, -20, 0.0],
+        "angular_velocity": [720, 720, 90],
+        "living_time": 1.0
+    },
+    "sounds": {
+        "shoot": "lradd:item/qbz191_em_fire",
+        "silence": "lradd:item/qbz191_em_fire_s",
+        "reload_empty": "lradd:item/qbz191_em_reload_empty",
+        "reload_tactical": "lradd:item/qbz191_em_reload_tactical",
+        "inspect": "lradd:item/qbz191_em_inspect",
+        "inspect_empty": "lradd:item/qbz191_em_inspect_empty",
+        "draw": "lradd:item/qbz191_em_draw",
+        "put_away": "lradd:item/qbz191_em_put_away",
+        "shoot_3p": "lradd:item/qbz191_em_fire_3p",
+        "silence_3p": "lradd:item/qbz191_em_fire_s_3p"
+    },
+    "text_show": {
+      "ammo_count_text_show_pos": {
+        "scale": 0.5,
+        "align": "center",
+        "shadow": false,
+        "color": "#7cffff",
+        "light": 15,
+        "text": "text_show.lradd.qbz191_em.ammo_count"
+      }
+    }
+}

@@ -58,6 +58,8 @@
         "inspect": "lradd:item/ultimax100_inspect",
         "inspect_empty": "lradd:item/ultimax100_inspect_empty",
         "draw": "lradd:item/ultimax100_draw",
-        "put_away": "lradd:item/ultimax100_put_away"
+        "put_away": "lradd:item/ultimax100_put_away",
+        "shoot_3p": "lradd:item/ultimax100_fire_3p",
+        "silence_3p": "lradd:item/ultimax100_fire_s_3p"
     }
 }

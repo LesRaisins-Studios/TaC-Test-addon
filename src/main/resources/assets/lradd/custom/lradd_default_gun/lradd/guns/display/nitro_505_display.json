@@ -32,6 +32,7 @@
         "inspect": "lradd:item/nitro_505_inspect",
         "inspect_empty": "lradd:item/nitro_505_inspect_empty",
         "draw": "lradd:item/nitro_505_draw",
-        "put_away": "lradd:item/nitro_505_put_away"
+        "put_away": "lradd:item/nitro_505_put_away",
+        "shoot_3p": "lradd:item/nitro_505_shoot_3p"
     }
 }

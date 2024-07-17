@@ -1,0 +1,43 @@
+{
+    "model": "lradd:gun/mk47_geo",
+    "texture": "lradd:gun/uv/mk47",
+    "lod": {
+        "model": "lradd:gun/lod/mk47_lod",
+        "texture": "lradd:gun/lod/mk47_lod"
+    },
+    "hud": "lradd:gun/hud/mk47",
+    "slot": "lradd:gun/slot/mk47",
+    "animation": "lradd:mk47",
+    "use_default_animation": "rifle",
+    "third_person_animation": "default",
+    "transform": {
+        "scale": {
+            "thirdperson": [0.45, 0.45, 0.45],
+            "ground": [0.45, 0.45, 0.45],
+            "fixed": [0.6, 0.6, 0.6]
+        }
+    },
+    "muzzle_flash": {
+      "texture": "tacz:flash/common_muzzle_flash",
+      "scale": 1
+    },
+    "shell": {
+        "initial_velocity": [8.0, 5.0, -0.5],
+        "random_velocity": [2.5, 1.5, 0.25],
+        "acceleration": [0.0, -20, 0.0],
+        "angular_velocity": [720, 720, 90],
+        "living_time": 1.0
+    },
+    "sounds": {
+        "shoot": "lradd:item/mk47_fire",
+        "silence": "lradd:item/mk47_fire_s",
+        "reload_empty": "lradd:item/mk47_reload_empty",
+        "reload_tactical": "lradd:item/mk47_reload_tactical",
+        "inspect": "lradd:item/mk47_inspect",
+        "inspect_empty": "lradd:item/mk47_inspect",
+        "draw": "lradd:item/mk47_draw",
+        "put_away": "lradd:item/mk47_put_away",
+        "shoot_3p": "lradd:item/mk47_fire_3p",
+        "silence_3p": "lradd:item/mk47_fire_s_3p"
+    }
+}

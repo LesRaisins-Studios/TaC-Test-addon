@@ -96,13 +96,22 @@ repositories {
          dir 'libs'
      }
     maven { url 'https://jitpack.io' }
+    maven {
+        // Add curse maven to repositories
+        name = "Curse Maven"
+        url = "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
-    implementation fg.deobf("com.tacz:tacz-${minecraft_version}:0531-145351")
+//    implementation fg.deobf("com.tacz:tacz-${minecraft_version}:0531-145351")
 //    implementation 'com.github.MCModderAnchor:TACZ:1.20.1-c1c8493a5c-1'
+    implementation fg.deobf('curse.maven:timeless-and-classics-zero-1028108:5529117-sources-5529578')
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }

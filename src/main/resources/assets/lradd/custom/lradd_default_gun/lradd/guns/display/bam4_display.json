@@ -58,6 +58,8 @@
         "inspect": "lradd:item/bam4_inspect",
         "inspect_empty": "lradd:item/bam4_inspect_empty",
         "draw": "lradd:item/bam4_drop_1",
-        "put_away": "tac:m4a1/m4a1_put_away"
+        "put_away": "tac:m4a1/m4a1_put_away",
+        "shoot_3p": "lradd:item/bam4_fire_3p",
+        "silence_3p": "lradd:item/bam4_fire_s_3p"
     }
 }

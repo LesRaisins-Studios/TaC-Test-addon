@@ -1,0 +1,7 @@
+{
+  "name": "lradd.attachment.laser_hs507c.name",
+  "tooltip": "lradd.attachment.laser_hs507c.tooltip",
+  "display": "lradd:laser_hs507c_display",
+  "data": "lradd:laser_hs507c_data",
+  "type": "laser"
+}

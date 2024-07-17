@@ -9,36 +9,34 @@
     40
   ],
   "bolt": "open_bolt",
-  "rpm": 720,
+  "rpm": 600,
   "bullet": {
     // 寿命，单位秒
     "life": 0.65,
     // 用于霰弹，默认为 1，每发的伤害 / bullet_amount，每次射击扣除一发子弹
     "bullet_amount": 1,
     // 伤害
-    "damage": 6,
+    "damage": 7.5,
     // 曳光弹间隔数量，没有此字段则不发射曳光弹
     // 设置为 0 则是每发都是曳光弹
     "tracer_count_interval": 0,
     // 额外伤害的内容，为空则表示没有任何额外伤害计算内容
     "extra_damage": {
       // 护甲穿透率，默认为 0，也就是没有穿甲伤害
-      "armor_ignore": 0.3,
+      "armor_ignore": 0.13,
       // 爆头伤害 x1.5
-      "head_shot_multiplier": 1.75,
+      "head_shot_multiplier": 2,
       // 距离-伤害分段常函数
       "damage_adjust": [
-        // 这样就能写抵近伤害了
-        {"distance": 1.2, "damage": 7},
-        {"distance": 7, "damage": 6},
-        {"distance": 14, "damage": 5.6},
-        {"distance": 22, "damage": 5.1},
-        // 如果你忘记写这个无穷，那么超过上述距离，我就认为是 0
-        {"distance": "infinite", "damage": 4.5}
+        {"distance": 2.5, "damage": 8},
+        {"distance": 8, "damage": 7.5},
+        {"distance": 20, "damage": 7},
+        {"distance": 35, "damage": 5.5},
+        {"distance": "infinite", "damage": 4}
       ]
     },
     // 速度 m/s
-    "speed": 200,
+    "speed": 220,
     // 重力
     "gravity": 0.0245,
     // 击退效果
@@ -64,34 +62,33 @@
       "empty": 3.75,
       "tactical": 2.8333
     }
-  },
-  "draw_time": 0.9583,
-  "put_away_time": 0.4,
-  "aim_time": 0.2,
-  "sprint_time": 0.3,
+  },  
+  "draw_time": 0.5,
+  "put_away_time": 0.3,
+  "sprint_time": 0.15,
+  "aim_time": 0.1,
   "fire_mode": [
     "auto",
     "semi"
   ],
   "recoil": {
     "pitch": [
-      {"time": 0, "value": [0.35, 0.35]},
-      {"time": 0.23, "value": [0.55, 0.55]},
-      {"time": 0.33, "value": [0.35, 0.35]},
-      {"time": 0.48, "value": [-0.165, -0.165]},
-      {"time": 0.62, "value": [0, 0]}
+      {"time": 0, "value": [0.75, 0.75]},
+      {"time": 0.18, "value": [0.75, 0.75]},
+      {"time": 0.42, "value": [0.05, 0.05]},
+      {"time": 0.55, "value": [0.165, 0.165]},
+      {"time": 0.6, "value": [0.165, 0.165]}
     ],
     "yaw": [
-      {"time": 0, "value": [0.35, 0.35]},
-      {"time": 0.32, "value": [0.35, 0.35]},
-      {"time": 0.55, "value": [0, 0]}
+      {"time": 0, "value": [-0.15, 0.15]},
+      {"time": 0.25, "value": [0, 0]}
     ]
   },
   "inaccuracy": {
-    "stand": 1.65,
-    "move": 1.95,
-    "sneak": 1.05,
-    "lie": 0.6,
+    "stand": 1.4,
+    "move": 1.75,
+    "sneak": 1.0,
+    "lie": 1.0,
     "aim": 0.15
   },
   "move_speed": {

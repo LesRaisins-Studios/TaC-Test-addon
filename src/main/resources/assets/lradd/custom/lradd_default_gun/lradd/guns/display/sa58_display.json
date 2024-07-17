@@ -58,6 +58,8 @@
         "inspect": "lradd:item/sa58_inspect",
         "inspect_empty": "lradd:item/sa58_inspect_empty",
         "draw": "lradd:item/sa58_draw",
-        "put_away": "tac:m4a1/m4a1_put_away"
+        "put_away": "tac:m4a1/m4a1_put_away",
+        "shoot_3p": "lradd:item/sa58_fire_3p",
+        "silence_3p": "lradd:item/sa58_fire_s_3p"
     }
 }

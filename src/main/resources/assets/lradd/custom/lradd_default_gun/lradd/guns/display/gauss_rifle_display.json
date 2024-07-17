@@ -36,6 +36,8 @@
         "inspect": "lradd:item/gauss_rifle_inspect",
         "inspect_empty": "lradd:item/gauss_rifle_inspect_empty",
         "draw": "lradd:item/gauss_rifle_draw",
-        "put_away": "lradd:item/gauss_rifleput_away"
+        "put_away": "lradd:item/gauss_rifleput_away",
+        "shoot_3p": "lradd:item/gauss_rifle_fire_3p",
+        "silence_3p": "lradd:item/gauss_rifle_fire_s_3p"
     }
 }

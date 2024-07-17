@@ -1,0 +1,7 @@
+{
+  "name": "lradd.attachment.scope_strikefire2.name",
+  "tooltip": "lradd.attachment.scope_strikefire2.tooltip",
+  "display": "lradd:scope_strikefire2_display",
+  "data": "lradd:scope_strikefire2_data",
+  "type": "scope"
+}

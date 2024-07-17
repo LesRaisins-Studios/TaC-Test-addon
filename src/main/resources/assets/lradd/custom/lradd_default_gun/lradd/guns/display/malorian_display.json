@@ -58,6 +58,8 @@
         "inspect": "lradd:item/malorian_inspect",
         "inspect_empty": "lradd:item/malorian_inspect_empty",
         "draw": "lradd:item/malorian_draw",
-        "put_away": "lradd:item/malorian_down"
+        "put_away": "lradd:item/malorian_down",
+        "shoot_3p": "lradd:item/malorian_fire_3p",
+        "silence_3p": "lradd:item/malorian_fire_s_3p"
     }
 }

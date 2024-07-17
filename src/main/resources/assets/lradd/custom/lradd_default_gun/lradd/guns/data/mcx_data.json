@@ -104,6 +104,8 @@
     "scope",
     "stock",
     "muzzle",
+    "grip",
+    "laser",
     "extended_mag"
   ]
 }

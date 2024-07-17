@@ -1,0 +1,26 @@
+{
+    "materials": [
+      {
+        "item": {
+          "tag": "forge:ingots/iron"
+        },
+        "count": 10
+      },
+      {
+        "item": {
+          "tag": "forge:gems/quartz"
+        },
+        "count": 4
+      },
+      {
+        "item": {
+          "tag": "forge:leather"
+        },
+        "count": 2
+      }
+    ],
+    "result": {
+      "type": "attachment",
+      "id": "lradd:grip_cqr_g2"
+    }
+  }

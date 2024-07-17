@@ -59,6 +59,8 @@
         "inspect_empty": "lradd:item/m200_inspect_empty",
         "draw": "lradd:item/m200_draw",
         "bolt": "lradd:item/m200_bolt",
-        "put_away": "tac:m4a1/m4a1_put_away"
+        "put_away": "tac:m4a1/m4a1_put_away",
+        "shoot_3p": "lradd:item/m200_fire_3p",
+        "silence_3p": "lradd:item/m200_fire_s_3p"
     }
 }

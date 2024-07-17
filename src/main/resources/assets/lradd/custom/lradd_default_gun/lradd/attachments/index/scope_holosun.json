@@ -1,0 +1,7 @@
+{
+  "name": "lradd.attachment.scope_holosun.name",
+  "tooltip": "lradd.attachment.scope_holosun.tooltip",
+  "display": "lradd:scope_holosun_display",
+  "data": "lradd:scope_holosun_data",
+  "type": "scope"
+}
