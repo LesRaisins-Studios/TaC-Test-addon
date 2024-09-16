@@ -1,17 +1,21 @@
 {
-  
+  "weight": 2.0,
+  "movement_speed": {
+    "base": 0.0,
+    "aim": -0.05,
+    "reload": -0.05
+  },
   "ammo": "tacz:9mm",
-
   "ammo_amount": 13,
   "bolt": "open_bolt",
   "rpm": 300,
   "bullet": {
     // 寿命，单位秒
-    "life": 0.75,
+    "life": 0.5,
     // 用于霰弹，默认为 1，每发的伤害 / bullet_amount，每次射击扣除一发子弹
     "bullet_amount": 1,
     // 伤害
-    "damage": 7,
+    "damage": 8.2,
     // 曳光弹间隔数量，没有此字段则不发射曳光弹
     // 设置为 0 则是每发都是曳光弹
     "tracer_count_interval": 0,
@@ -20,17 +24,19 @@
       // 护甲穿透率，默认为 0，也就是没有穿甲伤害
       "armor_ignore": 0.15,
       // 爆头伤害 x1.5
-      "head_shot_multiplier": 2.25,
+      "head_shot_multiplier": 2.5,
       // 距离-伤害分段常函数
       "damage_adjust": [
-        {"distance": 3, "damage": 7.5},
-        {"distance": 15, "damage": 7},
-        {"distance": 30, "damage": 5.5},
-        {"distance": "infinite", "damage": 4}
+        {"distance": 10, "damage": 8.2},
+        {"distance": 18, "damage": 7.7},
+        {"distance": 26, "damage": 7.1},
+        {"distance": 35, "damage": 6.5},
+        {"distance": 46, "damage": 6.0},
+        {"distance": "infinite", "damage": 5.0}
       ]
     },
     // 速度 m/s
-    "speed": 210,
+    "speed": 300,
     // 重力
     "gravity": 0.0245,
     // 击退效果
@@ -78,10 +84,10 @@
     ]
   },
   "inaccuracy": {
-    "stand": 1.2,
-    "move": 1.45,
-    "sneak": 0.78,
-    "lie": 0.75,
+    "stand": 0.25,
+    "move": 0.55,
+    "sneak": 0.25,
+    "lie": 0.25,
     "aim": 0.15
   },
   // 开放的配件槽。未指定的槽位默认关闭。全部配件槽类型有:

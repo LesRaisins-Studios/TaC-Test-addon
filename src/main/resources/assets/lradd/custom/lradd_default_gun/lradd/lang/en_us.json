@@ -31,6 +31,7 @@
     "lradd.gun.mag7.name": "MAG 7",
     "lradd.gun.mk47.name": "MK47",
     "lradd.gun.p250.name": "P250",
+    "lradd.gun.famas.name": "FAMAS",
     "lradd.ammo.nail.name": "NAILS",
     "lradd.ammo.fusion_cell.name": "FUSION CELL",
     "lradd.ammo.flintlock_bullet.name": "FLINTLOCK BULLET",
@@ -47,5 +48,18 @@
     "lradd.attachment.scope_strikefire2.name": "Strikefire II Reddot Sight",
     "lradd.attachment.muzzle_s_c784.name": "C784 Silencer",
     "lradd.attachment.grip_bipod.name": "X48 Bipod",
-    "text_show.lradd.qbz191_em.ammo_count": "%ammo_count%"
+    "text_show.lradd.qbz191_em.ammo_count": "%ammo_count%",
+
+    "lradd.attachment.sight_romeo1.tooltip": "Comission by Yue",
+    "lradd.attachment.grip_cqr_g2.tooltip": "Comission by Yue",
+    "lradd.attachment.grip_minivert.tooltip": "Comission by Yue",
+    "lradd.attachment.grip_vg1.tooltip": "VG1 Grip",
+    "lradd.attachment.laser_hs507c.tooltip": "Comission by Yue",
+    "lradd.attachment.muzzle_191em.tooltip": "Comission by Yue",
+    "lradd.attachment.muzzle_mk47.tooltip": "Comission by Yue",
+    "lradd.attachment.muzzle_s_c784.tooltip": "Comission by Yue",
+    "lradd.attachment.nsic_sight.tooltip": "Comission by Yue",
+    "lradd.attachment.scope_re.tooltip": "Comission by Yue",
+    "lradd.attachment.scope_strikefire2.tooltip": "Comission by Yue",
+    "lradd.attachment.sight_holosun_reddot.tooltip": "Comission by Yue"
   }

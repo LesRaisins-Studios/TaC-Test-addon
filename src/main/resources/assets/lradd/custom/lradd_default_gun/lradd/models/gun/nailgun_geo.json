@@ -4910,23 +4910,23 @@
 				{
 					"name": "ground",
 					"parent": "positioning",
-					"pivot": [-8, -1.075, 12.05]
+					"pivot": [-8, 0.925, 12.05]
 				},
 				{
 					"name": "fixed",
 					"parent": "positioning",
-					"pivot": [1.1, 8.425, 12.175],
+					"pivot": [-6.65, 8.425, 12.175],
 					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "thirdperson_hand",
 					"parent": "positioning",
-					"pivot": [-8.00386, 7.225, 14.25755]
+					"pivot": [-8.00386, 8.225, 14.25755]
 				},
 				{
 					"name": "shell",
 					"parent": "positioning",
-					"pivot": [-3.025, 4.8, -0.725]
+					"pivot": [-8.025, 10.8, 7.275]
 				},
 				{
 					"name": "idle_view",

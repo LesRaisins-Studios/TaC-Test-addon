@@ -5943,18 +5943,18 @@
 				{
 					"name": "ground",
 					"parent": "positioning",
-					"pivot": [-8, 0.175, 10.05]
+					"pivot": [-8, 0.175, -0.95]
 				},
 				{
 					"name": "fixed",
 					"parent": "positioning",
-					"pivot": [1.1, 8.425, 9.175],
+					"pivot": [-7.4, 6.425, 1.175],
 					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "thirdperson_hand",
 					"parent": "positioning",
-					"pivot": [-8.00386, 4.225, 15.25755]
+					"pivot": [-8.00386, 5.225, 13.25755]
 				},
 				{
 					"name": "iron_view",

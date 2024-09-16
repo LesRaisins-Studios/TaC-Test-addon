@@ -1,0 +1,32 @@
+{
+    "model": "lradd:gun/tactical_axe_geo",
+    "texture": "lradd:gun/uv/tactical_axe",
+    "lod": {
+        "model": "lradd:gun/lod/tactical_axe_lod",
+        "texture": "lradd:gun/lod/tactical_axe_lod"
+    },
+    "hud": "lradd:gun/hud/tactical_axe",
+    "slot": "lradd:gun/slot/tactical_axe",
+    "animation": "lradd:tactical_axe",
+    "use_default_animation": "rifle",
+    "third_person_animation": "default",
+    "transform": {
+        "scale": {
+            "thirdperson": [0.5, 0.5, 0.5],
+            "ground": [0.45, 0.45, 0.45],
+            "fixed": [1, 1, 1]
+        }
+    },
+    "sounds": {
+        "shoot": "lradd:item/tactical_axe_fire",
+        "silence": "lradd:item/tactical_axe_fire_s",
+        "reload_empty": "lradd:item/tactical_axe_reload_empty",
+        "reload_tactical": "lradd:item/tactical_axe_reload_norm",
+        "inspect": "lradd:item/tactical_axe_inspect",
+        "inspect_empty": "lradd:item/tactical_axe_inspect_empty",
+        "draw": "lradd:item/tactical_axe_draw",
+        "put_away": "tac:m4a1/m4a1_put_away",
+        "shoot_3p": "lradd:item/tactical_axe_fire_3p",
+        "silence_3p": "lradd:item/tactical_axe_fire_s_3p"
+    }
+}

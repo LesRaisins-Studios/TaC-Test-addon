@@ -18,8 +18,10 @@
     "ignite": false,
     "pierce": 1,
     "explosion": {
+      "explode": true,
       "damage": 80,
-      "radius": 3
+      "radius": 3,
+      "delay": 30
     }
   },
   "reload": {

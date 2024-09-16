@@ -11566,7 +11566,7 @@
 				{
 					"name": "fixed",
 					"parent": "positioning",
-					"pivot": [-7, 5, 11],
+					"pivot": [-7, 5, 7],
 					"rotation": [0, 90, 0]
 				},
 				{

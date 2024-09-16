@@ -3800,13 +3800,13 @@
 				{
 					"name": "fixed",
 					"parent": "positioning",
-					"pivot": [1.1, 13.425, 9.175],
+					"pivot": [-6.9, 13.425, 9.175],
 					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "thirdperson_hand",
 					"parent": "positioning",
-					"pivot": [-8.00386, 11.225, 15.25755]
+					"pivot": [-8.00386, 12.475, 15.25755]
 				},
 				{
 					"name": "idle_view",

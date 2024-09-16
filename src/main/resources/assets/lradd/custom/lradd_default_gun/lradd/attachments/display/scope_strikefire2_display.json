@@ -7,8 +7,8 @@
   // 只有 瞄具 配件需要设置这个属性，表示瞄具的放大倍率。
   // 玩家可以在数组设置的几个倍率之间切换
   "lod": {
-    "model": "lradd:attachment/lod/scope_strikefire2_lod",
-    "texture": "lradd:attachment/lod/scope_strikefire2_lod"
+    "model": "lradd:attachment/lod/scope_strikefire2",
+    "texture": "lradd:attachment/lod/scope_strikefire2"
   },
   "zoom": [
     1.33

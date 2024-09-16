@@ -1,31 +1,37 @@
 {
+  "weight": 5.0,
+  "movement_speed": {
+    "base": 0.0,
+    "aim": -0.15,
+    "reload": -0.1
+  },
   "ammo": "tacz:12g",
-
   "ammo_amount": 5,
   "bolt": "manual_action",
   "rpm": 140,
   "bullet": {
     // 寿命，单位秒
-    "life": 1.2,
+    "life": 0.5,
     // 用于霰弹，默认为 1，每发的伤害 / bullet_amount，每次射击扣除一发子弹
     "bullet_amount": 8,
     // 伤害
-    "damage": 30,
+    "damage": 50,
     // 曳光弹间隔数量，没有此字段则不发射曳光弹
     // 设置为 0 则是每发都是曳光弹
     "tracer_count_interval": 0,
     // 额外伤害的内容，为空则表示没有任何额外伤害计算内容
     "extra_damage": {
       // 护甲穿透率，默认为 0，也就是没有穿甲伤害
-      "armor_ignore": 0.1,
+      "armor_ignore": 0.25,
       // 爆头伤害 x1.5
-      "head_shot_multiplier": 1.5,
+      "head_shot_multiplier": 1.75,
       // 距离-伤害分段常函数
       "damage_adjust": [
-        {"distance": 1.5, "damage": 35},
-        {"distance": 15, "damage": 30},
-        {"distance": 30, "damage": 25},
-        {"distance": "infinite", "damage": 15}
+        {"distance": 4, "damage": 50},
+        {"distance": 10, "damage": 42.5},
+        {"distance": 16, "damage": 32.5},
+        {"distance": 22, "damage": 25},
+        {"distance": "infinite", "damage": 20}
       ]
     },
     // 速度 m/s
@@ -52,12 +58,12 @@
       "tactical": 1.08
     },
     "cooldown": {
-      "empty": 2.5417,
-      "tactical": 2.0417
+      "empty": 2.8333,
+      "tactical": 2.0833
     }
   },
-  "draw_time": 0.5,
-  "put_away_time": 0.4,
+  "draw_time": 0.625,
+  "put_away_time": 0.4167,
   "aim_time": 0.2,
   "sprint_time": 0.3,
   "bolt_action_time": 0.375,
@@ -68,15 +74,14 @@
     "pitch": [
       {"time": 0, "value": [1.95, 1.95]},
       {"time": 0.26, "value": [1.95, 1.95]},
-      {"time": 0.45, "value": [-0.35, -0.35]},
-      {"time": 0.75, "value": [0.1, 0.1]},
-      {"time": 1.02, "value": [0, 0]},
-      {"time": 1.21, "value": [0, 0]}
+      {"time": 0.5, "value": [0.1, 0.1]},
+      {"time": 0.65, "value": [0.35, 0.35]},
+      {"time": 0.85, "value": [0.35, 0.35]}
     ],
     "yaw": [
-      {"time": 0, "value": [-0.6, -0.5]},
-      {"time": 0.32, "value": [-0.6, -0.5]},
-      {"time": 0.57, "value": [0, 0]}
+      {"time": 0, "value": [-0.6, 0.6]},
+      {"time": 0.35, "value": [0, 0]},
+      {"time": 0.65, "value": [0, 0]}
     ]
   },
   "inaccuracy": {

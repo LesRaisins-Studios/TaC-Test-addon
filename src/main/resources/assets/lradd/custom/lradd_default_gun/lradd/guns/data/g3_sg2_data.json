@@ -1,4 +1,10 @@
 {
+  "weight": 9.0,
+  "movement_speed": {
+    "base": 0.0,
+    "aim": -0.2,
+    "reload": -0.15
+  },
   "ammo": "tacz:308",
   "ammo_amount": 20,
   "extended_mag_ammo_amount": [
@@ -7,24 +13,24 @@
     25
   ],
   "bolt": "closed_bolt",
-  "rpm": 200,
+  "rpm": 300,
   "bullet": {
-    "life": 0.8,
+    "life": 0.5,
     "bullet_amount": 1,
-    "damage": 12,
+    "damage": 12.5,
     "tracer_count_interval": 0,
     "extra_damage": {
       "armor_ignore": 0.5,
-      "head_shot_multiplier": 2.25,
+      "head_shot_multiplier": 2.2,
       "damage_adjust": [
-        {"distance": 5, "damage": 13.5},
-        {"distance": 25, "damage": 12},
-        {"distance": 45, "damage": 11.25},
-        {"distance": 80, "damage": 10.3},
-        {"distance": "infinite", "damage": 9.15}
+        {"distance": 15, "damage": 12.5},
+        {"distance": 25, "damage": 12.3},
+        {"distance": 45, "damage": 12.0},
+        {"distance": 80, "damage": 11.6},
+        {"distance": "infinite", "damage": 11.2}
       ]
     },
-    "speed": 270,
+    "speed": 450,
     "gravity": 0.0245,
     "knockback": 0,
     "friction": 0.012,
@@ -58,7 +64,7 @@
       {"time": 0.7, "value": [0.55, 0.55]}
     ],
     "yaw": [
-      {"time": 0, "value": [-0.45, -0.35]},
+      {"time": 0, "value": [-0.45, 0.45]},
       {"time": 0.2, "value": [0, 0]},
       {"time": 0.5, "value": [0, 0]}
     ]
@@ -73,16 +79,5 @@
   "allow_attachment_types": [
     "scope",
     "stock"
-  ],
-  "exclusive_attachments": {
-    "tacz:scope_standard_8x": {
-      "weight": 2.0,
-      "ads_addend": 0.04,
-      "inaccuracy_addend": -0.4,
-      "recoil_modifier": {
-        "pitch": -0.2,
-        "yaw": -0.1
-      }
-    }
-  }
+  ]
 }

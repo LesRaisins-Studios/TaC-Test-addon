@@ -12,9 +12,9 @@
     "third_person_animation": "default",
     "transform": {
         "scale": {
-            "thirdperson": [0.45, 0.45, 0.45],
+            "thirdperson": [0.5, 0.5, 0.5],
             "ground": [0.45, 0.45, 0.45],
-            "fixed": [0.6, 0.6, 0.6]
+            "fixed": [1, 1, 1]
         }
     },
     "shell": {

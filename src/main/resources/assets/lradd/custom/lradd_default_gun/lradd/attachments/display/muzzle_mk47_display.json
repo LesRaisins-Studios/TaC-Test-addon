@@ -1,0 +1,11 @@
+{
+  "slot": "lradd:attachment/slot/muzzle_mk47",
+  // 配件的默认模型，不可为空
+  "model": "lradd:attachment/muzzle_mk47_geo",
+  // 配件默认模型使用的材质，不可为空
+  "texture": "lradd:attachment/uv/muzzle_mk47",
+  "sounds": {
+    "install": "tacz:attachments/attachment_general_b",
+    "uninstall": "tacz:attachments/attachment_general_uninstall"
+  }
+}

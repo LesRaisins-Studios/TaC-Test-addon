@@ -111,7 +111,7 @@ dependencies {
 
 //    implementation fg.deobf("com.tacz:tacz-${minecraft_version}:0531-145351")
 //    implementation 'com.github.MCModderAnchor:TACZ:1.20.1-c1c8493a5c-1'
-    implementation fg.deobf('curse.maven:timeless-and-classics-zero-1028108:5529117-sources-5529578')
+    implementation fg.deobf("curse.maven:timeless-and-classics-zero-1028108:5722050-sources-5724527")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }

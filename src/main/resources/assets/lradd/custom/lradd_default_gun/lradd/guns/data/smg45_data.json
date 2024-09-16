@@ -28,15 +28,17 @@
       "head_shot_multiplier": 2,
       // 距离-伤害分段常函数
       "damage_adjust": [
-        {"distance": 2.5, "damage": 8},
-        {"distance": 8, "damage": 7.5},
-        {"distance": 20, "damage": 7},
-        {"distance": 35, "damage": 5.5},
-        {"distance": "infinite", "damage": 4}
+        {"distance": 2.5, "damage": 7.6},
+        {"distance": 8, "damage": 7.4},
+        {"distance": 16, "damage": 7.05},
+        {"distance": 24, "damage": 6.4},
+        {"distance": 32, "damage": 5.8},
+        {"distance": 40, "damage": 5},
+        {"distance": "infinite", "damage": 4.15}
       ]
     },
     // 速度 m/s
-    "speed": 220,
+    "speed": 200,
     // 重力
     "gravity": 0.0245,
     // 击退效果
@@ -85,10 +87,10 @@
     ]
   },
   "inaccuracy": {
-    "stand": 1.4,
-    "move": 1.75,
-    "sneak": 1.0,
-    "lie": 1.0,
+    "stand": 0.3,
+    "move": 0.65,
+    "sneak": 0.25,
+    "lie": 0.25,
     "aim": 0.15
   },
   "move_speed": {

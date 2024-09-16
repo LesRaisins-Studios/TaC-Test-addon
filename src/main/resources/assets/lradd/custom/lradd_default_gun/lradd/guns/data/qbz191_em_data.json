@@ -1,61 +1,43 @@
 {
-  // 指定枪械弹药
-  "ammo": "lradd:2mm_ec",
-  // 弹容
+  "weight": 8.0,
+  "movement_speed": {
+    "base": 0.0,
+    "aim": -0.15,
+    "reload": -0.1
+  },
+  "ammo": "tacz:556x45",
   "ammo_amount": 30,
-  // 扩容弹夹弹药总数
   "extended_mag_ammo_amount": [
     35,
-    43,
-    50
+    40,
+    45
   ],
-  // 枪栓类型：开膛待机（open_bolt）、闭膛待击（closed_bolt）、手动上膛（manual_action)
   "bolt": "closed_bolt",
-  // 每分钟射出弹药量，最大不应超过 1200
-  "rpm": 720,
-  // 子弹实体属性
+  "rpm": 600,
   "bullet": {
-    // 寿命，单位秒
-    "life": 0.6,
-    // 用于霰弹，默认为 1，每发的伤害 / bullet_amount，每次射击扣除一发子弹
+    "life": 0.5,
     "bullet_amount": 1,
-    // 伤害
-    "damage": 9,
-    // 曳光弹间隔数量，没有此字段则不发射曳光弹
-    // 设置为 0 则是每发都是曳光弹
+    "damage": 9.5,
     "tracer_count_interval": 0,
-    // 额外伤害的内容，为空则表示没有任何额外伤害计算内容
     "extra_damage": {
-      // 护甲穿透率，默认为 0，也就是没有穿甲伤害
-      "armor_ignore": 0.5,
-      // 爆头伤害 x1.5
-      "head_shot_multiplier": 2,
-      // 距离-伤害分段常函数
+      "armor_ignore": 0.35,
+      "head_shot_multiplier": 2.3,
       "damage_adjust": [
-        // 这样就能写抵近伤害了
-        {"distance": 1, "damage": 12},
-        {"distance": 25, "damage": 9},
-        {"distance": 45, "damage": 8},
-        // 如果你忘记写这个无穷，那么超过上述距离，我就认为是 0
-        {"distance": "infinite", "damage": 7.5}
+        {"distance": 15, "damage": 9.5},
+        {"distance": 25, "damage": 9.2},
+        {"distance": 35, "damage": 9.0},
+        {"distance": 55, "damage": 8.5},
+        {"distance": 80, "damage": 7.5},
+        {"distance": "infinite", "damage": 7.0}
       ]
     },
-    // 速度 m/s
-    "speed": 450,
-    // 重力
+    "speed": 400,
     "gravity": 0.0245,
-    // 击退效果
     "knockback": 0,
-    // 阻力
-    "friction": 0.0025,
-    // 点燃目标
+    "friction": 0.01,
     "ignite": false,
-    // 穿透数
-    "pierce": 3
-    // 是否爆炸，没有此字段时为 false
-    //"explosion": {
-    //  "radius": 5
-    //}
+    "ignite_entity_time": 2,
+    "pierce": 1
   },
   // 换弹相关
   "reload": {
@@ -81,57 +63,36 @@
   "draw_time": 0.625,
   // 收枪的动作时长，单位秒。
   "put_away_time": 0.375,
-  // 瞄准时长，单位秒。
-  "aim_time": 0.2,
-  "sprint_time": 0.3,
-  // 拉栓上膛的时间，仅当枪栓类型为 manual_action 时有效
-  // "bolt_action_time": 0.9,
-  // 开火模式
+  "aim_time": 0.1,
+  "sprint_time": 0.25,
   "fire_mode": [
-    // 全自动
     "auto",
-    // 半自动
-    "semi",
-    "burst"
+    "semi"
   ],
-  // 多连续发数据，仅多连发会调用
-  "burst_data": {
-    // 是否连续射击
-    "continuous_shoot": true,
-    // 连发数
-    "count": 3,
-    // 组内连发的射速
-    "bpm": 850,
-    // 每组连发之间的时间间隔（上一组结束时间到下一组开始的时间间隔），单位秒
-    "min_interval": 0.45
-  },
-  // 后坐力
   "recoil": {
     "pitch": [
-      {"time": 0, "value": [0.45, 0.45]},
-      {"time": 0.28, "value": [0.45, 0.45]},
-      {"time": 0.37, "value": [0.15, 0.15]},
-      {"time": 0.52, "value": [-0.13, -0.13]},
-      {"time": 0.76, "value": [0, 0]}
+      {"time": 0, "value": [1.05, 1.05]},
+      {"time": 0.2, "value": [1.05, 1.05]},
+      {"time": 0.45, "value": [0.15, 0.15]},
+      {"time": 0.8, "value": [0.45, 0.45]}
     ],
     "yaw": [
-      {"time": 0, "value": [-0.325, -0.275]},
-      {"time": 0.45, "value": [-0.125, 0]},
-      {"time": 0.62, "value": [0, 0]}
+      {"time": 0, "value": [-0.35, 0.35]},
+      {"time": 0.15, "value": [0, 0.05]},
+      {"time": 0.4, "value": [-0.15, 0.15]}
     ]
   },
-  // 不准确度
+  "hurt_bob_tweak_multiplier": 0.05,
   "inaccuracy": {
-    // 站立射击散布
-    "stand": 1.45,
-    // 移动射击散布
-    "move": 2.3,
-    // 潜行射击散布
-    "sneak": 1.025,
-    // 趴下射击散布
-    "lie": 0.75,
-    // 瞄准射击时散布
+    "stand": 0.25,
+    "move": 1.45,
+    "sneak": 0.2,
+    "lie": 0.2,
     "aim": 0.1
+  },
+  "melee": {
+    "distance": 0,
+    "cooldown": 0.5
   },
   "move_speed": {
     "base": 0.9,

@@ -1,4 +1,10 @@
 {
+  "weight": 2.0,
+  "movement_speed": {
+    "base": 0.0,
+    "aim": -0.1,
+    "reload": -0.1
+  },
   // 指定枪械弹药
   "ammo": "lradd:arrow",
   // 弹容
@@ -110,26 +116,9 @@
     // 瞄准射击时散布
     "aim": 0.05
   },
-  "move_speed": {
-    "base": 0.9,
-    "aim": 0.72
-  },
   // 开放的配件槽。未指定的槽位默认关闭。全部配件槽类型有:
   // scope, stock, muzzle, grip, laser, extended_mag
   "allow_attachment_types": [
     "scope"
-  ],
-  // 专属的配件属性
-  "exclusive_attachments": {
-    // 配件 ID，后面的数据和配件的 data 部分结构完全一致
-    "tac:8x": {
-      "weight": 2.0,
-      "ads_addend": 0.04,
-      "inaccuracy_addend": -0.4,
-      "recoil_modifier": {
-        "pitch": -0.2,
-        "yaw": -0.1
-      }
-    }
-  }
+  ]
 }

@@ -1,0 +1,62 @@
+{
+    // 默认的模型，在包目录下的 models 文件夹中寻找，不可为空
+    "model": "lradd:gun/famas_geo",
+    // 默认材质，不可为空
+    "texture": "lradd:gun/uv/famas",
+    // 低模
+    "lod": {
+        "model": "lradd:gun/lod/famas_lod",
+        "texture": "lradd:gun/lod/famas_lod"
+    },
+    // GUI/HUD 界面的 2D 材质，在包目录下的 textures 文件夹中寻找，可为空，若为空，则对应位置不会渲染
+    "hud": "lradd:gun/hud/famas",
+    // 背包/快捷栏等容器中槽位显示的 2D 材质，在包目录下的 textures 文件夹中寻找，不建议为空
+    "slot": "lradd:gun/slot/famas",
+    // 调用的动画名，会在包目录下的 animations 文件夹中寻找，不建议为空
+    "animation": "lradd:famas",
+    // 指定使用缺省动画，可为空。如果上文指定的动画文件里缺少某个动画，如 draw 动画，则会从缺省动画拷贝。
+    // 值可为 rifle、pistol
+    "use_default_animation": "rifle",
+    // 第三人称动画，硬编码，只能选择已有类型，默认只有 default
+    "third_person_animation": "default",
+    // 调整各个视角下模型的变换参数，可为空
+    "transform": {
+        // 暂时只有缩放需要在这里指定，旋转和位移使用模型内定位组。
+        // 可以为空，若为空，则不缩放模型。
+        "scale": {
+            "thirdperson": [0.5, 0.5, 0.5],
+            "ground": [0.45, 0.45, 0.45],
+            "fixed": [1, 1, 1]
+        }
+    },
+    "muzzle_flash": {
+      "texture": "tacz:flash/common_muzzle_flash",
+      "scale": 1
+    },
+    // 抛壳的渲染数据，可为空，若为空，则枪械不抛壳
+    "shell": {
+        // 抛壳的初速度
+        "initial_velocity": [8.0, 5.0, -0.5],
+        // 抛壳随机变化的运动速度
+        "random_velocity": [2.5, 1.5, 0.25],
+        // 抛壳的加速度
+        "acceleration": [0.0, -20, 0.0],
+        // 抛壳的三轴角速度
+        "angular_velocity": [720, 720, 90],
+        // 抛壳渲染存活时间，单位为秒
+        "living_time": 1.0
+    },
+    // 枪械音效，在包目录下 sounds 文件夹内寻找，不建议为空
+    "sounds": {
+        "shoot": "lradd:item/famas_fire",
+        "silence": "lradd:item/famas_fire_s",
+        "reload_empty": "lradd:item/famas_reload_empty",
+        "reload_tactical": "lradd:item/famas_reload_tactical",
+        "inspect": "lradd:item/famas_inspect",
+        "inspect_empty": "lradd:item/famas_inspect_empty",
+        "draw": "lradd:item/famas_draw",
+        "put_away": "tac:m4a1/m4a1_put_away",
+        "shoot_3p": "lradd:item/famas_fire_3p",
+        "silence_3p": "lradd:item/famas_fire_s_3p"
+    }
+}

@@ -1950,8 +1950,6 @@
 						{
 							"origin": [-1, 8.5, 8.09928],
 							"size": [2, 0.23438, 3.4375],
-							"pivot": [0, 8.5, 8.09928],
-							"rotation": [0, 0, 0],
 							"uv": {
 								"north": {"uv": [79, 44], "uv_size": [2, 0.5]},
 								"east": {"uv": [76, 69], "uv_size": [3.5, 0.5]},
@@ -3262,7 +3260,7 @@
 				{
 					"name": "thirdperson_hand",
 					"parent": "positioning",
-					"pivot": [0, 4.925, 3.65]
+					"pivot": [0, 5.925, 3.65]
 				},
 				{
 					"name": "ground",

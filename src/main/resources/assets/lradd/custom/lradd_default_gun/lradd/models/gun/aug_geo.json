@@ -6056,18 +6056,18 @@
 				{
 					"name": "ground",
 					"parent": "positioning",
-					"pivot": [-8, 0.175, 15.05]
+					"pivot": [-8, 2.175, 14.05]
 				},
 				{
 					"name": "fixed",
 					"parent": "positioning",
-					"pivot": [1.1, 8.425, 14.175],
+					"pivot": [-6.9, 8.425, 14.175],
 					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "thirdperson_hand",
 					"parent": "positioning",
-					"pivot": [-8.00386, 6.725, 10.25755]
+					"pivot": [-8.00386, 7.225, 10.25755]
 				},
 				{
 					"name": "idle_view",

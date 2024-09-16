@@ -9232,7 +9232,7 @@
 					"pivot": [-8, 7.45, 2.475]
 				},
 				{
-					"name": "shell2",
+					"name": "shell",
 					"parent": "positioning2",
 					"pivot": [-8, 9.25, 9.225]
 				},
@@ -9267,23 +9267,18 @@
 				{
 					"name": "ground",
 					"parent": "positioning",
-					"pivot": [-8, 0.175, 10.05]
+					"pivot": [-8, 1.175, 8.05]
 				},
 				{
 					"name": "fixed",
 					"parent": "positioning",
-					"pivot": [1.1, 8.425, 9.175],
+					"pivot": [-7.15, 8.425, 9.175],
 					"rotation": [0, 90, 0]
 				},
 				{
 					"name": "thirdperson_hand",
 					"parent": "positioning",
-					"pivot": [-8.00386, 6.475, 13.25755]
-				},
-				{
-					"name": "shell",
-					"parent": "positioning",
-					"pivot": [-3.025, 4.8, -0.725]
+					"pivot": [-8.00386, 6.975, 13.25755]
 				},
 				{
 					"name": "idle_view",

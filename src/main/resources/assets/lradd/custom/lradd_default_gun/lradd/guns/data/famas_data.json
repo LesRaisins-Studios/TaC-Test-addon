@@ -1,0 +1,94 @@
+{
+  "weight": 6.0,
+  "movement_speed": {
+    "base": 0.0,
+    "aim": -0.1,
+    "reload": -0.05
+  },
+  "ammo": "tacz:556x45",
+  "ammo_amount": 25,
+  "extended_mag_ammo_amount": [
+    28,
+    32,
+    35
+  ],
+  "bolt": "open_bolt",
+  "rpm": 670,
+  "bullet": {
+    "life": 0.5,
+    "bullet_amount": 1,
+    "damage": 8.0,
+    "tracer_count_interval": 0,
+    "extra_damage": {
+      "armor_ignore": 0.3,
+      "head_shot_multiplier": 2.25,
+      "damage_adjust": [
+        {"distance": 15, "damage": 8.0},
+        {"distance": 25, "damage": 7.8},
+        {"distance": 35, "damage": 7.5},
+        {"distance": 50, "damage": 7.0},
+        {"distance": 70, "damage": 6.4},
+        {"distance": "infinite", "damage": 5.5}
+      ]
+    },
+    "speed": 400,
+    "gravity": 0.0245,
+    "knockback": 0,
+    "friction": 0.01,
+    "ignite": false,
+    "pierce": 1
+  },
+  "reload": {
+    "type": "magazine",
+    "feed": {
+      "empty": 2.9,
+      "tactical": 2
+    },
+    "cooldown": {
+      "empty": 2.9583,
+      "tactical": 2.4583
+    }
+  },
+  "draw_time": 0.6667,
+  "put_away_time": 0.5,
+  "aim_time": 0.15,
+  "sprint_time": 0.25,
+  "fire_mode": [
+    "auto",
+    "semi"
+  ],
+  "recoil": {
+    "pitch": [
+      {"time": 0, "value": [0.7, 0.7]},
+      {"time": 0.23, "value": [0.7, 0.7]},
+      {"time": 0.55, "value": [0.13,0.13]},
+      {"time": 0.76, "value": [0.25, 0.25]}
+    ],
+    "yaw": [
+      {"time": 0, "value": [-0.2, 0.2]},
+      {"time": 0.15, "value": [0.0, 0.0]},
+      {"time": 0.4, "value": [-0.05, 0.05]}
+    ]
+  },
+  "inaccuracy": {
+    "stand": 0.4,
+    "move": 0.9,
+    "sneak": 0.35,
+    "lie": 0.3,
+    "aim": 0.15
+  },
+  "move_speed": {
+    "base": 0.85,
+    // 瞄准情况
+    "aim": 0.68
+  },
+  // 开放的配件槽。未指定的槽位默认关闭。全部配件槽类型有:
+  // scope, stock, muzzle, grip, laser, extended_mag
+  "allow_attachment_types": [
+    "scope",
+    "muzzle",
+    "grip",
+    "laser",
+    "extended_mag"
+  ]
+}

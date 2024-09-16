@@ -23,7 +23,7 @@
 				{
 					"name": "fixed",
 					"parent": "positioning",
-					"pivot": [1.1, 7.425, 2.175],
+					"pivot": [-6.9, 7.425, 2.175],
 					"rotation": [0, 90, 0]
 				},
 				{
@@ -34,7 +34,7 @@
 				{
 					"name": "muzzle_flash",
 					"parent": "positioning",
-					"pivot": [-0.025, 7.85, -9.475]
+					"pivot": [-8.025, 7.85, -9.475]
 				},
 				{
 					"name": "lod",
