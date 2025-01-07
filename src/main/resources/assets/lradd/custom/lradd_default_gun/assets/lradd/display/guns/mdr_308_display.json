@@ -1,0 +1,56 @@
+{
+    "model": "lradd:gun/mdr_308_geo",
+    "texture": "lradd:gun/uv/mdr_308",
+    "lod": {
+        "model": "lradd:gun/lod/mdr_308_lod",
+        "texture": "lradd:gun/lod/mdr_308_lod"
+    },
+    "hud": "lradd:gun/hud/mdr_308",
+    "slot": "lradd:gun/slot/mdr_308",
+    "animation": "lradd:mdr_308",
+    "use_default_animation": "rifle",
+    "third_person_animation": "default",
+    "transform": {
+        "scale": {
+            "thirdperson": [
+                0.6,
+                0.6,
+                0.6
+            ],
+            "ground": [
+                0.6,
+                0.6,
+                0.6
+            ],
+            "fixed": [
+                1.2,
+                1.2,
+                1.2
+            ]
+        }
+    },
+    "shell": {
+        "initial_velocity": [6, 2, 1],
+        "random_velocity": [1, 1, 0.25],
+        "acceleration": [0.0, -10, 0.0],
+        "angular_velocity": [360, -1200, 90],
+        "living_time": 1.0
+    },
+    "muzzle_flash": {
+        "texture": "lradd:misc/common_muzzle_flash",
+        "scale": 1
+    },
+    "sounds": {
+        "shoot": "lradd:mdr_308/mdr_308_shoot",
+        "shoot_3p": "lradd:mdr_308/mdr_308_shoot_3p",
+        "dry_fire": "lradd:mdr_308/mdr_308_empty",
+        "draw": "lradd:mdr_308/mdr_308_draw",
+        "put_away": "lradd:mdr_308/mdr_308_put_away",
+        "reload_tactical": "lradd:mdr_308/mdr_308_reload_tactical",
+        "reload_empty": "lradd:mdr_308/mdr_308_reload_empty",
+        "inspect": "lradd:mdr_308/mdr_308_inspect",
+        "inspect_empty": "lradd:mdr_308/mdr_308_inspect_empty",
+        "silence": "lradd:mdr_308/mdr_308_silence",
+        "silence_3p": "lradd:mdr_308/mdr_308_silence_3p"
+    }
+}

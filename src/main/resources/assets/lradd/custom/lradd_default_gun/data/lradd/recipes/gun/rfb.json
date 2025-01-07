@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 52
+    },
+    {
+      "item": {
+        "tag": "forge:gems/lapis"
+      },
+      "count": 8
+    },
+    {
+      "item": {
+        "tag": "forge:gems/quartz"
+      },
+      "count": 6
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "lradd:rfb"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

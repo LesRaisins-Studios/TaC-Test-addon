@@ -1,0 +1,7 @@
+{
+  "name": "lradd.attachment.muzzle_191em.name",
+  "tooltip": "lradd.attachment.muzzle_191em.tooltip",
+  "display": "lradd:muzzle_191em_display",
+  "data": "lradd:muzzle_191em_data",
+  "type": "muzzle"
+}

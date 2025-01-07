@@ -1,0 +1,7 @@
+{
+  "name": "lradd.attachment.muzzle_mk47.name",
+  "tooltip": "lradd.attachment.muzzle_mk47.tooltip",
+  "display": "lradd:muzzle_mk47_display",
+  "data": "lradd:muzzle_mk47_data",
+  "type": "muzzle"
+}

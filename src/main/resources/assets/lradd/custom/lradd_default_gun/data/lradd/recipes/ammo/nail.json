@@ -1,0 +1,16 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:raw_materials/iron"
+      },
+      "count": 10
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "lradd:nail",
+    "count": 40
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

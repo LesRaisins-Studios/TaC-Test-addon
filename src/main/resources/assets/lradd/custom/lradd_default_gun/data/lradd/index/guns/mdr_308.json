@@ -1,0 +1,8 @@
+{
+    "name": "lradd.mdr_308",
+    "display": "lradd:mdr_308_display",
+    "data": "lradd:mdr_308_data",
+    "tooltip": "tooltip.mdr_308",
+    "type": "rifle",
+    "sort": 502
+}

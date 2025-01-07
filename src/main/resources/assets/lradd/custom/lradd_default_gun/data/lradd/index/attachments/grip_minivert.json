@@ -1,0 +1,7 @@
+{
+  "name": "lradd.attachment.grip_minivert.name",
+  "tooltip": "lradd.attachment.grip_minivert.tooltip",
+  "display": "lradd:grip_minivert_display",
+  "data": "lradd:grip_minivert_data",
+  "type": "grip"
+}

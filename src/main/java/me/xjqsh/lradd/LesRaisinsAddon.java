@@ -23,6 +23,6 @@ public class LesRaisinsAddon {
 
     private static void registerDefaultExtraGunPack() {
         String jarDefaultPackPath = String.format("/assets/%s/custom/%s", MOD_ID, DEFAULT_PACK_NAME);
-        ResourceManager.registerExtraGunPack(LesRaisinsAddon.class, jarDefaultPackPath);
+        ResourceManager.registerExportResource(LesRaisinsAddon.class, jarDefaultPackPath);
     }
 }

@@ -1,0 +1,22 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 5
+    },
+    {
+      "item": {
+        "tag": "forge:feathers"
+      },
+      "count": 4
+    }
+  ],
+  "result": {
+    "type": "ammo",
+    "id": "lradd:arrow",
+    "count": 10
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}
