@@ -18,6 +18,7 @@
     "ignite": false,
     "pierce": 1,
     "explosion": {
+      "explode": true,
       "damage": 80,
       "radius": 3
     }
