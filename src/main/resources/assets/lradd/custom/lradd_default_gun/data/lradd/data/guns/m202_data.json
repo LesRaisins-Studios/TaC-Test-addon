@@ -8,7 +8,7 @@
     "bullet_amount": 1,
     "damage": 20,
     "extra_damage": {
-      "armor_ignore": 0,
+      "armor_ignore": 0.0,
       "head_shot_multiplier": 1
     },
     "speed": 95,
@@ -20,7 +20,10 @@
     "explosion": {
       "explode": true,
       "damage": 80,
-      "radius": 3
+      "radius": 3,
+      "knockback": true,
+      "destroy_block": true,
+      "delay": 30
     }
   },
   "reload": {
