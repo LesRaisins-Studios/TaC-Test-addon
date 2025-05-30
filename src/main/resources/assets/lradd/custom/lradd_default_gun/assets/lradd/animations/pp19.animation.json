@@ -371,6 +371,20 @@
 						}
 					}
 				}
+			},
+			"sound_effects": {
+				"0.1333": {
+					"effect": "tacz:vector/victor_reload_empty_fast_drum_hit"
+				},
+				"0.5333": {
+					"effect": "tacz:sks/sks_reload_raise"
+				},
+				"1.4": {
+					"effect": "tacz:vector/victor_reload_magin"
+				},
+				"1.7667": {
+					"effect": "tacz:scar_l/p05_ar_schotel_inspect_rotate"
+				}
 			}
 		},
 		"reload_empty": {
@@ -839,8 +853,14 @@
 					},
 					"scale": {
 						"0.0": [1, 1, 1],
-						"0.9333": {"pre": [1, 1, 1], "post": [0, 0, 0]},
-						"1.4": {"pre": [0, 0, 0], "post": [1, 1, 1]}
+						"0.9333": {
+							"pre": [1, 1, 1],
+							"post": [0, 0, 0]
+						},
+						"1.4": {
+							"pre": [0, 0, 0],
+							"post": [1, 1, 1]
+						}
 					}
 				},
 				"constraint": {
@@ -979,17 +999,20 @@
 				}
 			},
 			"sound_effects": {
-				"0.4": {
-					"effect": "gz:pp19/bnk_wep_smg_pp19_reloads_3"
+				"0.2667": {
+					"effect": "tacz:vector/victor_reload_empty_fast_drum_hit"
 				},
-				"0.9667": {
-					"effect": "gz:pp19/bnk_wep_smg_pp19_reloads_4"
+				"0.8667": {
+					"effect": "tacz:sks/sks_reload_raise"
 				},
-				"1.4667": {
-					"effect": "gz:pp19/bnk_wep_smg_pp19_reloads_9"
+				"1.3333": {
+					"effect": "tacz:vector/victor_reload_magin"
+				},
+				"1.7333": {
+					"effect": "tacz:scar_l/p05_ar_schotel_inspect_rotate"
 				},
 				"2.2667": {
-					"effect": "gz:pp19/bnk_wep_smg_pp19_reloads_7"
+					"effect": "tacz:sks/sks_reload_empty_fast_charge"
 				}
 			}
 		},
@@ -1899,17 +1922,20 @@
 				}
 			},
 			"sound_effects": {
+				"0.1333": {
+					"effect": "tacz:type_81/type_81_reload_raise_quick_up"
+				},
 				"2.1667": {
-					"effect": "gz:pp19/bnk_wep_smg_pp19_reloads_3"
+					"effect": "tacz:type_81/type_81_reload_fast_magout"
 				},
 				"4.8": {
-					"effect": "gz:pp19/bnk_wep_smg_pp19_reloads_9"
+					"effect": "tacz:type_81/type_81_inspect_smag_magin"
 				},
 				"5.7667": {
-					"effect": "gz:pp19/bnk_wep_smg_pp19_reloads_22"
+					"effect": "tacz:type_81/type_81_inspect_smag_pull"
 				},
 				"6.8667": {
-					"effect": "gz:pp19/bnk_wep_smg_pp19_reloads_21"
+					"effect": "tacz:type_81/type_81_inspect_smag_release"
 				}
 			}
 		},
@@ -2819,17 +2845,20 @@
 				}
 			},
 			"sound_effects": {
+				"0.1333": {
+					"effect": "tacz:type_81/type_81_reload_raise_quick_up"
+				},
 				"2.1667": {
-					"effect": "gz:pp19/bnk_wep_smg_pp19_reloads_3"
+					"effect": "tacz:type_81/type_81_reload_fast_magout"
 				},
 				"4.8": {
-					"effect": "gz:pp19/bnk_wep_smg_pp19_reloads_9"
+					"effect": "tacz:type_81/type_81_inspect_smag_magin"
 				},
 				"5.7667": {
-					"effect": "gz:pp19/bnk_wep_smg_pp19_reloads_22"
+					"effect": "tacz:type_81/type_81_inspect_smag_pull"
 				},
 				"6.8667": {
-					"effect": "gz:pp19/bnk_wep_smg_pp19_reloads_21"
+					"effect": "tacz:type_81/type_81_inspect_smag_release"
 				}
 			}
 		},
@@ -2962,7 +2991,7 @@
 			},
 			"sound_effects": {
 				"0.0667": {
-					"effect": "p04_lm_rkilo_raise_first_end"
+					"effect": "lradd:pp19/p04_lm_rkilo_raise_first_end"
 				}
 			}
 		},
@@ -3082,7 +3111,7 @@
 			},
 			"sound_effects": {
 				"0.0": {
-					"effect": "p04_lm_rkilo_drop_rattle"
+					"effect": "lradd:pp19/p04_lm_rkilo_drop_rattle"
 				}
 			}
 		},

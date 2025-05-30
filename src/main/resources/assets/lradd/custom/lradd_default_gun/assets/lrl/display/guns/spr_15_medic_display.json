@@ -18,7 +18,7 @@
     }
   },
   "muzzle_flash": {
-    "texture": "lrl:flash/common_muzzle_flash",
+    "texture": "tacz:flash/common_muzzle_flash",
     "scale": 0
   },
   "iron_zoom": 1.2,
@@ -30,23 +30,23 @@
     "living_time": 1.0
   },
   "sounds": {
-    "shoot": "lrl:scar_h/scar_h_shoot",
-    "shoot_3p": "lrl:scar_h/scar_h_shoot_3p",
-    "silence": "lrl:scar_h/scar_h_silence",
-    "silence_3p": "lrl:scar_h/scar_h_silence_3p",
-    "reload_empty": "lrl:m4a1/m4a1_reload_empty",
-    "reload_tactical": "lrl:m4a1/m4a1_reload_tactical",
-    "inspect": "lrl:m4a1/m4a1_inspect",
-    "inspect_empty": "lrl:m4a1/m4a1_inspect_empty",
-    "draw": "lrl:m4a1/m4a1_draw",
-    "put_away": "lrl:m4a1/m4a1_put_away",
-    "dry_fire": "lrl:dry_fire",
-    "fire_select": "lrl:fire_select",
-    "head_hit": "lrl:head_hit",
-    "flesh_hit": "lrl:flesh_hit",
-    "kill": "lrl:kill",
-    "melee_push": "lrl:melee_stock/melee_stock_01",
-    "melee_stock": "lrl:melee_stock/melee_stock_03"
+    "shoot": "tacz:scar_h/scar_h_shoot",
+    "shoot_3p": "tacz:scar_h/scar_h_shoot_3p",
+    "silence": "tacz:scar_h/scar_h_silence",
+    "silence_3p": "tacz:scar_h/scar_h_silence_3p",
+    "reload_empty": "tacz:m4a1/m4a1_reload_empty",
+    "reload_tactical": "tacz:m4a1/m4a1_reload_tactical",
+    "inspect": "tacz:m4a1/m4a1_inspect",
+    "inspect_empty": "tacz:m4a1/m4a1_inspect_empty",
+    "draw": "tacz:m4a1/m4a1_draw",
+    "put_away": "tacz:m4a1/m4a1_put_away",
+    "dry_fire": "tacz:dry_fire",
+    "fire_select": "tacz:fire_select",
+    "head_hit": "tacz:head_hit",
+    "flesh_hit": "tacz:flesh_hit",
+    "kill": "tacz:kill",
+    "melee_push": "tacz:melee_stock/melee_stock_01",
+    "melee_stock": "tacz:melee_stock/melee_stock_03"
   },
   "offhand_show": {
     "pos": [0, 19, 4],

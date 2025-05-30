@@ -60,8 +60,8 @@
     }
   },
     "sounds": {
-        "shoot": "lrl:trisguns/fs_shoot1",
-        "shoot_3p": "lrl:trisguns/fs_shoot2",
+      "shoot": "tacz:ak47/ak47_shoot",
+      "shoot_3p": "tacz:ak47/ak47_shoot_3p",
         "draw": "lrl:rd704/rd704_draw",
         "put_away": "lrl:rd704/rd704_put_away",
         "silence": "lrl:trisguns/fs_shoot3",

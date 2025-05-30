@@ -37,16 +37,16 @@
         "living_time": 1.0
       },
     "muzzle_flash": {
-        "texture": "lrl:misc/common_muzzle_flash",
+        "texture": "tacz:flash/common_muzzle_flash",
         "scale": 1
     },
     "sounds": {
-        "shoot": "lrl:sa58/sa58_shoot",
-        "shoot_3p": "lrl:sa58/sa58_shoot_3p",
-        "draw": "lrl:sa58/sa58_draw",
-        "dry_fire": "lrl:sa58/sa58_empty",
-        "put_away": "lrl:sa58/sa58_put_away",
-        "silence": "lrl:sa58/sa58_silence",
-        "silence_3p": "lrl:sa58/sa58_silence_3p"
+        "shoot": "lradd:sa58/sa58_shoot",
+        "shoot_3p": "lradd:sa58/sa58_shoot_3p",
+        "draw": "lradd:sa58/sa58_draw",
+        "dry_fire": "lradd:sa58/sa58_empty",
+        "put_away": "lradd:sa58/sa58_put_away",
+        "silence": "lradd:sa58/sa58_silence",
+        "silence_3p": "lradd:sa58/sa58_silence_3p"
     }
 }

@@ -31,7 +31,7 @@
     "living_time": 1.0
   },
   "sounds": {
-    "shoot": "lrl:ak12/ak12f",
+    "shoot": "tacz:ak47/ak47_shoot",
     "shoot_3p": "tacz:ak47/ak47_shoot_3p",
     "reload_empty": "tacz:ak47/ak47_reload_empty",
     "reload_tactical": "tacz:ak47/ak47_reload_tactical",

@@ -37,20 +37,20 @@
         "living_time": 1.0
     },
     "muzzle_flash": {
-        "texture": "lrl:misc/common_muzzle_flash",
+        "texture": "tacz:flash/common_muzzle_flash",
         "scale": 1
     },
     "sounds": {
-        "shoot": "lrl:mdr_308/mdr_308_shoot",
-        "shoot_3p": "lrl:mdr_308/mdr_308_shoot_3p",
-        "dry_fire": "lrl:mdr_308/mdr_308_empty",
-        "draw": "lrl:mdr_308/mdr_308_draw",
-        "put_away": "lrl:mdr_308/mdr_308_put_away",
-        "reload_tactical": "lrl:mdr_308/mdr_308_reload_tactical",
-        "reload_empty": "lrl:mdr_308/mdr_308_reload_empty",
-        "inspect": "lrl:mdr_308/mdr_308_inspect",
-        "inspect_empty": "lrl:mdr_308/mdr_308_inspect_empty",
-        "silence": "lrl:mdr_308/mdr_308_silence",
-        "silence_3p": "lrl:mdr_308/mdr_308_silence_3p"
+        "shoot": "lradd:mdr_308/mdr_308_shoot",
+        "shoot_3p": "lradd:mdr_308/mdr_308_shoot_3p",
+        "dry_fire": "lradd:mdr_308/mdr_308_empty",
+        "draw": "lradd:mdr_308/mdr_308_draw",
+        "put_away": "lradd:mdr_308/mdr_308_put_away",
+        "reload_tactical": "lradd:mdr_308/mdr_308_reload_tactical",
+        "reload_empty": "lradd:mdr_308/mdr_308_reload_empty",
+        "inspect": "lradd:mdr_308/mdr_308_inspect",
+        "inspect_empty": "lradd:mdr_308/mdr_308_inspect_empty",
+        "silence": "lradd:mdr_308/mdr_308_silence",
+        "silence_3p": "lradd:mdr_308/mdr_308_silence_3p"
     }
 }

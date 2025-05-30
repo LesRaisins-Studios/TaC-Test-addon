@@ -50,10 +50,6 @@
     "sounds": {
         "shoot": "lradd:item/pp19_fire",
         "silence": "lradd:item/pp19_fire_s",
-        "reload_empty": "lradd:item/pp19_reload_empty",
-        "reload_tactical": "lradd:item/pp19_reload_norm",
-        "inspect": "lradd:item/pp19_inspect",
-        "inspect_empty": "lradd:item/pp19_inspect_empty",
         "draw": "lradd:item/pp19_draw",
         "put_away": "tacz:m4a1/m4a1_put_away",
         "shoot_3p": "lradd:item/pp19_fire_3p",

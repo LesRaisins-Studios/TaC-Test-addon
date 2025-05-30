@@ -48,15 +48,11 @@
     },
     
     "sounds": {
-        "shoot": "lrl:item/pp19_fire",
-        "silence": "lrl:item/pp19_fire_s",
-        "reload_empty": "lrl:item/pp19_reload_empty",
-        "reload_tactical": "lrl:item/pp19_reload_norm",
-        "inspect": "lrl:item/pp19_inspect",
-        "inspect_empty": "lrl:item/pp19_inspect_empty",
-        "draw": "lrl:item/pp19_draw",
+        "shoot": "lradd:item/pp19_fire",
+        "silence": "lradd:item/pp19_fire_s",
+        "draw": "lradd:item/pp19_draw",
         "put_away": "tacz:m4a1/m4a1_put_away",
-        "shoot_3p": "lrl:item/pp19_fire_3p",
-        "silence_3p": "lrl:item/pp19_fire_s_3p"
+        "shoot_3p": "lradd:item/pp19_fire_3p",
+        "silence_3p": "lradd:item/pp19_fire_s_3p"
     }
 }
