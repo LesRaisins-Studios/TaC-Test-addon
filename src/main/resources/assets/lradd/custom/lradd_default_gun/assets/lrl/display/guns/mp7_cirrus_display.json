@@ -1,0 +1,97 @@
+{
+  "model": "lrl:gun/mp7_cirrus_geo",
+  "texture": "lrl:gun/uv/mp7_cirrus",
+
+  "lod": {
+    "model": "lrl:gun/lod/mp7_cirrus",
+    "texture": "lrl:gun/lod/mp7_cirrus"
+  },
+  "hud": "lrl:gun/hud/mp7_cirrus",
+  
+  
+  
+  "slot": "lrl:gun/slot/mp7_cirrus",
+  "animation": "lrl:mp7",
+  "use_default_animation": "rifle",
+  "third_person_animation": "default",
+  "player_animator_3rd": "lrl:rifle_default.player_animation",
+  "show_crosshair": false,
+  "transform": {
+    "scale": {
+      "thirdperson": [0.6, 0.6, 0.6],
+      "ground": [0.6, 0.6, 0.6],
+      "fixed": [1.2, 1.2, 1.2]
+    }
+  },
+  "muzzle_flash": {
+    "texture": "lrl:flash/emx_muzzle_skeep",
+    "scale": 0.75
+  },
+  "iron_zoom": 1.2,
+  "shell": {
+    "initial_velocity": [5, 2, 1],
+    "random_velocity": [1, 1, 0.25],
+    "acceleration": [0.0, -10, 0.0],
+    "angular_velocity": [360, -1200, 90],
+    "living_time": 1.0
+  },
+  "ammo": {
+    "tracer_color": "#CD2626"
+  },
+  "sounds": {
+    "shoot": "lrl:mp7/mp7_fire",
+    "shoot_3p": "lrl:ump45/ump45_shoot_3p",
+    "silence": "lrl:mp7/mp7_fire_s",
+    "silence_3p": "lrl:ump45/ump45_silence_3p",
+    "inspect": "lrl:uzi/uzi_inspect",
+    "draw": "lrl:uzi/uzi_draw",
+    "put_away": "lrl:uzi/uzi_put_away",
+    "dry_fire": "lrl:trisguns/emx_dw2",
+    "fire_select": "lrl:trisguns/emx_mode",
+    "head_hit": "lrl:head_hit",
+    "flesh_hit": "lrl:flesh_hit",
+    "kill": "lrl:kill",
+    "melee_bayonet": "lrl:melee_bayonet/melee_bayonet_01",
+    "melee_push": "lrl:melee_stock/melee_stock_01",
+    "melee_stock": "lrl:melee_stock/melee_stock_02"
+  },
+  "offhand_show": {
+    "pos": [1, 20, 3.5],
+    "rotate": [0, 0, 60],
+    "scale": [0.5, 0.5, 0.5]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [-1, 20, 3],
+      "rotate": [-180, 0, 120],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  },
+  "text_show": {
+    "ammo_count_text_show_pos": {
+      "scale": 1,
+      "align": "center",
+      "shadow": false,
+      "color": "#FFFFFF",
+      "light": 15,
+      "text": "text_show.tacz.ak47.ammo_count"
+    }
+  },
+  "controllable": {
+    "semi": {
+      "low_frequency": 0.25,
+      "high_frequency": 0.5,
+      "time": 100
+    },
+    "auto": {
+      "low_frequency": 0.15,
+      "high_frequency": 0.25,
+      "time": 80
+    },
+    "burst": {
+      "low_frequency": 0.25,
+      "high_frequency": 0.5,
+      "time": 100
+    }
+  }
+}

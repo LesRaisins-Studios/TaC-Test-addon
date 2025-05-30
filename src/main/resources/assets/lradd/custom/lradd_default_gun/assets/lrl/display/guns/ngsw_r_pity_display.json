@@ -1,0 +1,58 @@
+{
+  "model": "lrl:gun/ngsw_r_pity_geo",
+  "texture": "lrl:gun/uv/ngsw_r_pity",
+  "lod": {
+    "model": "lrl:gun/lod/ngsw_r_pity",
+    "texture": "lrl:gun/lod/ngsw_r_pity"
+  },
+  "hud": "lrl:gun/hud/ngsw_r_pity",
+  "slot": "lrl:gun/slot/ngsw_r_pity",
+  "animation": "lrl:bas_b",
+  "use_default_animation": "rifle",
+  "third_person_animation": "default",
+  "transform": {
+    "scale": {
+      "thirdperson": [0.6, 0.6, 0.6],
+      "ground": [0.6, 0.6, 0.6],
+      "fixed": [1.2, 1.2, 1.2]
+    }
+  },
+  "muzzle_flash": {
+    "texture": "lrl:flash/common_muzzle_flash",
+    "scale": 0
+  },
+  "iron_zoom": 1.2,
+  "shell": {
+    "initial_velocity": [5, 2, 1],
+    "random_velocity": [1, 1, 0.25],
+    "acceleration": [0.0, -10, 0.0],
+    "angular_velocity": [360, -1200, 90],
+    "living_time": 1.0
+  },
+  "sounds": {
+    "draw": "lrl:hk416d/hk416d_draw",
+    "shoot": "lrl:mcx/sigmcx_shoot",
+    "shoot_3p": "lrl:scar_h/scar_h_shoot_3p",
+    "silence": "lrl:mcx/sigmcx_silence",
+    "silence_3p": "lrl:scar_h/scar_h_silence_3p",
+    "dry_fire": "lrl:dry_fire",
+    "fire_select": "lrl:fire_select",
+    "head_hit": "lrl:head_hit",
+    "flesh_hit": "lrl:flesh_hit",
+    "kill": "lrl:kill",
+    "melee_push": "lrl:melee_stock/melee_stock_01",
+    "melee_stock": "lrl:melee_stock/melee_stock_03"
+  },
+  "offhand_show": {
+    "pos": [0, 19, 4],
+    "rotate": [0, 0, 60],
+    "scale": [0.5, 0.5, 0.5]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [0, 19, 3],
+      "rotate": [-180, 0, 120],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  }
+}

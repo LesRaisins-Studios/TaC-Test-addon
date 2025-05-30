@@ -1,0 +1,7 @@
+{
+  "name": "lrl.gun.p90_asiimov.name",
+  "display": "lrl:p90_asiimov_display",
+  "data": "lrl:p90_asiimov_data",
+  "tooltip": "lrl.gun.p90_asiimov.desc",
+  "type": "smg"
+}

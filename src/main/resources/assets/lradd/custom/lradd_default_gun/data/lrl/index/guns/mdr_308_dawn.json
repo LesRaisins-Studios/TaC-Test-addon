@@ -1,0 +1,8 @@
+{
+    "name": "lrl.mdr_308_dawn",
+    "display": "lrl:mdr_308_dawn_display",
+    "data": "lrl:mdr_308_dawn_data",
+    "tooltip": "tooltip.mdr_308_dawn",
+    "type": "rifle",
+    "sort": 502
+}

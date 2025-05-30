@@ -55,7 +55,7 @@
         "inspect": "lradd:item/txc_inspect",
         "inspect_empty": "lradd:item/txc_inspect_empty",
         "draw": "lradd:item/txc_draw",
-        "put_away": "tac:m4a1/m4a1_put_away",
+        "put_away": "tacz:m4a1/m4a1_put_away",
         "shoot_3p": "lradd:item/txc_fire_3p",
         "silence_3p": "lradd:item/txc_fire_s_3p"
     }

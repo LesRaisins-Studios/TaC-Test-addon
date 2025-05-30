@@ -1,0 +1,7 @@
+{
+  "name": "lrl.gun.ai_awp_asiimov.name",
+  "display": "lrl:ai_awp_asiimov_display",
+  "data": "lrl:ai_awp_asiimov_data",
+  "tooltip": "lrl.gun.ai_awp_asiimov.desc",
+  "type": "sniper"
+}

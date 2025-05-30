@@ -1,49 +1,19 @@
 {
-  "weight": 1.0,
-  "ads": {
-    "addend": 0.0,
-    "percent": 0.0,
-    "multiplier": 1.0
-  },
+  "weight": 0.25,
   "inaccuracy": {
-    "addend": 0.0,
-    "percent": 0.0,
-    "multiplier": 1.0
+    "multiplier": 0.01
    },
   "aim_inaccuracy": {
-    "addend": 0.0,
-    "percent": -0.2,
-    "multiplier": 1.0
+    "multiplier": 0.01
   },
-  "rpm": {
-    "addend": 0.0,
-    "percent": 0.0,
-    "multiplier": 1.0
+  "ammo_speed":{
+    "addend": 500
   },
-  "damage": {
-    "addend": 0.0,
-    "percent": 0.0,
-    "multiplier": 1.0
-  },
-  "recoil": {
-    "yaw": {
-      "addend": 0.0,
-      "percent": 0.0,
-      "multiplier": 1.0
-    },
-    "pitch": {
-      "addend": 0.0,
-      "percent": 0.0,
-      "multiplier": 1.0
-    }
-  },
-  "armor_ignore":{
-    "addend": 0,
-    "percent": 0.0,
-    "multiplier": 1.0
+  "pierce": {
+    "addend": 2
   },
   "silence": {
     "use_silence_sound": true,
-    "distance_addend": -25
+    "distance_addend": -40
   }
 }

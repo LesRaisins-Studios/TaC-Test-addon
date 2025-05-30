@@ -1,0 +1,62 @@
+{
+    
+    "model": "lrl:gun/ash12_pity_geo",
+    
+    "texture": "lrl:gun/uv/ash12_pity",
+  
+    "lod": {
+        "model": "lrl:gun/lod/ash12_pity",
+        "texture": "lrl:gun/lod/ash12_pity"
+    },
+    
+    "hud": "lrl:gun/hud/ash12_pity",
+    
+    "slot": "lrl:gun/slot/ash12_pity",
+    
+    "animation": "lrl:ash12",
+    
+    
+    "use_default_animation": "rifle",
+    
+    "third_person_animation": "default",
+    
+    "transform": {
+        
+        
+        "scale": {
+            "thirdperson": [0.5, 0.5, 0.5],
+            "ground": [0.45, 0.45, 0.45],
+            "fixed": [1, 1, 1]
+        }
+    },
+    "muzzle_flash": {
+      "texture": "lrl:flash/common_muzzle_flash",
+      "scale": 1
+    },
+    
+    "shell": {
+        
+        "initial_velocity": [8.0, 5.0, -0.5],
+        
+        "random_velocity": [2.5, 1.5, 0.25],
+        
+        "acceleration": [0.0, -20, 0.0],
+        
+        "angular_velocity": [720, 720, 90],
+        
+        "living_time": 1.0
+    },
+    
+    "sounds": {
+        "shoot": "lrl:oden/ash12_fire",
+        "silence": "lrl:oden/ash12_fire_s",
+        "reload_empty": "lrl:oden/ash12_reload_empty",
+        "reload_tactical": "lrl:oden/ash12_reload_tactical",
+        "inspect": "lrl:oden/ash12_inspect",
+        "inspect_empty": "lrl:oden/ash12_inspect_empty",
+        "draw": "lrl:oden/ash12_draw",
+        "put_away": "tacz:m4a1/m4a1_put_away",
+        "shoot_3p": "lrl:oden/ash12_fire_3p",
+        "silence_3p": "lrl:oden/ash12_fire_s_3p"
+    }
+}

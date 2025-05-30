@@ -1,0 +1,7 @@
+{
+  "name": "lrl.gun.db_long_super.name",
+  "display": "lrl:db_long_super_display",
+  "data": "lrl:db_long_super_data",
+  "tooltip": "lrl.gun.db_long_super.desc",
+  "type": "shotgun"
+}

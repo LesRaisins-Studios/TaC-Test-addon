@@ -36,7 +36,7 @@
         "inspect": "lradd:item/acr_inspect",
         "inspect_empty": "lradd:item/acr_inspect_empty",
         "draw": "lradd:item/acr_draw",
-        "put_away": "tac:m4a1/m4a1_put_away",
+        "put_away": "tacz:m4a1/m4a1_put_away",
         "shoot_3p": "lradd:item/acr_fire_3p",
         "silence_3p": "lradd:item/acr_fire_s_3p"
     }

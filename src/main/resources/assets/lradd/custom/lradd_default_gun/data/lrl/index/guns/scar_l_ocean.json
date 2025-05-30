@@ -1,0 +1,8 @@
+{
+  "name": "lrl.gun.scar_l_ocean.name",
+  "display": "lrl:scar_l_ocean_display",
+  "data": "lrl:scar_l_ocean_data",
+  "tooltip": "lrl.gun.scar_l_ocean.desc",
+  "type": "rifle",
+  "sort": 4
+}

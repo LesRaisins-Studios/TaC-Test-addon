@@ -1,0 +1,7 @@
+{
+  "name": "lrl.gun.deagle_pilot.name",
+  "display": "lrl:deagle_pilot_display",
+  "data": "lrl:deagle_pilot_data",
+  "tooltip": "lrl.gun.deagle_pilot.desc",
+  "type": "pistol"
+}

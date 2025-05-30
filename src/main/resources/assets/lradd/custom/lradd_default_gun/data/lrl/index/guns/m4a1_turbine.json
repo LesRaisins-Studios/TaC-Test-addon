@@ -1,0 +1,8 @@
+{
+  "name": "lrl.gun.m4a1_turbine.name",
+  "display": "lrl:m4a1_turbine_display",
+  "data": "lrl:m4a1_turbine_data",
+  "type": "rifle",
+  "tooltip": "lrl.gun.m4a1_turbine.desc",
+  "sort": 2
+}

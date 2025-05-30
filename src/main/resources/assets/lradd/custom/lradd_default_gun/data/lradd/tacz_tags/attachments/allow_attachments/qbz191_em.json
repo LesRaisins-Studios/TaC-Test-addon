@@ -1,9 +1,13 @@
 [
-    "#tacz:scope",
-    "#tacz:muzzle",
-    "#tacz:extended_mag",
-    "#tacz:stock",
-    "#tacz:grip",
-    "#tacz:laser",
-    "lradd:muzzle_191em"
+  "#tacz:scope",
+  "#tacz:muzzle",
+  "#tacz:grip",
+  "#tacz:muzzle_brake",
+  "#tacz:muzzle_compensator",
+  "#tacz:muzzle_silencer",
+  "#tacz:oem_stock",
+  "#tacz:scope_sight",
+  "#tacz:scope_scope",
+  "#tacz:scope_sniper",
+  "lradd:muzzle_191em"
   ]

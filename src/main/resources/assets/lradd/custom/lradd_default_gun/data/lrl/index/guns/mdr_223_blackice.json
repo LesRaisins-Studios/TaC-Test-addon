@@ -1,0 +1,8 @@
+{
+    "name": "lrl.mdr_223_blackice",
+    "display": "lrl:mdr_223_blackice_display",
+    "data": "lrl:mdr_223_blackice_data",
+    "tooltip": "tooltip.mdr_223_blackice",
+    "type": "rifle",
+    "sort": 503
+}

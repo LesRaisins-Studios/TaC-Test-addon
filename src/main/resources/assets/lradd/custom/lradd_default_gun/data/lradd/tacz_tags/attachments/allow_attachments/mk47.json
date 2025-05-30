@@ -2,5 +2,13 @@
     "#tacz:scope",
     "#tacz:muzzle",
     "#tacz:stock",
-    "muzzle_mk47"
+    "#tacz:grip",
+    "#tacz:muzzle_brake",
+    "#tacz:muzzle_compensator",
+    "#tacz:muzzle_silencer",
+    "#tacz:oem_stock",
+    "#tacz:scope_sight",
+    "#tacz:scope_scope",
+    "#tacz:scope_sniper",
+    "lradd:muzzle_mk47"
   ]

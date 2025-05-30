@@ -1,0 +1,7 @@
+{
+  "name": "lrl.gun.p90_industries.name",
+  "display": "lrl:p90_industries_display",
+  "data": "lrl:p90_industries_data",
+  "tooltip": "lrl.gun.p90_industries.desc",
+  "type": "smg"
+}

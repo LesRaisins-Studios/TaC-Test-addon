@@ -1,0 +1,75 @@
+{
+    "model": "lrl:gun/rd704_asiimov_geo",
+    "texture": "lrl:gun/uv/rd704_asiimov",
+    "lod": {
+        "model": "lrl:gun/lod/rd704_asiimov",
+        "texture": "lrl:gun/lod/rd704_asiimov"
+    },
+    "hud": "lrl:gun/hud/rd704_asiimov",
+    "slot": "lrl:gun/slot/rd704_asiimov",
+    "animation": "lrl:rd704",
+    "use_default_animation": "rifle",
+    "third_person_animation": "default",
+    "transform": {
+        "scale": {
+            "thirdperson": [
+                0.6,
+                0.6,
+                0.6
+            ],
+            "ground": [
+                0.6,
+                0.6,
+                0.6
+            ],
+            "fixed": [
+                1.2,
+                1.2,
+                1.2
+            ]
+        }
+    },
+    "shell": {
+        "initial_velocity": [5, 2, 1],
+        "random_velocity": [1, 1, 0.25],
+        "acceleration": [0.0, -10, 0.0],
+        "angular_velocity": [360, -1200, 90],
+        "living_time": 1.0
+      },
+    "iron_zoom": 1.2,
+    "muzzle_flash": {
+        "texture": "lrl:flash/emx_muzzle_flash_cy",
+        "scale": 1
+    },
+  "text_show": {
+    "ammo_text": {
+      "scale": 0.25,
+      "align": "center",
+      "shadow": false,
+      "color": "#d8eba0",
+      "light": 15,
+      "text": "%ammo_count%"
+    },
+    "ammo_text2": {
+      "scale": 0.25,
+      "align": "center",
+      "shadow": false,
+      "color": "#d8eba0",
+      "light": 15,
+      "text": "%ammo_count%"
+    }
+  },
+    "sounds": {
+        "shoot": "lrl:trisguns/fs_shoot1",
+        "shoot_3p": "lrl:trisguns/fs_shoot2",
+        "draw": "lrl:rd704/rd704_draw",
+        "put_away": "lrl:rd704/rd704_put_away",
+        "silence": "lrl:trisguns/fs_shoot3",
+        "silence_3p": "lrl:trisguns/fs_shoot4",
+        "dry_fire": "lrl:trisguns/emx_dw2",
+        "fire_select": "lrl:trisguns/emx_mode",
+        "head_hit": "lrl:head_hit",
+        "flesh_hit": "lrl:flesh_hit",
+        "kill": "lrl:kill"
+    }
+}

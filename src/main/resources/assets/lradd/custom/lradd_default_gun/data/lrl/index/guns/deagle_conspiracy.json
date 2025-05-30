@@ -1,0 +1,7 @@
+{
+  "name": "lrl.gun.deagle_conspiracy.name",
+  "display": "lrl:deagle_conspiracy_display",
+  "data": "lrl:deagle_conspiracy_data",
+  "tooltip": "lrl.gun.deagle_conspiracy.desc",
+  "type": "pistol"
+}

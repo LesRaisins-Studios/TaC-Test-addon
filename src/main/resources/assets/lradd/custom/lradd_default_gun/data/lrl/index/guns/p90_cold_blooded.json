@@ -1,0 +1,7 @@
+{
+  "name": "lrl.gun.p90_cold_blooded.name",
+  "display": "lrl:p90_cold_blooded_display",
+  "data": "lrl:p90_cold_blooded_data",
+  "tooltip": "lrl.gun.p90_cold_blooded.desc",
+  "type": "smg"
+}

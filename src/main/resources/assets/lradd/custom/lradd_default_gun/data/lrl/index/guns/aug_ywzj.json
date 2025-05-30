@@ -1,0 +1,8 @@
+{
+  "name": "lrl.gun.aug_ywzj.name",
+  "display": "lrl:aug_ywzj_display",
+  "data": "lrl:aug_ywzj_data",
+  "type": "rifle",
+  "tooltip": "lrl.gun.aug_ywzj.desc",
+  "sort": 10
+}

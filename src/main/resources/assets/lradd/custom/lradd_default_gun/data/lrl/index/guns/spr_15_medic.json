@@ -1,0 +1,8 @@
+{
+  "name": "lrl.gun.spr_15_medic.name",
+  "display": "lrl:spr_15_medic_display",
+  "data": "lrl:spr_15_medic_data",
+  "tooltip": "lrl.gun.spr_15_medic.desc",
+  "type": "rifle",
+  "sort": 10
+}

@@ -1,13 +1,24 @@
 {
-  "weight": 3.0,
-  "ads": {
-    "addend": 0.15,
-    "percent": 0.6,
-    "multiplier": 1.0
+  "weight": 0.75,
+  "damage": {
+    "percent": 3.0
+  },
+  "armor_ignore":{
+    "addend": 1.0
+  },
+  "head_shot":{
+    "percent": 6.0
   },
   "inaccuracy": {
-    "addend": 0.0,
-    "percent": 0.8,
-    "multiplier": 1.0
-   }
+    "multiplier": 0.01
+   },
+  "aim_inaccuracy": {
+    "multiplier": 0.01
+  },
+  "ammo_speed":{
+    "addend": 300
+  },
+  "pierce": {
+    "addend": 4
+  }
 }

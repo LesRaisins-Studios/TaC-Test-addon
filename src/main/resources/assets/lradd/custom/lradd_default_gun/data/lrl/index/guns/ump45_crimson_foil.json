@@ -1,0 +1,7 @@
+{
+  "name": "lrl.gun.ump45_crimson_foil.name",
+  "display": "lrl:ump45_crimson_foil_display",
+  "data": "lrl:ump45_crimson_foil_data",
+  "tooltip": "lrl.gun.ump45_crimson_foil.desc",
+  "type": "smg"
+}

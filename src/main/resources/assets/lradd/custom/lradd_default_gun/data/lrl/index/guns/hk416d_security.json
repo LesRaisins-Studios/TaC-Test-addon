@@ -1,0 +1,8 @@
+{
+  "name": "lrl.gun.hk416d_security.name",
+  "display": "lrl:hk416d_security_display",
+  "data": "lrl:hk416d_security_data",
+  "type": "rifle",
+  "tooltip": "lrl.gun.hk416d_security.desc",
+  "sort": 2
+}

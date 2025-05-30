@@ -1,0 +1,8 @@
+{
+  "name": "lrl.gun.m4a1_temukau.name",
+  "display": "lrl:m4a1_temukau_display",
+  "data": "lrl:m4a1_temukau_data",
+  "type": "rifle",
+  "tooltip": "lrl.gun.m4a1_temukau.desc",
+  "sort": 2
+}

@@ -5,7 +5,7 @@
     "aim": -0.15,
     "reload": -0.1
   },
-  "ammo": "tacz:556x45",
+  "ammo": "tacz:58x42",
   "ammo_amount": 30,
   "extended_mag_ammo_amount": [
     35,

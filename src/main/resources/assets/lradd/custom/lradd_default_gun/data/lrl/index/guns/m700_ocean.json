@@ -1,0 +1,7 @@
+{
+  "name": "lrl.gun.m700_ocean.name",
+  "display": "lrl:m700_ocean_display",
+  "data": "lrl:m700_ocean_data",
+  "tooltip": "lrl.gun.m700_ocean.desc",
+  "type": "sniper"
+}

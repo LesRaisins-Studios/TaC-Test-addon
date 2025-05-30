@@ -1,0 +1,8 @@
+{
+    "name": "lrl.mdr_223_pity",
+    "display": "lrl:mdr_223_pity_display",
+    "data": "lrl:mdr_223_pity_data",
+    "tooltip": "tooltip.mdr_223_pity",
+    "type": "rifle",
+    "sort": 503
+}

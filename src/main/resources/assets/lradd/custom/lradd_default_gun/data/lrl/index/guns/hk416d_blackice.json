@@ -1,0 +1,8 @@
+{
+  "name": "lrl.gun.hk416d_blackice.name",
+  "display": "lrl:hk416d_blackice_display",
+  "data": "lrl:hk416d_blackice_data",
+  "type": "rifle",
+  "tooltip": "lrl.gun.hk416d_blackice.desc",
+  "sort": 2
+}

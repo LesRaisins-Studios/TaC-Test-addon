@@ -25,7 +25,7 @@
         "inspect": "lradd:item/tactical_axe_inspect",
         "inspect_empty": "lradd:item/tactical_axe_inspect_empty",
         "draw": "lradd:item/tactical_axe_draw",
-        "put_away": "tac:m4a1/m4a1_put_away",
+        "put_away": "tacz:m4a1/m4a1_put_away",
         "shoot_3p": "lradd:item/tactical_axe_fire_3p",
         "silence_3p": "lradd:item/tactical_axe_fire_s_3p"
     }

@@ -1,0 +1,7 @@
+{
+  "name": "lrl.gun.hk_mp5a5_agent.name",
+  "display": "lrl:hk_mp5a5_agent_display",
+  "data": "lrl:hk_mp5a5_agent_data",
+  "tooltip": "lrl.gun.hk_mp5a5_agent.desc",
+  "type": "smg"
+}

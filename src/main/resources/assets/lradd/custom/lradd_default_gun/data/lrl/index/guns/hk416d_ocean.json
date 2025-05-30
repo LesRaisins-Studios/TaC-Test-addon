@@ -1,0 +1,8 @@
+{
+  "name": "lrl.gun.hk416d_ocean.name",
+  "display": "lrl:hk416d_ocean_display",
+  "data": "lrl:hk416d_ocean_data",
+  "type": "rifle",
+  "tooltip": "lrl.gun.hk416d_ocean.desc",
+  "sort": 2
+}

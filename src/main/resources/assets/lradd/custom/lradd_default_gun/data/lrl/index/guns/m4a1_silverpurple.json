@@ -1,0 +1,8 @@
+{
+  "name": "lrl.gun.m4a1_silverpurple.name",
+  "display": "lrl:m4a1_silverpurple_display",
+  "data": "lrl:m4a1_silverpurple_data",
+  "type": "rifle",
+  "tooltip": "lrl.gun.m4a1_silverpurple.desc",
+  "sort": 2
+}

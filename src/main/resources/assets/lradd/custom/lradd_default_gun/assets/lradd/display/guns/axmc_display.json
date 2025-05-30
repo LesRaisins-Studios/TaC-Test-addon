@@ -56,7 +56,7 @@
         "inspect_empty": "lradd:item/axmc_inspect_empty",
         "draw": "lradd:item/axmc_draw",
         "bolt": "lradd:item/axmc_bolt",
-        "put_away": "tac:m4a1/m4a1_put_away",
+        "put_away": "tacz:m4a1/m4a1_put_away",
         "shoot_3p": "lradd:item/axmc_fire_3p",
         "silence_3p": "lradd:item/axmc_fire_s_3p"
     }

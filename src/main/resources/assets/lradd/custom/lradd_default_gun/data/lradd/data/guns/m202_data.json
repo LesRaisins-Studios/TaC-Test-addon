@@ -8,18 +8,22 @@
     "bullet_amount": 1,
     "damage": 20,
     "extra_damage": {
-      "armor_ignore": 0,
+      "armor_ignore": 0.0,
       "head_shot_multiplier": 1
     },
-    "speed": 95,
-    "gravity": 0.0245,
+    "speed": 80,
+    "gravity": 0.015,
     "knockback": 0,
     "friction": 0.005,
     "ignite": false,
-    "pierce": 1,
+    "pierce": 0,
     "explosion": {
-      "damage": 80,
-      "radius": 3
+      "explode": true,
+      "damage": 120,
+      "radius": 3,
+      "knockback": true,
+      "destroy_block": true,
+      "delay": 30
     }
   },
   "reload": {

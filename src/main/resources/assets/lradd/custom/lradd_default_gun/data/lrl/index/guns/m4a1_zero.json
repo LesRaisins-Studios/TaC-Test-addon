@@ -1,0 +1,8 @@
+{
+  "name": "lrl.gun.m4a1_zero.name",
+  "display": "lrl:m4a1_zero_display",
+  "data": "lrl:m4a1_zero_data",
+  "type": "rifle",
+  "tooltip": "lrl.gun.m4a1_zero.desc",
+  "sort": 2
+}

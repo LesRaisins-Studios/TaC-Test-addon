@@ -1,0 +1,7 @@
+{
+  "name": "lrl.gun.glock_17_highbeam.name",
+  "display": "lrl:glock_17_highbeam_display",
+  "data": "lrl:glock_17_highbeam_data",
+  "tooltip": "lrl.gun.glock_17_highbeam.desc",
+  "type": "pistol"
+}

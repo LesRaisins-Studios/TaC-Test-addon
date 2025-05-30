@@ -1,0 +1,7 @@
+{
+  "name": "lrl.gun.ump45_hurrican.name",
+  "display": "lrl:ump45_hurrican_display",
+  "data": "lrl:ump45_hurrican_data",
+  "tooltip": "lrl.gun.ump45_hurrican.desc",
+  "type": "smg"
+}

@@ -1,0 +1,10 @@
+{
+    // 枪械的显示名称，支持本地化
+    "name": "lrl.gun.ash12_pity.name",
+    // 枪械的本地数据
+    "display": "lrl:ash12_pity_display",
+    // 枪械参数
+    "data": "lrl:ash12_pity_data",
+    // 枪械种类，标准待定
+    "type": "rifle"
+}

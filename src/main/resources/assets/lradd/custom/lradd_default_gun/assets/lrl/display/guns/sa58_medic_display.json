@@ -1,0 +1,52 @@
+{
+    "model": "lrl:gun/sa58_medic_geo",
+    "texture": "lrl:gun/uv/sa58_medic",
+    "lod": {
+        "model": "lrl:gun/lod/sa58_medic_lod",
+        "texture": "lrl:gun/lod/sa58_medic_lod"
+    },
+    "hud": "lrl:gun/hud/sa58_medic",
+    "slot": "lrl:gun/slot/sa58_medic",
+    "animation": "lradd:sa58",
+    "use_default_animation": "rifle",
+    "third_person_animation": "default",
+    "transform": {
+        "scale": {
+            "thirdperson": [
+                0.6,
+                0.6,
+                0.6
+            ],
+            "ground": [
+                0.6,
+                0.6,
+                0.6
+            ],
+            "fixed": [
+                1.2,
+                1.2,
+                1.2
+            ]
+        }
+    },
+    "shell": {
+        "initial_velocity": [5, 2, 1],
+        "random_velocity": [1, 1, 0.25],
+        "acceleration": [0.0, -10, 0.0],
+        "angular_velocity": [360, -1200, 90],
+        "living_time": 1.0
+      },
+    "muzzle_flash": {
+        "texture": "lrl:misc/common_muzzle_flash",
+        "scale": 1
+    },
+    "sounds": {
+        "shoot": "lrl:sa58/sa58_shoot",
+        "shoot_3p": "lrl:sa58/sa58_shoot_3p",
+        "draw": "lrl:sa58/sa58_draw",
+        "dry_fire": "lrl:sa58/sa58_empty",
+        "put_away": "lrl:sa58/sa58_put_away",
+        "silence": "lrl:sa58/sa58_silence",
+        "silence_3p": "lrl:sa58/sa58_silence_3p"
+    }
+}

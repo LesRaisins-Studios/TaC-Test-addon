@@ -1,0 +1,8 @@
+{
+    "name": "lrl.rd704_blackice",
+    "display": "lrl:rd704_blackice_display",
+    "data": "lrl:rd704_blackice_data",
+    "tooltip": "tooltip.rd704_blackice",
+    "type": "rifle",
+    "sort": 500
+}

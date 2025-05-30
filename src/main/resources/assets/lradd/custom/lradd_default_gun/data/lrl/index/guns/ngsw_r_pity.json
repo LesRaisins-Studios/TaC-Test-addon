@@ -1,0 +1,8 @@
+{
+  "name": "lrl.gun.ngsw_r_pity.name",
+  "display": "lrl:ngsw_r_pity_display",
+  "data": "lrl:ngsw_r_pity_data",
+  "tooltip": "lrl.gun.ngsw_r_pity.desc",
+  "type": "rifle",
+  "sort": 10
+}

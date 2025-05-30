@@ -1,0 +1,8 @@
+{
+  "name": "lrl.gun.mp7_cirrus.name",
+  "display": "lrl:mp7_cirrus_display",
+  "data": "lrl:mp7_cirrus_data",
+  "tooltip": "lrl.gun.mp7_cirrus.desc",
+  "type": "smg",
+  "sort": 10
+}

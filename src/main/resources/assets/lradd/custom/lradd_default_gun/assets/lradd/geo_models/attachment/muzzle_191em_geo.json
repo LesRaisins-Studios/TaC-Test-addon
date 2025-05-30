@@ -12,7 +12,7 @@
 			},
 			"bones": [
 				{
-					"name": "muzzle_191em",
+					"name": "muzzle_default",
 					"pivot": [0, 0.00781, -1.25],
 					"cubes": [
 						{

@@ -1,0 +1,8 @@
+{
+  "name": "lrl.gun.aug_security.name",
+  "display": "lrl:aug_security_display",
+  "data": "lrl:aug_security_data",
+  "type": "rifle",
+  "tooltip": "lrl.gun.aug_security.desc",
+  "sort": 10
+}

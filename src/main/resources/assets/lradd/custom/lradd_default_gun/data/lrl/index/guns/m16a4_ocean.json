@@ -1,0 +1,8 @@
+{
+  "name": "lrl.gun.m16a4_ocean.name",
+  "display": "lrl:m16a4_ocean_display",
+  "data": "lrl:m16a4_ocean_data",
+  "type": "rifle",
+  "tooltip": "lrl.gun.m16a4_ocean.desc",
+  "sort": 4
+}
